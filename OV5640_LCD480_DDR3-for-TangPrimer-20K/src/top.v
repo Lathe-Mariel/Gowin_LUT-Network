@@ -117,7 +117,8 @@ reg [31:0] b_counter;
 reg [31:0] c_counter;
 localparam CLK27M = 'd27_000_000;
 localparam CLK48M = 'd480_000_000;
-reg clk48m_led;
+//reg clk48m_led;
+
 always@(posedge clk) begin
     if ( c_counter == (CLK27M - 1)) begin
         c_counter <= 'd0;
@@ -388,6 +389,90 @@ logic [BW_DATA_WIDTH-1:0] f33_data;
             bin_img <= bin_shr;
         end
     end
+
+    // -----------------------------
+    //  LUT-Network 画像認識
+    // -----------------------------
+
+    logic   [9:0]       mnist_class;
+    MnistLutSimple
+            #(
+                .USE_REG        (0      ),
+                .USER_WIDTH     (0      ),
+                .DEVICE         ("RTL"  )
+            )
+        u_MnistLutSimple
+            (
+                .reset          (~rst_n         ),
+                .clk            (cmos_pclk  ),
+                .cke            (1'b1           ),
+                
+                .in_user        ('0             ),
+                .in_data        (bin_img        ),
+                .in_valid       (1'b1           ),
+
+                .out_user       (               ),
+                .out_data       (mnist_class    ),
+                .out_valid      (               )
+            );
+
+ // -----------------------------
+    //  表示画像オーバーレイ
+    // -----------------------------
+
+    logic           prev_de;
+    logic   [10:0]  dvi_x;
+    logic   [9:0]   dvi_y;
+    always_ff @(posedge lcd_dclk ) begin
+        prev_de <= Pout_de_dn[1];
+
+        if ( ~Pout_de_dn[1] ) begin
+            dvi_x <= 0;
+        end
+        else begin
+            dvi_x <= dvi_x + 1;
+        end
+
+        if ( Pout_vs_dn[1] ) begin
+            dvi_y <= 0;
+        end
+        else begin
+            if ( {prev_de, Pout_de_dn[1]} == 2'b10 ) begin
+                dvi_y <= dvi_y + 1;
+            end
+        end
+    end
+
+    localparam int  BIN_X = 50;
+    localparam int  BIN_Y = 1;
+    logic  bin_en;
+    logic  bin_view;
+    always_ff @(posedge lcd_dclk ) begin
+        if ( dvi_x[10:4] >= BIN_X && dvi_x[10:4] < BIN_X+28 && dvi_y[9:4] >= BIN_Y && dvi_y[9:4]  < BIN_Y+28 ) begin
+            bin_en   <= 1;
+            bin_view <= bin_img[dvi_y[9:4]-BIN_Y][dvi_x[10:4]-BIN_X];
+        end
+        else begin
+            bin_en   <= 0;
+            bin_view <= 0;
+        end
+    end
+
+    localparam int  MNIST_X = 1;
+    localparam int  MNIST_Y = 18;
+    logic  mnist_en;
+    logic  mnist_view;
+    always_ff @(posedge lcd_dclk ) begin
+        if ( dvi_x[10:5] >= MNIST_X && dvi_x[10:5] < MNIST_X+10 && dvi_y[9:5] >= MNIST_Y && dvi_y[9:5] < MNIST_Y+1 ) begin
+            mnist_en   <= 1;
+            mnist_view <= mnist_class[dvi_x[10:5]-MNIST_X];
+        end
+        else begin
+            mnist_en   <= 0;
+            mnist_view <= 0;
+        end
+    end
+
 
 
 edge_filter3x3 
