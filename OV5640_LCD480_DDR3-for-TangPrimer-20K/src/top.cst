@@ -207,3 +207,14 @@ IO_LOC "ddr_dqs[0]" G2,G3;
 IO_PORT "ddr_dqs[0]" IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
 IO_LOC "ddr_cs" P5;
 IO_PORT "ddr_cs" IO_TYPE=SSTL15 PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
+
+//============ HDMI ===============
+
+IO_LOC "O_tmds_clk_p" G16,H15;
+IO_PORT "O_tmds_clk_p" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[0]" H14,H16;
+IO_PORT "O_tmds_data_p[0]" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[1]" J15,K16;
+IO_PORT "O_tmds_data_p[1]" PULL_MODE=NONE DRIVE=3.5;
+IO_LOC "O_tmds_data_p[2]" K14,K15;
+IO_PORT "O_tmds_data_p[2]" PULL_MODE=NONE DRIVE=3.5;
