@@ -38,7 +38,12 @@ module top(
 	output                      lcd_de,            //lcd data enable     
 	output[4:0]                 lcd_r,             //lcd red
 	output[5:0]                 lcd_g,             //lcd green
-	output[4:0]                 lcd_b	           //lcd blue
+	output[4:0]                 lcd_b,	           //lcd blue
+
+    output            O_tmds_clk_p    ,
+    output            O_tmds_clk_n    ,
+    output     [2:0]  O_tmds_data_p   ,//{r,g,b}
+    output     [2:0]  O_tmds_data_n   
 );
 
 //memory interface
@@ -310,8 +315,7 @@ logic [BW_DATA_WIDTH-1:0] lb_data2_w;
 logic [BW_DATA_WIDTH-1:0] lb_data_i;
 
 assign lb_data_i = 
-        {1'b0, ({1'b0, cmos_16bit_data_m0[15:11]} + {1'b0, cmos_16bit_data_m0[4:0]})} + 
-        {1'b0, cmos_16bit_data_m0[10:5]};
+//        {1'b0, ({1'b0, cmos_16bit_data_m0[15:11]} + {1'b0, cmos_16bit_data_m0[4:0]})} + {1'b0, cmos_16bit_data_m0[10:5]};
 
 logic [15:0] my_data_r;
 logic do_red = ( my_data_r == cmos_16bit_data_m0 )?1:0;
@@ -473,7 +477,27 @@ logic [BW_DATA_WIDTH-1:0] f33_data;
         end
     end
 
+    // -----------------------------
+    //  DVI出力
+    // -----------------------------
 
+    DVI_TX_Top
+        u_DVI_TX_Top
+            (
+                .I_rst_n       (~dvi_reset      ),
+                .I_serial_clk  (tmds_clk        ),
+                .I_rgb_clk     (dvi_pix_clk     ),
+                .I_rgb_vs      (dly1_vs         ),
+                .I_rgb_hs      (dly1_hs         ),
+                .I_rgb_de      (dly1_de         ),
+                .I_rgb_r       (buf_de ? buf_data[9:2] : bin_en ? {8{bin_view}} : mnist_en ? {8{mnist_view}} : dvi_x),
+                .I_rgb_g       (buf_de ? buf_data[9:2] : bin_en ? {8{bin_view}} : mnist_en ? {8{mnist_view}} : dvi_y),
+                .I_rgb_b       (buf_de ? buf_data[9:2] : bin_en ? {8{bin_view}} : mnist_en ? {8{mnist_view}} : 8'hff),
+                .O_tmds_clk_p  (O_tmds_clk_p    ),
+                .O_tmds_clk_n  (O_tmds_clk_n    ),
+                .O_tmds_data_p (O_tmds_data_p   ),
+                .O_tmds_data_n (O_tmds_data_n   )
+            );
 
 edge_filter3x3 
 #(
