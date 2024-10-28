@@ -1,9 +1,9 @@
--d C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg
+-d H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg
 -p GW2A-18C-PBGA256-8
 -pn GW2A-LV18PG256C8/I7
--cst C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.cst
--cfg C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\device.cfg
--sdc C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lcd.sdc
+-cst H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.cst
+-cfg H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\device.cfg
+-sdc H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lcd.sdc
 -bit
 -tr
 -ph

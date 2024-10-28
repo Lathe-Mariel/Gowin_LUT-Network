@@ -490,6 +490,9 @@ DVI_TX_Top DVI_TX_Top_inst
     .I_rgb_vs      (lcd_vs        ), 
     .I_rgb_hs      (lcd_hs        ),    
     .I_rgb_de      (lcd_de        ), 
+//    .I_rgb_r       ({lcd_r, 3'd0}),
+//    .I_rgb_g       ({lcd_g, 2'd0}),
+//    .I_rgb_b       ({lcd_b,3'd0}),
     .I_rgb_r       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x),  //tp0_data_r
     .I_rgb_g       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y),  //,  
     .I_rgb_b       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff),  //,

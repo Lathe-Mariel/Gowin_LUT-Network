@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg
-  <Physical Constraints File>: C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.cst
-  <Timing Constraints File>: C:\Git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lcd.sdc
-  <Tool Version>: V1.9.9.03 (64-bit)
+  <Design File>: H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg
+  <Physical Constraints File>: H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.cst
+  <Timing Constraints File>: H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lcd.sdc
+  <Tool Version>: V1.9.9.01 (64-bit)
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Mon Oct 28 21:00:57 2024
+  <Created Time>:Tue Oct 29 02:18:38 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.852s, Elapsed time = 0h 0m 0.851s
-    Placement Phase 1: CPU time = 0h 0m 0.228s, Elapsed time = 0h 0m 0.229s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Total Placement: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
+    Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Placement Phase 1: CPU time = 0h 0m 0.574s, Elapsed time = 0h 0m 0.574s
+    Placement Phase 2: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+    Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+    Total Placement: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Routing Phase 2: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+    Routing Phase 0: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
+    Routing Phase 1: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Routing Phase 2: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Total Routing: CPU time = 0h 0m 19s, Elapsed time = 0h 0m 19s
  Generate output files:
-    CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 
- Total Time and Memory Usage: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s, Peak memory usage = 554MB
+ Total Time and Memory Usage: CPU time = 0h 0m 38s, Elapsed time = 0h 0m 38s, Peak memory usage = 514MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5785/20736  28%
-    --LUT,ALU,ROM16           | 5083(4760 LUT, 323 ALU, 0 ROM16)
+  Logic                       | 5759/20736  28%
+    --LUT,ALU,ROM16           | 5057(4734 LUT, 323 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 117
-  Register                    | 3641/16173  23%
+  Register                    | 3640/16173  23%
     --Logic Register as Latch | 0/15552  0%
-    --Logic Register as FF    | 3638/15552  24%
+    --Logic Register as FF    | 3637/15552  24%
     --I/O Register as Latch   | 0/621  0%
     --I/O Register as FF      | 3/621  <1%
-  CLS                         | 4403/10368  43%
+  CLS                         | 4384/10368  43%
   I/O Port                    | 78
   I/O Buf                     | 71
     --Input Buf               | 13
@@ -112,7 +112,7 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_d          | PRIMARY        |  TR TL BL
-  cmos_pclk_d    | PRIMARY        |  TR TL BL
+  cmos_pclk_d    | PRIMARY        |  TR TL
   video_clk      | PRIMARY        |  TR TL BR BL
   cmos_xclk_d    | PRIMARY        |  TL
   cmos_16bit_clk | PRIMARY        |  TR TL BR

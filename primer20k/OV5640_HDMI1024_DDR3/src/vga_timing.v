@@ -31,7 +31,7 @@ parameter V_TOTAL = V_ACTIVE + V_FP + V_SYNC + V_BP;//vertical total time (lines
 reg hs_reg;                      //horizontal sync register
 reg vs_reg;                      //vertical sync register
 reg[11:0] h_cnt;                 //horizontal counter
-reg[11:0] v_cnt;                 //vertical counter
+reg[10:0] v_cnt;                 //vertical counter
 
 reg h_active;                    //horizontal video active
 reg v_active;                    //vertical video active
