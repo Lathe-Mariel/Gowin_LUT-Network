@@ -148,6 +148,79 @@ cmos_8_16bit cmos_8_16bit_m0(
 	.de_o                       (cmos_16bit_clk           )
 );
 
+    // -----------------------------
+    //  縮小＆二値化
+    // -----------------------------
+
+    logic          prev_href;
+    logic   [9:0]  cam_x;
+    logic   [8:0]  cam_y;
+    always_ff @(posedge cmos_pclk ) begin
+        prev_href <= cmos_href;
+
+        if ( ~cmos_href ) begin
+            cam_x <= 0;
+        end
+        else begin
+            cam_x <= cam_x + 1;
+        end
+
+        if ( ~cmos_vsync ) begin
+            cam_y <= 0;
+        end
+        else begin
+            if ( {prev_href, cmos_href} == 2'b01 ) begin
+                cam_y <= cam_y + 1;
+            end
+        end
+    end
+
+    logic   [27:0][27:0]    bin_shr;
+    logic   [27:0][27:0]    bin_img;
+    always_ff @(posedge cmos_pclk) begin
+        // 間引いてシフトレジスタにサンプリング
+        if ( cmos_href ) begin
+            if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
+                bin_shr <= (28*28)'({cmos_16bit_data[15:6] < 512, bin_shr} >> 1);
+            end
+        end
+
+        // ブランキングでラッチ 
+        if ( ~cmos_vsync ) begin
+            bin_img <= bin_shr;
+        end
+    end
+
+
+    // -----------------------------
+    //  LUT-Network 画像認識
+    // -----------------------------
+
+    logic   [9:0]       mnist_class;
+    MnistLutSimple
+            #(
+                .USE_REG        (0      ),
+                .USER_WIDTH     (0      ),
+                .DEVICE         ("RTL"  )
+            )
+        u_MnistLutSimple
+            (
+                .reset          (~rst_n          ),
+                .clk            (cmos_pclk  ),
+                .cke            (1'b1           ),
+                
+                .in_user        ('0             ),
+                .in_data        (bin_img        ),
+                .in_valid       (1'b1           ),
+
+                .out_user       (               ),
+                .out_data       (mnist_class    ),
+                .out_valid      (               )
+            );
+
+
+
+
 //The video output timing generator and generate a frame read data request
 //输出
 wire out_de;
@@ -323,6 +396,68 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     .IO_ddr_dqs         (ddr_dqs          ),
     .IO_ddr_dqs_n       (ddr_dqs_n        )
 );
+
+    // -----------------------------
+    //  表示画像オーバーレイ
+    // -----------------------------
+
+    logic           prev_de;
+    logic   [10:0]  dvi_x;
+    logic   [9:0]   dvi_y;
+    always_ff @(posedge video_clk ) begin
+        prev_de <= lcd_de;
+
+        if ( ~lcd_de ) begin
+            dvi_x <= 0;
+        end
+        else begin
+            dvi_x <= dvi_x + 1;
+        end
+
+        if ( lcd_vs ) begin
+            dvi_y <= 0;
+        end
+        else begin
+            if ( {prev_de, lcd_de} == 2'b10 ) begin
+                dvi_y <= dvi_y + 1;
+            end
+        end
+    end
+
+    localparam int  BIN_X = 50;
+    localparam int  BIN_Y = 1;
+    logic  bin_en;
+    logic  bin_view;
+    always_ff @(posedge video_clk ) begin
+        if ( dvi_x[10:4] >= BIN_X && dvi_x[10:4] < BIN_X+28 
+                && dvi_y[9:4] >= BIN_Y && dvi_y[9:4]  < BIN_Y+28 ) begin
+            bin_en   <= 1;
+            bin_view <= bin_img[dvi_y[9:4]-BIN_Y][dvi_x[10:4]-BIN_X];
+        end
+        else begin
+            bin_en   <= 0;
+            bin_view <= 0;
+        end
+    end
+
+    localparam int  MNIST_X = 1;
+    localparam int  MNIST_Y = 18;
+    logic  mnist_en;
+    logic  mnist_view;
+    always_ff @(posedge video_clk ) begin
+        if ( dvi_x[10:5] >= MNIST_X && dvi_x[10:5] < MNIST_X+10 
+                && dvi_y[9:5] >= MNIST_Y && dvi_y[9:5] < MNIST_Y+1 ) begin
+            mnist_en   <= 1;
+            mnist_view <= mnist_class[dvi_x[10:5]-MNIST_X];
+        end
+        else begin
+            mnist_en   <= 0;
+            mnist_view <= 0;
+        end
+    end
+
+
+
 //==============================================================================
 //TMDS TX(HDMI4)
 wire serial_clk;
@@ -355,9 +490,9 @@ DVI_TX_Top DVI_TX_Top_inst
     .I_rgb_vs      (lcd_vs        ), 
     .I_rgb_hs      (lcd_hs        ),    
     .I_rgb_de      (lcd_de        ), 
-    .I_rgb_r       ( {lcd_r,3'd0} ),  //tp0_data_r
-    .I_rgb_g       ( {lcd_g,2'd0} ),  
-    .I_rgb_b       ( {lcd_b,3'd0} ),  
+    .I_rgb_r       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x),  //tp0_data_r
+    .I_rgb_g       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y),  //,  
+    .I_rgb_b       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff),  //,
 
     //测试图
     // .I_rgb_clk     (video_clk       ),  //pixel clock
