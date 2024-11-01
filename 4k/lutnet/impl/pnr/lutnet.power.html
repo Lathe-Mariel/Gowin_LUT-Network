@@ -31,12 +31,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <div id="catalog">
 <ul>
 <li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+<ul>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+</ul>
 </li>
 <li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
 <ul>
 <li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
 <li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
-<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
 <li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
 </ul>
 </li>
@@ -59,19 +61,19 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\4k\lutnet\impl\gwsynthesis\lutnet.vg</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\impl\gwsynthesis\lutnet.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.cst</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.sdc</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.sdc</td>
 </tr>
 <tr>
 <td class="label">Tool Version</td>
-<td>V1.9.9.01 (64-bit)</td>
+<td>V1.9.9.03 (64-bit)</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -83,7 +85,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sun Oct 27 13:10:30 2024
+<td>Fri Nov  1 13:11:08 2024
 </td>
 </tr>
 <tr>
@@ -91,73 +93,31 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>Copyright (C)2014-2024 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
-<h1><a name="Summary">Power Summary</a></h1>
-<h2><a name="Power_Info">Power Information:</a></h2>
-<table class="summary_table">
-<tr>
-<td class="label">Total Power (mW)</td>
-<td>67.941</td>
-</tr>
-<tr>
-<td class="label">Quiescent Power (mW)</td>
-<td>22.269</td>
-</tr>
-<tr>
-<td class="label">Dynamic Power (mW)</td>
-<td>45.672</td>
-</tr>
-</table>
-<h2><a name="Thermal_Info">Thermal Information:</a></h2>
-<table class="summary_table">
-<tr>
-<td class="label">Junction Temperature</td>
-<td>27.412</td>
-</tr>
-<tr>
-<td class="label">Theta JA</td>
-<td>40.580</td>
-</tr>
-<tr>
-<td class="label">Max Allowed Ambient Temperature</td>
-<td>82.588</td>
-</tr>
-</table>
 <h2><a name="Configure_Info">Configure Information:</a></h2>
 <table class="summary_table">
 <tr>
-<td class="label">Default IO Toggle Rate</td>
-<td>0.125</td>
-</tr>
-<td class="label">Default Remain Toggle Rate</td>
-<td>0.125</td>
+<td class="label">Grade</td>
+<td>Commercial</td>
 </tr>
 <tr>
-<td class="label">Use Vectorless Estimation</td>
-<td>false</td>
+<td class="label">Process</td>
+<td>Typical</td>
 </tr>
 <tr>
-<td class="label">Filter Glitches</td>
-<td>false</td>
-</tr>
-<tr>
-<td class="label">Related Vcd File</td>
-<td></td>
-</tr>
-<tr>
-<td class="label">Related Saif File</td>
-<td></td>
+<td class="label">Ambient Temperature</td>
+<td>25.000
 </tr>
 <tr>
 <td class="label">Use Custom Theta JA</td>
 <td>false</td>
 </tr>
 <tr>
-<td class="label">Air Flow</td>
-<td>LFM_0</td>
-</tr>
-<tr>
 <td class="label">Heat Sink</td>
 <td>None</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
 </tr>
 <tr>
 <td class="label">Use Custom Theta SA</td>
@@ -172,8 +132,55 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>false</td>
 </tr>
 <tr>
-<td class="label">Ambient Temperature</td>
-<td>25.000
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>74.577</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>28.345</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>46.232</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>27.618</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>40.580</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>82.382</td>
 </tr>
 </table>
 <h2><a name="Supply_Summary">Supply Information:</a></h2>
@@ -189,15 +196,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>VCC</td>
 <td>1.200</td>
 <td>32.041</td>
-<td>9.302</td>
-<td>49.612</td>
+<td>10.616</td>
+<td>51.190</td>
 </tr>
 <tr>
 <td>VCCX</td>
-<td>2.500</td>
+<td>3.300</td>
 <td>0.698</td>
-<td>2.424</td>
-<td>7.807</td>
+<td>3.200</td>
+<td>12.865</td>
 </tr>
 <tr>
 <td>VCCIO18</td>
@@ -232,14 +239,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>Logic</td>
-<td>1.159</td>
+<td>1.160</td>
 <td>NA</td>
-<td>7.616</td>
+<td>7.620</td>
 </tr>
 <tr>
 <td>IO</td>
-<td>14.011
-<td>5.870
+<td>14.748
+<td>6.048
 <td>20.488
 </tr>
 <tr>
@@ -270,8 +277,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>tang_nano_4k_mnist</td>
-<td>37.510</td>
-<td>37.510(37.187)</td>
+<td>37.511</td>
+<td>37.511(37.186)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_DVI_TX_Top/</td>
 <td>0.144</td>
@@ -298,8 +305,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.435(0.000)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_MnistLutSimple/</td>
-<td>0.133</td>
-<td>0.133(0.133)</td>
+<td>0.131</td>
+<td>0.131(0.131)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_MnistLutSimple/i_MnistLutSimple_sub1/</td>
 <td>0.004</td>
@@ -310,12 +317,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.004(0.000)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_MnistLutSimple/i_MnistLutSimple_sub2/</td>
-<td>0.100</td>
-<td>0.100(0.100)</td>
+<td>0.099</td>
+<td>0.099(0.099)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_MnistLutSimple/i_MnistLutSimple_sub2/i_MnistLutSimple_sub2_base/</td>
-<td>0.100</td>
-<td>0.100(0.000)</td>
+<td>0.099</td>
+<td>0.099(0.000)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_MnistLutSimple/i_MnistLutSimple_sub5/</td>
 <td>0.028</td>
@@ -418,8 +425,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000(0.000)</td>
 <tr>
 <td>tang_nano_4k_mnist/u_syn_gen/</td>
-<td>0.018</td>
-<td>0.018(0.000)</td>
+<td>0.019</td>
+<td>0.019(0.000)</td>
 </table>
 <h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
 <table class="detail_table">
@@ -434,14 +441,19 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.053</td>
 </tr>
 <tr>
+<td>u_clkdiv/CLKOUT.default_gen_clk</td>
+<td>74.250</td>
+<td>3.277</td>
+</tr>
+<tr>
 <td>u_frame_buffer/u_HyperRAM_Memory_Interface_Top/u_hpram_top/clkdiv/CLKOUT.default_gen_clk</td>
 <td>79.500</td>
 <td>10.350</td>
 </tr>
 <tr>
-<td>in_clk</td>
-<td>27.000</td>
-<td>11.591</td>
+<td>ov2640_pixclk</td>
+<td>50.000</td>
+<td>2.372</td>
 </tr>
 <tr>
 <td>NO CLOCK DOMAIN</td>
@@ -449,14 +461,9 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0.000</td>
 </tr>
 <tr>
-<td>ov2640_pixclk</td>
-<td>50.000</td>
-<td>2.374</td>
-</tr>
-<tr>
-<td>u_clkdiv/CLKOUT.default_gen_clk</td>
-<td>74.250</td>
-<td>3.274</td>
+<td>in_clk</td>
+<td>27.000</td>
+<td>11.591</td>
 </tr>
 <tr>
 <td>u_GW_PLLVR/pllvr_inst/CLKOUT.default_gen_clk</td>

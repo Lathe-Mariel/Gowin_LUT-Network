@@ -134,7 +134,7 @@ module tang_nano_4k_mnist
         // 間引いてシフトレジスタにサンプリング
         if ( ov2640_href ) begin
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
-                bin_shr <= (28*28)'({ov2640_pixdata < 512, bin_shr} >> 1);
+                bin_shr <= (28*28)'({ov2640_pixdata < 450, bin_shr} >> 1);
             end
         end
 
