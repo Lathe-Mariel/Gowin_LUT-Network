@@ -408,7 +408,7 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     logic   [11:0]  dvi_x;
     logic   [10:0]  dvi_y;
 
-    assign camera_de = (dvi_x < 1024) & (dvi_y < 600);
+    assign camera_de = (dvi_x < 1024) & (dvi_y < 500);
 
     always_ff @(posedge video_clk ) begin
         prev_de <= lcd_de;

@@ -292,5 +292,7 @@ WARN  (NL0002) : The module "MnistLutSimple_sub4_base" instantiated to "i_MnistL
 [95%] Generate netlist file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg" completed
 WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "cmos_8_16bit_m0/cmos_16bit_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_8_16bit_m0/cmos_16bit_clk" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "DVI_TX_Top/Pout_vs_dn[4]" and "u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_8_16bit_m0/cmos_16bit_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
 [100%] Generate report file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish

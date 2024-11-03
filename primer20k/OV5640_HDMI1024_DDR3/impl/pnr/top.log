@@ -7,6 +7,10 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1117) : Can't calculate clocks' relationship between: "Pout_vs_dn[4]" and "u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "u_clkdiv/CLKOUT.default_gen_clk" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "u_clkdiv/CLKOUT.default_gen_clk" and "mem_clk"
 [50%] Placement Phase 3 completed
 Running routing......
@@ -27,5 +31,5 @@ Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\i
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.rpt.html" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.rpt.txt" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.tr.html" completed
-Sun Nov  3 02:37:03 2024
+Sun Nov  3 23:05:12 2024
 
