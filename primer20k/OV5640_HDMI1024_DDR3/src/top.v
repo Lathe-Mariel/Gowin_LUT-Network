@@ -155,10 +155,10 @@ cmos_8_16bit cmos_8_16bit_m0(
     logic          prev_href;
     logic   [9:0]  cam_x;
     logic   [8:0]  cam_y;
-    always_ff @(posedge cmos_pclk ) begin
-        prev_href <= cmos_href;
+    always_ff @(posedge cmos_16bit_clk ) begin
+        prev_href <= cmos_16bit_wr;
 
-        if ( ~cmos_href ) begin
+        if ( ~cmos_16bit_wr ) begin
             cam_x <= 0;
         end
         else begin
@@ -169,7 +169,7 @@ cmos_8_16bit cmos_8_16bit_m0(
             cam_y <= 0;
         end
         else begin
-            if ( {prev_href, cmos_href} == 2'b01 ) begin
+            if ( {prev_href, cmos_16bit_wr} == 2'b01 ) begin
                 cam_y <= cam_y + 1;
             end
         end
@@ -177,11 +177,11 @@ cmos_8_16bit cmos_8_16bit_m0(
 
     logic   [27:0][27:0]    bin_shr;
     logic   [27:0][27:0]    bin_img;
-    always_ff @(posedge cmos_pclk) begin
+    always_ff @(posedge cmos_16bit_clk) begin
         // 間引いてシフトレジスタにサンプリング
-        if ( cmos_href ) begin
+        if ( cmos_16bit_wr ) begin
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
-                bin_shr <= (28*28)'({cmos_16bit_data[15:6] < 512, bin_shr} >> 1);
+                bin_shr <= (28*28)'({write_data[15:6] < 400, bin_shr} >> 1);
             end
         end
 
@@ -206,7 +206,7 @@ cmos_8_16bit cmos_8_16bit_m0(
         u_MnistLutSimple
             (
                 .reset          (~rst_n          ),
-                .clk            (cmos_pclk  ),
+                .clk            (cmos_16bit_clk  ),
                 .cke            (1'b1           ),
                 
                 .in_user        ('0             ),
@@ -224,7 +224,7 @@ cmos_8_16bit cmos_8_16bit_m0(
 //The video output timing generator and generate a frame read data request
 //输出
 wire out_de;
-wire [9:0] lcd_x,lcd_y;
+//wire [9:0] lcd_x,lcd_y;
 vga_timing vga_timing_m0(
     .clk (video_clk),
     .rst (~rst_n),
@@ -272,6 +272,8 @@ testpattern testpattern_inst
     .O_data_b    (tp0_data_b         )
 );*/
 
+wire camera_de;
+
 Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
 ( 
     .I_rst_n              (init_calib_complete ),//rst_n            ),
@@ -296,8 +298,9 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
 
     // video data output            
     .I_vout0_clk          (video_clk        ),
-    .I_vout0_vs_n         (syn_off0_vs     ),//只接收负极性
-    .I_vout0_de           (out_de           ),
+    .I_vout0_vs_n         (~syn_off0_vs     ),//只接收负极性
+    .I_vout0_de           (camera_de           ),
+//    .I_vout0_de           (out_de           ),
     .O_vout0_den          (off0_syn_de      ),
     .O_vout0_data         (off0_syn_data    ),
     .O_vout0_fifo_empty   (                 ),
@@ -342,11 +345,11 @@ begin
 end
 
 //---------------------------------------------
-wire [4:0] lcd_r,lcd_b;
-wire [5:0] lcd_g;
+//wire [4:0] lcd_r,lcd_b;
+//wire [5:0] lcd_g;
 wire lcd_vs,lcd_de,lcd_hs,lcd_dclk;
   
-assign {lcd_r,lcd_g,lcd_b}    = off0_syn_de ? off0_syn_data[15:0] : 16'h0000;//{r,g,b}
+//assign {lcd_r,lcd_g,lcd_b}    = off0_syn_de ? off0_syn_data[15:0] : 16'h0000;//{r,g,b}
 assign lcd_vs      			  = Pout_vs_dn[4];//syn_off0_vs;
 assign lcd_hs      			  = Pout_hs_dn[4];//syn_off0_hs;
 assign lcd_de      			  = Pout_de_dn[4];//off0_syn_de;
@@ -402,8 +405,11 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     // -----------------------------
 
     logic           prev_de;
-    logic   [10:0]  dvi_x;
-    logic   [9:0]   dvi_y;
+    logic   [11:0]  dvi_x;
+    logic   [10:0]  dvi_y;
+
+    assign camera_de = (dvi_x < 1024) & (dvi_y < 600);
+
     always_ff @(posedge video_clk ) begin
         prev_de <= lcd_de;
 
@@ -493,9 +499,9 @@ DVI_TX_Top DVI_TX_Top_inst
 //    .I_rgb_r       ({lcd_r, 3'd0}),
 //    .I_rgb_g       ({lcd_g, 2'd0}),
 //    .I_rgb_b       ({lcd_b,3'd0}),
-    .I_rgb_r       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x),  //tp0_data_r
-    .I_rgb_g       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y),  //,  
-    .I_rgb_b       ( off0_syn_de? off0_syn_data[9:2]: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff),  //,
+    .I_rgb_r       ( off0_syn_de? {off0_syn_data[4:0],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x),  //tp0_data_r
+    .I_rgb_g       ( off0_syn_de? {off0_syn_data[10:5],2'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y),  //,  
+    .I_rgb_b       ( off0_syn_de? {off0_syn_data[15:11],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff),  //,
 
     //测试图
     // .I_rgb_clk     (video_clk       ),  //pixel clock

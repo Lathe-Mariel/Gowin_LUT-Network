@@ -2,55 +2,55 @@
  "Device" : "GW1NSR-4C",
  "Files" : [
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/GW_PLLVR.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/dvi_tx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/I2C_Interface.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/frame_buffer.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/MnistLutSimple.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/GW_PLLVR.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/OV2640_Controller.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/hyperram_memory_interface.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/OV2640_Registers.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/I2C_Interface.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/TMDS_PLLVR.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/jelly_reset.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/dvi_tx.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/MnistLutSimple.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/frame_buffer.sv",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/OV2640_Controller.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/hyperram_memory_interface.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/OV2640_Registers.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/jelly_reset.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/syn_gen.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/syn_gen.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/tang_nano_4k_mnist.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/tang_nano_4k_mnist.sv",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/TMDS_PLLVR.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/src/video_frame_buffer.v",
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/src/video_frame_buffer.v",
    "Type" : "verilog"
   }
  ],
@@ -58,7 +58,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Git/TangPrimer20K_LUT-Network/4k/lutnet/impl/temp/rtl_parser.result",
+ "ResultFile" : "H:/git/TangPrimer20K_LUT-Network/4k/lutnet/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
