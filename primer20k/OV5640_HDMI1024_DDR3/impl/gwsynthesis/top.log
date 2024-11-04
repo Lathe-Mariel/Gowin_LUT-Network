@@ -28,7 +28,7 @@ Undeclared symbol 'cmos_clk', assumed default net type 'wire'("H:\git\TangPrimer
 Undeclared symbol 'cmos_16bit_wr', assumed default net type 'wire'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":147)
 Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\vga_timing.v'
 Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
-WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":239)
+WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":243)
 Compiling module 'top'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":1)
 WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":106)
 Compiling module 'cmos_pll'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\gowin_rpll\cmos_pll.v":9)
@@ -258,12 +258,12 @@ WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("H:\git\T
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\vga_timing.v":77)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\video_frame_buffer\Video_Frame_Buffer_Top.v":4297)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\ddr3_memory_interface\DDR3MI.v":11506)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":420)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":428)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":426)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":434)
 Compiling module 'TMDS_rPLL'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\gowin_rpll\TMDS_rPLL.v":10)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\dvi_tx\DVI_TX_Top.v":1058)
-WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":502)
-WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":503)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":508)
+WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":509)
 NOTE  (EX0101) : Current top module is "top"
 WARN  (EX0211) : The output port "state_led[3]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v":14)
 [5%] Running netlist conversion ...
@@ -290,8 +290,10 @@ WARN  (NL0002) : The module "MnistLutSimple_sub3_base" instantiated to "i_MnistL
 WARN  (NL0002) : The module "MnistLutSimple_sub4" instantiated to "i_MnistLutSimple_sub4" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\MnistLutSimple.v":157)
 WARN  (NL0002) : The module "MnistLutSimple_sub4_base" instantiated to "i_MnistLutSimple_sub4_base" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\MnistLutSimple.v":31331)
 [95%] Generate netlist file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg" completed
-WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "cmos_8_16bit_m0/cmos_16bit_clk"
-WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_8_16bit_m0/cmos_16bit_clk" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "cmos_16bit_clk_half"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_16bit_clk_half" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_clkdiv/CLKOUT.default_gen_clk" and "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "DDR3_Memory_Interface_Top_inst/gw3_top/i4/fclkdiv/CLKOUT.default_gen_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "DVI_TX_Top/Pout_vs_dn[4]" and "u_clkdiv/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "cmos_8_16bit_m0/cmos_16bit_clk" and "u_clkdiv/CLKOUT.default_gen_clk"
 [100%] Generate report file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top_syn.rpt.html" completed

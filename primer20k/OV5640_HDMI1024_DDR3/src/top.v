@@ -181,7 +181,7 @@ cmos_8_16bit cmos_8_16bit_m0(
         // 間引いてシフトレジスタにサンプリング
         if ( cmos_16bit_wr ) begin
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
-                bin_shr <= (28*28)'({write_data[15:6] < 400, bin_shr} >> 1);
+                bin_shr <= (28*28)'({{write_data[15:13],write_data[10:7],write_data[4:2]} < 400, bin_shr} >> 1);
             end
         end
 
@@ -219,7 +219,11 @@ cmos_8_16bit cmos_8_16bit_m0(
             );
 
 
+    always@(posedge cmos_16bit_clk)begin
+        cmos_16bit_clk_half <= ~cmos_16bit_clk_half;
+    end
 
+logic cmos_16bit_clk_half;
 
 //The video output timing generator and generate a frame read data request
 //输出
@@ -283,7 +287,8 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     .I_rd_halt            (1'd0             ), //1:halt,  0:no halt
 `endif
     // video data input             
-    .I_vin0_clk           (cmos_16bit_clk   ),
+    .I_vin0_clk           (cmos_16bit_clk_half   ),
+//    .I_vin0_clk           (cmos_16bit_clk   ),
     .I_vin0_vs_n          (~cmos_vsync      ),//只接收负极性
     .I_vin0_de            (cmos_16bit_wr    ),
     .I_vin0_data          (write_data       ),
@@ -299,8 +304,8 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     // video data output            
     .I_vout0_clk          (video_clk        ),
     .I_vout0_vs_n         (~syn_off0_vs     ),//只接收负极性
-    .I_vout0_de           (camera_de           ),
 //    .I_vout0_de           (out_de           ),
+    .I_vout0_de           (camera_de        ),
     .O_vout0_den          (off0_syn_de      ),
     .O_vout0_data         (off0_syn_data    ),
     .O_vout0_fifo_empty   (                 ),
@@ -409,6 +414,7 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     logic   [10:0]  dvi_y;
 
     assign camera_de = (dvi_x < 1024) & (dvi_y < 500);
+//    assign camera_output_vs = (dvi_y < 719)? syn_off0_vs:1;
 
     always_ff @(posedge video_clk ) begin
         prev_de <= lcd_de;
