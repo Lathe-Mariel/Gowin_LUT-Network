@@ -6,8 +6,8 @@ module vga_timing(
 	output                de,            //video valid
 
 	output reg [9:0] active_x,              //video x position 
-	output reg [9:0] active_y             //video y position 
-	
+	output reg [9:0] active_y,             //video y position 
+	output reg rd //real resolution
 	);
 
 
@@ -22,6 +22,8 @@ parameter V_SYNC  = 16'd5;      //5    5
 parameter V_BP  = 16'd20;       //20   36
 parameter HS_POL = 1'b1;
 parameter VS_POL = 1'b1;
+parameter RD_H = 16'd1024;
+parameter RD_V = 16'd500;
 
 
 parameter H_TOTAL = H_ACTIVE + H_FP + H_SYNC + H_BP;//horizontal total time (pixels)
@@ -39,6 +41,15 @@ assign hs = hs_reg;
 assign vs = vs_reg;
 assign de = h_active & v_active;
 
+
+always@ (posedge clk)begin
+    if(rst == 1'b1)
+        rd <= 0;
+    else begin
+        rd <= (h_cnt > (H_BP + H_SYNC -2)) & (h_cnt < (H_BP + H_SYNC + RD_H -1)) & 
+              (v_cnt > (V_BP + V_SYNC -2)) & (v_cnt < (V_BP + V_SYNC + RD_V -1));
+    end
+end
 
 //列计数
 always@(posedge clk or posedge rst)

@@ -7,6 +7,7 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "cmos_pll_m0/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "u_clkdiv/CLKOUT.default_gen_clk" and "mem_clk"
 [50%] Placement Phase 3 completed
 Running routing......
@@ -27,5 +28,5 @@ Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\i
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.rpt.html" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.rpt.txt" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\top.tr.html" completed
-Mon Nov  4 18:09:37 2024
+Tue Nov  5 01:04:18 2024
 

@@ -7,8 +7,10 @@ module cmos_8_16bit(
 	output reg	       hblank,
 	output reg         de_o
 );
+
 reg[7:0] pdata_i_d0;
 reg x_cnt;
+
 always@(posedge pclk)
 begin
 	pdata_i_d0 <= pdata_i;

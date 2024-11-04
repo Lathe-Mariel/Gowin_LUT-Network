@@ -138,6 +138,9 @@ lut_ov5640_rgb565_1024_768 lut_ov5640_rgb565_1024_768_m0(
 	.lut_data                   (lut_data                 )
 );
 //CMOS sensor 8bit data is converted to 16bit data
+
+wire cmos_16bit_vsync;
+
 cmos_8_16bit cmos_8_16bit_m0(
 	.rst                        (~rst_n                   ),
 	.pclk                       (cmos_pclk                ),
@@ -153,25 +156,28 @@ cmos_8_16bit cmos_8_16bit_m0(
     // -----------------------------
 
     logic          prev_href;
-    logic   [9:0]  cam_x;
-    logic   [8:0]  cam_y;
+    logic   [10:0]  cam_x;
+    logic   [9:0]  cam_y;
+    always @(posedge cmos_clk)begin
+        prev_href <= cmos_href;
+        if(cmos_vsync)begin
+            cam_y <= 0;
+        // ブランキングでラッチ 
+            bin_img <= bin_shr;
+        end else begin
+            if({prev_href, cmos_href} == 2'b01) begin
+                cam_y <= cam_y +1;
+            end
+        end
+    end
+
     always_ff @(posedge cmos_16bit_clk ) begin
-        prev_href <= cmos_16bit_wr;
 
         if ( ~cmos_16bit_wr ) begin
             cam_x <= 0;
         end
         else begin
             cam_x <= cam_x + 1;
-        end
-
-        if ( ~cmos_vsync ) begin
-            cam_y <= 0;
-        end
-        else begin
-            if ( {prev_href, cmos_16bit_wr} == 2'b01 ) begin
-                cam_y <= cam_y + 1;
-            end
         end
     end
 
@@ -183,11 +189,6 @@ cmos_8_16bit cmos_8_16bit_m0(
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
                 bin_shr <= (28*28)'({{write_data[15:13],write_data[10:7],write_data[4:2]} < 400, bin_shr} >> 1);
             end
-        end
-
-        // ブランキングでラッチ 
-        if ( ~cmos_vsync ) begin
-            bin_img <= bin_shr;
         end
     end
 
@@ -219,9 +220,9 @@ cmos_8_16bit cmos_8_16bit_m0(
             );
 
 
-    always@(posedge cmos_16bit_clk)begin
-        cmos_16bit_clk_half <= ~cmos_16bit_clk_half;
-    end
+ //   always@(posedge cmos_16bit_clk)begin
+ //       cmos_16bit_clk_half <= ~cmos_16bit_clk_half;
+ //   end
 
 logic cmos_16bit_clk_half;
 
@@ -238,7 +239,8 @@ vga_timing vga_timing_m0(
 
     .hs(syn_off0_hs),
     .vs(syn_off0_vs),
-    .de(out_de)
+    .de(out_de),
+    .rd(camera_de)
 
     );
 
@@ -287,8 +289,8 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     .I_rd_halt            (1'd0             ), //1:halt,  0:no halt
 `endif
     // video data input             
-    .I_vin0_clk           (cmos_16bit_clk_half   ),
-//    .I_vin0_clk           (cmos_16bit_clk   ),
+//    .I_vin0_clk           (cmos_16bit_clk_half   ),
+    .I_vin0_clk           (cmos_16bit_clk   ),
     .I_vin0_vs_n          (~cmos_vsync      ),//只接收负极性
     .I_vin0_de            (cmos_16bit_wr    ),
     .I_vin0_data          (write_data       ),
@@ -413,7 +415,7 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     logic   [11:0]  dvi_x;
     logic   [10:0]  dvi_y;
 
-    assign camera_de = (dvi_x < 1024) & (dvi_y < 500);
+//    assign camera_de = (dvi_x > 0 & dvi_x < 1280) & (dvi_y < 500);
 //    assign camera_output_vs = (dvi_y < 719)? syn_off0_vs:1;
 
     always_ff @(posedge video_clk ) begin
