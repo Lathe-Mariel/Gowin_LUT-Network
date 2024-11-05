@@ -187,7 +187,7 @@ cmos_8_16bit cmos_8_16bit_m0(
         // 間引いてシフトレジスタにサンプリング
         if ( cmos_16bit_wr ) begin
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
-                bin_shr <= (28*28)'({{write_data[15:13],write_data[10:7],write_data[4:2]} < 400, bin_shr} >> 1);
+                bin_shr <= (28*28)'({(write_data[15:11]+write_data[10:5]+write_data[4:0]) < 64, bin_shr} >> 1);  //2値化閾値
             end
         end
     end
