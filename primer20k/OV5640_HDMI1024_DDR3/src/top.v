@@ -155,17 +155,22 @@ cmos_8_16bit cmos_8_16bit_m0(
     //  縮小＆二値化
     // -----------------------------
 
-    logic          prev_href;
+    logic          prev_href,prev2_href,prev3_href, prev_vsync,prev2_vsync;
     logic   [10:0]  cam_x;
     logic   [9:0]  cam_y;
     always @(posedge cmos_clk)begin
         prev_href <= cmos_href;
-        if(cmos_vsync)begin
+        prev2_href <= prev_href;
+        prev3_href <= prev2_href;
+        prev_vsync <= cmos_vsync;
+        prev2_vsync <= prev_vsync;
+
+        if(prev2_vsync)begin
             cam_y <= 0;
         // ブランキングでラッチ 
             bin_img <= bin_shr;
         end else begin
-            if({prev_href, cmos_href} == 2'b01) begin
+            if({prev3_href, prev2_href} == 2'b01) begin
                 cam_y <= cam_y +1;
             end
         end
@@ -187,7 +192,7 @@ cmos_8_16bit cmos_8_16bit_m0(
         // 間引いてシフトレジスタにサンプリング
         if ( cmos_16bit_wr ) begin
             if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
-                bin_shr <= (28*28)'({(write_data[15:11]+write_data[10:5]+write_data[4:0]) < 64, bin_shr} >> 1);  //2値化閾値
+                bin_shr <= (28*28)'({(write_data[15:11]+write_data[10:5]+write_data[4:0]) < 30, bin_shr} >> 1);  //2値化閾値
             end
         end
     end
