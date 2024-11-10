@@ -133,7 +133,7 @@ i2c_config i2c_config_m0(
 	.i2c_sda                    (cmos_sda                 )
 );
 //configure look-up table
-lut_ov5640_rgb565_1024_768 lut_ov5640_rgb565_1024_768_m0(
+lut_ov5640_rgb565_480_272 lut_ov5640_rgb565_480_272_m0(
 	.lut_index                  (lut_index                ),
 	.lut_data                   (lut_data                 )
 );
@@ -191,7 +191,7 @@ cmos_8_16bit cmos_8_16bit_m0(
     always_ff @(posedge cmos_16bit_clk) begin
         // 間引いてシフトレジスタにサンプリング
         if ( cmos_16bit_wr ) begin
-            if ( cam_x[9:4] < 28 && cam_y[8:4] < 28 && cam_x[3:0] == 0 && cam_y[3:0] == 0 ) begin
+            if ( cam_x[8:3] < 28 && cam_y[7:3] < 28 && cam_x[2:0] == 0 && cam_y[2:0] == 0 ) begin
                 bin_shr <= (28*28)'({(write_data[15:11]+write_data[10:5]+write_data[4:0]) < 30, bin_shr} >> 1);  //2値化閾値
             end
         end
@@ -419,9 +419,6 @@ DDR3MI DDR3_Memory_Interface_Top_inst
     logic           prev_de;
     logic   [11:0]  dvi_x;
     logic   [10:0]  dvi_y;
-
-//    assign camera_de = (dvi_x > 0 & dvi_x < 1280) & (dvi_y < 500);
-//    assign camera_output_vs = (dvi_y < 719)? syn_off0_vs:1;
 
     always_ff @(posedge video_clk ) begin
         prev_de <= lcd_de;

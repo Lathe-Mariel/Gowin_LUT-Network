@@ -22,8 +22,8 @@ parameter V_SYNC  = 16'd5;      //5    5
 parameter V_BP  = 16'd20;       //20   36
 parameter HS_POL = 1'b1;
 parameter VS_POL = 1'b1;
-parameter RD_H = 16'd1024;
-parameter RD_V = 16'd500;
+parameter RD_H = 16'd480;
+parameter RD_V = 16'd272;
 
 
 parameter H_TOTAL = H_ACTIVE + H_FP + H_SYNC + H_BP;//horizontal total time (pixels)
@@ -42,6 +42,7 @@ assign vs = vs_reg;
 assign de = h_active & v_active;
 
 
+/*有効領域 de信号生成*/
 always@ (posedge clk)begin
     if(rst == 1'b1)
         rd <= 0;
@@ -51,7 +52,7 @@ always@ (posedge clk)begin
     end
 end
 
-//列计数
+//Horizontalカウンタ
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
@@ -76,12 +77,12 @@ begin
 	else
 		active_y <= active_y;
 end
-//行计数
+//Vertical　カウンタ
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		v_cnt <= 12'd0;
-	else if(h_cnt == H_FP  - 1)//horizontal sync time
+	else if(h_cnt == H_BP  - 1)//horizontal sync time
 		if(v_cnt == V_TOTAL - 1)//vertical counter maximum value
 			v_cnt <= 12'd0;
 		else
@@ -89,50 +90,50 @@ begin
 	else
 		v_cnt <= v_cnt;
 end
-//HS生成
+//Horizonal Sync生成
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		hs_reg <= 1'b0;
-	else if(h_cnt == H_FP - 1)//horizontal sync begin
+	else if(h_cnt == (H_BP - 1))//horizontal sync begin
 		hs_reg <= HS_POL;
-	else if(h_cnt == H_FP + H_SYNC - 1)//horizontal sync end
+	else if(h_cnt == (H_BP + H_SYNC - 1))//horizontal sync end
 		hs_reg <= ~hs_reg;
 	else
 		hs_reg <= hs_reg;
 end
-//列有效
+//H_ACTIVE生成
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		h_active <= 1'b0;
-	else if(h_cnt == H_FP + H_SYNC + H_BP - 1)//horizontal active begin
+	else if(h_cnt == (H_BP - 1))//horizontal active begin
 		h_active <= 1'b1;
-	else if(h_cnt == H_TOTAL - 1)//horizontal active end
+	else if(h_cnt == (H_BP + H_SYNC + H_ACTIVE - 1))//horizontal active end
 		h_active <= 1'b0;
 	else
 		h_active <= h_active;
 end
-//VS生成
+//Vertical Sync 生成
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		vs_reg <= 1'd0;
-	else if((v_cnt == V_FP - 1) && (h_cnt == H_FP - 1))//vertical sync begin
-		vs_reg <= HS_POL;
-	else if((v_cnt == V_FP + V_SYNC - 1) && (h_cnt == H_FP - 1))//vertical sync end
+	else if((v_cnt == V_BP - 1) && (h_cnt == H_BP - 1))//vertical sync begin
+		vs_reg <= VS_POL;
+	else if((v_cnt == V_BP + V_SYNC - 1) && (h_cnt == H_BP - 1))//vertical sync end
 		vs_reg <= ~vs_reg;  
 	else
 		vs_reg <= vs_reg;
 end
-//行有效
+//V_ACTIVE生成
 always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		v_active <= 1'd0;
-	else if((v_cnt == V_FP + V_SYNC + V_BP - 1) && (h_cnt == H_FP - 1))//vertical active begin
+	else if((v_cnt == (V_BP + V_SYNC - 1)) && (h_cnt == (H_BP - 1)))//vertical active begin
 		v_active <= 1'b1;
-	else if((v_cnt == V_TOTAL - 1) && (h_cnt == H_FP - 1)) //vertical active end
+	else if((v_cnt == (V_BP + V_SYNC + V_ACTIVE - 1)) && (h_cnt == (H_BP - 1))) //vertical active end
 		v_active <= 1'b0;   
 	else
 		v_active <= v_active;

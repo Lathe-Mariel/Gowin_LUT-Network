@@ -12,27 +12,27 @@
   <Part Number>: GW2A-LV18PG256C8/I7
   <Device>: GW2A-18
   <Device Version>: C
-  <Created Time>:Wed Nov  6 01:02:45 2024
+  <Created Time>:Sun Nov 10 21:41:20 2024
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 1: CPU time = 0h 0m 0.573s, Elapsed time = 0h 0m 0.572s
-    Placement Phase 2: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Placement Phase 1: CPU time = 0h 0m 0.572s, Elapsed time = 0h 0m 0.572s
+    Placement Phase 2: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
     Placement Phase 3: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
-    Total Placement: CPU time = 0h 0m 17s, Elapsed time = 0h 0m 17s
+    Total Placement: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0.005s, Elapsed time = 0h 0m 0.005s
     Routing Phase 1: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Routing Phase 2: CPU time = 0h 0m 24s, Elapsed time = 0h 0m 24s
+    Routing Phase 2: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
+    Total Routing: CPU time = 0h 0m 19s, Elapsed time = 0h 0m 19s
  Generate output files:
-    CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
 
- Total Time and Memory Usage: CPU time = 0h 0m 48s, Elapsed time = 0h 0m 48s, Peak memory usage = 504MB
+ Total Time and Memory Usage: CPU time = 0h 0m 40s, Elapsed time = 0h 0m 40s, Peak memory usage = 534MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5858/20736  29%
-    --LUT,ALU,ROM16           | 5156(4816 LUT, 340 ALU, 0 ROM16)
+  Logic                       | 5732/20736  28%
+    --LUT,ALU,ROM16           | 5030(4692 LUT, 338 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 117
-  Register                    | 3662/16173  23%
+  Register                    | 3660/16173  23%
     --Logic Register as Latch | 0/15552  0%
-    --Logic Register as FF    | 3659/15552  24%
+    --Logic Register as FF    | 3657/15552  24%
     --I/O Register as Latch   | 0/621  0%
     --I/O Register as FF      | 3/621  <1%
-  CLS                         | 4427/10368  43%
+  CLS                         | 4329/10368  42%
   I/O Port                    | 78
   I/O Buf                     | 71
     --Input Buf               | 13
@@ -114,7 +114,7 @@
   clk_d          | PRIMARY        |  TR TL BL
   cmos_pclk_d    | PRIMARY        |  TR
   video_clk      | PRIMARY        |  TR TL BR BL
-  cmos_xclk_d    | PRIMARY        |  TR TL BR
+  cmos_xclk_d    | PRIMARY        |  TR TL
   cmos_16bit_clk | PRIMARY        |  TR TL BR
   dma_clk        | PRIMARY        |  TR TL BR BL
   serial_clk     | PRIMARY        |  TL

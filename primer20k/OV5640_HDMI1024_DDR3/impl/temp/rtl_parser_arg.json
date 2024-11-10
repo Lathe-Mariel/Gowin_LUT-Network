@@ -62,15 +62,11 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/lut_ov5640_rgb565_480_272.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/MnistLutSimple.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/syn_gen.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/testpattern.v",
    "Type" : "verilog"
   },
   {
