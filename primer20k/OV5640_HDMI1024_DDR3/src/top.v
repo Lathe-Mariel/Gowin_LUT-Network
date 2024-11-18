@@ -73,7 +73,7 @@ parameter DATA_WIDTH          = `DEF_SRAM_DATA_WIDTH;   //与生成DDR3IP有关�
 parameter WR_VIDEO_WIDTH      = `DEF_WR_VIDEO_WIDTH;  
 parameter RD_VIDEO_WIDTH      = `DEF_RD_VIDEO_WIDTH;  
 
-wire                            video_clk;         //video pixel clock
+wire                      video_clk;         //video pixel clock
 //-------------------
 //syn_code
 wire                      syn_off0_re;  // ofifo read enable signal
@@ -83,21 +83,20 @@ wire                      syn_off0_hs;
 wire                      off0_syn_de  ;
 wire [RD_VIDEO_WIDTH-1:0] off0_syn_data;
 
-wire[15:0]                      cmos_16bit_data;
-wire                            cmos_16bit_clk;
-wire[15:0] 						write_data;
+wire[15:0]                cmos_16bit_data;
+wire                      cmos_16bit_clk;
+wire[15:0] 			      write_data;
 
-wire[9:0]                       lut_index;
-wire[31:0]                      lut_data;
+wire[9:0]                 lut_index;
+wire[31:0]                lut_data;
 
-assign cmos_xclk = cmos_clk;
-assign cmos_pwdn = 1'b0;
+assign cmos_xclk  = cmos_clk;
+assign cmos_pwdn  = 1'b0;
 assign cmos_rst_n = 1'b1;
 assign write_data = {cmos_16bit_data[4:0],cmos_16bit_data[10:5],cmos_16bit_data[15:11]};
-assign hdmi_hpd = 1;
+assign hdmi_hpd   = 1;
 
 //状态指示灯
-// assign state_led[3] = 
 assign state_led[2] = lcd_vs_cnt[4];
 assign state_led[1] = rst_n; //复位指示灯
 assign state_led[0] = init_calib_complete; //DDR3初始化指示灯
@@ -107,14 +106,14 @@ always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;
 
 //generate the CMOS sensor clock and the SDRAM controller clock
 cmos_pll cmos_pll_m0(
-	.clkin                     (clk                      		),
-	.clkout                    (cmos_clk 	              		)
+	.clkin                     (clk                		),
+	.clkout                    (cmos_clk 	       		)
 	);
 
 mem_pll mem_pll_m0(
-	.clkin                     (clk                        ),
-	.clkout                    (memory_clk 	              		),
-	.lock 					   (DDR_pll_lock 						)
+	.clkin                     (clk                     ),
+	.clkout                    (memory_clk 	        	),
+	.lock 					   (DDR_pll_lock 			)
 	);
 
 //I2C master controller
@@ -155,14 +154,14 @@ cmos_8_16bit cmos_8_16bit_m0(
     //  縮小＆二値化
     // -----------------------------
 
-    logic          prev_href,prev2_href,prev3_href, prev_vsync,prev2_vsync;
+    logic           prev_href,prev2_href,prev3_href, prev_vsync,prev2_vsync;
     logic   [10:0]  cam_x;
-    logic   [9:0]  cam_y;
+    logic   [9:0]   cam_y;
     always @(posedge cmos_clk)begin
-        prev_href <= cmos_href;
-        prev2_href <= prev_href;
-        prev3_href <= prev2_href;
-        prev_vsync <= cmos_vsync;
+        prev_href   <= cmos_href;
+        prev2_href  <= prev_href;
+        prev3_href  <= prev2_href;
+        prev_vsync  <= cmos_vsync;
         prev2_vsync <= prev_vsync;
 
         if(prev2_vsync)begin
@@ -224,11 +223,6 @@ cmos_8_16bit cmos_8_16bit_m0(
                 .out_valid      (               )
             );
 
-
- //   always@(posedge cmos_16bit_clk)begin
- //       cmos_16bit_clk_half <= ~cmos_16bit_clk_half;
- //   end
-
 logic cmos_16bit_clk_half;
 
 //The video output timing generator and generate a frame read data request
@@ -238,9 +232,6 @@ wire out_de;
 vga_timing vga_timing_m0(
     .clk (video_clk),
     .rst (~rst_n),
-
-    // .active_x(lcd_x),
-    // .active_y(lcd_y),
 
     .hs(syn_off0_hs),
     .vs(syn_off0_vs),
@@ -302,8 +293,8 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     .O_vin0_fifo_full     (                 ),
 
     // //测试图
-    // .I_vin0_clk           (video_clk   ),
-    // .I_vin0_vs_n          (~tp0_vs_in      ),//只接收负极性
+    // .I_vin0_clk           (video_clk    ),
+    // .I_vin0_vs_n          (~tp0_vs_in   ),//只接收负极性
     // .I_vin0_de            (tp0_de_in    ),
     // .I_vin0_data          ({tp0_data_r[7:3],tp0_data_g[7:2],tp0_data_b[7:3]} ),
     // .O_vin0_fifo_full     (                 ),
@@ -311,7 +302,6 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     // video data output            
     .I_vout0_clk          (video_clk        ),
     .I_vout0_vs_n         (~syn_off0_vs     ),//只接收负极性
-//    .I_vout0_de           (out_de           ),
     .I_vout0_de           (camera_de        ),
     .O_vout0_den          (off0_syn_de      ),
     .O_vout0_data         (off0_syn_data    ),
@@ -357,11 +347,8 @@ begin
 end
 
 //---------------------------------------------
-//wire [4:0] lcd_r,lcd_b;
-//wire [5:0] lcd_g;
 wire lcd_vs,lcd_de,lcd_hs,lcd_dclk;
-  
-//assign {lcd_r,lcd_g,lcd_b}    = off0_syn_de ? off0_syn_data[15:0] : 16'h0000;//{r,g,b}
+
 assign lcd_vs      			  = Pout_vs_dn[4];//syn_off0_vs;
 assign lcd_hs      			  = Pout_hs_dn[4];//syn_off0_hs;
 assign lcd_de      			  = Pout_de_dn[4];//off0_syn_de;
@@ -371,7 +358,7 @@ DDR3MI DDR3_Memory_Interface_Top_inst
 (
     .clk                (video_clk          ),
     .memory_clk         (memory_clk         ),
-    .pll_lock           (DDR_pll_lock           ),
+    .pll_lock           (DDR_pll_lock       ),
     .rst_n              (rst_n              ), //rst_n
     .app_burst_number   (app_burst_number   ),
     .cmd_ready          (cmd_ready          ),
@@ -502,13 +489,10 @@ DVI_TX_Top DVI_TX_Top_inst
     .I_rst_n       (hdmi4_rst_n   ),  //asynchronous reset, low active
     .I_serial_clk  (serial_clk    ),
 
-    .I_rgb_clk     (lcd_dclk       ),  //pixel clock
+    .I_rgb_clk     (lcd_dclk      ),  //pixel clock
     .I_rgb_vs      (lcd_vs        ), 
     .I_rgb_hs      (lcd_hs        ),    
     .I_rgb_de      (lcd_de        ), 
-//    .I_rgb_r       ({lcd_r, 3'd0}),
-//    .I_rgb_g       ({lcd_g, 2'd0}),
-//    .I_rgb_b       ({lcd_b,3'd0}),
     .I_rgb_r       ( off0_syn_de? {off0_syn_data[4:0],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x),  //tp0_data_r
     .I_rgb_g       ( off0_syn_de? {off0_syn_data[10:5],2'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y),  //,  
     .I_rgb_b       ( off0_syn_de? {off0_syn_data[15:11],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff),  //,

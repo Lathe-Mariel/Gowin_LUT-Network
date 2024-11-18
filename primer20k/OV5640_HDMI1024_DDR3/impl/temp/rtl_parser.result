@@ -8,14 +8,6 @@
   "ModuleName" : "sys_pll"
  },
  {
-  "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/lut_ov5640_rgb565_1024_768.v",
-  "InstLine" : 1,
-  "InstName" : "lut_ov5640_rgb565_1024_768",
-  "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/lut_ov5640_rgb565_1024_768.v",
-  "ModuleLine" : 1,
-  "ModuleName" : "lut_ov5640_rgb565_1024_768"
- },
- {
   "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
   "InstLine" : 1,
   "InstName" : "top",
@@ -25,7 +17,7 @@
   "SubInsts" : [
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 288,
+    "InstLine" : 279,
     "InstName" : "Video_Frame_Buffer_Top_inst",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
     "ModuleLine" : 9,
@@ -33,7 +25,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 370,
+    "InstLine" : 357,
     "InstName" : "DDR3_Memory_Interface_Top_inst",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/ddr3_memory_interface/DDR3MI.v",
     "ModuleLine" : 9,
@@ -41,7 +33,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 500,
+    "InstLine" : 487,
     "InstName" : "DVI_TX_Top_inst",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 9,
@@ -49,7 +41,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 109,
+    "InstLine" : 108,
     "InstName" : "cmos_pll_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/gowin_rpll/cmos_pll.v",
     "ModuleLine" : 9,
@@ -57,7 +49,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 114,
+    "InstLine" : 113,
     "InstName" : "mem_pll_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/gowin_rpll/mem_pll.v",
     "ModuleLine" : 9,
@@ -65,7 +57,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 121,
+    "InstLine" : 120,
     "InstName" : "i2c_config_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
@@ -103,7 +95,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 136,
+    "InstLine" : 135,
     "InstName" : "lut_ov5640_rgb565_480_272_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/lut_ov5640_rgb565_480_272.v",
     "ModuleLine" : 1,
@@ -111,7 +103,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 144,
+    "InstLine" : 143,
     "InstName" : "cmos_8_16bit_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
@@ -119,7 +111,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 212,
+    "InstLine" : 211,
     "InstName" : "u_MnistLutSimple",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/MnistLutSimple.v",
     "ModuleLine" : 5,
@@ -237,7 +229,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 238,
+    "InstLine" : 232,
     "InstName" : "vga_timing_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/vga_timing.v",
     "ModuleLine" : 1,
@@ -245,7 +237,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/top.v",
-    "InstLine" : 483,
+    "InstLine" : 470,
     "InstName" : "u_tmds_rpll",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer20k/OV5640_HDMI1024_DDR3/src/gowin_rpll/TMDS_rPLL.v",
     "ModuleLine" : 10,

@@ -18,7 +18,6 @@
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\i2c_master\i2c_master_defines.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\i2c_master\i2c_master_top.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\i2c_master\timescale.v" type="verilog"/>
-        <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lut_ov5640_rgb565_1024_768.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lut_ov5640_rgb565_480_272.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\MnistLutSimple.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.v" type="verilog"/>
