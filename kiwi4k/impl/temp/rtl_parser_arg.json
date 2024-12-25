@@ -1,0 +1,65 @@
+{
+ "Device" : "GW1NSR-4C",
+ "Files" : [
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/GW_PLLVR.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/I2C_Interface.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/MnistLutSimple.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/OV2640_Controller.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/OV2640_Registers.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/TMDS_PLLVR.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/dvi_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/frame_buffer.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/hyperram_memory_interface.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/jelly_reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/syn_gen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/tang_nano_4k_mnist.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/src/video_frame_buffer.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Git/TangPrimer20K_LUT-Network/kiwi4k/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

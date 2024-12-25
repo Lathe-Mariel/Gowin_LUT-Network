@@ -1,0 +1,24 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NSR-4C" pn="GW1NSR-LV4CQN48PC7/I6">gw1nsr4c-009</Device>
+    <FileList>
+        <File path="src/GW_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/I2C_Interface.v" type="file.verilog" enable="1"/>
+        <File path="src/MnistLutSimple.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Controller.v" type="file.verilog" enable="1"/>
+        <File path="src/OV2640_Registers.v" type="file.verilog" enable="1"/>
+        <File path="src/TMDS_PLLVR.v" type="file.verilog" enable="1"/>
+        <File path="src/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/frame_buffer.sv" type="file.verilog" enable="1"/>
+        <File path="src/hyperram_memory_interface.v" type="file.verilog" enable="1"/>
+        <File path="src/jelly_reset.v" type="file.verilog" enable="1"/>
+        <File path="src/syn_gen.v" type="file.verilog" enable="1"/>
+        <File path="src/tang_nano_4k_mnist.sv" type="file.verilog" enable="1"/>
+        <File path="src/video_frame_buffer.v" type="file.verilog" enable="1"/>
+        <File path="src/tang_nano_4k_mnist.cst" type="file.cst" enable="1"/>
+        <File path="src/tang_nano_4k_mnist.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
