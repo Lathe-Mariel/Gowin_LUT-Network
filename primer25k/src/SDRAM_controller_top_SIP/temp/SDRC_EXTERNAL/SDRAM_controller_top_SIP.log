@@ -1,0 +1,54 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v":70)
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\top_defines.v":33)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\top_defines.v":33)
+WARN  (EX3705) : Macro '**' is redefined("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\top_defines.v":33)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v":70)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
+WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)
+WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
+WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v'
+Analyzing included file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\top_defines.v'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":2)
+WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+Back to file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":2)
+Compiling module 'SDRAM_controller_top_SIP'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":4)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
+Extracting RAM for identifier '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v":70)
+WARN  (EX3791) : Expression size ** truncated to fit in target size **("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v":70)
+NOTE  (EX0101) : Current top module is "SDRAM_controller_top_SIP"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\temp\SDRC_EXTERNAL\SDRAM_controller_top_SIP.vg" completed
+Generate template file "H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\temp\SDRC_EXTERNAL\SDRAM_controller_top_SIP_tmp.v" completed
+[100%] Generate report file "H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\temp\SDRC_EXTERNAL\SDRAM_controller_top_SIP_syn.rpt.html" completed
+GowinSynthesis finish

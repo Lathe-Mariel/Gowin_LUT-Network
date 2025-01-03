@@ -1,0 +1,15 @@
+-d H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg
+-p GW5A-25A-MBGA121N-1
+-pn GW5A-LV25MG121NES
+-cst H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
+-cfg H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
+-sdc H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-enable_dsrm 0

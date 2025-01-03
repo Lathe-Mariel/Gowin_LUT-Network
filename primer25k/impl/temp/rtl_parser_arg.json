@@ -1,0 +1,93 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/cmos_8_16bit.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/ddr3_memory_interface/DDR3MI.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/dvi_tx/dvi_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/fifo_hs/video_fifo.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_clkdiv/gowin_clkdiv.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_pll/gowin_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_pll/gowin_pll_memory.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_pll/gowin_pll_tmds.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_master_bit_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_master_byte_ctrl.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_master_defines.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_master_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/timescale.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/lut_ov5640_rgb565_480_272.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/MnistLutSimple.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/SDRAM_controller_top_SIP/SDRAM_controller_top_SIP.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/vga_timing.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/video_frame_buffer/video_frame_buffer.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}
