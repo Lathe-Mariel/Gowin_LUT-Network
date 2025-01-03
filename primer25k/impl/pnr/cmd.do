@@ -1,9 +1,9 @@
--d H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg
+-d E:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg
 -p GW5A-25A-MBGA121N-1
 -pn GW5A-LV25MG121NES
--cst H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
--cfg H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
--sdc H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
+-cst E:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
+-cfg E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
+-sdc E:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
 -bit
 -tr
 -ph

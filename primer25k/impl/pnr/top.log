@@ -1,15 +1,28 @@
-Reading netlist file: "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
-Parsing netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
+Parsing netlist file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst"
+Reading constraint file: "E:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
-ERROR  (PR2028) : The constrained location is useless in current package
-ERROR  (PR2017) : 'clk' cannot be placed according to constraint, for the location is a dedicated pin (CPU/SSPI)
-ERROR  (PR2028) : The constrained location is useless in current package
-ERROR  (PR2017) : 'IO_sdram_dq[12]' cannot be placed according to constraint, for the location is a dedicated pin (I2C)
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
-Fri Jan  3 22:49:48 2025
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1123) : the clock "mem_clk"'s frequency does not match pll_memory/PLLA_inst/CLKOUT0's 
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
+Sat Jan  4 03:04:33 2025
 
