@@ -1,13 +1,12 @@
-Reading netlist file: "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
-Parsing netlist file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
+Parsing netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "E:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst"
+Reading constraint file: "H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1123) : the clock "mem_clk"'s frequency does not match pll_memory/PLLA_inst/CLKOUT0's 
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -20,9 +19,9 @@ Running timing analysis......
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
-Sat Jan  4 03:04:33 2025
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
+Sun Jan  5 02:03:50 2025
 

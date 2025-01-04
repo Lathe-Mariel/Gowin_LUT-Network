@@ -1,6 +1,6 @@
 module top(
 	input                       clk,
-	input                       rst_n,
+	input                       rst,
 	inout                       cmos_scl,          //cmos i2c clock
 	inout                       cmos_sda,          //cmos i2c data
 	input                       cmos_vsync,        //cmos vsync
@@ -49,22 +49,28 @@ module top(
 
 //memory interface
 wire                   memory_clk         ;
-wire                   dma_clk         	  ;
-wire                   DDR_pll_lock           ;
+wire                   memory_clk45;
+//wire                   dma_clk         	  ;
+wire                   DDR_pll_lock       ;
 wire                   cmd_ready          ;
 wire[2:0]              cmd                ;
 wire                   cmd_en             ;
-wire[5:0]              app_burst_number   ;
-wire[ADDR_WIDTH-1:0]   addr               ;
+wire[7:0]              app_burst_number   ;
+wire[20:0]   addr               ;
 wire                   wr_data_rdy        ;
 wire                   wr_data_en         ;//
 wire                   wr_data_end        ;//
-wire[DATA_WIDTH-1:0]   wr_data            ;   
+//wire[DATA_WIDTH-1:0]   wr_data            ;   
+wire[15:0]   wr_data;  
 wire[DATA_WIDTH/8-1:0] wr_data_mask       ;   
 wire                   rd_data_valid      ;  
 wire                   rd_data_end        ;//unused 
-wire[DATA_WIDTH-1:0]   rd_data            ;   
+//wire[DATA_WIDTH-1:0]   rd_data            ;   
+wire [15:0] rd_data;
 wire                   init_calib_complete;
+
+logic rst_n;
+assign rst_n = ~rst;
 
 //According to IP parameters to choose
 `define	    WR_VIDEO_WIDTH_16
@@ -115,10 +121,11 @@ reg [4:0] lcd_vs_cnt;
 always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;
 
 Gowin_PLL_memory pll_memory(
-    .lock(DDR_pll_lock), //output lock
+    .lock(DDR_pll_lock),  //output lock
     .clkout0(memory_clk), //output clkout0 100MHz
-    .clkout1(cmos_clk), //output clkout1  24MHz
-    .clkin(clk) //input clkin
+    .clkout1(cmos_clk),   //output clkout1  24MHz
+    .clkin(clk),          //input clkin
+    .clkout2(memory_clk45)   //output clkout2
 );
 
 /*
@@ -139,7 +146,7 @@ mem_pll mem_pll_m0(
 i2c_config i2c_config_m0(
 	.rst                        (~rst_n                   ),
 	.clk                        (clk                      ),
-	.clk_div_cnt                (16'd270                  ),
+	.clk_div_cnt                (16'd270                  ), //
 	.i2c_addr_2byte             (1'b1                     ),
 	.lut_index                  (lut_index                ),
 	.lut_dev_addr               (lut_data[31:24]          ),
@@ -293,7 +300,42 @@ testpattern testpattern_inst
     .O_data_b    (tp0_data_b         )
 );*/
 
+logic[3:0] sdrc_dqm;
+logic sdrc_rd_n;
 
+	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(
+		.I_rst_n(init_calib_complete), //input I_rst_n
+		.I_dma_clk(memory_clk45   ), //input I_dma_clk
+`ifdef USE_THREE_FRAME_BUFFER
+		.I_wr_halt(1'd0           ), //input [0:0] I_wr_halt
+		.I_rd_halt(1'd0           ), //input [0:0] I_rd_halt
+`endif
+		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
+		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
+		.I_vin0_de(cmos_16bit_wr  ), //input I_vin0_de
+		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
+		.O_vin0_fifo_full(        ), //output O_vin0_fifo_full
+
+		.I_vout0_clk(video_clk    ), //input I_vout0_clk
+		.I_vout0_vs_n(~syn_off0_vs), //input I_vout0_vs_n
+		.I_vout0_de(camera_de     ), //input I_vout0_de
+		.O_vout0_den(off0_syn_de  ), //output O_vout0_den
+		.O_vout0_data(off0_syn_data), //output [15:0] O_vout0_data
+		.O_vout0_fifo_empty(       ), //output O_vout0_fifo_empty
+
+		.I_sdrc_busy_n(cmd_ready   ), //input I_sdrc_busy_n
+		.O_sdrc_wr_n(wr_data_en    ), //output O_sdrc_wr_n
+		.O_sdrc_rd_n(sdrc_rd_n     ), //output O_sdrc_rd_n
+		.O_sdrc_addr(addr          ), //output [20:0] O_sdrc_addr
+		.O_sdrc_data_len(app_burst_number), //output [7:0] O_sdrc_data_len
+		.O_sdrc_data(wr_data       ), //output [15:0] O_sdrc_data
+		.O_sdrc_dqm(sdrc_dqm       ), //output [1:0] O_sdrc_dqm
+		.I_sdrc_rd_valid(rd_data_valid), //input I_sdrc_rd_valid
+		.I_sdrc_data_out(rd_data   ), //input [15:0] I_sdrc_data_out
+		.I_sdrc_init_done() //input I_sdrc_init_done
+	);
+
+/*
 Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
 ( 
     .I_rst_n              (init_calib_complete ),//rst_n            ),
@@ -303,19 +345,11 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     .I_rd_halt            (1'd0             ), //1:halt,  0:no halt
 `endif
     // video data input             
-//    .I_vin0_clk           (cmos_16bit_clk_half   ),
     .I_vin0_clk           (cmos_16bit_clk   ),
     .I_vin0_vs_n          (~cmos_vsync      ),//只接收负极性
     .I_vin0_de            (cmos_16bit_wr    ),
     .I_vin0_data          (write_data       ),
     .O_vin0_fifo_full     (                 ),
-
-    // //测试图
-    // .I_vin0_clk           (video_clk    ),
-    // .I_vin0_vs_n          (~tp0_vs_in   ),//只接收负极性
-    // .I_vin0_de            (tp0_de_in    ),
-    // .I_vin0_data          ({tp0_data_r[7:3],tp0_data_g[7:2],tp0_data_b[7:3]} ),
-    // .O_vin0_fifo_full     (                 ),
 
     // video data output            
     .I_vout0_clk          (video_clk        ),
@@ -340,7 +374,7 @@ Video_Frame_Buffer_Top Video_Frame_Buffer_Top_inst
     .I_rd_data            (rd_data            ),//[DATA_WIDTH-1:0]
     .I_init_calib_complete(init_calib_complete)
 ); 
-
+*/
 
 localparam N = 7; //delay N clocks
                           
@@ -372,34 +406,35 @@ assign lcd_hs      			  = Pout_hs_dn[4]; //syn_off0_hs;
 assign lcd_de      			  = Pout_de_dn[4]; //off0_syn_de;
 assign lcd_dclk    			  = video_clk;     //video_clk_phs;
 
-SDRAM_controller_top_SIP sdram_controller0(    // IPUG279-1.3J  P.7
-		.O_sdram_clk(O_sdram_clk),        //output O_sdram_clk
-		.O_sdram_cke(O_sdram_cke),        //output O_sdram_cke
-		.O_sdram_cs_n(O_sdram_cs_n),      //output O_sdram_cs_n
-		.O_sdram_cas_n(O_sdram_cas_n),    //output O_sdram_cas_n
-		.O_sdram_ras_n(O_sdram_ras_n),    //output O_sdram_ras_n
-		.O_sdram_wen_n(O_sdram_wen_n),    //output O_sdram_wen_n
-		.O_sdram_dqm(O_sdram_dqm),        //output [1:0] O_sdram_dqm
-		.O_sdram_addr(O_sdram_addr),      //output [12:0] O_sdram_addr
-		.O_sdram_ba(O_sdram_ba),          //output [1:0] O_sdram_ba
-		.IO_sdram_dq(IO_sdram_dq),                  // [15:0] IO_sdram_dq
-		.I_sdrc_rst_n(rst_n),                       // I_sdrc_rst_n リセット
-		.I_sdrc_clk(video_clk),                     // I_sdrc_clk コントローラ動作クロック
-        .I_sdram_clk(memory_clk),                   // I_sdram_clk SDRAM動作クロック
-		.I_sdrc_selfrefresh(1'b1),                  // I_sdrc_selfrefresh セルフリフレッシュ制御(1:有効, 0:無効)
-		.I_sdrc_power_down(1'b0),                   // I_sdrc_power_down 低消費電力制御(1:有効, 0:無効)
-		.I_sdrc_wr_n(!wr_data_en),                  // I_sdrc_wr_n 書込イネーブル
-		.I_sdrc_rd_n(!rd_data_valid),               // I_sdrc_rd_n 読取イネーブル
-		.I_sdrc_addr(addr),                         // [22:0] I_sdrc_addr アドレス
+SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
+		.O_sdram_clk(O_sdram_clk    ),      //output O_sdram_clk
+		.O_sdram_cke(O_sdram_cke    ),      //output O_sdram_cke
+		.O_sdram_cs_n(O_sdram_cs_n  ),      //output O_sdram_cs_n
+		.O_sdram_cas_n(O_sdram_cas_n),      //output O_sdram_cas_n
+		.O_sdram_ras_n(O_sdram_ras_n),      //output O_sdram_ras_n
+		.O_sdram_wen_n(O_sdram_wen_n),      //output O_sdram_wen_n
+		.O_sdram_dqm(O_sdram_dqm    ),      //output [1:0] O_sdram_dqm
+		.O_sdram_addr(O_sdram_addr  ),      //output [12:0] O_sdram_addr
+		.O_sdram_ba(O_sdram_ba      ),      //output [1:0] O_sdram_ba
+		.IO_sdram_dq(IO_sdram_dq    ),              // [15:0] IO_sdram_dq
+		.I_sdrc_rst_n(rst_n         ),              // I_sdrc_rst_n リセット
+		.I_sdrc_clk(memory_clk45    ),              // I_sdrc_clk コントローラ動作クロック
+        .I_sdram_clk(memory_clk     ),              // I_sdram_clk SDRAM動作クロック
+		.I_sdrc_selfrefresh(1'b0 ),                 // I_sdrc_selfrefresh セルフリフレッシュ制御(1:有効, 0:無効)
+		.I_sdrc_power_down(1'b0  ),                 // I_sdrc_power_down 低消費電力制御(1:有効, 0:無効)
+		.I_sdrc_wr_n(wr_data_en  ),                 // I_sdrc_wr_n 書込イネーブル
+		.I_sdrc_rd_n(sdrc_rd_n   ),                 // I_sdrc_rd_n 読取イネーブル
+		.I_sdrc_addr(addr        ),                 // [22:0] I_sdrc_addr アドレス
 		.I_sdrc_data_len(app_burst_number),         // [7:0] I_sdrc_data_len 読み書きデータ長
-		.I_sdrc_dqm(0),                 // [1:0] I_sdrc_dqm データマスク制御
-		.I_sdrc_data(wr_data),                      // [15:0] I_sdrc_data 書込データ
-		.O_sdrc_data(rd_data),                      // [15:0] O_sdrc_data 読取データ
+		.I_sdrc_dqm(sdrc_dqm     ),                 // [1:0] I_sdrc_dqm データマスク制御
+		.I_sdrc_data(wr_data     ),                 // [15:0] I_sdrc_data 書込データ
+		.O_sdrc_data(rd_data     ),                 // [15:0] O_sdrc_data 読取データ
 		.O_sdrc_init_done(init_calib_complete),     // O_sdrc_init_done パワーアップ初期化完了(1:完了, 0:未完)
-		.O_sdrc_busy_n(cmd_ready),           // O_sdrc_busy_n コントローラアイドル表示．アイドル時に読み書きトリガ可能(1:アイドル, 0:ビジー)
-		.O_sdrc_rd_valid(rd_data_valid),       // O_sdrc_rd_valid 読み取りデータ有効．(1:有効)
-		.O_sdrc_wrd_ack(rd_data_end)          // O_sdrc_wrd_ack 読み書きリクエスト応答
+		.O_sdrc_busy_n(cmd_ready ),                 // O_sdrc_busy_n コントローラアイドル表示．アイドル時に読み書きトリガ可能(1:アイドル, 0:ビジー)
+		.O_sdrc_rd_valid(rd_data_valid),            // O_sdrc_rd_valid 読み取りデータ有効．(1:有効)
+		.O_sdrc_wrd_ack(         )                // O_sdrc_wrd_ack 読み書きリクエスト応答
 );
+
 
 /*
 DDR3MI DDR3_Memory_Interface_Top_inst 
@@ -518,7 +553,7 @@ wire hdmi4_rst_n;
 /*
 TMDS_rPLL u_tmds_rpll
 (.clkin     (clk       )     //input clk 
-,.clkout    (serial_clk     )     //output clk 
+,.clkout    (serial_clk     )     //output clk 325MHz
 ,.lock      (TMDS_DDR_pll_lock       )     //output lock
 );
 */
@@ -530,15 +565,12 @@ Gowin_PLL_tmds pll_tmds(
 
 assign hdmi4_rst_n = rst_n & TMDS_DDR_pll_lock;
 
-Gowin_CLKDIV your_instance_name(
+Gowin_CLKDIV video_clk_gen(
         .clkout(video_clk), //output clkout
         .hclkin(serial_clk), //input hclkin
         .resetn(hdmi_hpd), //input resetn
         .calib(1'b1) //input calib
 );
-
-defparam u_clkdiv.DIV_MODE="5";
-defparam u_clkdiv.GSREN="false";
 
 
 DVI_TX_Top DVI_TX_Top_inst

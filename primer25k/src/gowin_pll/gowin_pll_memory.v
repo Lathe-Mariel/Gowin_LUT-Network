@@ -5,16 +5,16 @@
 //Part Number: GW5A-LV25MG121NES
 //Device: GW5A-25
 //Device Version: A
-//Created Time: Fri Jan  3 21:49:40 2025
+//Created Time: Sun Jan  5 01:29:59 2025
 
-module Gowin_PLL_memory (lock, clkout0, clkout1, clkin);
+module Gowin_PLL_memory (lock, clkout0, clkout1, clkout2, clkin);
 
 output lock;
 output clkout0;
 output clkout1;
+output clkout2;
 input clkin;
 
-wire clkout2;
 wire clkout3;
 wire clkout4;
 wire clkout5;
@@ -58,19 +58,19 @@ PLLA PLLA_inst (
 defparam PLLA_inst.FCLKIN = "50";
 defparam PLLA_inst.IDIV_SEL = 1;
 defparam PLLA_inst.FBDIV_SEL = 1;
-defparam PLLA_inst.ODIV0_SEL = 8;
-defparam PLLA_inst.ODIV1_SEL = 32;
-defparam PLLA_inst.ODIV2_SEL = 8;
+defparam PLLA_inst.ODIV0_SEL = 12;
+defparam PLLA_inst.ODIV1_SEL = 50;
+defparam PLLA_inst.ODIV2_SEL = 12;
 defparam PLLA_inst.ODIV3_SEL = 8;
 defparam PLLA_inst.ODIV4_SEL = 8;
 defparam PLLA_inst.ODIV5_SEL = 8;
 defparam PLLA_inst.ODIV6_SEL = 8;
-defparam PLLA_inst.MDIV_SEL = 16;
+defparam PLLA_inst.MDIV_SEL = 24;
 defparam PLLA_inst.MDIV_FRAC_SEL = 0;
 defparam PLLA_inst.ODIV0_FRAC_SEL = 0;
 defparam PLLA_inst.CLKOUT0_EN = "TRUE";
 defparam PLLA_inst.CLKOUT1_EN = "TRUE";
-defparam PLLA_inst.CLKOUT2_EN = "FALSE";
+defparam PLLA_inst.CLKOUT2_EN = "TRUE";
 defparam PLLA_inst.CLKOUT3_EN = "FALSE";
 defparam PLLA_inst.CLKOUT4_EN = "FALSE";
 defparam PLLA_inst.CLKOUT5_EN = "FALSE";
@@ -103,8 +103,8 @@ defparam PLLA_inst.CLKOUT0_PE_COARSE = 0;
 defparam PLLA_inst.CLKOUT0_PE_FINE = 0;
 defparam PLLA_inst.CLKOUT1_PE_COARSE = 0;
 defparam PLLA_inst.CLKOUT1_PE_FINE = 0;
-defparam PLLA_inst.CLKOUT2_PE_COARSE = 0;
-defparam PLLA_inst.CLKOUT2_PE_FINE = 0;
+defparam PLLA_inst.CLKOUT2_PE_COARSE = 1;
+defparam PLLA_inst.CLKOUT2_PE_FINE = 4;
 defparam PLLA_inst.CLKOUT3_PE_COARSE = 0;
 defparam PLLA_inst.CLKOUT3_PE_FINE = 0;
 defparam PLLA_inst.CLKOUT4_PE_COARSE = 0;
