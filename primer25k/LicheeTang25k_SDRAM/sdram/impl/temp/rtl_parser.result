@@ -1,0 +1,36 @@
+[
+ {
+  "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/print.svh",
+    "InstLine" : 105,
+    "InstName" : "tx",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/uart_tx_V2.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx_V2"
+   },
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/top.sv",
+    "InstLine" : 202,
+    "InstName" : "SDRAM_PLL",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/gowin_pll/PLL.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "PLL100"
+   },
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/top.sv",
+    "InstLine" : 255,
+    "InstName" : "SDRAM",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/sdram_ctrl.sv",
+    "ModuleLine" : 5,
+    "ModuleName" : "SDRAM_CTRL"
+   }
+  ]
+ }
+]

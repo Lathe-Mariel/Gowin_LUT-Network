@@ -28,6 +28,21 @@ Undeclared symbol 'cmos_16bit_wr', assumed default net type 'wire'("H:\git\TangP
 Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v'
 Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer.v'
 Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v'
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
+Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\gw_jtag.v'
+Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
 WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":267)
 Compiling module 'top'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":1)
 WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":121)
@@ -271,6 +286,15 @@ Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\dvi_tx\dvi
 WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":585)
 WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":586)
 WARN  (EX2565) : Input 'I_sdrc_init_done' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":336)
+Compiling module 'gw_gao'("H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+Compiling module 'GW_JTAG'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\gw_jtag.v":1)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Extracting RAM for identifier '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
+Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
+Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
 Running device independent optimization ...

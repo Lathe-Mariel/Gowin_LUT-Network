@@ -1,0 +1,29 @@
+{
+ "Device" : "GW5A-25A",
+ "Files" : [
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/gowin_pll/PLL.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/sdram_ctrl.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/top.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/src/uart_tx_V2.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/LicheeTang25k_SDRAM/sdram/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

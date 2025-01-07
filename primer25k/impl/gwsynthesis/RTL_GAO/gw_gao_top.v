@@ -1,9 +1,16 @@
 module gw_gao(
     cmos_vsync,
     cmos_href,
-    \cam_y[1] ,
-    \cam_y[0] ,
-    cmos_pclk,
+    off0_syn_de,
+    cmos_16bit_wr,
+    camera_de,
+    memory_clk,
+    memory_clk45,
+    cmd_ready,
+    \sdram_controller0/I_sdrc_dqm[1] ,
+    \sdram_controller0/I_sdrc_dqm[0] ,
+    \frameBuffer_SDRAM/I_sdrc_init_done ,
+    cmos_16bit_clk,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
@@ -12,9 +19,16 @@ module gw_gao(
 
 input cmos_vsync;
 input cmos_href;
-input \cam_y[1] ;
-input \cam_y[0] ;
-input cmos_pclk;
+input off0_syn_de;
+input cmos_16bit_wr;
+input camera_de;
+input memory_clk;
+input memory_clk45;
+input cmd_ready;
+input \sdram_controller0/I_sdrc_dqm[1] ;
+input \sdram_controller0/I_sdrc_dqm[0] ;
+input \frameBuffer_SDRAM/I_sdrc_init_done ;
+input cmos_16bit_clk;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
@@ -22,9 +36,16 @@ output tdo_pad_o;
 
 wire cmos_vsync;
 wire cmos_href;
-wire \cam_y[1] ;
-wire \cam_y[0] ;
-wire cmos_pclk;
+wire off0_syn_de;
+wire cmos_16bit_wr;
+wire camera_de;
+wire memory_clk;
+wire memory_clk45;
+wire cmd_ready;
+wire \sdram_controller0/I_sdrc_dqm[1] ;
+wire \sdram_controller0/I_sdrc_dqm[0] ;
+wire \frameBuffer_SDRAM/I_sdrc_init_done ;
+wire cmos_16bit_clk;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -99,8 +120,8 @@ gw_con_top  u_icon_top(
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(cmos_vsync),
-    .data_i({cmos_vsync,cmos_href,\cam_y[1] ,\cam_y[0] }),
-    .clk_i(cmos_pclk)
+    .data_i({cmos_vsync,cmos_href,off0_syn_de,cmos_16bit_wr,camera_de,memory_clk,memory_clk45,cmd_ready,\sdram_controller0/I_sdrc_dqm[1] ,\sdram_controller0/I_sdrc_dqm[0] ,\frameBuffer_SDRAM/I_sdrc_init_done }),
+    .clk_i(cmos_16bit_clk)
 );
 
 endmodule

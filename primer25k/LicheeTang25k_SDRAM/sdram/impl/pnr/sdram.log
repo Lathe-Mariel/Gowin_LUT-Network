@@ -1,0 +1,26 @@
+Reading netlist file: "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\gwsynthesis\sdram.vg"
+Parsing netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\gwsynthesis\sdram.vg" completed
+Processing netlist completed
+Reading constraint file: "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\pnr\sdram.pin.html" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\pnr\sdram.rpt.html" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\pnr\sdram.rpt.txt" completed
+Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\pnr\sdram.tr.html" completed
+Sun Jan  5 23:48:34 2025
+

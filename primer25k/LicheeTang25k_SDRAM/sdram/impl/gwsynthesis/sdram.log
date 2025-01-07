@@ -1,0 +1,42 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\gowin_pll\PLL.v'
+Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv'
+Analyzing included file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_tasks.svh'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":116)
+Back to file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":116)
+Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\top.sv'
+Analyzing included file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\print.svh'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\top.sv":24)
+Back to file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\top.sv'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\top.sv":24)
+Analyzing Verilog file 'H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\uart_tx_V2.v'
+Compiling module 'top'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\top.sv":1)
+Extracting RAM for identifier 'print_seq'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\print.svh":6)
+Compiling module 'uart_tx_V2(clk_freq=133333000)'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\uart_tx_V2.v":1)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\uart_tx_V2.v":49)
+Compiling module 'PLL100'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\gowin_pll\PLL.v":10)
+Compiling module 'SDRAM_CTRL'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":5)
+Extracting RAM for identifier 'opened_row_adr'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":120)
+Extracting RAM for identifier 'wr_buf'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":206)
+Extracting RAM for identifier 'rd_buf'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":213)
+Extracting RAM for identifier 'cmd_buf'("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":225)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":310)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\src\sdram_ctrl.sv":340)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\gwsynthesis\sdram.vg" completed
+[100%] Generate report file "H:\git\TangPrimer20K_LUT-Network\primer25k\LicheeTang25k_SDRAM\sdram\impl\gwsynthesis\sdram_syn.rpt.html" completed
+GowinSynthesis finish

@@ -12,27 +12,27 @@
   <Part Number>: GW5A-LV25MG121NES
   <Device>: GW5A-25
   <Device Version>: A
-  <Created Time>:Sun Jan  5 02:03:50 2025
+  <Created Time>:Wed Jan  8 03:50:48 2025
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Placement Phase 1: CPU time = 0h 0m 0.42s, Elapsed time = 0h 0m 0.42s
-    Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
-    Placement Phase 3: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
-    Total Placement: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
+    Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Placement Phase 1: CPU time = 0h 0m 0.449s, Elapsed time = 0h 0m 0.449s
+    Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 3: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
+    Total Placement: CPU time = 0h 0m 21s, Elapsed time = 0h 0m 21s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
-    Routing Phase 2: CPU time = 0h 0m 0.244s, Elapsed time = 0h 0m 0.244s
+    Routing Phase 0: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.003s
+    Routing Phase 1: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
+    Routing Phase 2: CPU time = 0h 0m 0.276s, Elapsed time = 0h 0m 0.276s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Total Routing: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
  Generate output files:
-    CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 
- Total Time and Memory Usage: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s, Peak memory usage = 592MB
+ Total Time and Memory Usage: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s, Peak memory usage = 667MB
 
 
 3. Resource Usage Summary
@@ -40,24 +40,24 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 3654/23040  16%
-    --LUT,ALU,ROM16           | 3654(3406 LUT, 248 ALU, 0 ROM16)
+  Logic                       | 4224/23040  19%
+    --LUT,ALU,ROM16           | 4224(3957 LUT, 267 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 2690/23280  12%
+  Register                    | 3007/23280  13%
     --Logic Register as Latch | 0/23040  0%
-    --Logic Register as FF    | 2652/23040  12%
+    --Logic Register as FF    | 2970/23040  13%
     --I/O Register as Latch   | 0/240  0%
-    --I/O Register as FF      | 38/240  16%
-  CLS                         | 3135/11520  28%
-  I/O Port                    | 66
-  I/O Buf                     | 62
-    --Input Buf               | 13
-    --Output Buf              | 31
+    --I/O Register as FF      | 37/240  16%
+  CLS                         | 3524/11520  31%
+  I/O Port                    | 70
+  I/O Buf                     | 66
+    --Input Buf               | 16
+    --Output Buf              | 32
     --Inout Buf               | 18
   IOLOGIC                     | 10%
     --OSER10                  | 4
-  BSRAM                       | 9%
-    --SDPB                    | 4
+  BSRAM                       | 52%
+    --SDPB                    | 28
     --SDPX9B                  | 1
   DSP                         | 0%
   PLL                         | 2/6  34%
@@ -86,7 +86,7 @@
   bank 5   | 8/13(61%)   
   bank 6   | 10/10(100%) 
   bank 7   | 15/16(93%)  
-  bank 10  | 0/4(0%)     
+  bank 10  | 4/4(100%)   
   =======================
 
 
@@ -97,7 +97,7 @@
   -------------------------------
   PRIMARY       | 7/8(88%)
   LW            | 8/8(100%)
-  GCLK_PIN      | 25/30(84%)
+  GCLK_PIN      | 24/30(80%)
   PLL           | 2/6(34%)
   DDRDLL        | 0/4(0%)
   CLKDIV        | 1/16(7%)
@@ -110,21 +110,21 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  cmos_pclk_d    | PRIMARY        |  BL
-  memory_clk     | PRIMARY        |  BR
+  cmos_pclk_d    | PRIMARY        |  TR
+  memory_clk     | PRIMARY        |  TR BR
   cmos_xclk_d    | PRIMARY        |  TR TL BR BL
   memory_clk45   | PRIMARY        |  TR TL BR BL
   cmos_16bit_clk | PRIMARY        |  TR TL BR BL
-  video_clk      | PRIMARY        |  TR TL BR BL
-  Pout_vs_dn[4]  | PRIMARY        |  TR BR
-  rst_d          | LW             |  -
-  n7180_4        | LW             |  -
+  video_clk      | PRIMARY        |  TL BR BL
+  gw_gao_inst_0/control0[0]| PRIMARY        |  TR TL BR
   hdmi4_rst_n    | LW             |  -
-  prev2_vsync    | LW             |  -
   rst_n_6        | LW             |  -
+  Pout_vs_dn[4]  | LW             |  -
   frameBuffer_SDRAM/vfb_sdram_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r[1]| LW             |  -
   frameBuffer_SDRAM/vfb_sdram_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_r[1]| LW             |  -
   sdram_controller0/O_sdrc_init_done_d| LW             |  -
+  gw_gao_inst_0/gao_jtag_reset| LW             |  -
+  gw_gao_inst_0/u_la0_top/rst_ao| LW             |  -
   serial_clk     | HCLK           |  -
   ===========================================
 
@@ -147,12 +147,15 @@ cmos_db[4]        |           | G8/1          | Y          | in    | IOT68[B] | 
 cmos_db[5]        |           | G5/1          | Y          | in    | IOT72[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_db[6]        |           | F5/1          | Y          | in    | IOT72[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_db[7]        |           | L5/1          | Y          | in    | IOT63[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+tms_pad_i         |           | B1/10         | N          | in    | IOR3[A]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+tck_pad_i         |           | C1/10         | N          | in    | IOR1[A]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+tdi_pad_i         |           | A3/10         | N          | in    | IOR1[B]  | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_xclk         |           | K5/1          | Y          | out   | IOT63[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_rst_n        |           | E11/6         | Y          | out   | IOL3[A]  | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_pwdn         |           | K11/7         | Y          | out   | IOT11[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 led               |           | L6/7          | Y          | out   | IOT23[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 O_sdram_clk       |           | E3/4          | Y          | out   | IOB60[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
-O_sdram_cke       |           | H10/7         | N          | out   | IOT3[B]  | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
+O_sdram_cke       |           | K6/7          | N          | out   | IOT23[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 O_sdram_cs_n      |           | K9/0          | Y          | out   | IOT31[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 O_sdram_cas_n     |           | K10/7         | Y          | out   | IOT15[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 O_sdram_ras_n     |           | L10/7         | Y          | out   | IOT15[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
@@ -178,6 +181,7 @@ O_tmds_clk_p      | O_tmds_clk_n | C11,C10/6     | Y          | out   | IOL5    
 O_tmds_data_p[0]  | O_tmds_data_n[0] | B11,B10/6     | Y          | out   | IOL12    | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 3.3        | NONE         
 O_tmds_data_p[1]  | O_tmds_data_n[1] | D11,D10/6     | Y          | out   | IOL9     | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 3.3        | NONE         
 O_tmds_data_p[2]  | O_tmds_data_n[2] | G11,G10/7     | Y          | out   | IOT7     | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 3.3        | NONE         
+tdo_pad_o         |           | A2/10         | N          | out   | IOR3[B]  | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_scl          |           | A10/6         | Y          | io    | IOL14[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 cmos_sda          |           | A11/6         | Y          | io    | IOL14[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
 IO_sdram_dq[0]    |           | K2/2          | Y          | io    | IOR20[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM       
@@ -209,7 +213,7 @@ Loc./Bank| Signal            | Dir.  | Site     | IO Type  | Drive | Pull Mode |
 J11/7    | O_sdram_addr[3]   | out   | IOT1[A]  | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 J10/7    | O_sdram_addr[2]   | out   | IOT1[B]  | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 H11/7    | rst               | in    | IOT3[A]  | LVCMOS33 | OFF   | DOWN      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-H10/7    | O_sdram_cke       | out   | IOT3[B]  | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+H10/7    | -                 | in    | IOT3[B]  | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 G11/7    | O_tmds_data_p[2]  | out   | IOT7[A]  | LVDS25   | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 3.3   | NONE         
 G10/7    | O_tmds_data_n[2]  | out   | IOT7[B]  | LVDS25   | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 3.3   | NONE         
 K11/7    | cmos_pwdn         | out   | IOT11[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
@@ -221,7 +225,7 @@ L8/7     | O_sdram_dqm[0]    | out   | IOT19[B] | LVCMOS33 | 8     | NONE      |
 K7/7     | O_sdram_addr[4]   | out   | IOT21[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 J7/7     | O_sdram_wen_n     | out   | IOT21[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 L6/7     | led               | out   | IOT23[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-K6/7     | -                 | in    | IOT23[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+K6/7     | O_sdram_cke       | out   | IOT23[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 L9/0     | O_sdram_ba[0]     | out   | IOT31[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 K9/0     | O_sdram_cs_n      | out   | IOT31[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 J8/0     | O_sdram_addr[10]  | out   | IOT56[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
@@ -279,10 +283,10 @@ B10/6    | O_tmds_data_n[0]  | out   | IOL12[B] | LVDS25   | 3.5   | NONE      |
 A11/6    | cmos_sda          | io    | IOL14[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 A10/6    | cmos_scl          | io    | IOL14[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-C1/10    | -                 | in    | IOR1[A]  | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-A3/10    | -                 | in    | IOR1[B]  | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-B1/10    | -                 | in    | IOR3[A]  | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
-A2/10    | -                 | out   | IOR3[B]  | LVCMOS33 | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+C1/10    | tck_pad_i         | in    | IOR1[A]  | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+A3/10    | tdi_pad_i         | in    | IOR1[B]  | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+B1/10    | tms_pad_i         | in    | IOR3[A]  | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
+A2/10    | tdo_pad_o         | out   | IOR3[B]  | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 L2/2     | IO_sdram_dq[3]    | io    | IOR18[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 L1/2     | IO_sdram_dq[2]    | io    | IOR18[B] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       
 K1/2     | IO_sdram_dq[1]    | io    | IOR20[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM       

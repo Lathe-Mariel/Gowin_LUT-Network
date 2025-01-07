@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="215" Alu="22" Lut="530" Bsram="1" T_Register="542(215)" T_Alu="127(22)" T_Lut="863(530)" T_Bsram="9(1)">
+    <SubModule name="tx" Register="19" Alu="12" Lut="23" T_Register="19(19)" T_Alu="12(12)" T_Lut="23(23)"/>
+    <SubModule name="SDRAM_PLL"/>
+    <SubModule name="SDRAM" Register="308" Alu="93" Lut="310" Bsram="8" T_Register="308(308)" T_Alu="93(93)" T_Lut="310(310)" T_Bsram="8(8)"/>
+</Module>
