@@ -332,7 +332,7 @@ logic sdrc_rd_n;
 		.O_sdrc_dqm(sdrc_dqm       ), //output [1:0] O_sdrc_dqm
 		.I_sdrc_rd_valid(rd_data_valid), //input I_sdrc_rd_valid
 		.I_sdrc_data_out(rd_data   ), //input [15:0] I_sdrc_data_out
-		.I_sdrc_init_done() //input I_sdrc_init_done
+		.I_sdrc_init_done(init_calib_complete) //input I_sdrc_init_done
 	);
 
 /*
