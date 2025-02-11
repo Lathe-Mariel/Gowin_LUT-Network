@@ -8,19 +8,19 @@ WARN  (EX3705) : Macro '**' is redefined("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcor
 Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_autorefresh.v":70)
 Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v'
 Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
-WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+WARN  (EX3705) : Macro 'SDRAM_REFRESH_FREQ' is redefined("sdrc_defines.v":7)
 Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_control_fsm.v":554)
 Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v'
 Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)
-WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+WARN  (EX3705) : Macro 'SDRAM_REFRESH_FREQ' is redefined("sdrc_defines.v":7)
 Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)
 Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v'
 Analyzing included file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
-WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+WARN  (EX3705) : Macro 'SDRAM_REFRESH_FREQ' is redefined("sdrc_defines.v":7)
 Back to file '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_user_interface.v":268)
 Analyzing Verilog file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v'
 Analyzing included file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\top_defines.v'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":2)
-WARN  (EX3705) : Macro 'SDRAM_CLK_PERIOD' is redefined("sdrc_defines.v":8)
+WARN  (EX3705) : Macro 'SDRAM_REFRESH_FREQ' is redefined("sdrc_defines.v":7)
 Back to file 'H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":2)
 Compiling module 'SDRAM_controller_top_SIP'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\SDRAM_controller_top_SIP.v":4)
 Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\ipcore\SDRC_EXT\data\sdrc_top.v":236)

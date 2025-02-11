@@ -4,7 +4,6 @@
 -cst H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
 -cfg H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
 -sdc H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
--gao_crc 0010110001101101
 -bit
 -tr
 -ph
@@ -14,4 +13,3 @@
 -route_maxfan 23
 -global_freq 100.000
 -enable_dsrm 0
--rtl_gao

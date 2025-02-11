@@ -50,24 +50,25 @@ module top(
 //memory interface
 wire                   memory_clk         ;
 wire                   memory_clk45;
-//wire                   dma_clk         	  ;
+wire                   fb_clk;
+//wire                   dma_clk       	  ;
 wire                   DDR_pll_lock       ;
-wire                   cmd_ready          ;
+wire                   sdrc_busy_n        ;
 wire[2:0]              cmd                ;
 wire                   cmd_en             ;
-wire[7:0]              app_burst_number   ;
-wire[20:0]   addr               ;
+wire[7:0]              sdrc_data_len      ;
+wire[20:0]             sdrc_addr          ;
 wire                   wr_data_rdy        ;
-wire                   wr_data_en         ;//
+wire                   sdrc_wr_n         ;//
 wire                   wr_data_end        ;//
 //wire[DATA_WIDTH-1:0]   wr_data            ;   
 wire[15:0]   wr_data;  
 wire[DATA_WIDTH/8-1:0] wr_data_mask       ;   
-wire                   rd_data_valid      ;  
+wire                   sdrc_rd_valid;
 wire                   rd_data_end        ;//unused 
 //wire[DATA_WIDTH-1:0]   rd_data            ;   
-wire [15:0] rd_data;
-wire                   init_calib_complete;
+wire [15:0] sdrc_data;
+wire                   sdrc_init_done;
 
 logic rst_n;
 assign rst_n = ~rst;
@@ -304,7 +305,7 @@ logic[3:0] sdrc_dqm;
 logic sdrc_rd_n;
 
 	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(
-		.I_rst_n(init_calib_complete), //input I_rst_n
+		.I_rst_n(sdrc_init_done), //input I_rst_n
 		.I_dma_clk(memory_clk45   ), //input I_dma_clk
 `ifdef USE_THREE_FRAME_BUFFER
 		.I_wr_halt(1'd0           ), //input [0:0] I_wr_halt
@@ -323,16 +324,16 @@ logic sdrc_rd_n;
 		.O_vout0_data(off0_syn_data), //output [15:0] O_vout0_data
 		.O_vout0_fifo_empty(       ), //output O_vout0_fifo_empty
 
-		.I_sdrc_busy_n(cmd_ready   ), //input I_sdrc_busy_n
-		.O_sdrc_wr_n(wr_data_en    ), //output O_sdrc_wr_n
+		.I_sdrc_busy_n(sdrc_busy_n   ), //input I_sdrc_busy_n
+		.O_sdrc_wr_n(sdrc_wr_n    ), //output O_sdrc_wr_n
 		.O_sdrc_rd_n(sdrc_rd_n     ), //output O_sdrc_rd_n
-		.O_sdrc_addr(addr          ), //output [20:0] O_sdrc_addr
-		.O_sdrc_data_len(app_burst_number), //output [7:0] O_sdrc_data_len
+		.O_sdrc_addr(sdrc_addr          ), //output [20:0] O_sdrc_addr
+		.O_sdrc_data_len(sdrc_data_len), //output [7:0] O_sdrc_data_len
 		.O_sdrc_data(wr_data       ), //output [15:0] O_sdrc_data
 		.O_sdrc_dqm(sdrc_dqm       ), //output [1:0] O_sdrc_dqm
-		.I_sdrc_rd_valid(rd_data_valid), //input I_sdrc_rd_valid
-		.I_sdrc_data_out(rd_data   ), //input [15:0] I_sdrc_data_out
-		.I_sdrc_init_done(init_calib_complete) //input I_sdrc_init_done
+		.I_sdrc_rd_valid(sdrc_rd_valid), //input I_sdrc_rd_valid
+		.I_sdrc_data_out(sdrc_data ), //input [15:0] I_sdrc_data_out
+		.I_sdrc_init_done(sdrc_init_done) //input I_sdrc_init_done
 	);
 
 /*
@@ -422,16 +423,16 @@ SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
         .I_sdram_clk(memory_clk     ),              // I_sdram_clk SDRAM動作クロック
 		.I_sdrc_selfrefresh(1'b0 ),                 // I_sdrc_selfrefresh セルフリフレッシュ制御(1:有効, 0:無効)
 		.I_sdrc_power_down(1'b0  ),                 // I_sdrc_power_down 低消費電力制御(1:有効, 0:無効)
-		.I_sdrc_wr_n(wr_data_en  ),                 // I_sdrc_wr_n 書込イネーブル
+		.I_sdrc_wr_n(sdrc_wr_n  ),                 // I_sdrc_wr_n 書込イネーブル
 		.I_sdrc_rd_n(sdrc_rd_n   ),                 // I_sdrc_rd_n 読取イネーブル
-		.I_sdrc_addr(addr        ),                 // [22:0] I_sdrc_addr アドレス
-		.I_sdrc_data_len(app_burst_number),         // [7:0] I_sdrc_data_len 読み書きデータ長
+		.I_sdrc_addr(sdrc_addr        ),                 // [22:0] I_sdrc_addr アドレス
+		.I_sdrc_data_len(sdrc_data_len),         // [7:0] I_sdrc_data_len 読み書きデータ長
 		.I_sdrc_dqm(sdrc_dqm     ),                 // [1:0] I_sdrc_dqm データマスク制御
 		.I_sdrc_data(wr_data     ),                 // [15:0] I_sdrc_data 書込データ
-		.O_sdrc_data(rd_data     ),                 // [15:0] O_sdrc_data 読取データ
-		.O_sdrc_init_done(init_calib_complete),     // O_sdrc_init_done パワーアップ初期化完了(1:完了, 0:未完)
-		.O_sdrc_busy_n(cmd_ready ),                 // O_sdrc_busy_n コントローラアイドル表示．アイドル時に読み書きトリガ可能(1:アイドル, 0:ビジー)
-		.O_sdrc_rd_valid(rd_data_valid),            // O_sdrc_rd_valid 読み取りデータ有効．(1:有効)
+		.O_sdrc_data(sdrc_data     ),                 // [15:0] O_sdrc_data 読取データ
+		.O_sdrc_init_done(sdrc_init_done),     // O_sdrc_init_done パワーアップ初期化完了(1:完了, 0:未完)
+		.O_sdrc_busy_n(sdrc_busy_n ),                 // O_sdrc_busy_n コントローラアイドル表示．アイドル時に読み書きトリガ可能(1:アイドル, 0:ビジー)
+		.O_sdrc_rd_valid(sdrc_rd_valid),            // O_sdrc_rd_valid 読み取りデータ有効．(1:有効)
 		.O_sdrc_wrd_ack(         )                // O_sdrc_wrd_ack 読み書きリクエスト応答
 );
 
