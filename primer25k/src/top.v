@@ -57,7 +57,7 @@ wire                   sdrc_busy_n        ;
 wire[2:0]              cmd                ;
 wire                   cmd_en             ;
 wire[7:0]              sdrc_data_len      ;
-wire[20:0]             sdrc_addr          ;
+wire[22:0]             sdrc_addr          ;
 wire                   wr_data_rdy        ;
 wire                   sdrc_wr_n         ;//
 wire                   wr_data_end        ;//
@@ -301,7 +301,7 @@ testpattern testpattern_inst
     .O_data_b    (tp0_data_b         )
 );*/
 
-logic[3:0] sdrc_dqm;
+logic[1:0] sdrc_dqm;
 logic sdrc_rd_n;
 
 	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(

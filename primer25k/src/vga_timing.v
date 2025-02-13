@@ -12,10 +12,10 @@ module vga_timing(
 
 
 //VIDEO_1024 768
-parameter H_ACTIVE = 16'd1280;  //1280 1920
-parameter H_FP = 16'd110;       //110  88
-parameter H_SYNC = 16'd40;      //40   44
-parameter H_BP = 16'd220;       //220  148
+parameter H_ACTIVE = 16'd1280;  //1280 1920 1280@24
+parameter H_FP = 16'd110;       //110  88 1760
+parameter H_SYNC = 16'd40;      //40   44 40
+parameter H_BP = 16'd220;       //220  148 220
 parameter V_ACTIVE = 16'd720;   //720  1080
 parameter V_FP  = 16'd5;        //5    4
 parameter V_SYNC  = 16'd5;      //5    5

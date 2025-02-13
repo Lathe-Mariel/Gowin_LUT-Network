@@ -5,7 +5,7 @@
 //Part Number: GW5A-LV25MG121NES
 //Device: GW5A-25
 //Device Version: A
-//Created Time: Thu Feb 13 02:20:58 2025
+//Created Time: Thu Feb 13 23:51:45 2025
 
 module Gowin_PLL_tmds (lock, clkout0, clkin);
 
@@ -58,14 +58,14 @@ PLLA PLLA_inst (
 defparam PLLA_inst.FCLKIN = "50";
 defparam PLLA_inst.IDIV_SEL = 1;
 defparam PLLA_inst.FBDIV_SEL = 1;
-defparam PLLA_inst.ODIV0_SEL = 4;
+defparam PLLA_inst.ODIV0_SEL = 3;
 defparam PLLA_inst.ODIV1_SEL = 8;
 defparam PLLA_inst.ODIV2_SEL = 8;
 defparam PLLA_inst.ODIV3_SEL = 8;
 defparam PLLA_inst.ODIV4_SEL = 8;
 defparam PLLA_inst.ODIV5_SEL = 8;
 defparam PLLA_inst.ODIV6_SEL = 8;
-defparam PLLA_inst.MDIV_SEL = 26;
+defparam PLLA_inst.MDIV_SEL = 18;
 defparam PLLA_inst.MDIV_FRAC_SEL = 0;
 defparam PLLA_inst.ODIV0_FRAC_SEL = 0;
 defparam PLLA_inst.CLKOUT0_EN = "TRUE";
