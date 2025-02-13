@@ -7,6 +7,7 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1123) : the clock "mem_clk"'s frequency does not match pll_memory/PLLA_inst/CLKOUT0's 
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -23,5 +24,5 @@ Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html"
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
-Tue Feb 11 23:28:23 2025
+Thu Feb 13 02:22:09 2025
 

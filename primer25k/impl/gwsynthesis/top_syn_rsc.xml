@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1642" Alu="51" Lut="539" T_Register="2696(1642)" T_Alu="233(51)" T_Lut="3418(539)" T_Bsram="5(0)">
+<Module name="top" Register="1636" Alu="51" Lut="539" T_Register="2690(1636)" T_Alu="233(51)" T_Lut="3418(539)" T_Bsram="5(0)">
     <SubModule name="pll_memory"/>
     <SubModule name="i2c_config_m0" Register="13" Lut="27" T_Register="124(13)" T_Alu="15(0)" T_Lut="770(27)">
         <SubModule name="i2c_master_top_m0" Register="17" Lut="597" T_Register="111(17)" T_Alu="15(0)" T_Lut="743(597)">

@@ -12,27 +12,27 @@
   <Part Number>: GW5A-LV25MG121NES
   <Device>: GW5A-25
   <Device Version>: A
-  <Created Time>:Tue Feb 11 23:28:23 2025
+  <Created Time>:Thu Feb 13 02:22:09 2025
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Placement Phase 1: CPU time = 0h 0m 0.428s, Elapsed time = 0h 0m 0.428s
+    Placement Phase 1: CPU time = 0h 0m 0.463s, Elapsed time = 0h 0m 0.463s
     Placement Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Placement Phase 3: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
     Total Placement: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
-    Routing Phase 1: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
-    Routing Phase 2: CPU time = 0h 0m 0.211s, Elapsed time = 0h 0m 0.212s
+    Routing Phase 0: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
+    Routing Phase 1: CPU time = 0h 0m 18s, Elapsed time = 0h 0m 18s
+    Routing Phase 2: CPU time = 0h 0m 0.231s, Elapsed time = 0h 0m 0.231s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+    Total Routing: CPU time = 0h 0m 18s, Elapsed time = 0h 0m 18s
  Generate output files:
     CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 
- Total Time and Memory Usage: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s, Peak memory usage = 639MB
+ Total Time and Memory Usage: CPU time = 0h 0m 36s, Elapsed time = 0h 0m 36s, Peak memory usage = 599MB
 
 
 3. Resource Usage Summary
@@ -43,12 +43,12 @@
   Logic                       | 3648/23040  16%
     --LUT,ALU,ROM16           | 3648(3401 LUT, 247 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 2696/23280  12%
+  Register                    | 2690/23280  12%
     --Logic Register as Latch | 0/23040  0%
-    --Logic Register as FF    | 2659/23040  12%
+    --Logic Register as FF    | 2653/23040  12%
     --I/O Register as Latch   | 0/240  0%
     --I/O Register as FF      | 37/240  16%
-  CLS                         | 3138/11520  28%
+  CLS                         | 3128/11520  28%
   I/O Port                    | 66
   I/O Buf                     | 62
     --Input Buf               | 13
@@ -96,7 +96,7 @@
   Global Clock  | Usage       
   -------------------------------
   PRIMARY       | 7/8(88%)
-  LW            | 8/8(100%)
+  LW            | 7/8(88%)
   GCLK_PIN      | 24/30(80%)
   PLL           | 2/6(34%)
   DDRDLL        | 0/4(0%)
@@ -116,13 +116,12 @@
   memory_clk45   | PRIMARY        |  TR TL BR BL
   cmos_16bit_clk | PRIMARY        |  TR TL BR BL
   video_clk      | PRIMARY        |  TR TL BR BL
-  Pout_vs_dn[6]  | PRIMARY        |  TR BR
+  Pout_vs_dn[4]  | PRIMARY        |  TR BR
   rst_d          | LW             |  -
   n7180_4        | LW             |  -
   hdmi4_rst_n    | LW             |  -
   prev2_vsync    | LW             |  -
   rst_n_6        | LW             |  -
-  frameBuffer_SDRAM/vfb_sdram_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r[1]| LW             |  -
   frameBuffer_SDRAM/vfb_sdram_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_r[1]| LW             |  -
   sdram_controller0/O_sdrc_init_done_d| LW             |  -
   serial_clk     | HCLK           |  -
