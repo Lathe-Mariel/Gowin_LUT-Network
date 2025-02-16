@@ -2,21 +2,14 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="cmos_16bit_clk" trig_type="0" storage_depth="32768" window_num="1" capture_amount="32768" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+    <AoCore index="0" sample_clock="memory_clk45" trig_type="0" storage_depth="32768" window_num="1" capture_amount="32768" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
-            <Signal capture_enable="true">cmos_vsync</Signal>
-            <Signal capture_enable="true">cmos_href</Signal>
-            <Signal capture_enable="true">off0_syn_de</Signal>
             <Signal capture_enable="true">cmos_16bit_wr</Signal>
             <Signal capture_enable="true">camera_de</Signal>
-            <Signal capture_enable="true">memory_clk</Signal>
-            <Signal capture_enable="true">memory_clk45</Signal>
-            <Signal capture_enable="true">cmd_ready</Signal>
-            <Bus capture_enable="true" name="sdram_controller0/I_sdrc_dqm[1:0]">
-                <Signal>sdram_controller0/I_sdrc_dqm[1]</Signal>
-                <Signal>sdram_controller0/I_sdrc_dqm[0]</Signal>
-            </Bus>
-            <Signal capture_enable="true">frameBuffer_SDRAM/I_sdrc_init_done</Signal>
+            <Signal capture_enable="true">sdrc_wr_n</Signal>
+            <Signal capture_enable="true">sdrc_rd_n</Signal>
+            <Signal capture_enable="true">sdram_controller0/O_sdrc_busy_n</Signal>
+            <Signal capture_enable="true">sdram_controller0/O_sdrc_rd_valid</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -62,5 +55,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0010110001101101</GAO_ID>
+    <GAO_ID>1001001001001111</GAO_ID>
 </GAO_CONFIG>

@@ -57,13 +57,12 @@ wire                   sdrc_busy_n        ;
 wire[2:0]              cmd                ;
 wire                   cmd_en             ;
 wire[7:0]              sdrc_data_len      ;
-wire[22:0]             sdrc_addr          ;
+wire[20:0]             sdrc_addr          ;
 wire                   wr_data_rdy        ;
 wire                   sdrc_wr_n         ;//
 wire                   wr_data_end        ;//
 //wire[DATA_WIDTH-1:0]   wr_data            ;   
 wire[15:0]   wr_data;  
-wire[DATA_WIDTH/8-1:0] wr_data_mask       ;   
 wire                   sdrc_rd_valid;
 wire                   rd_data_end        ;//unused 
 //wire[DATA_WIDTH-1:0]   rd_data            ;   
@@ -87,8 +86,6 @@ assign rst_n = ~rst;
 //
 //=========================================================
 //SRAM parameters
-parameter ADDR_WIDTH          = `DEF_ADDR_WIDTH;    //存储单元是byte，总容量=2^27*16bit = 2Gbit,增加1位rank地址，{rank[0],bank[2:0],row[13:0],cloumn[9:0]}
-parameter DATA_WIDTH          = `DEF_SRAM_DATA_WIDTH;   //与生成DDR3IP有关，此ddr3 2Gbit, x16， 时钟比例1:4 ，则固定128bit
 parameter WR_VIDEO_WIDTH      = `DEF_WR_VIDEO_WIDTH;  
 parameter RD_VIDEO_WIDTH      = `DEF_RD_VIDEO_WIDTH;  
 
@@ -425,7 +422,7 @@ SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
 		.I_sdrc_power_down(1'b0  ),                 // I_sdrc_power_down 低消費電力制御(1:有効, 0:無効)
 		.I_sdrc_wr_n(sdrc_wr_n  ),                 // I_sdrc_wr_n 書込イネーブル
 		.I_sdrc_rd_n(sdrc_rd_n   ),                 // I_sdrc_rd_n 読取イネーブル
-		.I_sdrc_addr(sdrc_addr        ),                 // [22:0] I_sdrc_addr アドレス
+		.I_sdrc_addr({2'b00,sdrc_addr}  ),                 // [22:0] I_sdrc_addr アドレス
 		.I_sdrc_data_len(sdrc_data_len),         // [7:0] I_sdrc_data_len 読み書きデータ長
 		.I_sdrc_dqm(sdrc_dqm     ),                 // [1:0] I_sdrc_dqm データマスク制御
 		.I_sdrc_data(wr_data     ),                 // [15:0] I_sdrc_data 書込データ

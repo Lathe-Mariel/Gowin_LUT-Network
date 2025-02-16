@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="SDRAM_controller_top_SIP" Register="356" Alu="52" Lut="416" Bsram="1" T_Register="356(356)" T_Alu="52(52)" T_Lut="416(416)" T_Bsram="1(1)"/>
+<Module name="SDRAM_controller_top_SIP" Register="351" Alu="51" Lut="401" Bsram="1" T_Register="351(351)" T_Alu="51(51)" T_Lut="401(401)" T_Bsram="1(1)"/>

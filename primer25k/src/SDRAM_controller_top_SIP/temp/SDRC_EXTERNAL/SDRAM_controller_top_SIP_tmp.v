@@ -5,7 +5,7 @@
 //Part Number: GW5A-LV25MG121NES
 //Device: GW5A-25
 //Device Version: A
-//Created Time: Tue Feb 11 23:11:50 2025
+//Created Time: Mon Feb 17 02:11:56 2025
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
@@ -19,7 +19,7 @@
 		.O_sdram_wen_n(O_sdram_wen_n_o), //output O_sdram_wen_n
 		.O_sdram_dqm(O_sdram_dqm_o), //output [1:0] O_sdram_dqm
 		.O_sdram_addr(O_sdram_addr_o), //output [12:0] O_sdram_addr
-		.O_sdram_ba(O_sdram_ba_o), //output [1:0] O_sdram_ba
+		.O_sdram_ba(O_sdram_ba_o), //output [0:0] O_sdram_ba
 		.IO_sdram_dq(IO_sdram_dq_io), //inout [15:0] IO_sdram_dq
 		.I_sdrc_rst_n(I_sdrc_rst_n_i), //input I_sdrc_rst_n
 		.I_sdrc_clk(I_sdrc_clk_i), //input I_sdrc_clk
@@ -28,7 +28,7 @@
 		.I_sdrc_power_down(I_sdrc_power_down_i), //input I_sdrc_power_down
 		.I_sdrc_wr_n(I_sdrc_wr_n_i), //input I_sdrc_wr_n
 		.I_sdrc_rd_n(I_sdrc_rd_n_i), //input I_sdrc_rd_n
-		.I_sdrc_addr(I_sdrc_addr_i), //input [22:0] I_sdrc_addr
+		.I_sdrc_addr(I_sdrc_addr_i), //input [21:0] I_sdrc_addr
 		.I_sdrc_data_len(I_sdrc_data_len_i), //input [7:0] I_sdrc_data_len
 		.I_sdrc_dqm(I_sdrc_dqm_i), //input [1:0] I_sdrc_dqm
 		.I_sdrc_data(I_sdrc_data_i), //input [15:0] I_sdrc_data

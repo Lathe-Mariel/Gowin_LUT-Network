@@ -7,7 +7,7 @@ type=sdrc_ext
 version=3.0
 
 [Config]
-BANK_WIDTH=1
+BANK_WIDTH=0
 CLK_PERIOD=10
 CL_PERIOD=1
 COL_WIDTH=0

@@ -66,6 +66,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/sdram_controller_hs/sdram_controller_hs.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/SDRAM_controller_top_SIP/SDRAM_controller_top_SIP.v",
    "Type" : "verilog"
   },

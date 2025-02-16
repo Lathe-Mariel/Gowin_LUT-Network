@@ -65,15 +65,17 @@ end
 //显示计数
 always@(posedge clk)
 begin
-	if(h_cnt >= H_FP + H_SYNC + H_BP)//horizontal video active
-		active_x <= h_cnt - (H_FP[11:0] + H_SYNC[11:0] + H_BP[11:0]);
+//	if(h_cnt >= H_FP + H_SYNC + H_BP)//horizontal video active
+	if(h_cnt >= H_FP + H_SYNC )//horizontal video active
+		active_x <= h_cnt - (H_FP[11:0] + H_SYNC[11:0] );
 	else
 		active_x <= active_x;
 end
 always@(posedge clk)
 begin	
-	if(v_cnt >= V_FP + V_SYNC + V_BP)//horizontal video active
-		active_y <= v_cnt - (V_FP[11:0] + V_SYNC[11:0] + V_BP[11:0]);
+//	if(v_cnt >= V_FP + V_SYNC + V_BP)//horizontal video active
+	if(v_cnt >= V_FP + V_SYNC )//horizontal video active
+		active_y <= v_cnt - (V_FP[11:0] + V_SYNC[11:0] );
 	else
 		active_y <= active_y;
 end

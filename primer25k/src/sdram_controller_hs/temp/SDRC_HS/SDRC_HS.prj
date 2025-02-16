@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25A" package="MBGA121N" speed="1" partNumber="GW5A-LV25MG121NES"/>
+    <FileList>
+        <File path="H:/Gowin/Gowin_V1.9.9.01_x64/IDE/ipcore/SDRC_HS/data/SDRAM_Controller_HS_Top.v" type="verilog"/>
+        <File path="H:/Gowin/Gowin_V1.9.9.01_x64/IDE/ipcore/SDRC_HS/data/sdrc_hs_top.vp" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="include_path" value="H:/Gowin/Gowin_V1.9.9.01_x64/IDE/ipcore/SDRC_HS/data"/>
+        <Option type="include_path" value="H:/git/TangPrimer20K_LUT-Network/primer25k/src/sdram_controller_hs/temp/SDRC_HS"/>
+        <Option type="output_file" value="sdram_controller_hs.vg"/>
+        <Option type="output_template" value="sdram_controller_hs_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>
