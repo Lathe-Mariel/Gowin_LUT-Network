@@ -4,7 +4,7 @@
 -cst H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
 -cfg H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
 -sdc H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
--gao_crc 1001001001001111
+-gao_crc 1010111001010001
 -bit
 -tr
 -ph

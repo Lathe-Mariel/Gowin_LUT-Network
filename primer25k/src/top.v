@@ -1,6 +1,7 @@
 module top(
 	input                       clk,
 	input                       rst,
+    input                       sw1,
 	inout                       cmos_scl,          //cmos i2c clock
 	inout                       cmos_sda,          //cmos i2c data
 	input                       cmos_vsync,        //cmos vsync
@@ -304,13 +305,11 @@ logic sdrc_rd_n;
 	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(
 		.I_rst_n(sdrc_init_done), //input I_rst_n
 		.I_dma_clk(memory_clk45   ), //input I_dma_clk
-`ifdef USE_THREE_FRAME_BUFFER
-		.I_wr_halt(1'd0           ), //input [0:0] I_wr_halt
-		.I_rd_halt(1'd0           ), //input [0:0] I_rd_halt
-`endif
+		.I_wr_halt(~sw1           ), //input [0:0] I_wr_halt
+		.I_rd_halt(~sw1           ), //input [0:0] I_rd_halt
 		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
 		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
-		.I_vin0_de(cmos_16bit_wr  ), //input I_vin0_de
+		.I_vin0_de(cmos_16bit_wr & ~sw1 ), //input I_vin0_de
 		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
 		.O_vin0_fifo_full(        ), //output O_vin0_fifo_full
 

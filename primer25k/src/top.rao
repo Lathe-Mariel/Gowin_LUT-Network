@@ -10,6 +10,8 @@
             <Signal capture_enable="true">sdrc_rd_n</Signal>
             <Signal capture_enable="true">sdram_controller0/O_sdrc_busy_n</Signal>
             <Signal capture_enable="true">sdram_controller0/O_sdrc_rd_valid</Signal>
+            <Signal capture_enable="true">frameBuffer_SDRAM/O_vout0_fifo_empty</Signal>
+            <Signal capture_enable="true">frameBuffer_SDRAM/O_vin0_fifo_full</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -55,5 +57,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1001001001001111</GAO_ID>
+    <GAO_ID>1010111001010001</GAO_ID>
 </GAO_CONFIG>
