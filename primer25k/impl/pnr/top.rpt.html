@@ -37,7 +37,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <ul>
 <li><a href="#Resource_Usage_Summary" style=" font-size: 14px;">Resource Usage Summary</a></li>
 <li><a href="#I/O_Bank_Usage_Summary" style=" font-size: 14px;">I/O Bank Usage Summary</a></li>
-<li><a href="#Global_Clock_Usage_Summary" style=" font-size: 14px;">Global Clock Usage Summary</a></li>
+<li><a href="#Global_Clock_Usage_Summary" style=" font-size: 14px;">Clock Resource Usage Summary</a></li>
 <li><a href="#Global_Clock_Signals" style=" font-size: 14px;">Global Clock Signals</a></li>
 <li><a href="#Pinout_by_Port_Name" style=" font-size: 14px;">Pinout by Port Name</a></li>
 <li><a href="#All_Package_Pins" style=" font-size: 14px;">All Package Pins</a></li>
@@ -55,19 +55,19 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\primer25k\src\top.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraints File</td>
-<td>H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc</td>
+<td>C:\Git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc</td>
 </tr>
 <tr>
 <td class="label">Tool Version</td>
-<td>V1.9.9.01 (64-bit)</td>
+<td>V1.9.10.03 (64-bit)</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Feb 18 00:45:16 2025
+<td>Fri Feb 21 20:37:26 2025
 </td>
 </tr>
 <tr>
@@ -97,24 +97,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-   Placement Phase 1: CPU time = 0h 0m 0.45s, Elapsed time = 0h 0m 0.451s
-   Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-   Placement Phase 3: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
-   Total Placement: CPU time = 0h 0m 21s, Elapsed time = 0h 0m 21s
+   Placement Phase 0: CPU time = 0h 0m 0.597s, Elapsed time = 0h 0m 0.598s
+   Placement Phase 1: CPU time = 0h 0m 0.184s, Elapsed time = 0h 0m 0.184s
+   Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.003s, Elapsed time = 0h 0m 0.003s
-   Routing Phase 1: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
-   Routing Phase 2: CPU time = 0h 0m 0.231s, Elapsed time = 0h 0m 0.231s
+   Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
+   Routing Phase 1: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+   Routing Phase 2: CPU time = 0h 0m 0.07s, Elapsed time = 0h 0m 0.07s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
+   Total Routing: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 Generate output files:
-   CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s, Peak memory usage = 540MB</td>
+<td>CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 540MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>4161/23040</td>
+<td>4201/23040</td>
 <td>19%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>4161(3890 LUT, 271 ALU, 0 ROM16)</td>
+<td>4201(3930 LUT, 271 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>3015/23280</td>
+<td>3017/23280</td>
 <td>13%</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>2979/23040</td>
+<td>2981/23040</td>
 <td>13%</td>
 </tr>
 <tr>
@@ -169,13 +169,13 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>3499/11520</td>
+<td>3508/11520</td>
 <td>31%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
-<td>71</td>
-<td>-</td>
+<td>71/86</td>
+<td>83%</td>
 </tr>
 <tr>
 <td class="label">I/O Buf</td>
@@ -207,34 +207,72 @@ Generate output files:
 <td>26 SDPB<br/>1 SDPX9B<br/></td>
 <td>49%</td>
 </tr>
+</table>
+<h2><a name="I/O_Bank_Usage_Summary">I/O Bank Usage Summary:</a></h2>
+<table class="summary_table">
 <tr>
-<td class="label">DSP</td>
-<td>0</td><td>0%</td>
+<td class="label"><b>I/O Bank</b></td>
+<td><b>Usage</b></td><td><b>Utilization</b></td>
 </tr>
 <tr>
-<td class="label">PLL</td>
-<td>2/6</td>
-<td>34%</td>
+<td class="label">bank 0</td>
+<td>6/6</td><td>100%</td>
 </tr>
 <tr>
-<td class="label">DDRDLL</td>
-<td>0/4</td>
-<td>0%</td>
+<td class="label">bank 1</td>
+<td>10/10</td><td>100%</td>
 </tr>
 <tr>
-<td class="label">DCS</td>
-<td>0/8</td>
-<td>0%</td>
+<td class="label">bank 2</td>
+<td>12/12</td><td>100%</td>
 </tr>
 <tr>
-<td class="label">DQCE</td>
-<td>0/40</td>
-<td>0%</td>
+<td class="label">bank 3</td>
+<td>4/4</td><td>100%</td>
 </tr>
 <tr>
-<td class="label">OSC</td>
-<td>0/1</td>
-<td>0%</td>
+<td class="label">bank 4</td>
+<td>1/11</td><td>10%</td>
+</tr>
+<tr>
+<td class="label">bank 5</td>
+<td>8/13</td><td>62%</td>
+</tr>
+<tr>
+<td class="label">bank 6</td>
+<td>10/10</td><td>100%</td>
+</tr>
+<tr>
+<td class="label">bank 7</td>
+<td>16/16</td><td>100%</td>
+</tr>
+<tr>
+<td class="label">bank 10</td>
+<td>4/4</td><td>100%</td>
+</tr>
+</table>
+<br/>
+<h2><a name="Global_Clock_Usage_Summary">Clock Resource Usage Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Clock Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">PRIMARY</td>
+<td>8/8</td>
+<td>100%</td>
+</tr>
+<tr>
+<td class="label">LW</td>
+<td>8/8</td>
+<td>100%</td>
+</tr>
+<tr>
+<td class="label">GCLK_PIN</td>
+<td>27/30</td>
+<td>90%</td>
 </tr>
 <tr>
 <td class="label">CLKDIV</td>
@@ -242,98 +280,9 @@ Generate output files:
 <td>7%</td>
 </tr>
 <tr>
-<td class="label">DLLDLY</td>
-<td>0/8</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DQS</td>
-<td>0/4</td>
-<td>0%</td>
-</tr>
-<tr>
-<td class="label">DHCEN</td>
-<td>0/16</td>
-<td>0%</td>
-</tr>
-</table>
-<h2><a name="I/O_Bank_Usage_Summary">I/O Bank Usage Summary:</a></h2>
-<table class="summary_table">
-<tr>
-<td class="label"><b>I/O Bank</b></td>
-<td><b>Usage</b></td>
-</tr>
-<tr>
-<td class="label">bank 0</td>
-<td>6/6(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 1</td>
-<td>10/10(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 2</td>
-<td>12/12(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 3</td>
-<td>4/4(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 4</td>
-<td>1/11(9%)</td>
-</tr>
-<tr>
-<td class="label">bank 5</td>
-<td>8/13(61%)</td>
-</tr>
-<tr>
-<td class="label">bank 6</td>
-<td>10/10(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 7</td>
-<td>16/16(100%)</td>
-</tr>
-<tr>
-<td class="label">bank 10</td>
-<td>4/4(100%)</td>
-</tr>
-</table>
-<br/>
-<h2><a name="Global_Clock_Usage_Summary">Global Clock Usage Summary:</a></h2>
-<table class="summary_table">
-<tr>
-<td class="label"><b>Global Clock</b></td>
-<td><b>Usage</b></td>
-</tr>
-<tr>
-<td class="label">PRIMARY</td>
-<td>7/8(88%)</td>
-</tr>
-<tr>
-<td class="label">LW</td>
-<td>8/8(100%)</td>
-</tr>
-<tr>
-<td class="label">GCLK_PIN</td>
-<td>25/30(84%)</td>
-</tr>
-<tr>
-<td class="label">PLL</td>
-<td>2/6(34%)</td>
-</tr>
-<tr>
-<td class="label">DDRDLL</td>
-<td>0/4(0%)</td>
-</tr>
-<tr>
-<td class="label">CLKDIV</td>
-<td>1/16(7%)</td>
-</tr>
-<tr>
-<td class="label">DLLDLY</td>
-<td>0/8(0%)</td>
+<td class="label">PLLA</td>
+<td>2/6</td>
+<td>34%</td>
 </tr>
 </table>
 <br/>
@@ -345,9 +294,14 @@ Generate output files:
 <td><b>Location</b></td>
 </tr>
 <tr>
+<td class="label">clk_d</td>
+<td>PRIMARY</td>
+<td> TL BR BL</td>
+</tr>
+<tr>
 <td class="label">cmos_pclk_d</td>
 <td>PRIMARY</td>
-<td> TR</td>
+<td> TL</td>
 </tr>
 <tr>
 <td class="label">memory_clk</td>
@@ -372,20 +326,20 @@ Generate output files:
 <tr>
 <td class="label">video_clk</td>
 <td>PRIMARY</td>
-<td> TL BR BL</td>
+<td> TR TL BR</td>
 </tr>
 <tr>
 <td class="label">gw_gao_inst_0/control0[0]</td>
 <td>PRIMARY</td>
-<td> TR TL BR</td>
+<td> TR BR BL</td>
 </tr>
 <tr>
-<td class="label">hdmi4_rst_n</td>
+<td class="label">cmos_vsync_d</td>
 <td>LW</td>
 <td> -</td>
 </tr>
 <tr>
-<td class="label">prev2_vsync</td>
+<td class="label">hdmi4_rst_n</td>
 <td>LW</td>
 <td> -</td>
 </tr>
@@ -446,10 +400,11 @@ Generate output files:
 <td><b>Diff Resistor</b></td>
 <td><b>BankVccio</b></td>
 <td><b>Pull Strength</b></td>
+<td><b>Ctle</b></td>
 </tr>
 <tr>
 <td class="label">clk</td>
-<td></td>
+<td>-</td>
 <td>E2/5</td>
 <td>Y</td>
 <td>in</td>
@@ -465,10 +420,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">rst</td>
-<td></td>
+<td>-</td>
 <td>H11/7</td>
 <td>Y</td>
 <td>in</td>
@@ -484,10 +440,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">sw1</td>
-<td></td>
+<td>-</td>
 <td>H10/7</td>
 <td>Y</td>
 <td>in</td>
@@ -503,10 +460,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_vsync</td>
-<td></td>
+<td>-</td>
 <td>E10/6</td>
 <td>Y</td>
 <td>in</td>
@@ -522,10 +480,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_href</td>
-<td></td>
+<td>-</td>
 <td>L11/7</td>
 <td>Y</td>
 <td>in</td>
@@ -541,10 +500,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_pclk</td>
-<td></td>
+<td>-</td>
 <td>G7/1</td>
 <td>Y</td>
 <td>in</td>
@@ -560,10 +520,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[0]</td>
-<td></td>
+<td>-</td>
 <td>H8/1</td>
 <td>Y</td>
 <td>in</td>
@@ -579,10 +540,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[1]</td>
-<td></td>
+<td>-</td>
 <td>H5/1</td>
 <td>Y</td>
 <td>in</td>
@@ -598,10 +560,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[2]</td>
-<td></td>
+<td>-</td>
 <td>J5/1</td>
 <td>Y</td>
 <td>in</td>
@@ -617,10 +580,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[3]</td>
-<td></td>
+<td>-</td>
 <td>H7/1</td>
 <td>Y</td>
 <td>in</td>
@@ -636,10 +600,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[4]</td>
-<td></td>
+<td>-</td>
 <td>G8/1</td>
 <td>Y</td>
 <td>in</td>
@@ -655,10 +620,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[5]</td>
-<td></td>
+<td>-</td>
 <td>G5/1</td>
 <td>Y</td>
 <td>in</td>
@@ -674,10 +640,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[6]</td>
-<td></td>
+<td>-</td>
 <td>F5/1</td>
 <td>Y</td>
 <td>in</td>
@@ -693,10 +660,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_db[7]</td>
-<td></td>
+<td>-</td>
 <td>L5/1</td>
 <td>Y</td>
 <td>in</td>
@@ -712,10 +680,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">tms_pad_i</td>
-<td></td>
+<td>-</td>
 <td>B1/10</td>
 <td>N</td>
 <td>in</td>
@@ -731,10 +700,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">tck_pad_i</td>
-<td></td>
+<td>-</td>
 <td>C1/10</td>
 <td>N</td>
 <td>in</td>
@@ -750,10 +720,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">tdi_pad_i</td>
-<td></td>
+<td>-</td>
 <td>A3/10</td>
 <td>N</td>
 <td>in</td>
@@ -769,10 +740,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_xclk</td>
-<td></td>
+<td>-</td>
 <td>K5/1</td>
 <td>Y</td>
 <td>out</td>
@@ -788,10 +760,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_rst_n</td>
-<td></td>
+<td>-</td>
 <td>E11/6</td>
 <td>Y</td>
 <td>out</td>
@@ -807,10 +780,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_pwdn</td>
-<td></td>
+<td>-</td>
 <td>K11/7</td>
 <td>Y</td>
 <td>out</td>
@@ -826,10 +800,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">led</td>
-<td></td>
+<td>-</td>
 <td>L6/7</td>
 <td>Y</td>
 <td>out</td>
@@ -845,10 +820,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_clk</td>
-<td></td>
+<td>-</td>
 <td>E3/4</td>
 <td>Y</td>
 <td>out</td>
@@ -864,10 +840,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_cke</td>
-<td></td>
+<td>-</td>
 <td>K6/7</td>
 <td>N</td>
 <td>out</td>
@@ -883,10 +860,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_cs_n</td>
-<td></td>
+<td>-</td>
 <td>K9/0</td>
 <td>Y</td>
 <td>out</td>
@@ -902,10 +880,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_cas_n</td>
-<td></td>
+<td>-</td>
 <td>K10/7</td>
 <td>Y</td>
 <td>out</td>
@@ -921,10 +900,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_ras_n</td>
-<td></td>
+<td>-</td>
 <td>L10/7</td>
 <td>Y</td>
 <td>out</td>
@@ -940,10 +920,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_wen_n</td>
-<td></td>
+<td>-</td>
 <td>J7/7</td>
 <td>Y</td>
 <td>out</td>
@@ -959,10 +940,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[0]</td>
-<td></td>
+<td>-</td>
 <td>F6/0</td>
 <td>Y</td>
 <td>out</td>
@@ -978,10 +960,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[1]</td>
-<td></td>
+<td>-</td>
 <td>F7/0</td>
 <td>Y</td>
 <td>out</td>
@@ -997,10 +980,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[2]</td>
-<td></td>
+<td>-</td>
 <td>J10/7</td>
 <td>Y</td>
 <td>out</td>
@@ -1016,10 +1000,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[3]</td>
-<td></td>
+<td>-</td>
 <td>J11/7</td>
 <td>Y</td>
 <td>out</td>
@@ -1035,10 +1020,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[4]</td>
-<td></td>
+<td>-</td>
 <td>K7/7</td>
 <td>Y</td>
 <td>out</td>
@@ -1054,10 +1040,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[5]</td>
-<td></td>
+<td>-</td>
 <td>H2/3</td>
 <td>Y</td>
 <td>out</td>
@@ -1073,10 +1060,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[6]</td>
-<td></td>
+<td>-</td>
 <td>H1/3</td>
 <td>Y</td>
 <td>out</td>
@@ -1092,10 +1080,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[7]</td>
-<td></td>
+<td>-</td>
 <td>H4/3</td>
 <td>Y</td>
 <td>out</td>
@@ -1111,10 +1100,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[8]</td>
-<td></td>
+<td>-</td>
 <td>G4/3</td>
 <td>Y</td>
 <td>out</td>
@@ -1130,10 +1120,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[9]</td>
-<td></td>
+<td>-</td>
 <td>J2/2</td>
 <td>Y</td>
 <td>out</td>
@@ -1149,10 +1140,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[10]</td>
-<td></td>
+<td>-</td>
 <td>J8/0</td>
 <td>Y</td>
 <td>out</td>
@@ -1168,10 +1160,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[11]</td>
-<td></td>
+<td>-</td>
 <td>J1/2</td>
 <td>Y</td>
 <td>out</td>
@@ -1187,10 +1180,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_addr[12]</td>
-<td></td>
+<td>-</td>
 <td>D1/5</td>
 <td>Y</td>
 <td>out</td>
@@ -1206,10 +1200,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_ba[0]</td>
-<td></td>
+<td>-</td>
 <td>L9/0</td>
 <td>Y</td>
 <td>out</td>
@@ -1225,10 +1220,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_ba[1]</td>
-<td></td>
+<td>-</td>
 <td>K8/0</td>
 <td>Y</td>
 <td>out</td>
@@ -1244,10 +1240,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_dqm[0]</td>
-<td></td>
+<td>-</td>
 <td>L8/7</td>
 <td>Y</td>
 <td>out</td>
@@ -1263,10 +1260,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_sdram_dqm[1]</td>
-<td></td>
+<td>-</td>
 <td>L7/7</td>
 <td>Y</td>
 <td>out</td>
@@ -1282,6 +1280,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">O_tmds_clk_p</td>
@@ -1300,6 +1299,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -1319,6 +1319,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -1338,6 +1339,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -1357,11 +1359,12 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
 <td class="label">tdo_pad_o</td>
-<td></td>
+<td>-</td>
 <td>A2/10</td>
 <td>N</td>
 <td>out</td>
@@ -1377,10 +1380,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_scl</td>
-<td></td>
+<td>-</td>
 <td>A10/6</td>
 <td>Y</td>
 <td>io</td>
@@ -1396,10 +1400,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">cmos_sda</td>
-<td></td>
+<td>-</td>
 <td>A11/6</td>
 <td>Y</td>
 <td>io</td>
@@ -1415,10 +1420,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[0]</td>
-<td></td>
+<td>-</td>
 <td>K2/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1434,10 +1440,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[1]</td>
-<td></td>
+<td>-</td>
 <td>K1/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1453,10 +1460,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[2]</td>
-<td></td>
+<td>-</td>
 <td>L1/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1472,10 +1480,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[3]</td>
-<td></td>
+<td>-</td>
 <td>L2/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1491,10 +1500,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[4]</td>
-<td></td>
+<td>-</td>
 <td>K4/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1510,10 +1520,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[5]</td>
-<td></td>
+<td>-</td>
 <td>J4/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1529,10 +1540,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[6]</td>
-<td></td>
+<td>-</td>
 <td>G1/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1548,10 +1560,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[7]</td>
-<td></td>
+<td>-</td>
 <td>G2/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1567,10 +1580,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[8]</td>
-<td></td>
+<td>-</td>
 <td>E1/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1586,10 +1600,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[9]</td>
-<td></td>
+<td>-</td>
 <td>A1/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1605,10 +1620,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[10]</td>
-<td></td>
+<td>-</td>
 <td>F2/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1624,10 +1640,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[11]</td>
-<td></td>
+<td>-</td>
 <td>F1/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1643,10 +1660,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[12]</td>
-<td></td>
+<td>-</td>
 <td>B2/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1662,10 +1680,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[13]</td>
-<td></td>
+<td>-</td>
 <td>C2/5</td>
 <td>Y</td>
 <td>io</td>
@@ -1681,10 +1700,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[14]</td>
-<td></td>
+<td>-</td>
 <td>L4/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1700,10 +1720,11 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">IO_sdram_dq[15]</td>
-<td></td>
+<td>-</td>
 <td>L3/2</td>
 <td>Y</td>
 <td>io</td>
@@ -1719,6 +1740,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 </table>
 <br/>
@@ -1740,6 +1762,7 @@ Generate output files:
 <td><b>Diff Resistor</b></td>
 <td><b>Bank Vccio</b></td>
 <td><b>Pull Strength</b></td>
+<td><b>Ctle</b></td>
 </tr>
 <tr>
 <td class="label">J11/7</td>
@@ -1757,6 +1780,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J10/7</td>
@@ -1774,6 +1798,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H11/7</td>
@@ -1791,6 +1816,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H10/7</td>
@@ -1808,6 +1834,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G11/7</td>
@@ -1824,6 +1851,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -1841,6 +1869,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -1859,6 +1888,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L11/7</td>
@@ -1876,6 +1906,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L10/7</td>
@@ -1893,6 +1924,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K10/7</td>
@@ -1910,6 +1942,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L7/7</td>
@@ -1927,6 +1960,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L8/7</td>
@@ -1944,6 +1978,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K7/7</td>
@@ -1961,6 +1996,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J7/7</td>
@@ -1978,6 +2014,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L6/7</td>
@@ -1995,6 +2032,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K6/7</td>
@@ -2012,6 +2050,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L9/0</td>
@@ -2029,6 +2068,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K9/0</td>
@@ -2046,6 +2086,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J8/0</td>
@@ -2063,6 +2104,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K8/0</td>
@@ -2080,6 +2122,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">F7/0</td>
@@ -2097,6 +2140,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">F6/0</td>
@@ -2114,6 +2158,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H5/1</td>
@@ -2131,6 +2176,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J5/1</td>
@@ -2148,6 +2194,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L5/1</td>
@@ -2165,6 +2212,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K5/1</td>
@@ -2182,6 +2230,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H8/1</td>
@@ -2199,6 +2248,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H7/1</td>
@@ -2216,6 +2266,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G7/1</td>
@@ -2233,6 +2284,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G8/1</td>
@@ -2250,6 +2302,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">F5/1</td>
@@ -2267,6 +2320,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G5/1</td>
@@ -2284,6 +2338,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">D8/5</td>
@@ -2301,6 +2356,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">B2/5</td>
@@ -2318,6 +2374,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">C2/5</td>
@@ -2335,6 +2392,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A2_B8A/5</td>
@@ -2352,6 +2410,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">B1_B10A/5</td>
@@ -2369,6 +2428,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A3_B10B/5</td>
@@ -2386,6 +2446,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E2/5</td>
@@ -2403,6 +2464,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E1/5</td>
@@ -2420,6 +2482,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">C1_B14A/5</td>
@@ -2437,6 +2500,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">D1/5</td>
@@ -2454,6 +2518,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A1/5</td>
@@ -2471,6 +2536,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">F2/5</td>
@@ -2488,6 +2554,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">F1/5</td>
@@ -2505,6 +2572,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E8/4</td>
@@ -2522,6 +2590,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E6/4</td>
@@ -2539,6 +2608,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">D5/4</td>
@@ -2556,6 +2626,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E4/4</td>
@@ -2573,6 +2644,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">B3/4</td>
@@ -2590,6 +2662,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">C3/4</td>
@@ -2607,6 +2680,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E5/4</td>
@@ -2624,6 +2698,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">D6/4</td>
@@ -2641,6 +2716,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E3/4</td>
@@ -2658,6 +2734,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E7/4</td>
@@ -2675,6 +2752,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">D7/4</td>
@@ -2692,6 +2770,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G4/3</td>
@@ -2709,6 +2788,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H4/3</td>
@@ -2726,6 +2806,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H1/3</td>
@@ -2743,6 +2824,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">H2/3</td>
@@ -2760,6 +2842,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E11/6</td>
@@ -2777,6 +2860,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">E10/6</td>
@@ -2794,6 +2878,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">C11/6</td>
@@ -2810,6 +2895,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2827,6 +2913,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2844,6 +2931,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2861,6 +2949,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2878,6 +2967,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2895,6 +2985,7 @@ Generate output files:
 <td>OFF</td>
 <td>OFF</td>
 <td>3.3</td>
+<td>MEDIUM</td>
 <td>NONE</td>
 </tr>
 <tr>
@@ -2913,6 +3004,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A10/6</td>
@@ -2930,6 +3022,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">C1/10</td>
@@ -2947,6 +3040,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A3/10</td>
@@ -2964,6 +3058,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">B1/10</td>
@@ -2981,6 +3076,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">A2/10</td>
@@ -2998,6 +3094,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L2/2</td>
@@ -3015,6 +3112,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L1/2</td>
@@ -3032,6 +3130,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K1/2</td>
@@ -3049,6 +3148,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K2/2</td>
@@ -3066,6 +3166,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J4/2</td>
@@ -3083,6 +3184,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">K4/2</td>
@@ -3100,6 +3202,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G2/2</td>
@@ -3117,6 +3220,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">G1/2</td>
@@ -3134,6 +3238,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L4/2</td>
@@ -3151,6 +3256,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">L3/2</td>
@@ -3168,6 +3274,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J1/2</td>
@@ -3185,6 +3292,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 <tr>
 <td class="label">J2/2</td>
@@ -3202,6 +3310,7 @@ Generate output files:
 <td>OFF</td>
 <td>3.3</td>
 <td>MEDIUM</td>
+<td>NONE</td>
 </tr>
 </table>
 <br/>

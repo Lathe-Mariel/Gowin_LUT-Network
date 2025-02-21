@@ -254,6 +254,7 @@ logic cmos_16bit_clk_half;
 //输出
 wire camera_de;
 wire out_de;
+wire monitor_en;
 //wire [9:0] lcd_x,lcd_y;
 vga_timing vga_timing_m0(
     .clk (video_clk),
@@ -262,8 +263,18 @@ vga_timing vga_timing_m0(
     .hs(syn_off0_hs),
     .vs(syn_off0_vs),
     .de(out_de),
-    .rd(camera_de)
+    .rd(camera_de),
+    .monitor_en(monitor_en)
 );
+
+logic input_camera;
+    always@(negedge cmos_vsync)begin
+        if(monitor_en)begin
+            input_camera <= 1'b1;
+        end else begin
+            input_camera <= 1'b0;
+        end
+    end
 
 //输入测试图
 /*//--------------------------
@@ -309,8 +320,9 @@ logic sdrc_rd_n;
 		.I_rd_halt(~sw1           ), //input [0:0] I_rd_halt
 		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
 		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
-		.I_vin0_de(cmos_16bit_wr & ~sw1 ), //input I_vin0_de
-		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
+		.I_vin0_de(cmos_16bit_wr), //input I_vin0_de
+//		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
+		.I_vin0_data(input_camera   ), //input [15:0] I_vin0_data
 		.O_vin0_fifo_full(        ), //output O_vin0_fifo_full
 
 		.I_vout0_clk(video_clk    ), //input I_vout0_clk

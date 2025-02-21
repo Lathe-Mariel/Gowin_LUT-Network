@@ -4,6 +4,7 @@ module vga_timing(
 	output                hs,            //horizontal synchronization
 	output                vs,            //vertical synchronization
 	output                de,            //video valid
+    output reg            monitor_en,    // monitor enable
 
 	output reg [9:0] active_x,              //video x position 
 	output reg [9:0] active_y,             //video y position 
@@ -49,6 +50,14 @@ always@ (posedge clk)begin
     else begin
         rd <= (h_cnt > (H_BP + H_SYNC -2)) & (h_cnt < (H_BP + H_SYNC + RD_H -1)) & 
               (v_cnt > (V_BP + V_SYNC -2)) & (v_cnt < (V_BP + V_SYNC + RD_V -1));
+    end
+end
+
+always@ (posedge clk)begin
+    if(h_cnt > RD_V && h_cnt < (V_TOTAL - RD_V))begin
+        monitor_en <= 1;
+    end else begin
+        monitor_en <= 0;
     end
 end
 
