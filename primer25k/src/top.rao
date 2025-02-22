@@ -2,16 +2,15 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="memory_clk45" trig_type="0" storage_depth="32768" window_num="1" capture_amount="32768" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+    <AoCore index="0" sample_clock="cmos_16bit_clk" trig_type="0" storage_depth="65536" window_num="1" capture_amount="65536" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
             <Signal capture_enable="true">cmos_16bit_wr</Signal>
             <Signal capture_enable="true">camera_de</Signal>
-            <Signal capture_enable="true">sdrc_wr_n</Signal>
-            <Signal capture_enable="true">sdrc_rd_n</Signal>
-            <Signal capture_enable="true">sdram_controller0/O_sdrc_busy_n</Signal>
-            <Signal capture_enable="true">sdram_controller0/O_sdrc_rd_valid</Signal>
-            <Signal capture_enable="true">frameBuffer_SDRAM/O_vout0_fifo_empty</Signal>
-            <Signal capture_enable="true">frameBuffer_SDRAM/O_vin0_fifo_full</Signal>
+            <Signal capture_enable="true">input_camera</Signal>
+            <Signal capture_enable="true">monitor_en</Signal>
+            <Signal capture_enable="true">syn_off0_vs</Signal>
+            <Signal capture_enable="true">syn_off0_hs</Signal>
+            <Signal capture_enable="true">off0_syn_de</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -36,7 +35,7 @@
             <Trigger index="15"/>
         </Triggers>
         <MatchUnits>
-            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="0" enabled="1" match_type="1" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
             <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
             <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
             <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
@@ -57,5 +56,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1010111001010001</GAO_ID>
+    <GAO_ID>0001110100101010</GAO_ID>
 </GAO_CONFIG>

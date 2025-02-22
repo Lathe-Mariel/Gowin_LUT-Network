@@ -52,6 +52,7 @@ module top(
 wire                   memory_clk         ;
 wire                   memory_clk45;
 wire                   fb_clk;
+wire                   clk32_5;
 //wire                   dma_clk       	  ;
 wire                   DDR_pll_lock       ;
 wire                   sdrc_busy_n        ;
@@ -268,7 +269,7 @@ vga_timing vga_timing_m0(
 );
 
 logic input_camera;
-    always@(negedge cmos_vsync)begin
+    always_ff @(negedge cmos_vsync)begin
         if(monitor_en)begin
             input_camera <= 1'b1;
         end else begin
@@ -314,15 +315,14 @@ logic[1:0] sdrc_dqm;
 logic sdrc_rd_n;
 
 	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(
-		.I_rst_n(sdrc_init_done), //input I_rst_n
+		.I_rst_n(rst_n), //input I_rst_n
 		.I_dma_clk(memory_clk45   ), //input I_dma_clk
 		.I_wr_halt(~sw1           ), //input [0:0] I_wr_halt
 		.I_rd_halt(~sw1           ), //input [0:0] I_rd_halt
 		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
 		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
-		.I_vin0_de(cmos_16bit_wr), //input I_vin0_de
-//		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
-		.I_vin0_data(input_camera   ), //input [15:0] I_vin0_data
+		.I_vin0_de(cmos_16bit_wr & input_camera), //input I_vin0_de
+		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
 		.O_vin0_fifo_full(        ), //output O_vin0_fifo_full
 
 		.I_vout0_clk(video_clk    ), //input I_vout0_clk
@@ -581,6 +581,12 @@ Gowin_CLKDIV video_clk_gen(
         .calib(1'b1) //input calib
 );
 
+    Gowin_CLKDIV2 your_instance_name(
+        .clkout(clk32_5), //output clkout
+        .hclkin(video_clk), //input hclkin
+        .resetn(rst_n), //input resetn
+        .calib(1'b1) //input calib
+    );
 
 DVI_TX_Top DVI_TX_Top_inst
 (

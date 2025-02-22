@@ -12,6 +12,7 @@
         <File path="src/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
         <File path="src/fifo_hs/video_fifo.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_clkdiv/gowin_clkdiv.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv2.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/gowin_pll.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/gowin_pll_memory.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_pll/gowin_pll_tmds.v" type="file.verilog" enable="1"/>

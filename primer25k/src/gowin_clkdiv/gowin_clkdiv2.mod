@@ -1,0 +1,14 @@
+-series GW5A
+-device GW5A-25
+-device_version A
+-package MBGA121N
+-part_number GW5A-LV25MG121NES
+
+
+-mod_name Gowin_CLKDIV2
+-file_name gowin_clkdiv2
+-path H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_clkdiv/
+-type CLKDIV
+-file_type vlg
+-division_factor 2
+-calib true

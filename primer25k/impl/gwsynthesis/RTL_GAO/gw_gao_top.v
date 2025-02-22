@@ -1,14 +1,13 @@
 module gw_gao(
     cmos_16bit_wr,
     camera_de,
-    sdrc_wr_n,
-    sdrc_rd_n,
-    \sdram_controller0/O_sdrc_busy_n ,
-    \sdram_controller0/O_sdrc_rd_valid ,
-    \frameBuffer_SDRAM/O_vout0_fifo_empty ,
-    \frameBuffer_SDRAM/O_vin0_fifo_full ,
+    input_camera,
+    monitor_en,
+    syn_off0_vs,
+    syn_off0_hs,
+    off0_syn_de,
     cmos_vsync,
-    memory_clk45,
+    cmos_16bit_clk,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
@@ -17,14 +16,13 @@ module gw_gao(
 
 input cmos_16bit_wr;
 input camera_de;
-input sdrc_wr_n;
-input sdrc_rd_n;
-input \sdram_controller0/O_sdrc_busy_n ;
-input \sdram_controller0/O_sdrc_rd_valid ;
-input \frameBuffer_SDRAM/O_vout0_fifo_empty ;
-input \frameBuffer_SDRAM/O_vin0_fifo_full ;
+input input_camera;
+input monitor_en;
+input syn_off0_vs;
+input syn_off0_hs;
+input off0_syn_de;
 input cmos_vsync;
-input memory_clk45;
+input cmos_16bit_clk;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
@@ -32,14 +30,13 @@ output tdo_pad_o;
 
 wire cmos_16bit_wr;
 wire camera_de;
-wire sdrc_wr_n;
-wire sdrc_rd_n;
-wire \sdram_controller0/O_sdrc_busy_n ;
-wire \sdram_controller0/O_sdrc_rd_valid ;
-wire \frameBuffer_SDRAM/O_vout0_fifo_empty ;
-wire \frameBuffer_SDRAM/O_vin0_fifo_full ;
+wire input_camera;
+wire monitor_en;
+wire syn_off0_vs;
+wire syn_off0_hs;
+wire off0_syn_de;
 wire cmos_vsync;
-wire memory_clk45;
+wire cmos_16bit_clk;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -114,8 +111,8 @@ gw_con_top  u_icon_top(
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(cmos_vsync),
-    .data_i({cmos_16bit_wr,camera_de,sdrc_wr_n,sdrc_rd_n,\sdram_controller0/O_sdrc_busy_n ,\sdram_controller0/O_sdrc_rd_valid ,\frameBuffer_SDRAM/O_vout0_fifo_empty ,\frameBuffer_SDRAM/O_vin0_fifo_full }),
-    .clk_i(memory_clk45)
+    .data_i({cmos_16bit_wr,camera_de,input_camera,monitor_en,syn_off0_vs,syn_off0_hs,off0_syn_de}),
+    .clk_i(cmos_16bit_clk)
 );
 
 endmodule

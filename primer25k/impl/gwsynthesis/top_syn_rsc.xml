@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1637" Alu="51" Lut="541" T_Register="3017(1637)" T_Alu="254(51)" T_Lut="3949(541)" T_Bsram="27(0)">
- <SubModule name="pll_memory"/>
- <SubModule name="i2c_config_m0" Register="13" Lut="23" T_Register="124(13)" T_Alu="15(0)" T_Lut="812(23)">
-  <SubModule name="i2c_master_top_m0" Register="17" Lut="645" T_Register="111(17)" T_Alu="15(0)" T_Lut="789(645)">
-   <SubModule name="byte_controller" Register="23" Lut="51" T_Register="94(23)" T_Alu="15(0)" T_Lut="144(51)">
-    <SubModule name="bit_controller" Register="71" Alu="15" Lut="93" T_Register="71(71)" T_Alu="15(15)" T_Lut="93(93)"/>
-   </SubModule>
-  </SubModule>
- </SubModule>
- <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3" T_Register="29(29)" T_Lut="3(3)"/>
- <SubModule name="u_MnistLutSimple" T_Register="74(0)" T_Lut="954(0)">
-  <SubModule name="i_MnistLutSimple_sub0" T_Lut="5(0)">
-   <SubModule name="i_MnistLutSimple_sub0_base" Lut="5" T_Lut="5(5)"/>
-  </SubModule>
-  <SubModule name="i_MnistLutSimple_sub1" T_Lut="682(0)">
-   <SubModule name="i_MnistLutSimple_sub1_base" Lut="682" T_Lut="682(682)"/>
-  </SubModule>
-  <SubModule name="i_MnistLutSimple_sub2" T_Register="64(0)" T_Lut="64(0)">
-   <SubModule name="i_MnistLutSimple_sub2_base" Register="64" Lut="64" T_Register="64(64)" T_Lut="64(64)"/>
-  </SubModule>
-  <SubModule name="i_MnistLutSimple_sub4" T_Lut="193(0)">
-   <SubModule name="i_MnistLutSimple_sub4_base" Lut="193" T_Lut="193(193)"/>
-  </SubModule>
-  <SubModule name="i_MnistLutSimple_sub5" T_Register="10(0)" T_Lut="10(0)">
-   <SubModule name="i_MnistLutSimple_sub5_base" Register="10" Lut="10" T_Register="10(10)" T_Lut="10(10)"/>
-  </SubModule>
- </SubModule>
- <SubModule name="vga_timing_m0" Register="29" Lut="73" T_Register="29(29)" T_Lut="73(73)"/>
- <SubModule name="frameBuffer_SDRAM" Register="390" Alu="50" Lut="462" Bsram="8" T_Register="390(390)" T_Alu="50(50)" T_Lut="462(462)" T_Bsram="8(8)"/>
- <SubModule name="sdram_controller0" Register="350" Alu="51" Lut="400" Bsram="1" T_Register="350(350)" T_Alu="51(51)" T_Lut="400(400)" T_Bsram="1(1)"/>
- <SubModule name="pll_tmds"/>
- <SubModule name="video_clk_gen"/>
- <SubModule name="DVI_TX_Top_inst" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
- <SubModule name="gw_gao_inst_0" Register="311" Alu="18" Lut="475" Bsram="18" T_Register="311(311)" T_Alu="18(18)" T_Lut="475(475)" T_Bsram="18(18)"/>
+<Module name="top" Register="1637" Alu="51" Lut="541" T_Register="3005(1637)" T_Alu="267(51)" T_Lut="3964(541)" T_Bsram="37(0)">
+    <SubModule name="pll_memory"/>
+    <SubModule name="i2c_config_m0" Register="13" Lut="22" T_Register="124(13)" T_Alu="15(0)" T_Lut="795(22)">
+        <SubModule name="i2c_master_top_m0" Register="17" Lut="629" T_Register="111(17)" T_Alu="15(0)" T_Lut="773(629)">
+            <SubModule name="byte_controller" Register="23" Lut="50" T_Register="94(23)" T_Alu="15(0)" T_Lut="144(50)">
+                <SubModule name="bit_controller" Register="71" Alu="15" Lut="94" T_Register="71(71)" T_Alu="15(15)" T_Lut="94(94)"/>
+            </SubModule>
+        </SubModule>
+    </SubModule>
+    <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3" T_Register="29(29)" T_Lut="3(3)"/>
+    <SubModule name="u_MnistLutSimple" T_Register="74(0)" T_Lut="942(0)">
+        <SubModule name="i_MnistLutSimple_sub1" T_Lut="33(0)">
+            <SubModule name="i_MnistLutSimple_sub1_base" Lut="33" T_Lut="33(33)"/>
+        </SubModule>
+        <SubModule name="i_MnistLutSimple_sub2" T_Register="64(0)" T_Lut="706(0)">
+            <SubModule name="i_MnistLutSimple_sub2_base" Register="64" Lut="706" T_Register="64(64)" T_Lut="706(706)"/>
+        </SubModule>
+        <SubModule name="i_MnistLutSimple_sub5" T_Register="10(0)" T_Lut="203(0)">
+            <SubModule name="i_MnistLutSimple_sub5_base" Register="10" Lut="203" T_Register="10(10)" T_Lut="203(203)"/>
+        </SubModule>
+    </SubModule>
+    <SubModule name="vga_timing_m0" Register="29" Lut="75" T_Register="29(29)" T_Lut="75(75)"/>
+    <SubModule name="frameBuffer_SDRAM" Register="371" Alu="46" Lut="451" Bsram="4" T_Register="371(371)" T_Alu="46(46)" T_Lut="451(451)" T_Bsram="4(4)"/>
+    <SubModule name="sdram_controller0" Register="350" Alu="51" Lut="411" Bsram="1" T_Register="350(350)" T_Alu="51(51)" T_Lut="411(411)" T_Bsram="1(1)"/>
+    <SubModule name="pll_tmds"/>
+    <SubModule name="video_clk_gen"/>
+    <SubModule name="DVI_TX_Top_inst" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
+    <SubModule name="gw_gao_inst_0" Register="318" Alu="35" Lut="517" Bsram="32" T_Register="318(318)" T_Alu="35(35)" T_Lut="517(517)" T_Bsram="32(32)"/>
 </Module>

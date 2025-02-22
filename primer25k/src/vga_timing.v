@@ -27,8 +27,8 @@ parameter RD_H = 16'd480;
 parameter RD_V = 16'd272;
 
 
-parameter H_TOTAL = H_ACTIVE + H_FP + H_SYNC + H_BP;//horizontal total time (pixels)
-parameter V_TOTAL = V_ACTIVE + V_FP + V_SYNC + V_BP;//vertical total time (lines)
+parameter H_TOTAL = H_ACTIVE + H_BP + H_SYNC + H_FP;//horizontal total time (pixels)
+parameter V_TOTAL = V_ACTIVE + V_BP + V_SYNC + V_FP;//vertical total time (lines)
 
 
 reg hs_reg;                      //horizontal sync register
@@ -48,13 +48,13 @@ always@ (posedge clk)begin
     if(rst == 1'b1)
         rd <= 0;
     else begin
-        rd <= (h_cnt > (H_BP + H_SYNC -2)) & (h_cnt < (H_BP + H_SYNC + RD_H -1)) & 
-              (v_cnt > (V_BP + V_SYNC -2)) & (v_cnt < (V_BP + V_SYNC + RD_V -1));
+        rd <= (h_cnt > (H_FP + H_SYNC -2)) & (h_cnt < (H_FP + H_SYNC + RD_H -1)) & 
+              (v_cnt > (V_FP + V_SYNC -2)) & (v_cnt < (V_FP + V_SYNC + RD_V -1));
     end
 end
 
 always@ (posedge clk)begin
-    if(h_cnt > RD_V && h_cnt < (V_TOTAL - RD_V))begin
+    if(v_cnt > RD_V && v_cnt < (V_TOTAL - RD_V))begin
         monitor_en <= 1;
     end else begin
         monitor_en <= 0;
@@ -74,17 +74,17 @@ end
 //显示计数
 always@(posedge clk)
 begin
-//	if(h_cnt >= H_FP + H_SYNC + H_BP)//horizontal video active
-	if(h_cnt >= H_FP + H_SYNC )//horizontal video active
-		active_x <= h_cnt - (H_FP[11:0] + H_SYNC[11:0] );
+//	if(h_cnt >= H_BP + H_SYNC + H_FP)//horizontal video active
+	if(h_cnt >= H_BP + H_SYNC )//horizontal video active
+		active_x <= h_cnt - (H_BP[11:0] + H_SYNC[11:0] );
 	else
 		active_x <= active_x;
 end
 always@(posedge clk)
 begin	
-//	if(v_cnt >= V_FP + V_SYNC + V_BP)//horizontal video active
-	if(v_cnt >= V_FP + V_SYNC )//horizontal video active
-		active_y <= v_cnt - (V_FP[11:0] + V_SYNC[11:0] );
+//	if(v_cnt >= V_BP + V_SYNC + V_FP)//horizontal video active
+	if(v_cnt >= V_BP + V_SYNC )//horizontal video active
+		active_y <= v_cnt - (V_BP[11:0] + V_SYNC[11:0] );
 	else
 		active_y <= active_y;
 end
@@ -93,7 +93,7 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		v_cnt <= 12'd0;
-	else if(h_cnt == H_BP  - 1)//horizontal sync time
+	else if(h_cnt == H_FP  - 1)//horizontal sync time
 		if(v_cnt == V_TOTAL - 1)//vertical counter maximum value
 			v_cnt <= 12'd0;
 		else
@@ -106,9 +106,9 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		hs_reg <= 1'b0;
-	else if(h_cnt == (H_BP - 1))//horizontal sync begin
+	else if(h_cnt == (H_FP - 1))//horizontal sync begin
 		hs_reg <= HS_POL;
-	else if(h_cnt == (H_BP + H_SYNC - 1))//horizontal sync end
+	else if(h_cnt == (H_FP + H_SYNC - 1))//horizontal sync end
 		hs_reg <= ~hs_reg;
 	else
 		hs_reg <= hs_reg;
@@ -118,9 +118,9 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		h_active <= 1'b0;
-	else if(h_cnt == (H_BP - 1))//horizontal active begin
+	else if(h_cnt == (H_FP - 1))//horizontal active begin
 		h_active <= 1'b1;
-	else if(h_cnt == (H_BP + H_SYNC + H_ACTIVE - 1))//horizontal active end
+	else if(h_cnt == (H_FP + H_SYNC + H_ACTIVE - 1))//horizontal active end
 		h_active <= 1'b0;
 	else
 		h_active <= h_active;
@@ -130,9 +130,9 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		vs_reg <= 1'd0;
-	else if((v_cnt == V_BP - 1) && (h_cnt == H_BP - 1))//vertical sync begin
+	else if((v_cnt == V_FP - 1) && (h_cnt == H_FP - 1))//vertical sync begin
 		vs_reg <= VS_POL;
-	else if((v_cnt == V_BP + V_SYNC - 1) && (h_cnt == H_BP - 1))//vertical sync end
+	else if((v_cnt == V_FP + V_SYNC - 1) && (h_cnt == H_FP - 1))//vertical sync end
 		vs_reg <= ~vs_reg;  
 	else
 		vs_reg <= vs_reg;
@@ -142,9 +142,9 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		v_active <= 1'd0;
-	else if((v_cnt == (V_BP + V_SYNC - 1)) && (h_cnt == (H_BP - 1)))//vertical active begin
+	else if((v_cnt == (V_FP + V_SYNC - 1)) && (h_cnt == (H_FP - 1)))//vertical active begin
 		v_active <= 1'b1;
-	else if((v_cnt == (V_BP + V_SYNC + V_ACTIVE - 1)) && (h_cnt == (H_BP - 1))) //vertical active end
+	else if((v_cnt == (V_FP + V_SYNC + V_ACTIVE - 1)) && (h_cnt == (H_FP - 1))) //vertical active end
 		v_active <= 1'b0;   
 	else
 		v_active <= v_active;

@@ -5,7 +5,7 @@
 //Part Number: GW5A-LV25MG121NES
 //Device: GW5A-25
 //Device Version: A
-//Created Time: Fri Jan  3 22:42:13 2025
+//Created Time: Sat Feb 22 18:24:25 2025
 
 module Gowin_CLKDIV (clkout, hclkin, resetn, calib);
 

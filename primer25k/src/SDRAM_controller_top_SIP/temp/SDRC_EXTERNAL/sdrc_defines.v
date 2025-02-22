@@ -7,8 +7,8 @@
 `define SDRAM_REFRESH_FREQ 8196
 `define SDRAM_CLK_PERIOD 10
 `define SDRAM_CL 2
-`define SDRAM_tRP 2
+`define SDRAM_tRP 4
 `define SDRAM_tRFC 8
-`define SDRAM_tMRD 2
-`define SDRAM_tRCD 2
-`define SDRAM_tWR 2
+`define SDRAM_tMRD 4
+`define SDRAM_tRCD 4
+`define SDRAM_tWR 4
