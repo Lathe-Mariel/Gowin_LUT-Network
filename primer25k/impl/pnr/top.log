@@ -8,16 +8,12 @@ Running placement......
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
 WARN  (TA1123) : the clock "mem_clk"'s frequency does not match pll_memory/PLLA_inst/CLKOUT0's 
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "mem_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" and "mem_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "mem_clk" and "cmos_16bit_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "video_clk_gen/clkdiv_inst/CLKOUT.default_gen_clk" and "mem_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "mem_clk" and "video_clk_gen/clkdiv_inst/CLKOUT.default_gen_clk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_vsync_d' by the specified constraint. And then it may lead to the excessive delay or skew
 WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
@@ -29,5 +25,5 @@ Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html"
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
 Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
-Sun Feb 23 01:44:14 2025
+Sun Feb 23 21:07:28 2025
 

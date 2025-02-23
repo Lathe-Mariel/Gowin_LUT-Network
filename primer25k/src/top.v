@@ -297,11 +297,11 @@ logic sdrc_rd_n;
 
 	Video_Frame_Buffer_SDRAM frameBuffer_SDRAM(
 		.I_rst_n(rst_n), //input I_rst_n
-		.I_dma_clk(memory_clk   ), //input I_dma_clk
-/*
-		.I_wr_halt(sw1           ), //input [0:0] I_wr_halt
-		.I_rd_halt(           ), //input [0:0] I_rd_halt
-*/
+		.I_dma_clk(memory_clk45   ), //input I_dma_clk
+
+		.I_wr_halt(sw1         ), //input [0:0] I_wr_halt
+		.I_rd_halt(sw1           ), //input [0:0] I_rd_halt
+
 		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
 		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
 		.I_vin0_de(cmos_16bit_wr & input_camera), //input I_vin0_de
@@ -370,8 +370,8 @@ SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
 		.O_sdram_ba(O_sdram_ba      ),      //output [1:0] O_sdram_ba
 		.IO_sdram_dq(IO_sdram_dq    ),              // [15:0] IO_sdram_dq
 		.I_sdrc_rst_n(rst_n         ),              // I_sdrc_rst_n リセット
-		.I_sdrc_clk(memory_clk    ),              // I_sdrc_clk コントローラ動作クロック
-        .I_sdram_clk(memory_clk45     ),              // I_sdram_clk SDRAM動作クロック
+		.I_sdrc_clk(memory_clk45    ),              // I_sdrc_clk コントローラ動作クロック
+        .I_sdram_clk(memory_clk     ),              // I_sdram_clk SDRAM動作クロック
 		.I_sdrc_selfrefresh(1'b0 ),                 // I_sdrc_selfrefresh セルフリフレッシュ制御(1:有効, 0:無効)
 		.I_sdrc_power_down(1'b0  ),                 // I_sdrc_power_down 低消費電力制御(1:有効, 0:無効)
 		.I_sdrc_wr_n(sdrc_wr_n  ),                 // I_sdrc_wr_n 書込イネーブル

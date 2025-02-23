@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="Video_Frame_Buffer_SDRAM" Register="353" Alu="46" Lut="438" Bsram="4" T_Register="353(353)" T_Alu="46(46)" T_Lut="438(438)" T_Bsram="4(4)"/>
+<Module name="Video_Frame_Buffer_SDRAM" Register="371" Alu="46" Lut="452" Bsram="4" T_Register="371(371)" T_Alu="46(46)" T_Lut="452(452)" T_Bsram="4(4)"/>

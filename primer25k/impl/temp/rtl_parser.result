@@ -234,12 +234,12 @@
     "InstLine" : 298,
     "InstName" : "frameBuffer_SDRAM",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/video_frame_buffer/video_frame_buffer_sdram.v",
-    "ModuleLine" : 2851,
+    "ModuleLine" : 2956,
     "ModuleName" : "Video_Frame_Buffer_SDRAM",
     "SubInsts" : [
      {
       "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/video_frame_buffer/video_frame_buffer_sdram.v",
-      "InstLine" : 2902,
+      "InstLine" : 3011,
       "InstName" : "vfb_sdram_wrapper_inst",
       "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/video_frame_buffer/video_frame_buffer_sdram.v",
       "ModuleLine" : 10,

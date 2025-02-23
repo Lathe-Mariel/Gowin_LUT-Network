@@ -272,8 +272,8 @@ Compiling module 'vga_timing'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vg
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":79)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":87)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":100)
-Compiling module 'Video_Frame_Buffer_SDRAM'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2851)
-Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2850)
+Compiling module 'Video_Frame_Buffer_SDRAM'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2956)
+Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2955)
 Compiling module 'SDRAM_controller_top_SIP'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\SDRAM_controller_top_SIP.v":2794)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\SDRAM_controller_top_SIP.v":2793)
 WARN  (EX3670) : Actual bit length 2 differs from formal bit length 1 for port 'O_sdram_ba'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":370)
@@ -297,7 +297,6 @@ Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0
 Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input sw1 is unused("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":4)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
