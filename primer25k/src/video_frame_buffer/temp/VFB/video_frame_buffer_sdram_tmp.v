@@ -5,7 +5,7 @@
 //Part Number: GW5A-LV25MG121NES
 //Device: GW5A-25
 //Device Version: A
-//Created Time: Sat Feb 22 14:19:55 2025
+//Created Time: Sun Feb 23 01:30:35 2025
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
@@ -13,8 +13,6 @@
 	Video_Frame_Buffer_SDRAM your_instance_name(
 		.I_rst_n(I_rst_n_i), //input I_rst_n
 		.I_dma_clk(I_dma_clk_i), //input I_dma_clk
-		.I_wr_halt(I_wr_halt_i), //input [0:0] I_wr_halt
-		.I_rd_halt(I_rd_halt_i), //input [0:0] I_rd_halt
 		.I_vin0_clk(I_vin0_clk_i), //input I_vin0_clk
 		.I_vin0_vs_n(I_vin0_vs_n_i), //input I_vin0_vs_n
 		.I_vin0_de(I_vin0_de_i), //input I_vin0_de

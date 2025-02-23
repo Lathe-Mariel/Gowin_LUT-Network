@@ -75,16 +75,16 @@ end
 always@(posedge clk)
 begin
 //	if(h_cnt >= H_BP + H_SYNC + H_FP)//horizontal video active
-	if(h_cnt >= H_BP + H_SYNC )//horizontal video active
-		active_x <= h_cnt - (H_BP[11:0] + H_SYNC[11:0] );
+	if(h_cnt >= H_FP + H_SYNC )//horizontal video active
+		active_x <= h_cnt - (H_FP[11:0] + H_SYNC[11:0] );
 	else
 		active_x <= active_x;
 end
 always@(posedge clk)
 begin	
 //	if(v_cnt >= V_BP + V_SYNC + V_FP)//horizontal video active
-	if(v_cnt >= V_BP + V_SYNC )//horizontal video active
-		active_y <= v_cnt - (V_BP[11:0] + V_SYNC[11:0] );
+	if(v_cnt >= V_FP + V_SYNC )//horizontal video active
+		active_y <= v_cnt - (V_FP[11:0] + V_SYNC[11:0] );
 	else
 		active_y <= active_y;
 end
@@ -133,7 +133,7 @@ begin
 	else if((v_cnt == V_FP - 1) && (h_cnt == H_FP - 1))//vertical sync begin
 		vs_reg <= VS_POL;
 	else if((v_cnt == V_FP + V_SYNC - 1) && (h_cnt == H_FP - 1))//vertical sync end
-		vs_reg <= ~vs_reg;  
+		vs_reg <= ~vs_reg;
 	else
 		vs_reg <= vs_reg;
 end

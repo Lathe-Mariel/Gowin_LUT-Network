@@ -272,21 +272,20 @@ Compiling module 'vga_timing'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vg
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":79)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":87)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer25k\src\vga_timing.v":100)
-Compiling module 'Video_Frame_Buffer_SDRAM'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2956)
-Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2955)
+Compiling module 'Video_Frame_Buffer_SDRAM'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2851)
+Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\video_frame_buffer\video_frame_buffer_sdram.v":2850)
 Compiling module 'SDRAM_controller_top_SIP'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\SDRAM_controller_top_SIP.v":2794)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\SDRAM_controller_top_SIP\SDRAM_controller_top_SIP.v":2793)
-WARN  (EX3670) : Actual bit length 2 differs from formal bit length 1 for port 'O_sdram_ba'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":427)
-WARN  (EX3670) : Actual bit length 23 differs from formal bit length 22 for port 'I_sdrc_addr'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":436)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":510)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":518)
+WARN  (EX3670) : Actual bit length 2 differs from formal bit length 1 for port 'O_sdram_ba'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":370)
+WARN  (EX3670) : Actual bit length 23 differs from formal bit length 22 for port 'I_sdrc_addr'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":379)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":407)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":415)
 Compiling module 'Gowin_PLL_tmds'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_pll\gowin_pll_tmds.v":10)
 Compiling module 'Gowin_CLKDIV'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_clkdiv\gowin_clkdiv.v":10)
-Compiling module 'Gowin_CLKDIV2'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_clkdiv\gowin_clkdiv2.v":10)
 Compiling module 'DVI_TX_Top'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\dvi_tx\dvi_tx.v":1089)
 Compiling module '**'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\dvi_tx\dvi_tx.v":1088)
-WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":600)
-WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":601)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":491)
+WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":492)
 Compiling module 'gw_gao'("H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
@@ -298,6 +297,7 @@ Compiling module '**'("H:\Gowin\Gowin_V1.9.9.01_x64\IDE\data\ipcores\GAO\GW_AO_0
 Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
+WARN  (CV0016) : Input sw1 is unused("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":4)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -320,7 +320,6 @@ WARN  (NL0002) : The module "MnistLutSimple_sub3" instantiated to "i_MnistLutSim
 WARN  (NL0002) : The module "MnistLutSimple_sub3_base" instantiated to "i_MnistLutSimple_sub3_base" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer25k\src\MnistLutSimple.v":26284)
 WARN  (NL0002) : The module "MnistLutSimple_sub4" instantiated to "i_MnistLutSimple_sub4" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer25k\src\MnistLutSimple.v":157)
 WARN  (NL0002) : The module "MnistLutSimple_sub4_base" instantiated to "i_MnistLutSimple_sub4_base" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer25k\src\MnistLutSimple.v":31331)
-WARN  (NL0002) : The module "Gowin_CLKDIV2" instantiated to "your_instance_name" is swept in optimizing("H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.v":589)
 [95%] Generate netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
 [100%] Generate report file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top_syn.rpt.html" completed
 GowinSynthesis finish

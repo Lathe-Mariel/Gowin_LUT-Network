@@ -2,7 +2,7 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="cmos_16bit_clk" trig_type="0" storage_depth="65536" window_num="1" capture_amount="65536" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+    <AoCore index="0" sample_clock="memory_clk45" trig_type="0" storage_depth="65536" window_num="1" capture_amount="65536" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
             <Signal capture_enable="true">cmos_16bit_wr</Signal>
             <Signal capture_enable="true">camera_de</Signal>
@@ -15,7 +15,7 @@
         <Triggers>
             <Trigger index="0">
                 <SignalList>
-                    <Signal>cmos_vsync</Signal>
+                    <Signal>syn_off0_vs</Signal>
                 </SignalList>
             </Trigger>
             <Trigger index="1"/>

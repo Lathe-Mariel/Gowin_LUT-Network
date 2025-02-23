@@ -6,8 +6,7 @@ module gw_gao(
     syn_off0_vs,
     syn_off0_hs,
     off0_syn_de,
-    cmos_vsync,
-    cmos_16bit_clk,
+    memory_clk45,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
@@ -21,8 +20,7 @@ input monitor_en;
 input syn_off0_vs;
 input syn_off0_hs;
 input off0_syn_de;
-input cmos_vsync;
-input cmos_16bit_clk;
+input memory_clk45;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
@@ -35,8 +33,7 @@ wire monitor_en;
 wire syn_off0_vs;
 wire syn_off0_hs;
 wire off0_syn_de;
-wire cmos_vsync;
-wire cmos_16bit_clk;
+wire memory_clk45;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -110,9 +107,9 @@ gw_con_top  u_icon_top(
 
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
-    .trig0_i(cmos_vsync),
+    .trig0_i(syn_off0_vs),
     .data_i({cmos_16bit_wr,camera_de,input_camera,monitor_en,syn_off0_vs,syn_off0_hs,off0_syn_de}),
-    .clk_i(cmos_16bit_clk)
+    .clk_i(memory_clk45)
 );
 
 endmodule
