@@ -4,7 +4,7 @@ module vga_timing(
 	output                hs,            //horizontal synchronization
 	output                vs,            //vertical synchronization
 	output                de,            //video valid
-    output reg            monitor_en,    // monitor enable
+//    output reg            monitor_en,    // monitor enable
 
 	output reg [9:0] active_x,              //video x position 
 	output reg [9:0] active_y,             //video y position 
@@ -13,23 +13,21 @@ module vga_timing(
 
 
 //VIDEO_1024 768
-parameter H_ACTIVE = 16'd1280;  //1280 1920 1280@24
-parameter H_FP = 16'd110;       //110  88 1760
-parameter H_SYNC = 16'd40;      //40   44 40
-parameter H_BP = 16'd220;       //220  148 220
-parameter V_ACTIVE = 16'd720;   //720  1080
-parameter V_FP  = 16'd5;        //5    4
-parameter V_SYNC  = 16'd5;      //5    5
-parameter V_BP  = 16'd20;       //20   36
+parameter H_ACTIVE = 16'd720;  //1280(P65MHz) 1920 1280@24 720(P27Mhz)
+parameter H_FP = 16'd16;       //110           88   1760    16
+parameter H_SYNC = 16'd62;      //40           44   40      62
+parameter H_BP = 16'd60;       //220           148  220     60
+parameter V_ACTIVE = 16'd480;   //720          1080         480
+parameter V_FP  = 16'd9;        //5            4            9
+parameter V_SYNC  = 16'd6;      //5            5            6
+parameter V_BP  = 16'd30;       //20           36           30
 parameter HS_POL = 1'b1;
 parameter VS_POL = 1'b1;
 parameter RD_H = 16'd480;
 parameter RD_V = 16'd272;
 
-
 parameter H_TOTAL = H_ACTIVE + H_BP + H_SYNC + H_FP;//horizontal total time (pixels)
 parameter V_TOTAL = V_ACTIVE + V_BP + V_SYNC + V_FP;//vertical total time (lines)
-
 
 reg hs_reg;                      //horizontal sync register
 reg vs_reg;                      //vertical sync register
@@ -53,13 +51,14 @@ always@ (posedge clk)begin
     end
 end
 
+/*
 always@ (posedge clk)begin
     if(v_cnt > RD_V && v_cnt < (V_TOTAL - RD_V))begin
         monitor_en <= 1;
     end else begin
         monitor_en <= 0;
     end
-end
+end*/
 
 //Horizontalカウンタ
 always@(posedge clk or posedge rst)
@@ -118,7 +117,7 @@ always@(posedge clk or posedge rst)
 begin
 	if(rst == 1'b1)
 		h_active <= 1'b0;
-	else if(h_cnt == (H_FP - 1))//horizontal active begin
+	else if(h_cnt == (H_FP + H_SYNC - 1))//horizontal active begin
 		h_active <= 1'b1;
 	else if(h_cnt == (H_FP + H_SYNC + H_ACTIVE - 1))//horizontal active end
 		h_active <= 1'b0;

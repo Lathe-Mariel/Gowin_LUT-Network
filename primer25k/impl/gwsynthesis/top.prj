@@ -9,7 +9,6 @@
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\dvi_tx\dvi_tx.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\fifo_hs\video_fifo.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_clkdiv\gowin_clkdiv.v" type="verilog"/>
-        <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_clkdiv\gowin_clkdiv2.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_pll\gowin_pll.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_pll\gowin_pll_memory.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\primer25k\src\gowin_pll\gowin_pll_tmds.v" type="verilog"/>

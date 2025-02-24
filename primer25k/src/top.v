@@ -128,19 +128,6 @@ Gowin_PLL_memory pll_memory(
     .clkout2(memory_clk45)   //output clkout2
 );
 
-/*
-//generate the CMOS sensor clock and the SDRAM controller clock
-cmos_pll cmos_pll_m0(
-	.clkin                     (clk                		),
-	.clkout                    (cmos_clk 	       		)  //24MHz
-	);
-
-mem_pll mem_pll_m0(
-	.clkin                     (clk                     ),
-	.clkout                    (memory_clk 	        	), //400MHz
-	.lock 					   (DDR_pll_lock 			)
-	);
-*/
 
 //I2C master controller
 i2c_config i2c_config_m0(
@@ -264,8 +251,8 @@ vga_timing vga_timing_m0(
     .hs(syn_off0_hs),
     .vs(syn_off0_vs),
     .de(out_de),
-    .rd(camera_de),
-    .monitor_en(monitor_en)
+    .rd(camera_de)
+//    .monitor_en(monitor_en)
 );
 
 logic input_camera;
@@ -289,7 +276,8 @@ logic input_camera;
     .I_v_sync    (12'd5        ),//ver sync time   // 12'd4     // 12'd6     // 12'd5     // 12'd5   
     .I_v_bporch  (12'd20       ),//ver back porch  // 12'd23    // 12'd29    // 12'd20    // 12'd36  
     .I_v_res     (12'd720      ),//ver resolution  // 12'd600   // 12'd768   // 12'd720   // 12'd1080 
-
+720x480(PixelClock 27MHz)    H_Active 720    H_Blank 138    H_FrontPorch 16    H_Sync 62    H_BackPorch 60
+           V_Active    V_Blank 45    V_Front_Porch 9    V_Sync 6    V_BackPorch 30
 );*/
 
 logic[1:0] sdrc_dqm;
@@ -304,7 +292,7 @@ logic sdrc_rd_n;
 
 		.I_vin0_clk(cmos_16bit_clk), //input I_vin0_clk
 		.I_vin0_vs_n(~cmos_vsync  ), //input I_vin0_vs_n
-		.I_vin0_de(cmos_16bit_wr & input_camera), //input I_vin0_de
+		.I_vin0_de(cmos_16bit_wr), //input I_vin0_de
 		.I_vin0_data(write_data   ), //input [15:0] I_vin0_data
 		.O_vin0_fifo_full(        ), //output O_vin0_fifo_full
 
@@ -417,15 +405,15 @@ SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
         end
     end
 
-    localparam int  BIN_X = 50;
-    localparam int  BIN_Y = 1;
+    localparam int  BIN_X = 61;
+    localparam int  BIN_Y = 2;
     logic  bin_en;
     logic  bin_view;
     always_ff @(posedge video_clk ) begin
-        if ( dvi_x[10:4] >= BIN_X && dvi_x[10:4] < BIN_X+28 
-                && dvi_y[9:4] >= BIN_Y && dvi_y[9:4]  < BIN_Y+28 ) begin
+        if ( dvi_x[9:3] >= BIN_X && dvi_x[9:3] < BIN_X+28 
+                && dvi_y[8:3] >= BIN_Y && dvi_y[8:3]  < BIN_Y+28 ) begin
             bin_en   <= 1;
-            bin_view <= bin_img[dvi_y[9:4]-BIN_Y][dvi_x[10:4]-BIN_X];
+            bin_view <= bin_img[dvi_y[8:3]-BIN_Y][dvi_x[9:3]-BIN_X];
         end
         else begin
             bin_en   <= 0;
@@ -434,12 +422,12 @@ SDRAM_controller_top_SIP sdram_controller0( // IPUG279-1.3J  P.7
     end
 
     localparam int  MNIST_X = 1;
-    localparam int  MNIST_Y = 18;
+    localparam int  MNIST_Y = 25;
     logic  mnist_en;
     logic  mnist_view;
     always_ff @(posedge video_clk ) begin
         if ( dvi_x[10:5] >= MNIST_X && dvi_x[10:5] < MNIST_X+10 
-                && dvi_y[9:5] >= MNIST_Y && dvi_y[9:5] < MNIST_Y+1 ) begin
+                && dvi_y[8:4] >= MNIST_Y && dvi_y[8:4] < MNIST_Y+1 ) begin
             mnist_en   <= 1;
             mnist_view <= mnist_class[dvi_x[10:5]-MNIST_X];
         end

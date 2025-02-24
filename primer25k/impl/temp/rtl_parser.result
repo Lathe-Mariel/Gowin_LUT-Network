@@ -1,13 +1,5 @@
 [
  {
-  "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_clkdiv/gowin_clkdiv2.v",
-  "InstLine" : 10,
-  "InstName" : "Gowin_CLKDIV2",
-  "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_clkdiv/gowin_clkdiv2.v",
-  "ModuleLine" : 10,
-  "ModuleName" : "Gowin_CLKDIV2"
- },
- {
   "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_pll/gowin_pll.v",
   "InstLine" : 10,
   "InstName" : "Gowin_PLL",
@@ -51,7 +43,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 146,
+    "InstLine" : 133,
     "InstName" : "i2c_config_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
@@ -89,7 +81,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 161,
+    "InstLine" : 148,
     "InstName" : "lut_ov5640_rgb565_480_272_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/lut_ov5640_rgb565_480_272.v",
     "ModuleLine" : 1,
@@ -97,7 +89,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 169,
+    "InstLine" : 156,
     "InstName" : "cmos_8_16bit_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
@@ -105,7 +97,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 237,
+    "InstLine" : 224,
     "InstName" : "u_MnistLutSimple",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/MnistLutSimple.v",
     "ModuleLine" : 5,
@@ -223,7 +215,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 260,
+    "InstLine" : 247,
     "InstName" : "vga_timing_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/vga_timing.v",
     "ModuleLine" : 1,
@@ -231,7 +223,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 298,
+    "InstLine" : 286,
     "InstName" : "frameBuffer_SDRAM",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/video_frame_buffer/video_frame_buffer_sdram.v",
     "ModuleLine" : 2956,
@@ -249,7 +241,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 361,
+    "InstLine" : 349,
     "InstName" : "sdram_controller0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/SDRAM_controller_top_SIP/SDRAM_controller_top_SIP.v",
     "ModuleLine" : 2794,
@@ -267,7 +259,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 466,
+    "InstLine" : 454,
     "InstName" : "pll_tmds",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_pll/gowin_pll_tmds.v",
     "ModuleLine" : 10,
@@ -275,7 +267,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 474,
+    "InstLine" : 462,
     "InstName" : "video_clk_gen",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/gowin_clkdiv/gowin_clkdiv.v",
     "ModuleLine" : 10,
@@ -283,7 +275,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/top.v",
-    "InstLine" : 482,
+    "InstLine" : 470,
     "InstName" : "DVI_TX_Top_inst",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/primer25k/src/dvi_tx/dvi_tx.v",
     "ModuleLine" : 1089,
