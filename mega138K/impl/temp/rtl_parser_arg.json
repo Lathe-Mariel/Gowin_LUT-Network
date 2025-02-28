@@ -1,5 +1,5 @@
 {
- "Device" : "GW2A-18C",
+ "Device" : "GW5AST-138B",
  "Files" : [
   {
    "Path" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/cmos_8_16bit.v",
@@ -83,7 +83,7 @@
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/impl/temp/rtl_parser.result",
- "Top" : "top",
- "VerilogStd" : "sysv",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }
