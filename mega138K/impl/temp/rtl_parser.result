@@ -1,13 +1,5 @@
 [
  {
-  "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_rpll/sys_pll.v",
-  "InstLine" : 9,
-  "InstName" : "sys_pll",
-  "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_rpll/sys_pll.v",
-  "ModuleLine" : 9,
-  "ModuleName" : "sys_pll"
- },
- {
   "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
   "InstLine" : 1,
   "InstName" : "top",
@@ -17,47 +9,15 @@
   "SubInsts" : [
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 279,
-    "InstName" : "Video_Frame_Buffer_Top_inst",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
-    "ModuleLine" : 9,
-    "ModuleName" : "Video_Frame_Buffer_Top"
+    "InstLine" : 94,
+    "InstName" : "Gowin_PLL_inst",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 357,
-    "InstName" : "DDR3_Memory_Interface_Top_inst",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI.v",
-    "ModuleLine" : 9,
-    "ModuleName" : "DDR3MI"
-   },
-   {
-    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 487,
-    "InstName" : "DVI_TX_Top_inst",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
-    "ModuleLine" : 9,
-    "ModuleName" : "DVI_TX_Top"
-   },
-   {
-    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 108,
-    "InstName" : "cmos_pll_m0",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_rpll/cmos_pll.v",
-    "ModuleLine" : 9,
-    "ModuleName" : "cmos_pll"
-   },
-   {
-    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 113,
-    "InstName" : "mem_pll_m0",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_rpll/mem_pll.v",
-    "ModuleLine" : 9,
-    "ModuleName" : "mem_pll"
-   },
-   {
-    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 120,
+    "InstLine" : 103,
     "InstName" : "i2c_config_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
@@ -95,7 +55,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 135,
+    "InstLine" : 118,
     "InstName" : "lut_ov5640_rgb565_480_272_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/lut_ov5640_rgb565_480_272.v",
     "ModuleLine" : 1,
@@ -103,7 +63,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 143,
+    "InstLine" : 126,
     "InstName" : "cmos_8_16bit_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
@@ -111,7 +71,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 211,
+    "InstLine" : 194,
     "InstName" : "u_MnistLutSimple",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
     "ModuleLine" : 5,
@@ -229,7 +189,7 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 232,
+    "InstLine" : 215,
     "InstName" : "vga_timing_m0",
     "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/vga_timing.v",
     "ModuleLine" : 1,
@@ -237,11 +197,65 @@
    },
    {
     "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
-    "InstLine" : 470,
-    "InstName" : "u_tmds_rpll",
-    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_rpll/TMDS_rPLL.v",
+    "InstLine" : 277,
+    "InstName" : "Video_Frame_Buffer_inst",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+    "ModuleLine" : 5024,
+    "ModuleName" : "Video_Frame_Buffer_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "InstLine" : 5085,
+      "InstName" : "vfb_ddr3_wrapper_inst",
+      "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~vfb_ddr3_wrapper.Video_Frame_Buffer_Top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstLine" : 384,
+    "InstName" : "DDR3MI_inst",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+    "ModuleLine" : 31657,
+    "ModuleName" : "DDR3MI",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "InstLine" : 31742,
+      "InstName" : "gw3_top",
+      "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~GW_DDR3_PHY_MC.DDR3MI"
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstLine" : 542,
+    "InstName" : "Gowin_PLL_dvi_inst",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll_dvi.v",
     "ModuleLine" : 10,
-    "ModuleName" : "TMDS_rPLL"
+    "ModuleName" : "Gowin_PLL_dvi"
+   },
+   {
+    "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstLine" : 550,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleLine" : 1089,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+      "InstLine" : 1120,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "H:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
    }
   ]
  }

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="DDR3MI" Register="5450" Alu="190" Lut="2972" Bsram="16" T_Register="5450(5450)" T_Alu="190(190)" T_Lut="2972(2972)" T_Bsram="16(16)"/>
+<Module name="DDR3MI" Register="5668" Alu="231" Lut="3430" Bsram="24" T_Register="5668(5668)" T_Alu="231(231)" T_Lut="3430(3430)" T_Bsram="24(24)"/>

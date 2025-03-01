@@ -1,14 +1,18 @@
--d H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\gwsynthesis\top.vg
--p GW2A-18C-PBGA256-8
--pn GW2A-LV18PG256C8/I7
--cst H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\top.cst
--cfg H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\impl\pnr\device.cfg
--sdc H:\git\TangPrimer20K_LUT-Network\primer20k\OV5640_HDMI1024_DDR3\src\lcd.sdc
+-d H:\git\TangPrimer20K_LUT-Network\mega138K\impl\gwsynthesis\top.vg
+-p GW5AST-138B-PBGA484A-1
+-pn GW5AST-LV138PG484AES
+-cst H:\git\TangPrimer20K_LUT-Network\mega138K\src\top.cst
+-cfg H:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\device.cfg
+-sdc H:\git\TangPrimer20K_LUT-Network\mega138K\src\lcd.sdc
 -bit
 -tr
 -ph
 -timing
+-ireg_not_in_iob
+-oreg_not_in_iob
+-ioreg_not_in_iob
 -cst_error
 -correct_hold 1
 -route_maxfan 23
 -global_freq 100.000
+-enable_dsrm 0

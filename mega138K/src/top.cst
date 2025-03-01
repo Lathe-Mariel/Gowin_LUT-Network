@@ -1,13 +1,4 @@
-//============ HDMI ===============
 
-IO_LOC "O_tmds_clk_p" G16,H15;
-IO_PORT "O_tmds_clk_p" PULL_MODE=NONE DRIVE=3.5;
-IO_LOC "O_tmds_data_p[0]" H14,H16;
-IO_PORT "O_tmds_data_p[0]" PULL_MODE=NONE DRIVE=3.5;
-IO_LOC "O_tmds_data_p[1]" J15,K16;
-IO_PORT "O_tmds_data_p[1]" PULL_MODE=NONE DRIVE=3.5;
-IO_LOC "O_tmds_data_p[2]" K14,K15;
-IO_PORT "O_tmds_data_p[2]" PULL_MODE=NONE DRIVE=3.5;
 //====== DVI ====== 
 IO_LOC  "O_tmds_data_p[0]" J14,H14;
 IO_PORT "O_tmds_data_p[0]" PULL_MODE=NONE DRIVE=3.5;
@@ -62,16 +53,16 @@ IO_PORT "cmos_vsync" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
 
 
 //====== LEDS ====== 
-IO_LOC  "state_led[0]"   T18;
-IO_PORT "state_led[0]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC  "state_led[1]"   R18;
-IO_PORT "state_led[1]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC  "state_led[2]"   R17;
-IO_PORT "state_led[2]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC  "state_led[3]"   P16;
-IO_PORT "state_led[3]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
-IO_LOC  "state_led[4]"   U21;
-IO_PORT "state_led[4]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//IO_LOC  "state_led[0]"   T18;
+//IO_PORT "state_led[0]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//IO_LOC  "state_led[1]"   R18;
+//IO_PORT "state_led[1]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//IO_LOC  "state_led[2]"   R17;
+//IO_PORT "state_led[2]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//IO_LOC  "state_led[3]"   P16;
+//IO_PORT "state_led[3]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+//IO_LOC  "state_led[4]"   U21;
+//IO_PORT "state_led[4]"   IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
 
 
 //====== DDR3 ====== 
@@ -213,8 +204,3 @@ IO_LOC  "ddr_dqs[1]"    V9,V8;
 IO_PORT "ddr_dqs[1]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
 IO_LOC  "ddr_dqs[0]"    Y3,AA3;
 IO_PORT "ddr_dqs[0]"    IO_TYPE=SSTL15D PULL_MODE=NONE DRIVE=8 BANK_VCCIO=1.5;
-
-INS_LOC "u_ddr3/gw3_top/u_ddr_phy_top/u_dll" DDRDLLM_BL;
-INS_LOC "u_ddr3/gw3_top/u_ddr_phy_top/fclkdiv" LEFTSIDE[4];
-INS_LOC "Gowin_PLL_m0/PLL_inst" PLL_L[0];
-SET_PARAM "u_ddr3/gw3_top/u_ddr_phy_top/u_dll" CLKIN_SEL=CLKIN5;

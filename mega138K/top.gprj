@@ -7,7 +7,6 @@
     <FileList>
         <File path="src/MnistLutSimple.v" type="file.verilog" enable="1"/>
         <File path="src/cmos_8_16bit.v" type="file.verilog" enable="1"/>
-        <File path="src/ddr3_memory_interface/DDR3MI.v" type="file.verilog" enable="1"/>
         <File path="src/ddr3_memory_interface/DDR3MI_400M.v" type="file.verilog" enable="1"/>
         <File path="src/dvi_tx/DVI_TX_Top.v" type="file.verilog" enable="1"/>
         <File path="src/fifo_hs/video_fifo.v" type="file.verilog" enable="1"/>
