@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1631" Alu="47" Lut="538" T_Register="7924(1631)" T_Alu="392(47)" T_Lut="7045(538)" T_Bsram="40(0)">
+<Module name="top" Register="1631" Alu="47" Lut="538" T_Register="7969(1631)" T_Alu="392(47)" T_Lut="7111(538)" T_Bsram="40(0)">
     <SubModule name="Gowin_PLL_inst"/>
     <SubModule name="i2c_config_m0" Register="13" Lut="26" T_Register="124(13)" T_Alu="15(0)" T_Lut="777(26)">
         <SubModule name="i2c_master_top_m0" Register="17" Lut="606" T_Register="111(17)" T_Alu="15(0)" T_Lut="751(606)">
@@ -21,8 +21,8 @@
         </SubModule>
     </SubModule>
     <SubModule name="vga_timing_m0" Register="28" Lut="67" T_Register="28(28)" T_Lut="67(67)"/>
-    <SubModule name="Video_Frame_Buffer_inst" Register="319" Alu="30" Lut="1065" Bsram="16" T_Register="319(319)" T_Alu="30(30)" T_Lut="1065(1065)" T_Bsram="16(16)"/>
-    <SubModule name="DDR3MI_inst" Register="5646" Alu="231" Lut="3424" Bsram="24" T_Register="5646(5646)" T_Alu="231(231)" T_Lut="3424(3424)" T_Bsram="24(24)"/>
+    <SubModule name="Video_Frame_Buffer_inst" Register="321" Alu="30" Lut="1082" Bsram="16" T_Register="321(321)" T_Alu="30(30)" T_Lut="1082(1082)" T_Bsram="16(16)"/>
+    <SubModule name="DDR3MI_inst" Register="5689" Alu="231" Lut="3473" Bsram="24" T_Register="5689(5689)" T_Alu="231(231)" T_Lut="3473(3473)" T_Bsram="24(24)"/>
     <SubModule name="Gowin_PLL_dvi_inst"/>
     <SubModule name="DVI_TX_Top_inst" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
 </Module>

@@ -1,12 +1,12 @@
 module vga_timing(
-	input                 clk,           //pixel clock
-	input                 rst,           //reset signal high active
-	output                hs,            //horizontal synchronization
-	output                vs,            //vertical synchronization
-	output                de,            //video valid
+	input wire            clk,           //pixel clock
+	input wire            rst,           //reset signal high active
+	output wire           hs,            //horizontal synchronization
+	output wire           vs,            //vertical synchronization
+	output wire           de,            //video valid
 
-	output reg [9:0] active_x,              //video x position 
-	output reg [9:0] active_y,             //video y position 
+	output reg [12:0] active_x,              //video x position 
+	output reg [12:0] active_y,             //video y position 
 	output reg rd //real resolution
 	);
 

@@ -1,51 +1,49 @@
+//`default_nettype none
+
 module top(
-	input                       clk,
-	input                       rst_n,
-	inout                       cmos_scl,          //cmos i2c clock
-	inout                       cmos_sda,          //cmos i2c data
-	input                       cmos_vsync,        //cmos vsync
-	input                       cmos_href,         //cmos hsync refrence,data valid
-	input                       cmos_pclk,         //cmos pxiel clock
-    output                      cmos_xclk,         //cmos externl clock 
-	input   [7:0]               cmos_db,           //cmos data
-	output                      cmos_rst_n,        //cmos reset 
-	output                      cmos_pwdn,         //cmos power down
+	input wire               clk,
+	input wire               rst_n,
+	inout wire               cmos_scl,          //cmos i2c clock
+	inout wire               cmos_sda,          //cmos i2c data
+	input wire               cmos_vsync,        //cmos vsync
+	input wire               cmos_href,         //cmos hsync refrence,data valid
+	input wire               cmos_pclk,         //cmos pxiel clock
+    output wire              cmos_xclk,         //cmos externl clock 
+	input wire[7:0]          cmos_db,           //cmos data
+	output wire              cmos_rst_n,        //cmos reset 
+	output wire              cmos_pwdn,         //cmos power down
 	
 //	output [4:0] 				state_led,
 
-	output [15:0]             ddr_addr,         //ROW_WIDTH=16
-	output [3-1:0]            ddr_bank,         //BANK_WIDTH=3
-	output                    ddr_cs,
-	output                    ddr_ras,
-	output                    ddr_cas,
-	output                    ddr_we,
-	output                    ddr_ck,
-	output                    ddr_ck_n,
-	output                    ddr_cke,
-	output                    ddr_odt,
-	output                    ddr_reset_n,
-	output [3:0]              ddr_dm,         //DM_WIDTH=4
-	inout [31:0]              ddr_dq,         //DQ_WIDTH=32
-	inout [3:0]               ddr_dqs,        //DQS_WIDTH=4
-	inout [3:0]               ddr_dqs_n,      //DQS_WIDTH=4
+	output wire[15:0]        ddr_addr,         //ROW_WIDTH=16
+	output wire[3-1:0]       ddr_bank,         //BANK_WIDTH=3
+	output wire              ddr_cs,
+	output wire              ddr_ras,
+	output wire              ddr_cas,
+	output wire              ddr_we,
+	output wire              ddr_ck,
+	output wire              ddr_ck_n,
+	output wire              ddr_cke,
+	output wire              ddr_odt,
+	output wire              ddr_reset_n,
+	output wire[3:0]         ddr_dm,         //DM_WIDTH=4
+	inout wire[31:0]         ddr_dq,         //DQ_WIDTH=32
+	inout wire[3:0]          ddr_dqs,        //DQS_WIDTH=4
+	inout wire[3:0]          ddr_dqs_n,      //DQS_WIDTH=4
 
-    output            O_tmds_clk_p    ,
-    output            O_tmds_clk_n    ,
-    output     [2:0]  O_tmds_data_p   ,//{r,g,b}
-    output     [2:0]  O_tmds_data_n   
+    output wire       O_tmds_clk_p    ,
+    output wire       O_tmds_clk_n    ,
+    output wire[2:0]  O_tmds_data_p   ,//{r,g,b}
+    output wire[2:0]  O_tmds_data_n   
 );
 
 //memory interface
 wire                   memory_clk         ;
 wire                   DDR_pll_lock           ;
-wire[5:0]              app_burst_number   ;
 
 //According to IP parameters to choose
-`define	    WR_VIDEO_WIDTH_32
-`define	DEF_WR_VIDEO_WIDTH 32
-
-`define	    RD_VIDEO_WIDTH_32
-`define	DEF_RD_VIDEO_WIDTH 32
+`define	    RD_VIDEO_WIDTH_16
+`define	DEF_RD_VIDEO_WIDTH 16
 
 `define	USE_THREE_FRAME_BUFFER
 
@@ -54,9 +52,9 @@ wire[5:0]              app_burst_number   ;
 //
 //=========================================================
 //SRAM parameters
-parameter ADDR_WIDTH          = `DEF_ADDR_WIDTH;    //存储单元是byte，总容量=2^27*16bit = 2Gbit,增加1位rank地址，{rank[0],bank[2:0],row[13:0],cloumn[9:0]}
-parameter DATA_WIDTH          = `DEF_SRAM_DATA_WIDTH;   //与生成DDR3IP有关，此ddr3 2Gbit, x16， 时钟比例1:4 ，则固定128bit
-parameter WR_VIDEO_WIDTH      = `DEF_WR_VIDEO_WIDTH;  
+parameter ADDR_WIDTH          = `DEF_ADDR_WIDTH;    //{rank[0],bank[2:0],row[13:0],cloumn[9:0]}
+parameter DATA_WIDTH          = `DEF_SRAM_DATA_WIDTH;   //
+  
 parameter RD_VIDEO_WIDTH      = `DEF_RD_VIDEO_WIDTH;  
 
 wire                      video_clk;         //video pixel clock
@@ -76,11 +74,14 @@ wire[15:0] 			      write_data;
 wire[9:0]                 lut_index;
 wire[31:0]                lut_data;
 
+wire cmos_clk;
+logic cmos_16bit_wr;
+logic camera_de;
+
 assign cmos_xclk  = cmos_clk;
 assign cmos_pwdn  = 1'b0;
 assign cmos_rst_n = 1'b1;
 assign write_data = {cmos_16bit_data[4:0],cmos_16bit_data[10:5],cmos_16bit_data[15:11]};
-assign hdmi_hpd   = 1;
 
 //状态指示灯
 //assign state_led[2] = lcd_vs_cnt[4];
@@ -257,8 +258,6 @@ testpattern testpattern_inst
     .O_data_b    (tp0_data_b         )
 );*/
 
-wire camera_de;
-
 wire dma_clk;
 wire cmd_ready;
 wire[2:0]cmd;
@@ -273,12 +272,13 @@ wire rd_data_valid;
 wire rd_data_end; //unused
 wire[DATA_WIDTH-1:0] rd_data;
 wire init_calib_complete;
+wire[5:0] app_burst_number;
 
 	Video_Frame_Buffer_Top Video_Frame_Buffer_inst(
 		.I_rst_n(rst_n), //input I_rst_n
 		.I_dma_clk(dma_clk), //clock for frame buffer and memory controller (generated by memory controller)
-		.I_wr_halt(), //frame buffer interrupt(write) for debug
-		.I_rd_halt(), //frame buffer interrupt(read) for debug
+		.I_wr_halt(1'b0), //frame buffer interrupt(write) for debug
+		.I_rd_halt(1'b0), //frame buffer interrupt(read) for debug
 // video data input(camera)
 		.I_vin0_clk(cmos_16bit_clk), //camera data input clock
 		.I_vin0_vs_n(~cmos_vsync),   // camera data v sync
@@ -296,7 +296,8 @@ wire init_calib_complete;
 		.I_cmd_ready(cmd_ready),     //input I_cmd_ready
 		.O_cmd(cmd),                 //output [2:0] O_cmd
 		.O_cmd_en(cmd_en),           //output O_cmd_en
-		.O_addr(addr),               //output [27:0] O_addr
+//		.O_app_burst_number(app_burst_number), //output [5:0] O_app_burst_number
+		.O_addr(addr),               //output [28:0] O_addr
 		.I_wr_data_rdy(wr_data_rdy), //input I_wr_data_rdy
 		.O_wr_data_en(wr_data_en),   //output O_wr_data_en
 		.O_wr_data_end(wr_data_end), //output O_wr_data_end
@@ -304,7 +305,7 @@ wire init_calib_complete;
 		.O_wr_data_mask(wr_data_mask), //output [31:0] O_wr_data_mask
 		.I_rd_data_valid(rd_data_valid), //input I_rd_data_valid
 		.I_rd_data_end(rd_data_end), //input I_rd_data_end
-		.I_rd_data(rd_data), //input [255:0] I_rd_data
+		.I_rd_data(rd_data),         //input [255:0] I_rd_data
 		.I_init_calib_complete(init_calib_complete) // DDR3 controller calibration completed
 	);
 
@@ -383,12 +384,12 @@ assign lcd_dclk    			  = video_clk;//video_clk_phs;
 
 	DDR3MI DDR3MI_inst(
 		.clk(clk),           //input clk
-		.pll_stop(pll_stop), //output pll_stop
+		.pll_stop(), //output pll_stop
 		.memory_clk(memory_clk), //input memory_clk
-		.pll_lock(pll_lock), //input pll_lock
+		.pll_lock(DDR_pll_lock), //input pll_lock
 		.rst_n(rst_n),       //reset
 		.clk_out(dma_clk)  , //output clk_out
-		.ddr_rst(ddr_rst),   //output ddr_rst
+		.ddr_rst(),   //output ddr_rst
 		.init_calib_complete(init_calib_complete), //output init_calib_complete
 		.cmd_ready(cmd_ready),     //output cmd_ready
 		.cmd(cmd),                 //input [2:0] cmd
@@ -413,7 +414,7 @@ assign lcd_dclk    			  = video_clk;//video_clk_phs;
 		.O_ddr_cs_n(ddr_cs),    //output O_ddr_cs_n
 		.O_ddr_ras_n(ddr_ras),  //output O_ddr_ras_n
 		.O_ddr_cas_n(ddr_cas),  //output O_ddr_cas_n
-		.O_ddr_we_n(O_ddr_we_n), //output O_ddr_we_n
+		.O_ddr_we_n(ddr_we), //output O_ddr_we_n
 		.O_ddr_clk(ddr_ck),     //output O_ddr_clk
 		.O_ddr_clk_n(ddr_ck_n), //output O_ddr_clk_n
 		.O_ddr_cke(ddr_cke),    //output O_ddr_cke
@@ -536,11 +537,10 @@ DDR3MI DDR3_Memory_Interface_Top_inst
 //==============================================================================
 //TMDS TX(HDMI4)
 wire serial_clk;
-wire TMDS_DDR_pll_lock;
 //wire hdmi4_rst_n;
 
     Gowin_PLL_dvi Gowin_PLL_dvi_inst(
-        .lock(TMDS_DDR_pll_lock), //output lock
+        .lock(), //output lock
         .clkout0(serial_clk), //output clkout0
         .clkout1(video_clk), //output clkout1
         .clkin(clk), //input clkin

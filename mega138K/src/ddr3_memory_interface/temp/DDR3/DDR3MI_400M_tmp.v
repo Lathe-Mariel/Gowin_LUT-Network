@@ -2,10 +2,10 @@
 //All rights reserved.
 //File Title: Template file for instantiation
 //Tool Version: V1.9.9.01 (64-bit)
-//Part Number: GW5AST-LV138FPG676AES
+//Part Number: GW5AST-LV138PG484AES
 //Device: GW5AST-138
 //Device Version: B
-//Created Time: Sun Mar  2 00:56:25 2025
+//Created Time: Mon Mar  3 01:00:21 2025
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
@@ -22,7 +22,7 @@
 		.cmd_ready(cmd_ready_o), //output cmd_ready
 		.cmd(cmd_i), //input [2:0] cmd
 		.cmd_en(cmd_en_i), //input cmd_en
-		.addr(addr_i), //input [28:0] addr
+		.addr(addr_i), //input [29:0] addr
 		.wr_data_rdy(wr_data_rdy_o), //output wr_data_rdy
 		.wr_data(wr_data_i), //input [255:0] wr_data
 		.wr_data_en(wr_data_en_i), //input wr_data_en

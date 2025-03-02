@@ -2,7 +2,7 @@
 <!DOCTYPE gowin-synthesis-project>
 <Project>
     <Version>beta</Version>
-    <Device id="GW5AST-138B" package="PBGA484A" speed="1" partNumber="GW5AST-LV138PG484AES"/>
+    <Device id="GW5AST-138B" package="PBGA484A" speed="1" partNumber="GW5AST-LV138PG484AC1/I0"/>
     <FileList>
         <File path="H:\git\TangPrimer20K_LUT-Network\mega138K\src\cmos_8_16bit.v" type="verilog"/>
         <File path="H:\git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\DDR3MI_400M.v" type="verilog"/>

@@ -3,7 +3,7 @@
 <Project>
     <Template>FPGA</Template>
     <Version>5</Version>
-    <Device name="GW5AST-138B" pn="GW5AST-LV138PG484AES">gw5ast138b-000</Device>
+    <Device name="GW5AST-138B" pn="GW5AST-LV138PG484AC1/I0">gw5ast138b-011</Device>
     <FileList>
         <File path="src/MnistLutSimple.v" type="file.verilog" enable="1"/>
         <File path="src/cmos_8_16bit.v" type="file.verilog" enable="1"/>
