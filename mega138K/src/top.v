@@ -384,12 +384,12 @@ assign lcd_dclk    			  = video_clk;//video_clk_phs;
 
 	DDR3MI DDR3MI_inst(
 		.clk(clk),           //input clk
-		.pll_stop(), //output pll_stop
+		.pll_stop(),         //output pll_stop
 		.memory_clk(memory_clk), //input memory_clk
 		.pll_lock(DDR_pll_lock), //input pll_lock
 		.rst_n(rst_n),       //reset
 		.clk_out(dma_clk)  , //output clk_out
-		.ddr_rst(),   //output ddr_rst
+		.ddr_rst(),          //output ddr_rst
 		.init_calib_complete(init_calib_complete), //output init_calib_complete
 		.cmd_ready(cmd_ready),     //output cmd_ready
 		.cmd(cmd),                 //input [2:0] cmd

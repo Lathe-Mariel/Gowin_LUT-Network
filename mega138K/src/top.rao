@@ -6,8 +6,12 @@
         <SignalList>
             <Signal capture_enable="true">cmos_vsync</Signal>
             <Signal capture_enable="true">cmos_href</Signal>
-            <Signal capture_enable="true">cam_y[1]</Signal>
-            <Signal capture_enable="true">cam_y[0]</Signal>
+            <Signal capture_enable="true">init_calib_complete</Signal>
+            <Signal capture_enable="true">cmd_ready</Signal>
+            <Signal capture_enable="true">wr_data_en</Signal>
+            <Signal capture_enable="true">wr_data_rdy</Signal>
+            <Signal capture_enable="true">rd_data_valid</Signal>
+            <Signal capture_enable="true">camera_de</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -53,5 +57,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1100001001100111</GAO_ID>
+    <GAO_ID>1010111001010001</GAO_ID>
 </GAO_CONFIG>

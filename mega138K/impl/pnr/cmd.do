@@ -1,9 +1,9 @@
--d H:\git\TangPrimer20K_LUT-Network\mega138K\impl\gwsynthesis\top.vg
+-d E:\git\TangPrimer20K_LUT-Network\mega138K\impl\gwsynthesis\top.vg
 -p GW5AST-138B-PBGA484A-1
 -pn GW5AST-LV138PG484AC1/I0
--cst H:\git\TangPrimer20K_LUT-Network\mega138K\src\top.cst
--cfg H:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\device.cfg
--sdc H:\git\TangPrimer20K_LUT-Network\mega138K\src\lcd.sdc
+-cst E:\git\TangPrimer20K_LUT-Network\mega138K\src\top.cst
+-cfg E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\device.cfg
+-sdc E:\git\TangPrimer20K_LUT-Network\mega138K\src\lcd.sdc
 -bit
 -tr
 -ph
