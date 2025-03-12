@@ -1,8 +1,12 @@
 module gw_gao(
     cmos_vsync,
     cmos_href,
-    \cam_y[1] ,
-    \cam_y[0] ,
+    init_calib_complete,
+    cmd_ready,
+    wr_data_en,
+    wr_data_rdy,
+    rd_data_valid,
+    camera_de,
     cmos_pclk,
     tms_pad_i,
     tck_pad_i,
@@ -12,8 +16,12 @@ module gw_gao(
 
 input cmos_vsync;
 input cmos_href;
-input \cam_y[1] ;
-input \cam_y[0] ;
+input init_calib_complete;
+input cmd_ready;
+input wr_data_en;
+input wr_data_rdy;
+input rd_data_valid;
+input camera_de;
 input cmos_pclk;
 input tms_pad_i;
 input tck_pad_i;
@@ -22,8 +30,12 @@ output tdo_pad_o;
 
 wire cmos_vsync;
 wire cmos_href;
-wire \cam_y[1] ;
-wire \cam_y[0] ;
+wire init_calib_complete;
+wire cmd_ready;
+wire wr_data_en;
+wire wr_data_rdy;
+wire rd_data_valid;
+wire camera_de;
 wire cmos_pclk;
 wire tms_pad_i;
 wire tck_pad_i;
@@ -99,7 +111,7 @@ gw_con_top  u_icon_top(
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(cmos_vsync),
-    .data_i({cmos_vsync,cmos_href,\cam_y[1] ,\cam_y[0] }),
+    .data_i({cmos_vsync,cmos_href,init_calib_complete,cmd_ready,wr_data_en,wr_data_rdy,rd_data_valid,camera_de}),
     .clk_i(cmos_pclk)
 );
 

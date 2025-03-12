@@ -13,6 +13,7 @@ WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" 
 WARN  (TA1117) : Can't calculate clocks' relationship between: "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk" and "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk" and "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "clk" and "mem_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk" and "cmos_pclk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -30,5 +31,5 @@ Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.pin.html" 
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.rpt.html" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.rpt.txt" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.tr.html" completed
-Mon Mar 10 21:52:55 2025
+Wed Mar 12 22:55:43 2025
 

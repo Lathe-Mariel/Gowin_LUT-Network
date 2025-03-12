@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138PG484AC1/I0
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Mon Mar 10 21:52:55 2025
+  <Created Time>:Wed Mar 12 22:55:42 2025
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 1: CPU time = 0h 0m 0.144s, Elapsed time = 0h 0m 0.144s
+    Placement Phase 1: CPU time = 0h 0m 0.151s, Elapsed time = 0h 0m 0.152s
     Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
+    Placement Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
     Total Placement: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.777s, Elapsed time = 0h 0m 0.777s
-    Routing Phase 1: CPU time = 0h 0m 26s, Elapsed time = 0h 0m 26s
-    Routing Phase 2: CPU time = 0h 0m 0.244s, Elapsed time = 0h 0m 0.243s
+    Routing Phase 0: CPU time = 0h 0m 0.746s, Elapsed time = 0h 0m 0.747s
+    Routing Phase 1: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s
+    Routing Phase 2: CPU time = 0h 0m 0.4s, Elapsed time = 0h 0m 0.4s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 27s, Elapsed time = 0h 0m 27s
  Generate output files:
     CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
 
- Total Time and Memory Usage: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s, Peak memory usage = 1526MB
+ Total Time and Memory Usage: CPU time = 0h 0m 45s, Elapsed time = 0h 0m 45s, Peak memory usage = 1433MB
 
 
 3. Resource Usage Summary
@@ -40,19 +40,19 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 5739/138240  5%
-    --LUT,ALU,ROM16           | 5739(5430 LUT, 309 ALU, 0 ROM16)
+  Logic                       | 6295/138240  5%
+    --LUT,ALU,ROM16           | 6295(5963 LUT, 332 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 5536/139095  4%
+  Register                    | 5847/139095  5%
     --Logic Register as Latch | 0/138240  0%
-    --Logic Register as FF    | 5536/138240  5%
+    --Logic Register as FF    | 5847/138240  5%
     --I/O Register as Latch   | 0/855  0%
     --I/O Register as FF      | 0/855  0%
-  CLS                         | 5435/69120  8%
-  I/O Port                    | 98
-  I/O Buf                     | 71
-    --Input Buf               | 13
-    --Output Buf              | 38
+  CLS                         | 5899/69120  9%
+  I/O Port                    | 102
+  I/O Buf                     | 75
+    --Input Buf               | 16
+    --Output Buf              | 39
     --Inout Buf               | 20
   IOLOGIC                     | 24%
     --IDES8_MEM               | 16
@@ -60,8 +60,8 @@
     --OSER8_MEM               | 20
     --OSER10                  | 4
     --IODELAY                 | 16
-  BSRAM                       | 8%
-    --SDPB                    | 20
+  BSRAM                       | 13%
+    --SDPB                    | 38
     --SDPX9B                  | 4
   DSP                         | 0%
   PLL                         | 2/12  17%
@@ -88,7 +88,7 @@
   bank 5   | 1/35(2%)    
   bank 6   | 44/50(88%)  
   bank 7   | 28/50(56%)  
-  bank 10  | 0/11(0%)    
+  bank 10  | 4/11(36%)   
   =======================
 
 
@@ -97,8 +97,8 @@
   -------------------------------
   Global Clock  | Usage       
   -------------------------------
-  PRIMARY       | 7/8(88%)
-  LW            | 2/8(25%)
+  PRIMARY       | 8/8(100%)
+  LW            | 3/8(38%)
   GCLK_PIN      | 7/24(30%)
   PLL           | 2/12(17%)
   CLKDIV        | 1/24(5%)
@@ -111,14 +111,16 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  cmos_pclk_d    | PRIMARY        |  PBR2
+  clk_d          | PRIMARY        |  PTR2 PBR1 PBR2 PBR3
   memory_clk     | PRIMARY        |  PTR0 PBR0
-  cmos_xclk_d    | PRIMARY        |  PBR1 PBR2
-  cmos_16bit_clk | PRIMARY        |  PTR2 PBR1 PBR2
-  dma_clk        | PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
+  cmos_xclk_d    | PRIMARY        |  PTR2 PBR1 PBR2
+  cmos_16bit_clk | PRIMARY        |  PTR1 PTR2 PBR1 PBR2
+  dma_clk        | PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1
   serial_clk     | PRIMARY        |  PBR3
   video_clk      | PRIMARY        |  PTR2 PBR1 PBR2 PBR3
+  gw_gao_inst_0/control0[0]| PRIMARY        |  PTR1 PBR0 PBR1
   cmos_vsync_d   | LW             |  -
+  cmos_pclk_d    | LW             |  -
   DDR3MI_inst/gw3_top/ddr_rst| LW             |  -
   memory_clk     | HCLK           |  -
   serial_clk     | HCLK           |  -
@@ -143,6 +145,9 @@ cmos_db[4]        |           | AB22/4        | Y          | in    | IOB129[B] |
 cmos_db[5]        |           | Y22/4         | Y          | in    | IOB131[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_db[6]        |           | Y21/4         | Y          | in    | IOB131[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_db[7]        |           | R18/4         | Y          | in    | IOB138[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
+tms_pad_i         |           | T13/10        | N          | in    | IOB169[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
+tck_pad_i         |           | V12/10        | N          | in    | IOB173[A] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
+tdi_pad_i         |           | R13/10        | N          | in    | IOB173[B] | LVCMOS33   | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_xclk         |           | T18/4         | Y          | out   | IOB138[B] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_rst_n        |           | T21/4         | Y          | out   | IOB97[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_pwdn         |           | P16/4         | Y          | out   | IOB144[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
@@ -181,6 +186,7 @@ O_tmds_clk_p      | O_tmds_clk_n | G15,G16/3     | Y          | out   | IOR105  
 O_tmds_data_p[0]  | O_tmds_data_n[0] | J14,H14/3     | Y          | out   | IOR103   | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 2.5        | NONE          | NONE         
 O_tmds_data_p[1]  | O_tmds_data_n[1] | J15,H15/3     | Y          | out   | IOR101   | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 2.5        | NONE          | NONE         
 O_tmds_data_p[2]  | O_tmds_data_n[2] | K17,J17/3     | Y          | out   | IOR58    | LVDS25     | 3.5   | NONE      | OFF       | OFF        | NONE       | OFF        | OFF             | OFF           | 2.5        | NONE          | NONE         
+tdo_pad_o         |           | U13/10        | N          | out   | IOB169[A] | LVCMOS33   | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_scl          |           | R19/4         | Y          | io    | IOB99[B] | LVCMOS33   | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 cmos_sda          |           | P19/4         | Y          | io    | IOB99[A] | LVCMOS33   | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3        | MEDIUM        | NONE         
 ddr_dq[0]         |           | Y4/6          | Y          | io    | IOL78[A] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM        | OFF          
@@ -315,12 +321,12 @@ N14/4    | -                 | in    | IOB142[B] | LVCMOS33 | 8     | NONE      
 P16/4    | cmos_pwdn         | out   | IOB144[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 R17/4    | cmos_href         | in    | IOB144[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 N15/4    | -                 | in    | IOB146[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
-U13/10   | -                 | out   | IOB169[A] | LVCMOS33 | 8     | UP        | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
-T13/10   | -                 | in    | IOB169[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
+U13/10   | tdo_pad_o         | out   | IOB169[A] | LVCMOS33 | 8     | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
+T13/10   | tms_pad_i         | in    | IOB169[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 U12/10   | -                 | in    | IOB171[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 G11/10   | -                 | in    | IOB171[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
-V12/10   | -                 | in    | IOB173[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
-R13/10   | -                 | in    | IOB173[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
+V12/10   | tck_pad_i         | in    | IOB173[A] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
+R13/10   | tdi_pad_i         | in    | IOB173[B] | LVCMOS33 | OFF   | NONE      | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 U11/10   | -                 | in    | IOB175[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 L12/10   | -                 | in    | IOB175[B] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
 U10/10   | -                 | in    | IOB177[A] | LVCMOS33 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 3.3   | MEDIUM        | NONE         
