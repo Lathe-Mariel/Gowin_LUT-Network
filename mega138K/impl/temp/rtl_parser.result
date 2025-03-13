@@ -1,49 +1,49 @@
 [
  {
-  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+  "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
   "InstLine" : 3,
   "InstName" : "top",
-  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+  "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
   "ModuleLine" : 3,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 95,
     "InstName" : "Gowin_PLL_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll.v",
     "ModuleLine" : 10,
     "ModuleName" : "Gowin_PLL"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 104,
     "InstName" : "i2c_config_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_config.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
     "ModuleName" : "i2c_config",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_config.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_config.v",
       "InstLine" : 101,
       "InstName" : "i2c_master_top_m0",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_top.v",
       "ModuleLine" : 1,
       "ModuleName" : "i2c_master_top",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_top.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_top.v",
         "InstLine" : 232,
         "InstName" : "byte_controller",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_byte_ctrl.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_byte_ctrl.v",
         "ModuleLine" : 75,
         "ModuleName" : "i2c_master_byte_ctrl",
         "SubInsts" : [
          {
-          "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_byte_ctrl.v",
+          "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_byte_ctrl.v",
           "InstLine" : 146,
           "InstName" : "bit_controller",
-          "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_bit_ctrl.v",
+          "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/i2c_master/i2c_master_bit_ctrl.v",
           "ModuleLine" : 143,
           "ModuleName" : "i2c_master_bit_ctrl"
          }
@@ -54,132 +54,132 @@
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 119,
     "InstName" : "lut_ov5640_rgb565_480_272_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/lut_ov5640_rgb565_480_272.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/lut_ov5640_rgb565_480_272.v",
     "ModuleLine" : 1,
     "ModuleName" : "lut_ov5640_rgb565_480_272"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 127,
     "InstName" : "cmos_8_16bit_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/cmos_8_16bit.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
     "ModuleName" : "cmos_8_16bit"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 195,
     "InstName" : "u_MnistLutSimple",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
     "ModuleLine" : 5,
     "ModuleName" : "MnistLutSimple",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 40,
       "InstName" : "i_MnistLutSimple_sub0",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 194,
       "ModuleName" : "MnistLutSimple_sub0",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 223,
         "InstName" : "i_MnistLutSimple_sub0_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 262,
         "ModuleName" : "MnistLutSimple_sub0_base"
        }
       ]
      },
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 66,
       "InstName" : "i_MnistLutSimple_sub1",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 16153,
       "ModuleName" : "MnistLutSimple_sub1",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 16182,
         "InstName" : "i_MnistLutSimple_sub1_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 16221,
         "ModuleName" : "MnistLutSimple_sub1_base"
        }
       ]
      },
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 92,
       "InstName" : "i_MnistLutSimple_sub2",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 24176,
       "ModuleName" : "MnistLutSimple_sub2",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 24205,
         "InstName" : "i_MnistLutSimple_sub2_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 24244,
         "ModuleName" : "MnistLutSimple_sub2_base"
        }
       ]
      },
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 118,
       "InstName" : "i_MnistLutSimple_sub3",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 26247,
       "ModuleName" : "MnistLutSimple_sub3",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 26276,
         "InstName" : "i_MnistLutSimple_sub3_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 26315,
         "ModuleName" : "MnistLutSimple_sub3_base"
        }
       ]
      },
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 144,
       "InstName" : "i_MnistLutSimple_sub4",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 31294,
       "ModuleName" : "MnistLutSimple_sub4",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 31323,
         "InstName" : "i_MnistLutSimple_sub4_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 31362,
         "ModuleName" : "MnistLutSimple_sub4_base"
        }
       ]
      },
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "InstLine" : 170,
       "InstName" : "i_MnistLutSimple_sub5",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
       "ModuleLine" : 32621,
       "ModuleName" : "MnistLutSimple_sub5",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "InstLine" : 32650,
         "InstName" : "i_MnistLutSimple_sub5_base",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/MnistLutSimple.v",
         "ModuleLine" : 32689,
         "ModuleName" : "MnistLutSimple_sub5_base"
        }
@@ -188,70 +188,70 @@
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 216,
     "InstName" : "vga_timing_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/vga_timing.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/vga_timing.v",
     "ModuleLine" : 1,
     "ModuleName" : "vga_timing"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 277,
     "InstName" : "Video_Frame_Buffer_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
     "ModuleLine" : 4966,
     "ModuleName" : "Video_Frame_Buffer_Top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
       "InstLine" : 5027,
       "InstName" : "vfb_ddr3_wrapper_inst",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
       "ModuleLine" : 10,
       "ModuleName" : "~vfb_ddr3_wrapper.Video_Frame_Buffer_Top"
      }
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 385,
     "InstName" : "DDR3MI_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
     "ModuleLine" : 17920,
     "ModuleName" : "DDR3MI",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
       "InstLine" : 18005,
       "InstName" : "gw3_top",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
       "ModuleLine" : 10,
       "ModuleName" : "~GW_DDR3_PHY_MC.DDR3MI"
      }
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 542,
     "InstName" : "Gowin_PLL_dvi_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll_dvi.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/gowin_pll_dvi.v",
     "ModuleLine" : 10,
     "ModuleName" : "Gowin_PLL_dvi"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/top.v",
     "InstLine" : 550,
     "InstName" : "DVI_TX_Top_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 1089,
     "ModuleName" : "DVI_TX_Top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
       "InstLine" : 1120,
       "InstName" : "rgb2dvi_inst",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/dvi_tx/DVI_TX_Top.v",
       "ModuleLine" : 10,
       "ModuleName" : "~rgb2dvi.DVI_TX_Top"
      }
