@@ -12,6 +12,9 @@
             <Signal capture_enable="true">wr_data_rdy</Signal>
             <Signal capture_enable="true">rd_data_valid</Signal>
             <Signal capture_enable="true">camera_de</Signal>
+            <Signal capture_enable="true">cmd_en</Signal>
+            <Signal capture_enable="true">rst_n</Signal>
+            <Signal capture_enable="true">DDR_pll_lock</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -57,5 +60,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1010111001010001</GAO_ID>
+    <GAO_ID>0010110001101101</GAO_ID>
 </GAO_CONFIG>

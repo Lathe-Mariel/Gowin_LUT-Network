@@ -7,6 +7,9 @@ module gw_gao(
     wr_data_rdy,
     rd_data_valid,
     camera_de,
+    cmd_en,
+    rst_n,
+    DDR_pll_lock,
     cmos_pclk,
     tms_pad_i,
     tck_pad_i,
@@ -22,6 +25,9 @@ input wr_data_en;
 input wr_data_rdy;
 input rd_data_valid;
 input camera_de;
+input cmd_en;
+input rst_n;
+input DDR_pll_lock;
 input cmos_pclk;
 input tms_pad_i;
 input tck_pad_i;
@@ -36,6 +42,9 @@ wire wr_data_en;
 wire wr_data_rdy;
 wire rd_data_valid;
 wire camera_de;
+wire cmd_en;
+wire rst_n;
+wire DDR_pll_lock;
 wire cmos_pclk;
 wire tms_pad_i;
 wire tck_pad_i;
@@ -111,7 +120,7 @@ gw_con_top  u_icon_top(
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(cmos_vsync),
-    .data_i({cmos_vsync,cmos_href,init_calib_complete,cmd_ready,wr_data_en,wr_data_rdy,rd_data_valid,camera_de}),
+    .data_i({cmos_vsync,cmos_href,init_calib_complete,cmd_ready,wr_data_en,wr_data_rdy,rd_data_valid,camera_de,cmd_en,rst_n,DDR_pll_lock}),
     .clk_i(cmos_pclk)
 );
 
