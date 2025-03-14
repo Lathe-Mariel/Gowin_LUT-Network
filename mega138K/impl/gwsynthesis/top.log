@@ -277,17 +277,9 @@ Compiling module 'vga_timing'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\vga
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\vga_timing.v":89)
 Compiling module 'Video_Frame_Buffer_Top'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\video_frame_buffer\Video_Frame_Buffer_Top.v":4966)
 Compiling module '**'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\video_frame_buffer\Video_Frame_Buffer_Top.v":4965)
-Compiling module 'DDR3MI'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\DDR3MI_400M.v":17920)
-Compiling module '**'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\DDR3MI_400M.v":17919)
-WARN  (EX3670) : Actual bit length 29 differs from formal bit length 30 for port 'addr'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":397)
-WARN  (EX3670) : Actual bit length 256 differs from formal bit length 128 for port 'wr_data'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":399)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'wr_data_mask'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":402)
-WARN  (EX3670) : Actual bit length 256 differs from formal bit length 128 for port 'rd_data'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":403)
-WARN  (EX3670) : Actual bit length 16 differs from formal bit length 14 for port 'O_ddr_addr'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":412)
-WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'O_ddr_dqm'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":423)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'IO_ddr_dq'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":424)
-WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'IO_ddr_dqs'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":425)
-WARN  (EX3670) : Actual bit length 4 differs from formal bit length 2 for port 'IO_ddr_dqs_n'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":426)
+Compiling module 'DDR3MI'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\DDR3MI_400M.v":28354)
+Compiling module '**'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\DDR3MI_400M.v":28353)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 15 for port 'O_ddr_addr'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":412)
 WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":490)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":498)
 Compiling module 'Gowin_PLL_dvi'("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\gowin_pll\gowin_pll_dvi.v":10)
@@ -306,9 +298,6 @@ Compiling module '**'("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\data\ipcores\GAO\GW_AO_
 Trying to combine GAO to RTL design
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0021) : Inout ddr_dq[31:16] is unused("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":30)
-WARN  (CV0021) : Inout ddr_dqs[3:2] is unused("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":31)
-WARN  (CV0021) : Inout ddr_dqs_n[3:2] is unused("C:\Git\TangPrimer20K_LUT-Network\mega138K\src\top.v":32)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed

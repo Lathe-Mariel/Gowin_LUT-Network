@@ -218,12 +218,12 @@
     "InstLine" : 385,
     "InstName" : "DDR3MI_inst",
     "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
-    "ModuleLine" : 17920,
+    "ModuleLine" : 28354,
     "ModuleName" : "DDR3MI",
     "SubInsts" : [
      {
       "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
-      "InstLine" : 18005,
+      "InstLine" : 28439,
       "InstName" : "gw3_top",
       "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/DDR3MI_400M.v",
       "ModuleLine" : 10,

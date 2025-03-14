@@ -272,7 +272,7 @@ wire rd_data_valid;
 wire rd_data_end; //unused
 wire[DATA_WIDTH-1:0] rd_data;
 wire init_calib_complete;
-wire[5:0] app_burst_number;
+//wire[5:0] app_burst_number;
 
 	Video_Frame_Buffer_Top Video_Frame_Buffer_inst(
 		.I_rst_n(rst_n), //input I_rst_n

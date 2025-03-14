@@ -144,7 +144,7 @@ WARN  (EX0211) : The output port "loop_en" of module "~gwmc_bank_ctrl.DDR3MI" ha
 WARN  (EX0211) : The output port "updata_dqs_req" of module "~ddr_phy_top.DDR3MI" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (EX0211) : The output port "updata_dqs_finished" of module "~ddr_phy_top.DDR3MI" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 [5%] Running netlist conversion ...
-WARN  (CV0018) : Input addr[29] is unused("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\DDR3_TOP.v":117)
+WARN  (CV0018) : Input addr[28] is unused("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\DDR3_TOP.v":117)
 WARN  (CV0016) : Input ref_req is unused("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\DDR3_TOP.v":129)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -161,6 +161,8 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
+WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (NL0002) : The module "~of_fifo_ctrl.DDR3MI" instantiated to "of_fifo_ctrl_inst" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)

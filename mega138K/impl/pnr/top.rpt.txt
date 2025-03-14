@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138PG484AC1/I0
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Thu Mar 13 21:10:01 2025
+  <Created Time>:Fri Mar 14 18:51:11 2025
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 1: CPU time = 0h 0m 0.151s, Elapsed time = 0h 0m 0.152s
-    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Placement Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Total Placement: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
+    Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 1: CPU time = 0h 0m 0.19s, Elapsed time = 0h 0m 0.19s
+    Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 3: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Total Placement: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.564s, Elapsed time = 0h 0m 0.564s
-    Routing Phase 1: CPU time = 0h 0m 20s, Elapsed time = 0h 0m 20s
-    Routing Phase 2: CPU time = 0h 0m 0.196s, Elapsed time = 0h 0m 0.197s
+    Routing Phase 0: CPU time = 0h 0m 0.581s, Elapsed time = 0h 0m 0.581s
+    Routing Phase 1: CPU time = 0h 1m 38s, Elapsed time = 0h 1m 38s
+    Routing Phase 2: CPU time = 0h 0m 0.227s, Elapsed time = 0h 0m 0.227s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 20s, Elapsed time = 0h 0m 20s
+    Total Routing: CPU time = 0h 1m 38s, Elapsed time = 0h 1m 38s
  Generate output files:
     CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
 
- Total Time and Memory Usage: CPU time = 0h 0m 37s, Elapsed time = 0h 0m 37s, Peak memory usage = 1576MB
+ Total Time and Memory Usage: CPU time = 0h 1m 57s, Elapsed time = 0h 1m 57s, Peak memory usage = 1547MB
 
 
 3. Resource Usage Summary
@@ -40,29 +40,29 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 6331/138240                         |  5%
-    --LUT,ALU,ROM16           | 6331(5996 LUT, 335 ALU, 0 ROM16)    | -
+  Logic                       | 7558/138240                         |  6%
+    --LUT,ALU,ROM16           | 7558(7156 LUT, 402 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 5853/139095                         |  5%
+  Register                    | 8042/139095                         |  6%
     --Logic Register as Latch | 0/138240                            |  0%
-    --Logic Register as FF    | 5853/138240                         |  5%
+    --Logic Register as FF    | 8042/138240                         |  6%
     --I/O Register as Latch   | 0/855                               |  0%
     --I/O Register as FF      | 0/855                               |  0%
-  CLS                         | 5947/69120                          |  9%
+  CLS                         | 7455/69120                          |  11%
   I/O Port                    | 102/296                             |  35%
-  I/O Buf                     | 75                                  | -
+  I/O Buf                     | 93                                  | -
     --Input Buf               | 16                                  | -
     --Output Buf              | 39                                  | -
-    --Inout Buf               | 20                                  | -
-  IOLOGIC                     | 68/285                              | 24%
-    --IDES8_MEM               | 16
-    --OSER8                   | 24
-    --OSER8_MEM               | 20
+    --Inout Buf               | 38                                  | -
+  IOLOGIC                     | 105/285                             | 37%
+    --IDES8_MEM               | 32
+    --OSER8                   | 25
+    --OSER8_MEM               | 40
     --OSER10                  | 4
-    --IODELAY                 | 16
-  BSRAM                       | 72/340                              | 22%
-    --SDPB                    | 64
-    --SDPX9B                  | 8
+    --IODELAY                 | 32
+  BSRAM                       | 88/340                              | 26%
+    --SDPB                    | 72
+    --SDPX9B                  | 16
   ================================================================================
 
 
@@ -92,7 +92,7 @@
   GCLK_PIN      | 7/24          | 30%
   CLKDIV        | 1/24          | 5%
   DDRDLL        | 1/4           | 25%
-  DQS           | 2/23          | 9%
+  DQS           | 4/23          | 18%
   PLL           | 2/12          | 17%
   ==========================================
 
@@ -104,10 +104,10 @@
   -------------------------------------------
   clk_d          | PRIMARY        |  PTR1 PBR1 PBR2 PBR3
   cmos_xclk_d    | PRIMARY        |  PTR2 PBR2
-  cmos_16bit_clk | PRIMARY        |  PTR1 PTR2 PBR1 PBR2
+  cmos_16bit_clk | PRIMARY        |  PTR2 PBR1 PBR2
   dma_clk        | PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
   video_clk      | PRIMARY        |  PTR1 PTR2 PBR1 PBR2 PBR3
-  gw_gao_inst_0/control0[0]| PRIMARY        |  PTR1 PBR1 PBR2
+  gw_gao_inst_0/control0[0]| PRIMARY        |  PTR1 PBR0 PBR1 PBR2
   cmos_vsync_d   | LW             |  -
   cmos_pclk_d    | LW             |  -
   DDR3MI_inst/gw3_top/ddr_rst| LW             |  -
@@ -213,8 +213,8 @@ ddr_dq[30]        | -         | U1/6          | Y          | io    | IOL56[B] | 
 ddr_dq[31]        | -         | Y2/6          | Y          | io    | IOL62[B] | SSTL15     | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5        | MEDIUM        | OFF          
 ddr_dqs[0]        | ddr_dqs_n[0] | Y3,AA3/6      | Y          | io    | IOL69    | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
 ddr_dqs[1]        | ddr_dqs_n[1] | V9,V8/6       | Y          | io    | IOL96    | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
-ddr_dqs[2]        | -         | W6/6          | Y          | io    | IOL94[A] | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
-ddr_dqs[3]        | -         | R3/6          | Y          | io    | IOL65[A] | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
+ddr_dqs[2]        | ddr_dqs_n[2] | W6,W5/6       | Y          | io    | IOL94    | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
+ddr_dqs[3]        | ddr_dqs_n[3] | R3,R2/6       | Y          | io    | IOL65    | SSTL15D    | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5        | MEDIUM        | OFF          
 =========================================================================================================================================================================================================================
 
 
@@ -382,8 +382,8 @@ U3/6     | ddr_dq[27]        | io    | IOL60[A] | SSTL15   | 12    | NONE      |
 V3/6     | -                 | in    | IOL60[B] | LVCMOS15 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 1.5   | MEDIUM        | NONE         
 W2/6     | ddr_dq[24]        | io    | IOL62[A] | SSTL15   | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5   | MEDIUM        | OFF          
 Y2/6     | ddr_dq[31]        | io    | IOL62[B] | SSTL15   | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5   | MEDIUM        | OFF          
-R3/6     | ddr_dqs[3](p)     | io    | IOL65[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
-R2/6     | ddr_dqs[3](n)     | io    | IOL65[B] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
+R3/6     | ddr_dqs[3]        | io    | IOL65[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
+R2/6     | ddr_dqs_n[3]      | io    | IOL65[B] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
 W1/6     | ddr_dm[3]         | out   | IOL67[A] | SSTL15   | 12    | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5   | MEDIUM        | NONE         
 Y1/6     | ddr_dq[25]        | io    | IOL67[B] | SSTL15   | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5   | MEDIUM        | OFF          
 Y3/6     | ddr_dqs[0]        | io    | IOL69[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
@@ -409,8 +409,8 @@ R6/6     | ddr_dq[17]        | io    | IOL89[A] | SSTL15   | 12    | NONE      |
 T6/6     | ddr_dm[2]         | out   | IOL89[B] | SSTL15   | 12    | NONE      | OFF       | OFF        | OFF        | OFF        | OFF             | OFF           | 1.5   | MEDIUM        | NONE         
 Y6/6     | ddr_dq[20]        | io    | IOL92[A] | SSTL15   | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5   | MEDIUM        | OFF          
 AA6/6    | -                 | in    | IOL92[B] | LVCMOS15 | 8     | UP        | OFF       | ON         | OFF        | OFF        | OFF             | OFF           | 1.5   | MEDIUM        | NONE         
-W6/6     | ddr_dqs[2](p)     | io    | IOL94[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
-W5/6     | ddr_dqs[2](n)     | io    | IOL94[B] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
+W6/6     | ddr_dqs[2]        | io    | IOL94[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
+W5/6     | ddr_dqs_n[2]      | io    | IOL94[B] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
 V9/6     | ddr_dqs[1]        | io    | IOL96[A] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
 V8/6     | ddr_dqs_n[1]      | io    | IOL96[B] | SSTL15D  | 8     | NONE      | OFF       | NONE       | OFF        | OFF        | OFF             | ON            | 1.5   | MEDIUM        | OFF          
 AB7/6    | ddr_dq[10]        | io    | IOL98[A] | SSTL15   | 12    | NONE      | OFF       | NONE       | OFF        | INTERNAL   | OFF             | OFF           | 1.5   | MEDIUM        | OFF          
