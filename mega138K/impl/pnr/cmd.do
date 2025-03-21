@@ -4,6 +4,7 @@
 -cst E:\git\TangPrimer20K_LUT-Network\mega138K\src\top.cst
 -cfg E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\device.cfg
 -sdc E:\git\TangPrimer20K_LUT-Network\mega138K\src\lcd.sdc
+-gao_crc 0010110001101101
 -bit
 -tr
 -ph
@@ -16,3 +17,4 @@
 -route_maxfan 23
 -global_freq 100.000
 -enable_dsrm 0
+-rtl_gao
