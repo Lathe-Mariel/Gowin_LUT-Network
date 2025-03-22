@@ -7,13 +7,7 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1118) : the clock "clk"'s frequency does not match Gowin_PLL_dvi_inst/PLL_inst's param "FCLKIN = "50""
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "Gowin_PLL_inst/PLL_inst/CLKOUT1.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" and "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk" and "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk" and "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "clk" and "mem_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1.default_gen_clk" and "cmos_pclk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_pclk" and "cmos_16bit_clk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -31,5 +25,5 @@ Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.pin.html" 
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.rpt.html" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.rpt.txt" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\impl\pnr\top.tr.html" completed
-Fri Mar 21 22:14:19 2025
+Sat Mar 22 08:59:02 2025
 
