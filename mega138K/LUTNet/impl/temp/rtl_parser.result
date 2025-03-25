@@ -1,0 +1,388 @@
+[
+ {
+  "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+  "InstLine" : 3,
+  "InstName" : "top",
+  "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 95,
+    "InstName" : "Gowin_PLL_inst",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL"
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 104,
+    "InstName" : "i2c_config_m0",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_config.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "i2c_config",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_config.v",
+      "InstLine" : 101,
+      "InstName" : "i2c_master_top_m0",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_top.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "i2c_master_top",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_top.v",
+        "InstLine" : 232,
+        "InstName" : "byte_controller",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_byte_ctrl.v",
+        "ModuleLine" : 75,
+        "ModuleName" : "i2c_master_byte_ctrl",
+        "SubInsts" : [
+         {
+          "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_byte_ctrl.v",
+          "InstLine" : 146,
+          "InstName" : "bit_controller",
+          "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_bit_ctrl.v",
+          "ModuleLine" : 143,
+          "ModuleName" : "i2c_master_bit_ctrl"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 119,
+    "InstName" : "lut_ov5640_rgb565_480_272_m0",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/lut_ov5640_rgb565_480_272.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lut_ov5640_rgb565_480_272"
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 127,
+    "InstName" : "cmos_8_16bit_m0",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/cmos_8_16bit.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "cmos_8_16bit"
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 195,
+    "InstName" : "u_MnistLutSimple",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+    "ModuleLine" : 5,
+    "ModuleName" : "MnistLutSimple",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 40,
+      "InstName" : "i_MnistLutSimple_sub0",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 376,
+      "ModuleName" : "MnistLutSimple_sub0",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 405,
+        "InstName" : "i_MnistLutSimple_sub0_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 444,
+        "ModuleName" : "MnistLutSimple_sub0_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 66,
+      "InstName" : "i_MnistLutSimple_sub1",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 32207,
+      "ModuleName" : "MnistLutSimple_sub1",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 32236,
+        "InstName" : "i_MnistLutSimple_sub1_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 32275,
+        "ModuleName" : "MnistLutSimple_sub1_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 92,
+      "InstName" : "i_MnistLutSimple_sub2",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 48166,
+      "ModuleName" : "MnistLutSimple_sub2",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 48195,
+        "InstName" : "i_MnistLutSimple_sub2_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 48234,
+        "ModuleName" : "MnistLutSimple_sub2_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 118,
+      "InstName" : "i_MnistLutSimple_sub3",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 68093,
+      "ModuleName" : "MnistLutSimple_sub3",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 68122,
+        "InstName" : "i_MnistLutSimple_sub3_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 68161,
+        "ModuleName" : "MnistLutSimple_sub3_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 144,
+      "InstName" : "i_MnistLutSimple_sub4",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 88020,
+      "ModuleName" : "MnistLutSimple_sub4",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 88049,
+        "InstName" : "i_MnistLutSimple_sub4_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 88088,
+        "ModuleName" : "MnistLutSimple_sub4_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 170,
+      "InstName" : "i_MnistLutSimple_sub5",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 107947,
+      "ModuleName" : "MnistLutSimple_sub5",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 107976,
+        "InstName" : "i_MnistLutSimple_sub5_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 108015,
+        "ModuleName" : "MnistLutSimple_sub5_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 196,
+      "InstName" : "i_MnistLutSimple_sub6",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 127874,
+      "ModuleName" : "MnistLutSimple_sub6",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 127903,
+        "InstName" : "i_MnistLutSimple_sub6_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 127942,
+        "ModuleName" : "MnistLutSimple_sub6_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 222,
+      "InstName" : "i_MnistLutSimple_sub7",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 147801,
+      "ModuleName" : "MnistLutSimple_sub7",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 147830,
+        "InstName" : "i_MnistLutSimple_sub7_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 147869,
+        "ModuleName" : "MnistLutSimple_sub7_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 248,
+      "InstName" : "i_MnistLutSimple_sub8",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 167728,
+      "ModuleName" : "MnistLutSimple_sub8",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 167757,
+        "InstName" : "i_MnistLutSimple_sub8_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 167796,
+        "ModuleName" : "MnistLutSimple_sub8_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 274,
+      "InstName" : "i_MnistLutSimple_sub9",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 187655,
+      "ModuleName" : "MnistLutSimple_sub9",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 187684,
+        "InstName" : "i_MnistLutSimple_sub9_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 187723,
+        "ModuleName" : "MnistLutSimple_sub9_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 300,
+      "InstName" : "i_MnistLutSimple_sub10",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 207582,
+      "ModuleName" : "MnistLutSimple_sub10",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 207611,
+        "InstName" : "i_MnistLutSimple_sub10_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 207650,
+        "ModuleName" : "MnistLutSimple_sub10_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 326,
+      "InstName" : "i_MnistLutSimple_sub11",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 212629,
+      "ModuleName" : "MnistLutSimple_sub11",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 212658,
+        "InstName" : "i_MnistLutSimple_sub11_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 212697,
+        "ModuleName" : "MnistLutSimple_sub11_base"
+       }
+      ]
+     },
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "InstLine" : 352,
+      "InstName" : "i_MnistLutSimple_sub12",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+      "ModuleLine" : 213956,
+      "ModuleName" : "MnistLutSimple_sub12",
+      "SubInsts" : [
+       {
+        "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "InstLine" : 213985,
+        "InstName" : "i_MnistLutSimple_sub12_base",
+        "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+        "ModuleLine" : 214024,
+        "ModuleName" : "MnistLutSimple_sub12_base"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 216,
+    "InstName" : "vga_timing_m0",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/vga_timing.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "vga_timing"
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 277,
+    "InstName" : "Video_Frame_Buffer_inst",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+    "ModuleLine" : 4966,
+    "ModuleName" : "Video_Frame_Buffer_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "InstLine" : 5027,
+      "InstName" : "vfb_ddr3_wrapper_inst",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~vfb_ddr3_wrapper.Video_Frame_Buffer_Top"
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 385,
+    "InstName" : "DDR3MI_inst",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/ddr3_memory_interface/DDR3MI_400M.v",
+    "ModuleLine" : 28354,
+    "ModuleName" : "DDR3MI",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "InstLine" : 28439,
+      "InstName" : "gw3_top",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~GW_DDR3_PHY_MC.DDR3MI"
+     }
+    ]
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 542,
+    "InstName" : "Gowin_PLL_dvi_inst",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll_dvi.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_PLL_dvi"
+   },
+   {
+    "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+    "InstLine" : 550,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleLine" : 1089,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/dvi_tx/DVI_TX_Top.v",
+      "InstLine" : 1120,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
+   }
+  ]
+ }
+]

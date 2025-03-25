@@ -1,0 +1,2 @@
+MnistDifferentiableLut4Simple.ipynb　　　MNIST学習済みモデル製作用 Jupyter Notebook
+data/MnistDifferentiableLut4Simple/MnistLutSimple.v　　　学習済みモデル Verilog

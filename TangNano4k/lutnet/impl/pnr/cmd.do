@@ -1,0 +1,14 @@
+-d C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\impl\gwsynthesis\lutnet.vg
+-p GW1NSR-4C-QFN48P-7
+-pn GW1NSR-LV4CQN48PC7/I6
+-cst C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.cst
+-cfg C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\impl\pnr\device.cfg
+-sdc C:\Git\TangPrimer20K_LUT-Network\4k\lutnet\src\tang_nano_4k_mnist.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
