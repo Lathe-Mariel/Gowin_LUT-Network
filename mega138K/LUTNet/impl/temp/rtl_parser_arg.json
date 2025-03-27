@@ -2,71 +2,71 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/cmos_8_16bit.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/ddr3_memory_interface/DDR3MI_400M.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/cmos_8_16bit.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/dvi_tx/DVI_TX_Top.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/ddr3_memory_interface/DDR3MI_400M.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/fifo_hs/video_fifo.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/dvi_tx/DVI_TX_Top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/fifo_hs/video_fifo.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll_dvi.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_config.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/gowin_pll/gowin_pll_dvi.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_bit_ctrl.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_config.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_byte_ctrl.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_bit_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_defines.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_byte_ctrl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_top.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_defines.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/i2c_master/timescale.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/i2c_master_top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/lut_ov5640_rgb565_480_272.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/i2c_master/timescale.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/MnistLutSimple.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/lut_ov5640_rgb565_480_272.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/top.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/vga_timing.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/vga_timing.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
    "Type" : "verilog"
   }
  ],
@@ -74,7 +74,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "H:/git/Gowin_LUT-Network/mega138K/LUTNet/impl/temp/rtl_parser.result",
+ "ResultFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K/LUTNet/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"

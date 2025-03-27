@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1631" Alu="47" Lut="7105" T_Register="7651(1631)" T_Alu="351(47)" T_Lut="12402(7105)" T_Bsram="32(0)">
+<Module name="top" Register="1631" Alu="47" Lut="4508" T_Register="7651(1631)" T_Alu="351(47)" T_Lut="9821(4508)" T_Bsram="32(0)">
     <SubModule name="Gowin_PLL_inst"/>
-    <SubModule name="i2c_config_m0" Register="13" Lut="23" T_Register="124(13)" T_Alu="15(0)" T_Lut="949(23)">
-        <SubModule name="i2c_master_top_m0" Register="17" Lut="769" T_Register="111(17)" T_Alu="15(0)" T_Lut="926(769)">
-            <SubModule name="byte_controller" Register="23" Lut="48" T_Register="94(23)" T_Alu="15(0)" T_Lut="157(48)">
-                <SubModule name="bit_controller" Register="71" Alu="15" Lut="109" T_Register="71(71)" T_Alu="15(15)" T_Lut="109(109)"/>
+    <SubModule name="i2c_config_m0" Register="13" Lut="25" T_Register="124(13)" T_Alu="15(0)" T_Lut="965(25)">
+        <SubModule name="i2c_master_top_m0" Register="17" Lut="784" T_Register="111(17)" T_Alu="15(0)" T_Lut="940(784)">
+            <SubModule name="byte_controller" Register="23" Lut="49" T_Register="94(23)" T_Alu="15(0)" T_Lut="156(49)">
+                <SubModule name="bit_controller" Register="71" Alu="15" Lut="107" T_Register="71(71)" T_Alu="15(15)" T_Lut="107(107)"/>
             </SubModule>
         </SubModule>
     </SubModule>

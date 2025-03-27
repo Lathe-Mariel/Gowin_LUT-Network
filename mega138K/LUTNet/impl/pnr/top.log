@@ -1,7 +1,7 @@
-Reading netlist file: "H:\git\Gowin_LUT-Network\mega138K\LUTNet\impl\gwsynthesis\top.vg"
-Parsing netlist file "H:\git\Gowin_LUT-Network\mega138K\LUTNet\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\gwsynthesis\top.vg"
+Parsing netlist file "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "H:\git\Gowin_LUT-Network\mega138K\LUTNet\src\top.cst"
+Reading constraint file: "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -15,10 +15,17 @@ Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
-ERROR  (PR0004) : There are total 2092 unrouted nets
-Generate file "H:\git\Gowin_LUT-Network\mega138K\LUTNet\impl\pnr\top.pin.html" completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K\LUTNet\impl\pnr\top.rpt.html" completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K\LUTNet\impl\pnr\top.rpt.txt" completed
-Wed Mar 26 01:00:05 2025
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\pnr\top.pin.html" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\pnr\top.rpt.html" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\pnr\top.rpt.txt" completed
+Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K\LUTNet\impl\pnr\top.tr.html" completed
+Thu Mar 27 13:50:27 2025
 
