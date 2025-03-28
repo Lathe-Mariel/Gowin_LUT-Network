@@ -1,0 +1,1 @@
+FPGA向けの機械学習フレームワークLUT-NetworkをGowin FPGAを搭載する各種Sipeedボードで動かします．
