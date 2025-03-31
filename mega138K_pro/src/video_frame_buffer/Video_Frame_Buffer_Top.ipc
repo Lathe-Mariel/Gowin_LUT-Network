@@ -2,12 +2,12 @@
 ipc_version=4
 file=Video_Frame_Buffer_Top
 module=Video_Frame_Buffer_Top
-target_device=gw5ast138b-000
+target_device=gw5ast138b-002
 type=video_frame_buffer
 version=1.0
 
 [Config]
-Addr_Width=29
+Addr_Width=28
 Data_Width=256
 Image_Size=00800000
 LANG=0

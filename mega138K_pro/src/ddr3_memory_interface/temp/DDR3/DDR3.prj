@@ -2,7 +2,7 @@
 <!DOCTYPE gowin-synthesis-project>
 <Project>
     <Version>beta</Version>
-    <Device id="GW5AST-138B" package="PBGA484A" speed="1" partNumber="GW5AST-LV138PG484AES"/>
+    <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
         <File path="C:/Gowin/Gowin_V1.9.10.03_x64/IDE/ipcore/DDR3/data/ddr3_1_4code_hs/ddr3_1_4code_hs.v" type="verilog"/>
         <File path="C:/Gowin/Gowin_V1.9.10.03_x64/IDE/ipcore/DDR3/data/ddr3_1_4code_hs/DDR3_TOP.v" type="verilog"/>
@@ -11,7 +11,7 @@
         <Option type="disable_insert_pad" value="1"/>
         <Option type="enable_dsrm" value="0"/>
         <Option type="include_path" value="C:/Gowin/Gowin_V1.9.10.03_x64/IDE/ipcore/DDR3/data/ddr3_1_4code_hs"/>
-        <Option type="include_path" value="C:/Git/TangPrimer20K_LUT-Network/mega138K/src/ddr3_memory_interface/temp/DDR3"/>
+        <Option type="include_path" value="C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/ddr3_memory_interface/temp/DDR3"/>
         <Option type="output_file" value="DDR3MI_400M.vg"/>
         <Option type="output_template" value="DDR3MI_400M_tmp.v"/>
         <Option type="ram_balance" value="1"/>

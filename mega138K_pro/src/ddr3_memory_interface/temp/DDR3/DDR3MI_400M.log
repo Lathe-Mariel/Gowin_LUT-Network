@@ -167,7 +167,7 @@ WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is s
 WARN  (NL0002) : The module "~OUT_FIFO.DDR3MI" instantiated to "u_out_fifo" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (NL0002) : The module "~of_fifo_ctrl.DDR3MI" instantiated to "of_fifo_ctrl_inst" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
 WARN  (NL0002) : The module "~gwmc_rd_data.DDR3MI" instantiated to "gw_rd_data0" is swept in optimizing("C:\Gowin\Gowin_V1.9.10.03_x64\IDE\ipcore\DDR3\data\ddr3_1_4code_hs\ddr3_1_4code_hs.v":7173)
-[95%] Generate netlist file "C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M.vg" completed
-Generate template file "C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M_tmp.v" completed
-[100%] Generate report file "C:\Git\TangPrimer20K_LUT-Network\mega138K\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M_syn.rpt.html" completed
+[95%] Generate netlist file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M.vg" completed
+Generate template file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M_tmp.v" completed
+[100%] Generate report file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\temp\DDR3\DDR3MI_400M_syn.rpt.html" completed
 GowinSynthesis finish

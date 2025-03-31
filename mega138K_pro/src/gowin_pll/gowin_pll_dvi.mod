@@ -1,13 +1,13 @@
 -series GW5AST
 -device GW5AST-138
 -device_version B
--package PBGA484A
--part_number GW5AST-LV138PG484AES
+-package FCPBGA676A
+-part_number GW5AST-LV138FPG676AES
 
 
 -mod_name Gowin_PLL_dvi
 -file_name gowin_pll_dvi
--path C:/Git/TangPrimer20K_LUT-Network/mega138K/src/gowin_pll/
+-path C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/
 -type PLL_ADV
 -file_type vlg
 -ssc false

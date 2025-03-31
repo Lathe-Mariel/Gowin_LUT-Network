@@ -2,7 +2,7 @@
 ipc_version=4
 file=DDR3MI_400M
 module=DDR3MI
-target_device=gw5ast138b-000
+target_device=gw5ast138b-002
 type=ddr3
 version=3.0
 
