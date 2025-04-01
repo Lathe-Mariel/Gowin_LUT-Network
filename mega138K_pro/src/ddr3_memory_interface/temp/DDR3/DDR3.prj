@@ -17,7 +17,7 @@
         <Option type="ram_balance" value="1"/>
         <Option type="ram_rw_check" value="1"/>
         <Option type="vcc" value="0.9"/>
-        <Option type="vccx" value="1.8"/>
+        <Option type="vccx" value="3.3"/>
         <Option type="verilog_language" value="sysv-2017"/>
     </OptionList>
 </Project>

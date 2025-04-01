@@ -1,15 +1,14 @@
-Reading netlist file: "H:\git\Gowin_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg"
-Parsing netlist file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg" completed
+WARN  (CM1011) : The input VCCX is illegal, default VCCX '1.8' is setted.
+Reading netlist file: "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg"
+Parsing netlist file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "H:\git\Gowin_LUT-Network\mega138K_pro\src\top.cst"
+Reading constraint file: "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "cmos_16bit_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk" and "cmos_16bit_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" and "DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (TA1132) :  'DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -23,9 +22,12 @@ Running timing analysis......
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.pin.html" completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
-Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Tue Apr  1 00:49:17 2025
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.power.html" completed
+Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.html" completed
+Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
+Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
+Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
+Tue Apr  1 17:42:14 2025
 
