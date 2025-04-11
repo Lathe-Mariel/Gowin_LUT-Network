@@ -8,7 +8,6 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -29,5 +28,5 @@ Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.ht
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Thu Apr 10 22:00:22 2025
+Fri Apr 11 19:01:48 2025
 
