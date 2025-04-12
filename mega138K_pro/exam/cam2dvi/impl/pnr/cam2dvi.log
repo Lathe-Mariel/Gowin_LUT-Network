@@ -1,0 +1,29 @@
+Reading netlist file: "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\gwsynthesis\cam2dvi.vg"
+Parsing netlist file "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\gwsynthesis\cam2dvi.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\138K_PRO_DOCK.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_vsync_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Generate file "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\pnr\cam2dvi.pin.html" completed
+Generate file "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\pnr\cam2dvi.rpt.html" completed
+Generate file "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\pnr\cam2dvi.rpt.txt" completed
+Generate file "C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\pnr\cam2dvi.tr.html" completed
+Tue Apr  8 21:43:14 2025
+

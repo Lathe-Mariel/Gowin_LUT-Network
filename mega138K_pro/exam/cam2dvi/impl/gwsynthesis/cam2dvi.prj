@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
+    <FileList>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\cmos_8_16bit.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\ddr3_memory_interface\DDR3MI_400M.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\dvi_tx\DVI_TX_Top.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\fifo_top\video_fifo.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\gowin_pll\gowin_pll_400M.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\gowin_pll\TMDS_PLL_60HZ.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\i2c_config.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\i2c_master_defines.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\i2c_master_top.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\i2c_master\timescale.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\lut_ov5640_rgb565_1280_720.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\syn_gen.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\testpattern.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\top.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\vga_timing.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\video_frame_buffer\Video_Frame_Buffer_Top.v" type="verilog"/>
+        <File path="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\video_timing_check.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="enable_dsrm" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\gwsynthesis\cam2dvi.vg"/>
+        <Option type="print_all_synthesis_warning" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="top"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>
