@@ -59,7 +59,6 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v<br>
-E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_hs\video_fifo.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v<br>
@@ -72,6 +71,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v<br
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v<br>
+E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v<br>
@@ -103,7 +103,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sat Apr 12 23:34:30 2025
+<td>Sun Apr 13 16:58:46 2025
 </td>
 </tr>
 <tr>
@@ -119,11 +119,11 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 286.000MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.478s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.562s, Elapsed time = 0h 0m 0.561s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.671s, Elapsed time = 0h 0m 0.681s, Peak memory usage = 286.000MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.5s, Elapsed time = 0h 0m 0.491s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.046s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.016s, Peak memory usage = 286.000MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.89s, Elapsed time = 0h 0m 0.901s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.236s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.131s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 13s, Elapsed time = 0h 0m 13s, Peak memory usage = 286.000MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.39s, Elapsed time = 0h 0m 0.384s, Peak memory usage = 286.000MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.765s, Elapsed time = 0h 0m 0.794s, Peak memory usage = 306.121MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 1505.676MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.472s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.546s, Elapsed time = 0h 0m 0.556s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.734s, Elapsed time = 0h 0m 0.694s, Peak memory usage = 1505.676MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.5s, Elapsed time = 0h 0m 0.502s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.047s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 1505.676MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.921s, Elapsed time = 0h 0m 0.899s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.227s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.126s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.343s, Elapsed time = 0h 0m 0.333s, Peak memory usage = 1505.676MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.718s, Elapsed time = 0h 0m 0.736s, Peak memory usage = 1505.676MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 19s, Elapsed time = 0h 0m 19s, Peak memory usage = 306.121MB</td>
+<td>CPU time = 0h 0m 18s, Elapsed time = 0h 0m 18s, Peak memory usage = 1505.676MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -171,7 +171,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>8041</td>
+<td>8211</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
@@ -179,31 +179,31 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
-<td>1959</td>
+<td>2167</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
-<td>156</td>
+<td>155</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
-<td>5897</td>
+<td>5860</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>7086</td>
+<td>7497</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>949</td>
+<td>1162</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>2810</td>
+<td>2917</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>3327</td>
+<td>3418</td>
 </tr>
 <tr>
 <td class="label"><b>MUX </b></td>
@@ -215,19 +215,19 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label"><b>ALU </b></td>
-<td>369</td>
+<td>368</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
-<td>369</td>
+<td>368</td>
 </tr>
 <tr>
 <td class="label"><b>INV </b></td>
-<td>46</td>
+<td>52</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
-<td>46</td>
+<td>52</td>
 </tr>
 <tr>
 <td class="label"><b>IOLOGIC </b></td>
@@ -255,7 +255,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label"><b>BSRAM </b></td>
-<td>56</td>
+<td>64</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
@@ -263,7 +263,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
-<td>8</td>
+<td>16</td>
 </tr>
 <tr>
 <td class="label"><b>CLOCK </b></td>
@@ -303,12 +303,12 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>7509(7140 LUT, 369 ALU) / 138240</td>
+<td>7925(7557 LUT, 368 ALU) / 138240</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>8041 / 139140</td>
+<td>8211 / 139140</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -318,13 +318,13 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>8041 / 139140</td>
+<td>8211 / 139140</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">BSRAM</td>
-<td>56 / 340</td>
-<td>17%</td>
+<td>64 / 340</td>
+<td>19%</td>
 </tr>
 </table>
 <h1><a name="timing">Timing</a></h1>

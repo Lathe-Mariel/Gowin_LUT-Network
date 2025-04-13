@@ -18,10 +18,6 @@
    "Type" : "verilog"
   },
   {
-   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_hs/video_fifo.v",
-   "Type" : "verilog"
-  },
-  {
    "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/gowin_pll.v",
    "Type" : "verilog"
   },
@@ -67,6 +63,10 @@
   },
   {
    "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
    "Type" : "verilog"
   }
  ],

@@ -30,6 +30,6 @@
         <File path="src/TMDS_30HZ.sdc" type="file.sdc" enable="0"/>
         <File path="src/TMDS_60HZ.sdc" type="file.sdc" enable="1"/>
         <File path="src/TMDS_800_600_60.sdc" type="file.sdc" enable="0"/>
-        <File path="src/video_timing.rao" type="file.gao" enable="0"/>
+        <File path="src/video_timing.rao" type="file.gao" enable="1"/>
     </FileList>
 </Project>

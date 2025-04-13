@@ -4,7 +4,6 @@ Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistL
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v'
-Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_hs\video_fifo.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v'
@@ -21,6 +20,7 @@ Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
+Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v'
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
 Analyzing included file '**'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
@@ -36,9 +36,9 @@ Analyzing included file '**'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\
 Back to file '**'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top_138.v":396)
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\gw_jtag.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
-WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":221)
+WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":220)
 Compiling module 'top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":3)
-WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":89)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":88)
 Compiling module 'Gowin_PLL'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v":10)
 Compiling module 'i2c_config'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v":1)
 Compiling module 'i2c_master_top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_top.v":1)
@@ -244,8 +244,8 @@ WARN  (EX3827) : Synthesis - simulation differences may occur when using full_ca
 WARN  (EX1998) : Net 'i2c_read_req' does not have a driver("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v":28)
 Compiling module 'lut_ov5640_rgb565_480_272'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v":1)
 Compiling module 'cmos_8_16bit'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v":1)
-WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":154)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":165)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":153)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":164)
 Compiling module 'MnistLutSimple(USE_REG=0)'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":5)
 Compiling module 'MnistLutSimple_sub0(USE_REG=0)'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":194)
 Compiling module 'MnistLutSimple_sub0_base(USE_REG=0)'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":262)
@@ -263,17 +263,17 @@ Compiling module 'vga_timing'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v":89)
 Compiling module 'Video_Frame_Buffer_Top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v":5024)
 Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v":5023)
-WARN  (EX3670) : Actual bit length 29 differs from formal bit length 28 for port 'O_addr'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":296)
-Compiling module 'DDR3MI'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":28341)
-Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":28340)
-WARN  (EX3670) : Actual bit length 16 differs from formal bit length 15 for port 'O_ddr_addr'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":367)
-WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":399)
-WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":407)
+WARN  (EX3670) : Actual bit length 29 differs from formal bit length 28 for port 'O_addr'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":295)
+Compiling module 'DDR3MI'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":31657)
+Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":31656)
+WARN  (EX3670) : Actual bit length 16 differs from formal bit length 15 for port 'O_ddr_addr'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":366)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":398)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":406)
 Compiling module 'Gowin_PLL_dvi'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v":10)
 Compiling module 'DVI_TX_Top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v":1089)
 Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v":1088)
-WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":464)
-WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":465)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":463)
+WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":464)
 Compiling module 'gw_gao'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
 Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\gw_jtag.v":1)
 Compiling module '**'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top_138.v":396)
@@ -303,7 +303,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "lut_ov5640_rgb565_480_272" instantiated to "lut_ov5640_rgb565_480_272_m0" is swept in optimizing("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":119)
+WARN  (NL0002) : The module "lut_ov5640_rgb565_480_272" instantiated to "lut_ov5640_rgb565_480_272_m0" is swept in optimizing("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":118)
 WARN  (NL0002) : The module "MnistLutSimple_sub0" instantiated to "i_MnistLutSimple_sub0" is swept in optimizing("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":53)
 WARN  (NL0002) : The module "MnistLutSimple_sub0_base" instantiated to "i_MnistLutSimple_sub0_base" is swept in optimizing("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":231)
 WARN  (NL0002) : The module "MnistLutSimple_sub3" instantiated to "i_MnistLutSimple_sub3" is swept in optimizing("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v":131)

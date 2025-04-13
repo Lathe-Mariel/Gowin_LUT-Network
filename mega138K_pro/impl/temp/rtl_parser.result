@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 92,
+    "InstLine" : 91,
     "InstName" : "Gowin_PLL_inst",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/gowin_pll.v",
     "ModuleLine" : 10,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 101,
+    "InstLine" : 100,
     "InstName" : "i2c_config_m0",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
@@ -55,7 +55,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 116,
+    "InstLine" : 115,
     "InstName" : "lut_ov5640_rgb565_480_272_m0",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/lut_ov5640_rgb565_480_272.v",
     "ModuleLine" : 1,
@@ -63,7 +63,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 124,
+    "InstLine" : 123,
     "InstName" : "cmos_8_16bit_m0",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
@@ -71,7 +71,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 192,
+    "InstLine" : 191,
     "InstName" : "u_MnistLutSimple",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/MnistLutSimple_old.v",
     "ModuleLine" : 5,
@@ -189,7 +189,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 212,
+    "InstLine" : 211,
     "InstName" : "vga_timing_m0",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/vga_timing.v",
     "ModuleLine" : 1,
@@ -197,7 +197,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 273,
+    "InstLine" : 272,
     "InstName" : "Video_Frame_Buffer_inst",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
     "ModuleLine" : 5024,
@@ -215,15 +215,15 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 340,
+    "InstLine" : 339,
     "InstName" : "DDR3MI_inst",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/ddr3_memory_interface/DDR3MI_400M.v",
-    "ModuleLine" : 28341,
+    "ModuleLine" : 31657,
     "ModuleName" : "DDR3MI",
     "SubInsts" : [
      {
       "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/ddr3_memory_interface/DDR3MI_400M.v",
-      "InstLine" : 28426,
+      "InstLine" : 31742,
       "InstName" : "gw3_top",
       "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/ddr3_memory_interface/DDR3MI_400M.v",
       "ModuleLine" : 10,
@@ -233,7 +233,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 449,
+    "InstLine" : 448,
     "InstName" : "Gowin_PLL_dvi_inst",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/gowin_pll_dvi.v",
     "ModuleLine" : 10,
@@ -241,7 +241,7 @@
    },
    {
     "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
-    "InstLine" : 457,
+    "InstLine" : 456,
     "InstName" : "DVI_TX_Top_inst",
     "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 1089,
@@ -256,6 +256,24 @@
       "ModuleName" : "~rgb2dvi.DVI_TX_Top"
      }
     ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+  "InstLine" : 825,
+  "InstName" : "video_fifo",
+  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+  "ModuleLine" : 825,
+  "ModuleName" : "video_fifo",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+    "InstLine" : 850,
+    "InstName" : "fifo_inst",
+    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "~fifo.video_fifo"
    }
   ]
  }

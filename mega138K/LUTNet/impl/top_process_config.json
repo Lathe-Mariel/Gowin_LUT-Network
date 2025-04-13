@@ -4,7 +4,6 @@
  "CPU" : true,
  "CRC_CHECK" : true,
  "Clock_Route_Order" : 0,
- "Convert_SDP32_36_to_SDP16_18" : true,
  "Correct_Hold_Violation" : true,
  "DONE" : true,
  "DOWNLOAD_SPEED" : "default",
@@ -32,8 +31,6 @@
  "HOTBOOT" : false,
  "I2C" : false,
  "I2C_SLAVE_ADDR" : "00",
- "INCREMENTAL_PLACE_AND_ROUTING" : "0",
- "INCREMENTAL_PLACE_ONLY" : "0",
  "IncludePath" : [
 
  ],
@@ -81,7 +78,6 @@
  "TopModule" : "top",
  "USERCODE" : "default",
  "Unused_Pin" : "As_input_tri_stated_with_pull_up",
- "VCC" : "0.9",
  "VCCAUX" : "3.3",
  "VCCX" : "1.8",
  "VHDL_Standard" : "VHDL_Std_1993",

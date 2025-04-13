@@ -1,9 +1,10 @@
--d C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\gwsynthesis\cam2dvi.vg
+-d E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg
 -p GW5AST-138B-FCPBGA676A-1
 -pn GW5AST-LV138FPG676AES
--cst C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\138K_PRO_DOCK.cst
--cfg C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\impl\pnr\device.cfg
--sdc C:\Users\n11ak\Downloads\TangMega-138KPro-example-main\TangMega-138KPro-example-main\cam2hdmi_alt\cam2dvi\src\TMDS_60HZ.sdc
+-cst E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\138K_PRO_DOCK.cst
+-cfg E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\device.cfg
+-sdc E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\TMDS_60HZ.sdc
+-gao_crc 1000000001100000
 -bit
 -tr
 -ph
@@ -13,3 +14,4 @@
 -route_maxfan 23
 -global_freq 100.000
 -enable_dsrm 0
+-rtl_gao
