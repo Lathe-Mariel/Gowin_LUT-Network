@@ -41,6 +41,8 @@ module top #(
 	inout  [32-1:0]        ddr_dq,         //DQ_WIDTH=32
 	inout  [4-1:0]         ddr_dqs,        //DQS_WIDTH=4
 	inout  [4-1:0]         ddr_dqs_n,      //DQS_WIDTH=4
+
+    input                  sw0,
   
     output                 tmds_clk_n_0,
     output                 tmds_clk_p_0,
@@ -403,8 +405,8 @@ endgenerate
         .I_rst_n              (init_calib_complete ),
         .I_dma_clk            (dma_clk          ),
     `ifdef USE_THREE_FRAME_BUFFER 
-        .I_wr_halt            (1'd0             ), //1:halt,  0:no halt
-        .I_rd_halt            (1'd0             ), //1:halt,  0:no halt
+        .I_wr_halt            (sw0             ), //1:halt,  0:no halt
+        .I_rd_halt            (sw0             ), //1:halt,  0:no halt
     `endif
 
         // video data input       
