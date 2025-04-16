@@ -5,6 +5,7 @@ module top(
 	input wire               rst_n,
     input wire               sw0,
     input wire               sw1,
+    output wire              fan,
 	inout wire               cmos_scl,        //cmos i2c clock
 	inout wire               cmos_sda,        //cmos i2c data
 	input wire               cmos_vsync,      //cmos vsync
@@ -85,6 +86,8 @@ assign write_data = {cmos_16bit_data[4:0],cmos_16bit_data[10:5],cmos_16bit_data[
 assign state_led[2] = camera_de;
 assign state_led[1] = rst_n; //复位指示灯
 assign state_led[0] = init_calib_complete; //DDR3初始化指示灯
+
+assign fan = 1'b1;
 
 reg [4:0] lcd_vs_cnt;
 always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;

@@ -7,6 +7,8 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
+WARN  (TA1123) : the clock "clk_74_25"'s frequency does not match u_tmds_pll/PLL_inst/CLKOUT1's 
+WARN  (TA1132) :  'cmos_16bit_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -28,5 +30,5 @@ Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\p
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.html" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.txt" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.tr.html" completed
-Tue Apr 15 02:37:05 2025
+Wed Apr 16 21:49:50 2025
 

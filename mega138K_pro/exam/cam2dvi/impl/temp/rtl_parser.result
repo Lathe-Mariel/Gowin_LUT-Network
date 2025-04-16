@@ -51,7 +51,7 @@
    },
    {
     "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
-    "InstLine" : 216,
+    "InstLine" : 227,
     "InstName" : "lut_ov5640_rgb565_m0",
     "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/lut_ov5640_rgb565_1280_720.v",
     "ModuleLine" : 1,
@@ -105,7 +105,7 @@
    },
    {
     "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
-    "InstLine" : 278,
+    "InstLine" : 301,
     "InstName" : "vga_timing_m0",
     "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/vga_timing.v",
     "ModuleLine" : 1,
@@ -151,7 +151,7 @@
     "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 526,
     "InstName" : "u_tmds_pll",
-    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/TMDS_PLL_60HZ.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/TMDS_PLL_800_600_60.v",
     "ModuleLine" : 10,
     "ModuleName" : "TMDS_PLL"
    },

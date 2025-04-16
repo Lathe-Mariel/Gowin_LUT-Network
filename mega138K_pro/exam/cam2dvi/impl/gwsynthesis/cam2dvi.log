@@ -4,7 +4,7 @@ Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2d
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\ddr3_memory_interface\DDR3MI_400M.v'
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\dvi_tx\DVI_TX_Top.v'
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\fifo_top\video_fifo.v'
-Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_60HZ.v'
+Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_800_600_60.v'
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\gowin_pll_400M.v'
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_config.v'
 Analyzing Verilog file 'C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_master_bit_ctrl.v'
@@ -40,7 +40,7 @@ WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\T
 WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\video_timing_check.v":120)
 WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\video_timing_check.v":137)
 Compiling module 'Gowin_PLL'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\gowin_pll_400M.v":10)
-Compiling module 'lut_ov5640_rgb565(HActive=12'd1280,VActive=12'd720,HTotal=13'd1892,VTotal=13'd740,USE_4vs3_frame="false")'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\lut_ov5640_rgb565_1280_720.v":1)
+Compiling module 'lut_ov5640_rgb565(HTotal=13'd1892,VTotal=13'd740,USE_4vs3_frame="false")'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\lut_ov5640_rgb565_1280_720.v":1)
 Compiling module 'i2c_config'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_config.v":1)
 Compiling module 'i2c_master_top'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_master_top.v":1)
 Compiling module 'i2c_master_byte_ctrl'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_master_byte_ctrl.v":75)
@@ -244,7 +244,7 @@ WARN  (EX2629) : Delay control is not supported for synthesis("C:\Git\TangPrimer
 WARN  (EX3827) : Synthesis - simulation differences may occur when using full_case directive("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_master_byte_ctrl.v":230)
 WARN  (EX1998) : Net 'i2c_read_req' does not have a driver("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_config.v":28)
 Compiling module 'cmos_8_16bit'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\cmos_8_16bit.v":1)
-Compiling module 'vga_timing'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\vga_timing.v":1)
+Compiling module 'vga_timing(H_ACTIVE=16'd800,H_FP=16'd40,H_SYNC=16'd128,H_BP=16'd88,V_ACTIVE=16'd600,V_FP=16'd1,V_SYNC=16'd4,V_BP=16'd23)'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\vga_timing.v":1)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\vga_timing.v":107)
 WARN  (EX3791) : Expression size 12 truncated to fit in target size 10("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\vga_timing.v":114)
 Compiling module 'Video_Frame_Buffer_Top'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\video_frame_buffer\Video_Frame_Buffer_Top.v":4966)
@@ -253,7 +253,7 @@ WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port
 Compiling module 'DDR3MI'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\ddr3_memory_interface\DDR3MI_400M.v":31657)
 Compiling module '**'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\ddr3_memory_interface\DDR3MI_400M.v":31656)
 WARN  (EX3670) : Actual bit length 16 differs from formal bit length 15 for port 'O_ddr_addr'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\top.v":472)
-Compiling module 'TMDS_PLL'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_60HZ.v":10)
+Compiling module 'TMDS_PLL'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_800_600_60.v":10)
 Compiling module 'DVI_TX_Top'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\dvi_tx\DVI_TX_Top.v":1089)
 Compiling module '**'("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\dvi_tx\DVI_TX_Top.v":1088)
 NOTE  (EX0101) : Current top module is "top"
@@ -283,7 +283,7 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "lut_ov5640_rgb565" instantiated to "lut_ov5640_rgb565_m0" is swept in optimizing("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\top.v":219)
+WARN  (NL0002) : The module "lut_ov5640_rgb565" instantiated to "lut_ov5640_rgb565_m0" is swept in optimizing("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\top.v":230)
 WARN  (NL0002) : The module "timing_check" instantiated to "timing_check_5640" is swept in optimizing("C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\top.v":162)
 [95%] Generate netlist file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg" completed
 [100%] Generate report file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi_syn.rpt.html" completed
