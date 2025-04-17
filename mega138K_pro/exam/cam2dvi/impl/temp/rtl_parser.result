@@ -1,91 +1,91 @@
 [
  {
-  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
+  "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
   "InstLine" : 825,
   "InstName" : "video_fifo",
-  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
+  "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
   "ModuleLine" : 825,
   "ModuleName" : "video_fifo",
   "SubInsts" : [
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
     "InstLine" : 850,
     "InstName" : "fifo_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/fifo_top/video_fifo.v",
     "ModuleLine" : 13,
     "ModuleName" : "~fifo.video_fifo"
    }
   ]
  },
  {
-  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/syn_gen.v",
+  "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/syn_gen.v",
   "InstLine" : 13,
   "InstName" : "syn_gen",
-  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/syn_gen.v",
+  "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/syn_gen.v",
   "ModuleLine" : 13,
   "ModuleName" : "syn_gen"
  },
  {
-  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+  "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
   "InstLine" : 1,
   "InstName" : "top",
-  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+  "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
   "ModuleLine" : 1,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 150,
     "InstName" : "timing_check_5640",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_timing_check.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_timing_check.v",
     "ModuleLine" : 1,
     "ModuleName" : "timing_check"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 166,
     "InstName" : "Gowin_PLL_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/gowin_pll_400M.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/gowin_pll_400M.v",
     "ModuleLine" : 10,
     "ModuleName" : "Gowin_PLL"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 227,
     "InstName" : "lut_ov5640_rgb565_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/lut_ov5640_rgb565_1280_720.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/lut_ov5640_rgb565_1280_720.v",
     "ModuleLine" : 1,
     "ModuleName" : "lut_ov5640_rgb565"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 234,
     "InstName" : "i2c_config_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_config.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_config.v",
     "ModuleLine" : 1,
     "ModuleName" : "i2c_config",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_config.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_config.v",
       "InstLine" : 101,
       "InstName" : "i2c_master_top_m0",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_top.v",
       "ModuleLine" : 1,
       "ModuleName" : "i2c_master_top",
       "SubInsts" : [
        {
-        "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_top.v",
+        "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_top.v",
         "InstLine" : 232,
         "InstName" : "byte_controller",
-        "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_byte_ctrl.v",
+        "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_byte_ctrl.v",
         "ModuleLine" : 75,
         "ModuleName" : "i2c_master_byte_ctrl",
         "SubInsts" : [
          {
-          "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_byte_ctrl.v",
+          "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_byte_ctrl.v",
           "InstLine" : 146,
           "InstName" : "bit_controller",
-          "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_bit_ctrl.v",
+          "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/i2c_master/i2c_master_bit_ctrl.v",
           "ModuleLine" : 143,
           "ModuleName" : "i2c_master_bit_ctrl"
          }
@@ -96,96 +96,96 @@
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 251,
     "InstName" : "cmos_8_16bit_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/cmos_8_16bit.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/cmos_8_16bit.v",
     "ModuleLine" : 1,
     "ModuleName" : "cmos_8_16bit"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 301,
     "InstName" : "vga_timing_m0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/vga_timing.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/vga_timing.v",
     "ModuleLine" : 1,
     "ModuleName" : "vga_timing"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 403,
     "InstName" : "Video_Frame_Buffer_Top_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
     "ModuleLine" : 4966,
     "ModuleName" : "Video_Frame_Buffer_Top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
       "InstLine" : 5027,
       "InstName" : "vfb_ddr3_wrapper_inst",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
       "ModuleLine" : 10,
       "ModuleName" : "~vfb_ddr3_wrapper.Video_Frame_Buffer_Top"
      }
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 443,
     "InstName" : "u_ddr3",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
     "ModuleLine" : 31657,
     "ModuleName" : "DDR3MI",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
       "InstLine" : 31742,
       "InstName" : "gw3_top",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/ddr3_memory_interface/DDR3MI_400M.v",
       "ModuleLine" : 10,
       "ModuleName" : "~GW_DDR3_PHY_MC.DDR3MI"
      }
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 526,
     "InstName" : "u_tmds_pll",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/TMDS_PLL_800_600_60.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/gowin_pll/TMDS_PLL_800_600_60.v",
     "ModuleLine" : 10,
     "ModuleName" : "TMDS_PLL"
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 591,
     "InstName" : "DVI_TX_Top_inst0",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 1089,
     "ModuleName" : "DVI_TX_Top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
       "InstLine" : 1120,
       "InstName" : "rgb2dvi_inst",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
       "ModuleLine" : 10,
       "ModuleName" : "~rgb2dvi.DVI_TX_Top"
      }
     ]
    },
    {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
+    "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/top.v",
     "InstLine" : 612,
     "InstName" : "DVI_TX_Top_inst1",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+    "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
     "ModuleLine" : 1089,
     "ModuleName" : "DVI_TX_Top",
     "SubInsts" : [
      {
-      "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+      "InstFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
       "InstLine" : 1120,
       "InstName" : "rgb2dvi_inst",
-      "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
+      "ModuleFile" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/exam/cam2dvi/src/dvi_tx/DVI_TX_Top.v",
       "ModuleLine" : 10,
       "ModuleName" : "~rgb2dvi.DVI_TX_Top"
      }
