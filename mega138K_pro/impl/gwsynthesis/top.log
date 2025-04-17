@@ -4,6 +4,7 @@ Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistL
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v'
+Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v'
@@ -20,7 +21,6 @@ Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
-Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v'
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
 Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
 Analyzing included file '**'("C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)

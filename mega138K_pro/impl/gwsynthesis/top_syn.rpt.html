@@ -59,6 +59,7 @@ table.detail_table td.label { min-width: 100px; width: 8%;}
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v<br>
+E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v<br>
@@ -71,7 +72,6 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v<br
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v<br>
 E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v<br>
-E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v<br>
 C:\Gowin\Gowin_V1.9.9.03_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v<br>
@@ -103,7 +103,7 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Sun Apr 13 16:58:46 2025
+<td>Sun Apr 13 22:12:45 2025
 </td>
 </tr>
 <tr>
@@ -119,11 +119,11 @@ E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\RTL_GAO\gw_gao_to
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 1505.676MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.484s, Elapsed time = 0h 0m 0.472s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.546s, Elapsed time = 0h 0m 0.556s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.734s, Elapsed time = 0h 0m 0.694s, Peak memory usage = 1505.676MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.5s, Elapsed time = 0h 0m 0.502s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.047s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 1505.676MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.921s, Elapsed time = 0h 0m 0.899s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.227s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.126s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 1505.676MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.343s, Elapsed time = 0h 0m 0.333s, Peak memory usage = 1505.676MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.718s, Elapsed time = 0h 0m 0.736s, Peak memory usage = 1505.676MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 294.031MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.515s, Elapsed time = 0h 0m 0.535s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.578s, Elapsed time = 0h 0m 0.602s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.89s, Elapsed time = 0h 0m 0.852s, Peak memory usage = 294.031MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.5s, Elapsed time = 0h 0m 0.518s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.048s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 294.031MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 0.976s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.251s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.134s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s, Peak memory usage = 294.031MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.437s, Elapsed time = 0h 0m 0.428s, Peak memory usage = 294.031MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.937s, Elapsed time = 0h 0m 1s, Peak memory usage = 315.301MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 18s, Elapsed time = 0h 0m 18s, Peak memory usage = 1505.676MB</td>
+<td>CPU time = 0h 0m 21s, Elapsed time = 0h 0m 21s, Peak memory usage = 315.301MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>

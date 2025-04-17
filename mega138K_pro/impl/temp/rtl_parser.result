@@ -1,5 +1,23 @@
 [
  {
+  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+  "InstLine" : 825,
+  "InstName" : "video_fifo",
+  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+  "ModuleLine" : 825,
+  "ModuleName" : "video_fifo",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+    "InstLine" : 850,
+    "InstName" : "fifo_inst",
+    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "~fifo.video_fifo"
+   }
+  ]
+ },
+ {
   "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/top.v",
   "InstLine" : 3,
   "InstName" : "top",
@@ -256,24 +274,6 @@
       "ModuleName" : "~rgb2dvi.DVI_TX_Top"
      }
     ]
-   }
-  ]
- },
- {
-  "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
-  "InstLine" : 825,
-  "InstName" : "video_fifo",
-  "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
-  "ModuleLine" : 825,
-  "ModuleName" : "video_fifo",
-  "SubInsts" : [
-   {
-    "InstFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
-    "InstLine" : 850,
-    "InstName" : "fifo_inst",
-    "ModuleFile" : "E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/fifo_top/video_fifo.v",
-    "ModuleLine" : 13,
-    "ModuleName" : "~fifo.video_fifo"
    }
   ]
  }

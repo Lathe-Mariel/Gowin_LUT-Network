@@ -12,7 +12,7 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Sun Apr 13 15:30:07 2025
+  <Created Time>:Sun Apr 13 22:13:10 2025
 
 
 2. PnR Details
@@ -22,17 +22,17 @@
     Placement Phase 1: CPU time = 0h 0m 0.216s, Elapsed time = 0h 0m 0.216s
     Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Total Placement: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.693s, Elapsed time = 0h 0m 0.693s
-    Routing Phase 1: CPU time = 0h 0m 46s, Elapsed time = 0h 0m 46s
-    Routing Phase 2: CPU time = 0h 0m 0.276s, Elapsed time = 0h 0m 0.276s
+    Routing Phase 0: CPU time = 0h 0m 0.695s, Elapsed time = 0h 0m 0.695s
+    Routing Phase 1: CPU time = 0h 0m 49s, Elapsed time = 0h 0m 49s
+    Routing Phase 2: CPU time = 0h 0m 0.271s, Elapsed time = 0h 0m 0.271s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 47s, Elapsed time = 0h 0m 47s
+    Total Routing: CPU time = 0h 0m 50s, Elapsed time = 0h 0m 50s
  Generate output files:
     CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s
 
- Total Time and Memory Usage: CPU time = 0h 1m 4s, Elapsed time = 0h 1m 4s, Peak memory usage = 1445MB
+ Total Time and Memory Usage: CPU time = 0h 1m 7s, Elapsed time = 0h 1m 7s, Peak memory usage = 1449MB
 
 
 3. Resource Usage Summary
