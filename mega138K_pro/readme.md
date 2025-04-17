@@ -1,3 +1,4 @@
+exam　　　　　　　　　　　　Sipeedのサンプルプロジェクト（cam2dvi）  
 src/top.v　　　　　　　　　トップ・モジュール  
 src/MnistLutSimple.v　　　　学習済みモデル  
 src/MnistLutSimple_old.v　　旧学習済みモデル（4K用．合成成功する）  
