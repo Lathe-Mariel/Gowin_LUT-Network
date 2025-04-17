@@ -11,18 +11,13 @@ WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" 
 WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "cmos_16bit_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "clk_x1" and "cmos_16bit_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_16bit_clk" and "clk_x1"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "tck_pad_i" and "cmos_pclk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_pclk" and "tck_pad_i"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "clk_x1" and "cmos_pclk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "video_clk" and "cmos_pclk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_vsync" and "cmos_pclk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
-WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 WARN  (PR1014) : Generic routing resource will be used to clock signal 'cmos_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'clk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -33,5 +28,5 @@ Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.ht
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
 Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Sun Apr 13 22:14:31 2025
+Thu Apr 17 11:41:55 2025
 
