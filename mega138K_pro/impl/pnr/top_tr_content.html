@@ -27,15 +27,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Design File</td>
-<td>E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg</td>
+<td>H:\git\Gowin_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg</td>
 </tr>
 <tr>
 <td class="label">Physical Constraints File</td>
-<td>E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst</td>
+<td>H:\git\Gowin_LUT-Network\mega138K_pro\src\top.cst</td>
 </tr>
 <tr>
 <td class="label">Timing Constraint File</td>
-<td>E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lcd.sdc</td>
+<td>H:\git\Gowin_LUT-Network\mega138K_pro\src\lcd.sdc</td>
 </tr>
 <tr>
 <td class="label">Tool Version</td>
@@ -55,7 +55,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Fri Apr 18 01:57:09 2025
+<td>Sat Apr 19 15:35:24 2025
 </td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Numbers of Paths Analyzed</td>
-<td>34083</td>
+<td>35973</td>
 </tr>
 <tr>
 <td class="label">Numbers of Endpoints Analyzed</td>
@@ -84,15 +84,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Numbers of Falling Endpoints</td>
-<td>18</td>
+<td>20</td>
 </tr>
 <tr>
 <td class="label">Numbers of Setup Violated Endpoints</td>
-<td>49</td>
+<td>898</td>
 </tr>
 <tr>
 <td class="label">Numbers of Hold Violated Endpoints</td>
-<td>5938</td>
+<td>5946</td>
 </tr>
 </table>
 <h2><a name="Clock_Report">Clock Summary:</a></h2>
@@ -113,8 +113,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>1</td>
 <td>cmos_vsync</td>
 <td>Base</td>
-<td>1000.000</td>
-<td>1.000
+<td>10000.000</td>
+<td>0.100
 <td>0.000</td>
 <td>500.000</td>
 <td></td>
@@ -135,27 +135,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>3</td>
-<td>cmos_16bit_clk</td>
-<td>Base</td>
-<td>83.333</td>
-<td>12.000
-<td>0.000</td>
-<td>41.666</td>
-<td></td>
-<td></td>
-<td>cmos_16bit_clk </td>
-</tr>
-<tr>
-<td>4</td>
 <td>cmos_pclk</td>
 <td>Base</td>
-<td>41.667</td>
-<td>24.000
+<td>20.000</td>
+<td>50.000
 <td>0.000</td>
-<td>5.000</td>
+<td>10.000</td>
 <td></td>
 <td></td>
 <td>cmos_pclk </td>
+</tr>
+<tr>
+<td>4</td>
+<td>cmos_16bit</td>
+<td>Generated</td>
+<td>40.000</td>
+<td>25.000
+<td>0.000</td>
+<td>20.000</td>
+<td>cmos_pclk </td>
+<td>cmos_pclk</td>
+<td>cmos_16bit_clk </td>
 </tr>
 <tr>
 <td>5</td>
@@ -232,31 +232,31 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>1</td>
 <td>clk</td>
 <td>50.000(MHz)</td>
-<td>96.574(MHz)</td>
+<td>95.048(MHz)</td>
 <td>8</td>
 <td>TOP</td>
 </tr>
 <tr>
 <td>2</td>
-<td>cmos_16bit_clk</td>
-<td>12.000(MHz)</td>
-<td>86.913(MHz)</td>
-<td>5</td>
+<td>cmos_pclk</td>
+<td>50.000(MHz)</td>
+<td>491.475(MHz)</td>
+<td>2</td>
 <td>TOP</td>
 </tr>
 <tr>
 <td>3</td>
-<td>cmos_pclk</td>
-<td>24.000(MHz)</td>
-<td>491.476(MHz)</td>
-<td>2</td>
+<td>cmos_16bit</td>
+<td>25.000(MHz)</td>
+<td>86.914(MHz)</td>
+<td>5</td>
 <td>TOP</td>
 </tr>
 <tr>
 <td>4</td>
 <td>video_clk</td>
 <td>65.000(MHz)</td>
-<td>82.933(MHz)</td>
+<td>82.813(MHz)</td>
 <td>10</td>
 <td>TOP</td>
 </tr>
@@ -320,25 +320,25 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>0</td>
 </tr>
 <tr>
-<td>cmos_16bit_clk</td>
+<td>cmos_pclk</td>
 <td>Setup</td>
 <td>0.000</td>
 <td>0</td>
 </tr>
 <tr>
-<td>cmos_16bit_clk</td>
+<td>cmos_pclk</td>
 <td>Hold</td>
 <td>0.000</td>
 <td>0</td>
 </tr>
 <tr>
-<td>cmos_pclk</td>
+<td>cmos_16bit</td>
 <td>Setup</td>
 <td>0.000</td>
 <td>0</td>
 </tr>
 <tr>
-<td>cmos_pclk</td>
+<td>cmos_16bit</td>
 <td>Hold</td>
 <td>0.000</td>
 <td>0</td>
@@ -422,179 +422,179 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>1</td>
-<td>9.645</td>
-<td>i2c_config_m0/lut_index_3_s2/Q</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>20.000</td>
-<td>-0.011</td>
-<td>10.302</td>
-</tr>
-<tr>
-<td>2</td>
-<td>9.696</td>
-<td>i2c_config_m0/lut_index_3_s2/Q</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_5_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>20.000</td>
-<td>0.003</td>
-<td>10.237</td>
-</tr>
-<tr>
-<td>3</td>
-<td>9.878</td>
+<td>9.479</td>
 <td>i2c_config_m0/lut_index_3_s2/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/txr_4_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>-0.006</td>
-<td>10.065</td>
+<td>10.463</td>
 </tr>
 <tr>
-<td>4</td>
-<td>9.887</td>
+<td>2</td>
+<td>9.645</td>
 <td>i2c_config_m0/lut_index_3_s2/Q</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0/D</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_5_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
-<td>0.020</td>
-<td>10.030</td>
+<td>0.003</td>
+<td>10.288</td>
 </tr>
 <tr>
-<td>5</td>
-<td>10.126</td>
+<td>3</td>
+<td>9.838</td>
+<td>i2c_config_m0/lut_index_3_s2/Q</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0/D</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>-0.011</td>
+<td>10.110</td>
+</tr>
+<tr>
+<td>4</td>
+<td>9.937</td>
 <td>i2c_config_m0/lut_index_1_s2/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/txr_3_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>-0.006</td>
-<td>9.817</td>
+<td>10.005</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10.167</td>
+<td>i2c_config_m0/lut_index_3_s2/Q</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0/D</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>0.020</td>
+<td>9.750</td>
 </tr>
 <tr>
 <td>6</td>
-<td>10.210</td>
-<td>i2c_config_m0/lut_index_3_s2/Q</td>
+<td>10.193</td>
+<td>i2c_config_m0/lut_index_1_s2/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/txr_7_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
-<td>0.003</td>
-<td>9.723</td>
+<td>-0.006</td>
+<td>9.749</td>
 </tr>
 <tr>
 <td>7</td>
-<td>10.290</td>
-<td>i2c_config_m0/lut_index_3_s2/Q</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>20.000</td>
-<td>-0.006</td>
-<td>9.652</td>
-</tr>
-<tr>
-<td>8</td>
-<td>10.410</td>
+<td>10.243</td>
 <td>i2c_config_m0/lut_index_3_s2/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/txr_1_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>-0.002</td>
-<td>9.528</td>
+<td>9.695</td>
 </tr>
 <tr>
-<td>9</td>
-<td>13.589</td>
-<td>i2c_config_m0/lut_index_5_s2/Q</td>
-<td>i2c_config_m0/i2c_write_req_s0/CE</td>
+<td>8</td>
+<td>10.294</td>
+<td>i2c_config_m0/lut_index_3_s2/Q</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
-<td>0.000</td>
-<td>6.099</td>
+<td>-0.006</td>
+<td>9.648</td>
 </tr>
 <tr>
-<td>10</td>
-<td>13.687</td>
+<td>9</td>
+<td>13.344</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/CE</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.002</td>
-<td>6.000</td>
+<td>6.343</td>
 </tr>
 <tr>
-<td>11</td>
-<td>13.711</td>
+<td>10</td>
+<td>13.369</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sda_oen_s0/CE</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.011</td>
-<td>5.966</td>
+<td>6.309</td>
+</tr>
+<tr>
+<td>11</td>
+<td>13.537</td>
+<td>i2c_config_m0/lut_index_5_s2/Q</td>
+<td>i2c_config_m0/i2c_write_req_s0/CE</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>6.152</td>
 </tr>
 <tr>
 <td>12</td>
-<td>13.988</td>
+<td>13.936</td>
 <td>i2c_config_m0/lut_index_5_s2/Q</td>
 <td>i2c_config_m0/i2c_write_req_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.000</td>
-<td>5.948</td>
+<td>6.001</td>
 </tr>
 <tr>
 <td>13</td>
-<td>13.988</td>
+<td>13.936</td>
 <td>i2c_config_m0/lut_index_5_s2/Q</td>
 <td>i2c_config_m0/state_0_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.000</td>
-<td>5.948</td>
+<td>6.001</td>
 </tr>
 <tr>
 <td>14</td>
-<td>14.513</td>
-<td>i2c_config_m0/lut_index_1_s2/Q</td>
-<td>i2c_config_m0/lut_index_9_s2/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>20.000</td>
-<td>0.014</td>
-<td>5.410</td>
-</tr>
-<tr>
-<td>15</td>
-<td>14.513</td>
+<td>14.171</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.002</td>
-<td>5.421</td>
+<td>5.764</td>
+</tr>
+<tr>
+<td>15</td>
+<td>14.423</td>
+<td>i2c_config_m0/lut_index_1_s2/Q</td>
+<td>i2c_config_m0/lut_index_9_s2/D</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>0.014</td>
+<td>5.500</td>
 </tr>
 <tr>
 <td>16</td>
-<td>14.710</td>
+<td>14.713</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_2_s0/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sda_oen_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.000</td>
-<td>5.226</td>
+<td>5.224</td>
 </tr>
 <tr>
 <td>17</td>
@@ -620,36 +620,36 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>19</td>
-<td>14.930</td>
+<td>14.993</td>
 <td>i2c_config_m0/lut_index_1_s2/Q</td>
 <td>i2c_config_m0/lut_index_8_s2/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.014</td>
-<td>4.993</td>
+<td>4.930</td>
 </tr>
 <tr>
 <td>20</td>
-<td>15.084</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/Q</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/D</td>
-<td>clk:[R]</td>
-<td>clk:[R]</td>
-<td>20.000</td>
-<td>0.006</td>
-<td>4.846</td>
-</tr>
-<tr>
-<td>21</td>
-<td>15.116</td>
+<td>15.126</td>
 <td>i2c_config_m0/lut_index_1_s2/Q</td>
 <td>i2c_config_m0/lut_index_7_s2/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>0.008</td>
-<td>4.813</td>
+<td>4.803</td>
+</tr>
+<tr>
+<td>21</td>
+<td>15.179</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/Q</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/D</td>
+<td>clk:[R]</td>
+<td>clk:[R]</td>
+<td>20.000</td>
+<td>0.006</td>
+<td>4.751</td>
 </tr>
 <tr>
 <td>22</td>
@@ -664,14 +664,14 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>23</td>
-<td>15.394</td>
+<td>15.397</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_2_s0/Q</td>
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_14_s0/D</td>
 <td>clk:[R]</td>
 <td>clk:[R]</td>
 <td>20.000</td>
 <td>-0.002</td>
-<td>4.544</td>
+<td>4.541</td>
 </tr>
 <tr>
 <td>24</td>
@@ -1057,17 +1057,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td>6</td>
-<td>2.137</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0/PRESET</td>
-<td>video_clk:[R]</td>
-<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
-<td>0.385</td>
-<td>-3.177</td>
-<td>1.096</td>
-</tr>
-<tr>
-<td>7</td>
 <td>1.139</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_7_s/RESET</td>
@@ -1078,7 +1067,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.195</td>
 </tr>
 <tr>
-<td>8</td>
+<td>7</td>
 <td>1.209</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_5_s/RESET</td>
@@ -1089,7 +1078,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>4.144</td>
 </tr>
 <tr>
-<td>9</td>
+<td>8</td>
 <td>1.362</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_1_s/RESET</td>
@@ -1100,7 +1089,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.991</td>
 </tr>
 <tr>
-<td>10</td>
+<td>9</td>
 <td>1.551</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_3_s/RESET</td>
@@ -1111,7 +1100,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.793</td>
 </tr>
 <tr>
-<td>11</td>
+<td>10</td>
 <td>1.745</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/rbin_num_4_s0/CLEAR</td>
@@ -1122,7 +1111,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.345</td>
 </tr>
 <tr>
-<td>12</td>
+<td>11</td>
 <td>1.755</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_0_s/RESET</td>
@@ -1133,7 +1122,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.589</td>
 </tr>
 <tr>
-<td>13</td>
+<td>12</td>
 <td>1.786</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_dly_1_s0/CLEAR</td>
@@ -1144,7 +1133,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.303</td>
 </tr>
 <tr>
-<td>14</td>
+<td>13</td>
 <td>1.862</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_6_s/RESET</td>
@@ -1155,7 +1144,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.530</td>
 </tr>
 <tr>
-<td>15</td>
+<td>14</td>
 <td>1.929</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_dly_4_s0/CLEAR</td>
@@ -1166,7 +1155,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.169</td>
 </tr>
 <tr>
-<td>16</td>
+<td>15</td>
 <td>1.962</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/rbin_num_5_s0/CLEAR</td>
@@ -1177,7 +1166,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.119</td>
 </tr>
 <tr>
-<td>17</td>
+<td>16</td>
 <td>1.972</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/rbin_num_1_s0/CLEAR</td>
@@ -1188,7 +1177,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.119</td>
 </tr>
 <tr>
-<td>18</td>
+<td>17</td>
 <td>2.004</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Big.mem_Big.mem_0_2_s/RESET</td>
@@ -1199,7 +1188,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>3.379</td>
 </tr>
 <tr>
-<td>19</td>
+<td>18</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_0_s0/CLEAR</td>
@@ -1210,7 +1199,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>20</td>
+<td>19</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_1_s0/CLEAR</td>
@@ -1221,7 +1210,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>21</td>
+<td>20</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_2_s0/CLEAR</td>
@@ -1232,7 +1221,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>22</td>
+<td>21</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_3_s0/CLEAR</td>
@@ -1243,7 +1232,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>23</td>
+<td>22</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_4_s0/CLEAR</td>
@@ -1254,7 +1243,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>24</td>
+<td>23</td>
 <td>2.089</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/Rnum_5_s0/CLEAR</td>
@@ -1265,7 +1254,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>2.994</td>
 </tr>
 <tr>
-<td>25</td>
+<td>24</td>
 <td>2.190</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/raddr_num_dly_6_s0/CLEAR</td>
@@ -1274,6 +1263,17 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>5.000</td>
 <td>-0.438</td>
 <td>2.900</td>
+</tr>
+<tr>
+<td>25</td>
+<td>2.197</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/gowin_add_SDPB_Big.mem_Big.mem_0_3_s/RESET</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[R]</td>
+<td>5.000</td>
+<td>-0.491</td>
+<td>3.214</td>
 </tr>
 </table>
 <h3><a name="Removal_Slack_Table">Removal Paths Table</a></h3>
@@ -1292,25 +1292,25 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr style="color: #FF0000;" class = "error">
 <td>1</td>
-<td>-3.027</td>
+<td>-3.029</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_1_s0/PRESET</td>
 <td>video_clk:[R]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
 <td>-0.385</td>
 <td>-3.843</td>
-<td>0.431</td>
+<td>0.429</td>
 </tr>
 <tr style="color: #FF0000;" class = "error">
 <td>2</td>
-<td>-2.931</td>
+<td>-3.006</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
 <td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0/PRESET</td>
 <td>video_clk:[R]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
 <td>-0.385</td>
 <td>-3.843</td>
-<td>0.527</td>
+<td>0.452</td>
 </tr>
 <tr style="color: #FF0000;" class = "error">
 <td>3</td>
@@ -1677,15 +1677,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.645</td>
+<td>9.479</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>16.230</td>
+<td>16.391</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>25.875</td>
+<td>25.870</td>
 </tr>
 <tr>
 <td class="label">From</td>
@@ -1693,7 +1693,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -1770,139 +1770,139 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">i2c_config_m0/lut_index_3_s2/Q</td>
 </tr>
 <tr>
-<td>9.120</td>
-<td>2.810</td>
+<td>9.856</td>
+<td>3.546</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R63C139[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s29/I3</td>
+<td>R69C143[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n207_s58/I3</td>
 </tr>
 <tr>
-<td>9.687</td>
-<td>0.567</td>
+<td>10.363</td>
+<td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
-<td>7</td>
-<td>R63C139[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s29/F</td>
+<td>16</td>
+<td>R69C143[2][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
 </tr>
 <tr>
-<td>10.538</td>
-<td>0.851</td>
+<td>11.446</td>
+<td>1.082</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C133[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n211_s57/I1</td>
+<td>R66C140[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s77/I0</td>
 </tr>
 <tr>
-<td>11.106</td>
-<td>0.567</td>
+<td>11.902</td>
+<td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
-<td>4</td>
-<td>R66C133[2][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s57/F</td>
+<td>1</td>
+<td>R66C140[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s77/F</td>
 </tr>
 <tr>
-<td>11.821</td>
-<td>0.715</td>
+<td>12.075</td>
+<td>0.172</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R68C142[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s43/I3</td>
+<td>R66C141[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s60/I1</td>
 </tr>
 <tr>
-<td>12.400</td>
-<td>0.579</td>
+<td>12.648</td>
+<td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
 <td>2</td>
-<td>R68C142[0][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s43/F</td>
+<td>R66C141[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s60/F</td>
 </tr>
 <tr>
-<td>12.971</td>
-<td>0.571</td>
+<td>12.823</td>
+<td>0.175</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C140[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s18/I3</td>
+<td>R66C141[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s38/I3</td>
 </tr>
 <tr>
-<td>13.260</td>
+<td>13.112</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C140[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s18/F</td>
+<td>R66C141[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s38/F</td>
 </tr>
 <tr>
-<td>13.620</td>
-<td>0.360</td>
+<td>13.285</td>
+<td>0.172</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C138[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s10/I2</td>
+<td>R67C141[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s15/I3</td>
 </tr>
 <tr>
-<td>14.198</td>
+<td>13.863</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C138[0][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s10/F</td>
+<td>R67C141[2][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s15/F</td>
 </tr>
 <tr>
-<td>14.852</td>
-<td>0.654</td>
+<td>14.636</td>
+<td>0.773</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C133[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s7/I0</td>
+<td>R65C135[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s8/I1</td>
 </tr>
 <tr>
-<td>15.431</td>
-<td>0.579</td>
+<td>15.143</td>
+<td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C133[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s7/F</td>
+<td>R65C135[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s8/F</td>
 </tr>
 <tr>
-<td>15.941</td>
-<td>0.510</td>
+<td>15.823</td>
+<td>0.680</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R63C132[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s6/I0</td>
+<td>R65C127[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n211_s6/I1</td>
 </tr>
 <tr>
-<td>16.230</td>
-<td>0.289</td>
+<td>16.391</td>
+<td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R63C132[2][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s6/F</td>
+<td>R65C127[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s6/F</td>
 </tr>
 <tr>
-<td>16.230</td>
+<td>16.391</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R63C132[2][B]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_2_s0/D</td>
+<td>R65C127[0][B]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_4_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -1953,29 +1953,29 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>25.939</td>
-<td>5.256</td>
+<td>25.934</td>
+<td>5.251</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R63C132[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0/CLK</td>
+<td>R65C127[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0/CLK</td>
 </tr>
 <tr>
-<td>25.875</td>
+<td>25.870</td>
 <td>-0.064</td>
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R63C132[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0</td>
+<td>R65C127[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew</td>
-<td>0.011</td>
+<td>0.006</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship </td>
@@ -1991,11 +1991,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.449, 33.476%; route: 6.471, 62.811%; tC2Q: 0.382, 3.713%</td>
+<td>cell: 3.480, 33.259%; route: 6.601, 63.086%; tC2Q: 0.382, 3.656%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.492%; route: 5.256, 88.508%</td>
+<td>cell: 0.683, 11.502%; route: 5.251, 88.498%</td>
 </tr>
 </table>
 <h3>Path2</h3>
@@ -2003,11 +2003,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.696</td>
+<td>9.645</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>16.165</td>
+<td>16.216</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -2114,8 +2114,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
 </tr>
 <tr>
-<td>11.262</td>
-<td>0.899</td>
+<td>11.313</td>
+<td>0.950</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -2123,7 +2123,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n215_s97/I3</td>
 </tr>
 <tr>
-<td>11.830</td>
+<td>11.881</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2132,7 +2132,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s97/F</td>
 </tr>
 <tr>
-<td>12.241</td>
+<td>12.292</td>
 <td>0.411</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2141,7 +2141,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n207_s57/I3</td>
 </tr>
 <tr>
-<td>12.532</td>
+<td>12.583</td>
 <td>0.291</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2150,7 +2150,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s57/F</td>
 </tr>
 <tr>
-<td>12.683</td>
+<td>12.735</td>
 <td>0.151</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2159,7 +2159,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n207_s29/I2</td>
 </tr>
 <tr>
-<td>13.251</td>
+<td>13.302</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2168,7 +2168,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s29/F</td>
 </tr>
 <tr>
-<td>13.462</td>
+<td>13.513</td>
 <td>0.211</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2177,7 +2177,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n207_s13/I3</td>
 </tr>
 <tr>
-<td>14.030</td>
+<td>14.081</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2186,7 +2186,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s13/F</td>
 </tr>
 <tr>
-<td>14.593</td>
+<td>14.645</td>
 <td>0.564</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2195,7 +2195,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n207_s7/I3</td>
 </tr>
 <tr>
-<td>15.050</td>
+<td>15.101</td>
 <td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2204,7 +2204,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s7/F</td>
 </tr>
 <tr>
-<td>15.597</td>
+<td>15.648</td>
 <td>0.548</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2213,7 +2213,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n207_s6/I0</td>
 </tr>
 <tr>
-<td>16.165</td>
+<td>16.216</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -2222,7 +2222,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s6/F</td>
 </tr>
 <tr>
-<td>16.165</td>
+<td>16.216</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -2317,7 +2317,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.525, 34.433%; route: 6.330, 61.830%; tC2Q: 0.382, 3.736%</td>
+<td>cell: 3.525, 34.262%; route: 6.381, 62.020%; tC2Q: 0.382, 3.718%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -2329,15 +2329,15 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.878</td>
+<td>9.838</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.992</td>
+<td>16.037</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>25.870</td>
+<td>25.875</td>
 </tr>
 <tr>
 <td class="label">From</td>
@@ -2345,7 +2345,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -2440,8 +2440,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s29/F</td>
 </tr>
 <tr>
-<td>10.538</td>
-<td>0.851</td>
+<td>10.533</td>
+<td>0.846</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -2449,8 +2449,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n211_s57/I1</td>
 </tr>
 <tr>
-<td>11.106</td>
-<td>0.567</td>
+<td>11.112</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>4</td>
@@ -2458,85 +2458,103 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s57/F</td>
 </tr>
 <tr>
-<td>11.860</td>
-<td>0.754</td>
+<td>11.827</td>
+<td>0.715</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R68C142[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n211_s37/I2</td>
+<td>R68C142[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s43/I3</td>
 </tr>
 <tr>
-<td>12.367</td>
-<td>0.507</td>
+<td>12.406</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
-<td>1</td>
-<td>R68C142[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s37/F</td>
+<td>2</td>
+<td>R68C142[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s43/F</td>
 </tr>
 <tr>
-<td>12.897</td>
-<td>0.530</td>
+<td>12.778</td>
+<td>0.373</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C141[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n211_s15/I2</td>
+<td>R66C140[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s18/I3</td>
 </tr>
 <tr>
-<td>13.465</td>
-<td>0.567</td>
+<td>13.067</td>
+<td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C141[2][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s15/F</td>
+<td>R66C140[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s18/F</td>
 </tr>
 <tr>
-<td>14.237</td>
-<td>0.773</td>
+<td>13.427</td>
+<td>0.360</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C135[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n211_s8/I1</td>
+<td>R66C138[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s10/I2</td>
 </tr>
 <tr>
-<td>14.745</td>
-<td>0.507</td>
+<td>14.006</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C135[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s8/F</td>
+<td>R66C138[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s10/F</td>
 </tr>
 <tr>
-<td>15.425</td>
-<td>0.680</td>
+<td>14.660</td>
+<td>0.654</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C127[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n211_s6/I1</td>
+<td>R66C133[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s7/I0</td>
 </tr>
 <tr>
-<td>15.992</td>
-<td>0.567</td>
+<td>15.238</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C127[0][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s6/F</td>
+<td>R66C133[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s7/F</td>
 </tr>
 <tr>
-<td>15.992</td>
+<td>15.748</td>
+<td>0.510</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C132[2][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s6/I0</td>
+</tr>
+<tr>
+<td>16.037</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C132[2][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s6/F</td>
+</tr>
+<tr>
+<td>16.037</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C127[0][B]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_4_s0/D</td>
+<td>R63C132[2][B]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_2_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -2587,29 +2605,29 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>25.934</td>
-<td>5.251</td>
+<td>25.939</td>
+<td>5.256</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R65C127[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0/CLK</td>
+<td>R63C132[2][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0/CLK</td>
 </tr>
 <tr>
-<td>25.870</td>
+<td>25.875</td>
 <td>-0.064</td>
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R65C127[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_4_s0</td>
+<td>R63C132[2][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_2_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew</td>
-<td>0.006</td>
+<td>0.011</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship </td>
@@ -2617,7 +2635,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Logic Level</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
@@ -2625,11 +2643,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.285, 32.639%; route: 6.397, 63.561%; tC2Q: 0.382, 3.800%</td>
+<td>cell: 3.460, 34.225%; route: 6.267, 61.992%; tC2Q: 0.382, 3.783%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.502%; route: 5.251, 88.498%</td>
+<td>cell: 0.683, 11.492%; route: 5.256, 88.508%</td>
 </tr>
 </table>
 <h3>Path4</h3>
@@ -2637,319 +2655,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>9.887</td>
+<td>9.937</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.957</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>25.844</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>i2c_config_m0/lut_index_3_s2</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>5.928</td>
-<td>5.245</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C132[2][A]</td>
-<td>i2c_config_m0/lut_index_3_s2/CLK</td>
-</tr>
-<tr>
-<td>6.310</td>
-<td>0.382</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>116</td>
-<td>R70C132[2][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/lut_index_3_s2/Q</td>
-</tr>
-<tr>
-<td>9.853</td>
-<td>3.543</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C142[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s85/I2</td>
-</tr>
-<tr>
-<td>10.421</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C142[1][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s85/F</td>
-</tr>
-<tr>
-<td>11.220</td>
-<td>0.799</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R68C142[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s99/I0</td>
-</tr>
-<tr>
-<td>11.798</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R68C142[2][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s99/F</td>
-</tr>
-<tr>
-<td>12.180</td>
-<td>0.381</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C141[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s41/I3</td>
-</tr>
-<tr>
-<td>12.468</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R67C141[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s41/F</td>
-</tr>
-<tr>
-<td>12.622</td>
-<td>0.154</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C141[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s17/I2</td>
-</tr>
-<tr>
-<td>13.130</td>
-<td>0.507</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C141[2][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s17/F</td>
-</tr>
-<tr>
-<td>14.292</td>
-<td>1.163</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C135[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s8/I2</td>
-</tr>
-<tr>
-<td>14.800</td>
-<td>0.507</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C135[1][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s8/F</td>
-</tr>
-<tr>
-<td>15.390</td>
-<td>0.590</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C130[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n228_s6/I1</td>
-</tr>
-<tr>
-<td>15.957</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C130[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s6/F</td>
-</tr>
-<tr>
-<td>15.957</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C130[1][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_0_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>20.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>25.908</td>
-<td>5.225</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R66C130[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0/CLK</td>
-</tr>
-<tr>
-<td>25.844</td>
-<td>-0.064</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>R66C130[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>-0.020</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>7</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.514%; route: 5.245, 88.486%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.017, 30.086%; route: 6.630, 66.101%; tC2Q: 0.382, 3.814%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.552%; route: 5.225, 88.448%</td>
-</tr>
-</table>
-<h3>Path5</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>10.126</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>15.735</td>
+<td>15.923</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -3056,8 +2766,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s76/F</td>
 </tr>
 <tr>
-<td>10.695</td>
-<td>0.766</td>
+<td>10.883</td>
+<td>0.955</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -3065,7 +2775,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n211_s84/I1</td>
 </tr>
 <tr>
-<td>11.262</td>
+<td>11.451</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -3074,7 +2784,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s84/F</td>
 </tr>
 <tr>
-<td>11.646</td>
+<td>11.835</td>
 <td>0.384</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3083,7 +2793,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n211_s66/I3</td>
 </tr>
 <tr>
-<td>12.220</td>
+<td>12.408</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
@@ -3092,7 +2802,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n211_s66/F</td>
 </tr>
 <tr>
-<td>12.395</td>
+<td>12.583</td>
 <td>0.175</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3101,7 +2811,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n215_s33/I2</td>
 </tr>
 <tr>
-<td>12.973</td>
+<td>13.162</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -3110,7 +2820,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s33/F</td>
 </tr>
 <tr>
-<td>13.510</td>
+<td>13.698</td>
 <td>0.536</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3119,7 +2829,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n215_s15/I0</td>
 </tr>
 <tr>
-<td>13.828</td>
+<td>14.017</td>
 <td>0.319</td>
 <td>tINS</td>
 <td>RF</td>
@@ -3128,7 +2838,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s15/F</td>
 </tr>
 <tr>
-<td>14.338</td>
+<td>14.527</td>
 <td>0.510</td>
 <td>tNET</td>
 <td>FF</td>
@@ -3137,7 +2847,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n215_s9/I0</td>
 </tr>
 <tr>
-<td>14.846</td>
+<td>15.035</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>FR</td>
@@ -3146,7 +2856,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s9/F</td>
 </tr>
 <tr>
-<td>15.227</td>
+<td>15.416</td>
 <td>0.381</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3155,7 +2865,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n215_s6/I2</td>
 </tr>
 <tr>
-<td>15.735</td>
+<td>15.923</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -3164,7 +2874,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s6/F</td>
 </tr>
 <tr>
-<td>15.735</td>
+<td>15.923</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3259,27 +2969,27 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.601, 36.685%; route: 5.833, 59.418%; tC2Q: 0.382, 3.896%</td>
+<td>cell: 3.601, 35.993%; route: 6.022, 60.184%; tC2Q: 0.382, 3.823%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.683, 11.520%; route: 5.242, 88.480%</td>
 </tr>
 </table>
-<h3>Path6</h3>
+<h3>Path5</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>10.210</td>
+<td>10.167</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.651</td>
+<td>15.677</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>25.861</td>
+<td>25.844</td>
 </tr>
 <tr>
 <td class="label">From</td>
@@ -3287,7 +2997,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_7_s0</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -3364,107 +3074,433 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">i2c_config_m0/lut_index_3_s2/Q</td>
 </tr>
 <tr>
-<td>9.856</td>
-<td>3.546</td>
+<td>9.408</td>
+<td>3.098</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C143[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n207_s58/I3</td>
+<td>R63C143[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n207_s59/I3</td>
 </tr>
 <tr>
-<td>10.363</td>
-<td>0.507</td>
+<td>9.865</td>
+<td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
-<td>16</td>
-<td>R69C143[2][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
+<td>14</td>
+<td>R63C143[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s59/F</td>
 </tr>
 <tr>
-<td>11.132</td>
-<td>0.769</td>
+<td>10.518</td>
+<td>0.654</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C137[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n219_s46/I1</td>
+<td>R65C136[3][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n215_s63/I1</td>
 </tr>
 <tr>
-<td>11.711</td>
-<td>0.579</td>
+<td>10.975</td>
+<td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
-<td>2</td>
-<td>R67C137[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s46/F</td>
+<td>3</td>
+<td>R65C136[3][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n215_s63/F</td>
 </tr>
 <tr>
-<td>12.120</td>
-<td>0.409</td>
+<td>11.386</td>
+<td>0.411</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C136[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n199_s41/I3</td>
+<td>R65C139[3][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n228_s69/I3</td>
 </tr>
 <tr>
-<td>12.408</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R66C136[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s41/F</td>
-</tr>
-<tr>
-<td>12.792</td>
-<td>0.384</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C134[3][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n199_s30/I3</td>
-</tr>
-<tr>
-<td>13.366</td>
+<td>11.960</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C134[3][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s30/F</td>
+<td>R65C139[3][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s69/F</td>
 </tr>
 <tr>
-<td>13.368</td>
-<td>0.003</td>
+<td>12.111</td>
+<td>0.151</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C134[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n199_s14/I2</td>
+<td>R65C139[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n228_s44/I2</td>
 </tr>
 <tr>
-<td>13.876</td>
+<td>12.567</td>
+<td>0.456</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R65C139[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s44/F</td>
+</tr>
+<tr>
+<td>12.948</td>
+<td>0.381</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R68C139[3][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n228_s18/I2</td>
+</tr>
+<tr>
+<td>13.405</td>
+<td>0.456</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R68C139[3][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s18/F</td>
+</tr>
+<tr>
+<td>13.941</td>
+<td>0.536</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C135[1][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n228_s8/I3</td>
+</tr>
+<tr>
+<td>14.520</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C135[1][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s8/F</td>
+</tr>
+<tr>
+<td>15.110</td>
+<td>0.590</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C130[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n228_s6/I1</td>
+</tr>
+<tr>
+<td>15.677</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C130[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n228_s6/F</td>
+</tr>
+<tr>
+<td>15.677</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C130[1][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_0_s0/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>20.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>25.908</td>
+<td>5.225</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C130[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0/CLK</td>
+</tr>
+<tr>
+<td>25.844</td>
+<td>-0.064</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R66C130[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_0_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>-0.020</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.683, 11.514%; route: 5.245, 88.486%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 3.545, 36.360%; route: 5.822, 59.717%; tC2Q: 0.382, 3.923%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.683, 11.552%; route: 5.225, 88.448%</td>
+</tr>
+</table>
+<h3>Path6</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>10.193</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>15.667</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>25.861</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>i2c_config_m0/lut_index_1_s2</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_7_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>5.918</td>
+<td>5.236</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C133[1][A]</td>
+<td>i2c_config_m0/lut_index_1_s2/CLK</td>
+</tr>
+<tr>
+<td>6.301</td>
+<td>0.382</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>101</td>
+<td>R70C133[1][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/lut_index_1_s2/Q</td>
+</tr>
+<tr>
+<td>9.532</td>
+<td>3.232</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C142[1][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n219_s67/I1</td>
+</tr>
+<tr>
+<td>9.821</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>5</td>
+<td>R63C142[1][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n219_s67/F</td>
+</tr>
+<tr>
+<td>10.857</td>
+<td>1.036</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C137[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s44/I3</td>
+</tr>
+<tr>
+<td>11.146</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>R63C137[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s44/F</td>
+</tr>
+<tr>
+<td>11.895</td>
+<td>0.749</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C136[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n199_s38/I3</td>
+</tr>
+<tr>
+<td>12.402</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R67C134[2][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s14/F</td>
+<td>R67C136[2][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s38/F</td>
 </tr>
 <tr>
-<td>14.027</td>
+<td>12.405</td>
+<td>0.003</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C136[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n199_s24/I2</td>
+</tr>
+<tr>
+<td>12.861</td>
+<td>0.456</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C136[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s24/F</td>
+</tr>
+<tr>
+<td>13.242</td>
+<td>0.381</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C134[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n199_s12/I3</td>
+</tr>
+<tr>
+<td>13.821</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C134[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s12/F</td>
+</tr>
+<tr>
+<td>13.972</td>
 <td>0.151</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
 <td>R67C134[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n199_s7/I3</td>
+<td>i2c_config_m0/i2c_master_top_m0/n199_s7/I1</td>
 </tr>
 <tr>
-<td>14.535</td>
-<td>0.507</td>
+<td>14.551</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
@@ -3472,7 +3508,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s7/F</td>
 </tr>
 <tr>
-<td>15.083</td>
+<td>15.100</td>
 <td>0.549</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3481,7 +3517,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n199_s6/I0</td>
 </tr>
 <tr>
-<td>15.651</td>
+<td>15.667</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -3490,7 +3526,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n199_s6/F</td>
 </tr>
 <tr>
-<td>15.651</td>
+<td>15.667</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -3569,7 +3605,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew</td>
-<td>-0.003</td>
+<td>0.006</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship </td>
@@ -3581,11 +3617,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.514%; route: 5.245, 88.486%</td>
+<td>cell: 0.683, 11.532%; route: 5.236, 88.468%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.531, 36.317%; route: 5.810, 59.749%; tC2Q: 0.382, 3.934%</td>
+<td>cell: 3.266, 33.503%; route: 6.100, 62.573%; tC2Q: 0.382, 3.923%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -3597,319 +3633,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>10.290</td>
+<td>10.243</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>15.580</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>25.870</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>i2c_config_m0/lut_index_3_s2</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>5.928</td>
-<td>5.245</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C132[2][A]</td>
-<td>i2c_config_m0/lut_index_3_s2/CLK</td>
-</tr>
-<tr>
-<td>6.310</td>
-<td>0.382</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>116</td>
-<td>R70C132[2][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/lut_index_3_s2/Q</td>
-</tr>
-<tr>
-<td>9.856</td>
-<td>3.546</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C143[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n207_s58/I3</td>
-</tr>
-<tr>
-<td>10.363</td>
-<td>0.507</td>
-<td>tINS</td>
-<td>RR</td>
-<td>16</td>
-<td>R69C143[2][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
-</tr>
-<tr>
-<td>11.127</td>
-<td>0.764</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R63C136[3][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n203_s48/I3</td>
-</tr>
-<tr>
-<td>11.675</td>
-<td>0.548</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R63C136[3][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s48/F</td>
-</tr>
-<tr>
-<td>11.677</td>
-<td>0.003</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R63C136[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n203_s24/I2</td>
-</tr>
-<tr>
-<td>12.185</td>
-<td>0.507</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R63C136[1][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s24/F</td>
-</tr>
-<tr>
-<td>12.600</td>
-<td>0.415</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C138[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n203_s11/I2</td>
-</tr>
-<tr>
-<td>13.178</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C138[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s11/F</td>
-</tr>
-<tr>
-<td>13.885</td>
-<td>0.706</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C133[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n203_s7/I1</td>
-</tr>
-<tr>
-<td>14.463</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C133[0][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s7/F</td>
-</tr>
-<tr>
-<td>15.012</td>
-<td>0.549</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C127[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/n203_s6/I0</td>
-</tr>
-<tr>
-<td>15.580</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C127[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s6/F</td>
-</tr>
-<tr>
-<td>15.580</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C127[1][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_6_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>20.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>25.934</td>
-<td>5.251</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R65C127[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0/CLK</td>
-</tr>
-<tr>
-<td>25.870</td>
-<td>-0.064</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>R65C127[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>0.006</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>7</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.514%; route: 5.245, 88.486%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.288, 34.060%; route: 5.982, 61.978%; tC2Q: 0.382, 3.963%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.502%; route: 5.251, 88.498%</td>
-</tr>
-</table>
-<h3>Path8</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>10.410</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>15.456</td>
+<td>15.622</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -4016,8 +3744,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
 </tr>
 <tr>
-<td>10.848</td>
-<td>0.485</td>
+<td>10.845</td>
+<td>0.481</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4025,7 +3753,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n223_s42/I0</td>
 </tr>
 <tr>
-<td>11.416</td>
+<td>11.412</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4034,7 +3762,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n223_s42/F</td>
 </tr>
 <tr>
-<td>11.567</td>
+<td>11.563</td>
 <td>0.151</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4043,7 +3771,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n223_s81/I2</td>
 </tr>
 <tr>
-<td>12.135</td>
+<td>12.131</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4052,8 +3780,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n223_s81/F</td>
 </tr>
 <tr>
-<td>12.415</td>
-<td>0.280</td>
+<td>12.581</td>
+<td>0.450</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4061,7 +3789,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n223_s10/I2</td>
 </tr>
 <tr>
-<td>12.982</td>
+<td>13.148</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4070,7 +3798,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n223_s10/F</td>
 </tr>
 <tr>
-<td>13.572</td>
+<td>13.738</td>
 <td>0.590</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4079,7 +3807,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n223_s7/I0</td>
 </tr>
 <tr>
-<td>14.140</td>
+<td>14.306</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4088,7 +3816,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n223_s7/F</td>
 </tr>
 <tr>
-<td>14.888</td>
+<td>15.055</td>
 <td>0.749</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4097,7 +3825,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/n223_s6/I0</td>
 </tr>
 <tr>
-<td>15.456</td>
+<td>15.622</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4106,7 +3834,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n223_s6/F</td>
 </tr>
 <tr>
-<td>15.456</td>
+<td>15.622</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4201,35 +3929,35 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.345, 35.105%; route: 5.801, 60.880%; tC2Q: 0.382, 4.014%</td>
+<td>cell: 3.345, 34.503%; route: 5.967, 61.551%; tC2Q: 0.382, 3.945%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.683, 11.510%; route: 5.247, 88.490%</td>
 </tr>
 </table>
-<h3>Path9</h3>
+<h3>Path8</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>13.589</td>
+<td>10.294</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>12.025</td>
+<td>15.576</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>25.614</td>
+<td>25.870</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>i2c_config_m0/lut_index_5_s2</td>
+<td>i2c_config_m0/lut_index_3_s2</td>
 </tr>
 <tr>
 <td class="label">To</td>
-<td>i2c_config_m0/i2c_write_req_s0</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0</td>
 </tr>
 <tr>
 <td class="label">Launch Clk</td>
@@ -4288,85 +4016,139 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>5.926</td>
-<td>5.243</td>
+<td>5.928</td>
+<td>5.245</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C134[0][A]</td>
-<td>i2c_config_m0/lut_index_5_s2/CLK</td>
+<td>R70C132[2][A]</td>
+<td>i2c_config_m0/lut_index_3_s2/CLK</td>
 </tr>
 <tr>
-<td>6.308</td>
+<td>6.310</td>
 <td>0.382</td>
 <td>tC2Q</td>
 <td>RR</td>
-<td>83</td>
-<td>R69C134[0][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/lut_index_5_s2/Q</td>
+<td>116</td>
+<td>R70C132[2][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/lut_index_3_s2/Q</td>
 </tr>
 <tr>
-<td>8.780</td>
-<td>2.472</td>
+<td>9.856</td>
+<td>3.546</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R66C143[1][A]</td>
-<td>i2c_config_m0/n124_s18/I1</td>
+<td>R69C143[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n207_s58/I3</td>
 </tr>
 <tr>
-<td>9.347</td>
-<td>0.567</td>
+<td>10.363</td>
+<td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
-<td>21</td>
-<td>R66C143[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/n124_s18/F</td>
+<td>16</td>
+<td>R69C143[2][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n207_s58/F</td>
 </tr>
 <tr>
-<td>10.581</td>
-<td>1.234</td>
+<td>11.123</td>
+<td>0.760</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C126[0][A]</td>
-<td>i2c_config_m0/n124_s14/I1</td>
+<td>R63C136[3][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s48/I3</td>
 </tr>
 <tr>
-<td>11.160</td>
+<td>11.671</td>
+<td>0.548</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C136[3][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s48/F</td>
+</tr>
+<tr>
+<td>11.673</td>
+<td>0.003</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C136[1][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s24/I2</td>
+</tr>
+<tr>
+<td>12.181</td>
+<td>0.507</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R63C136[1][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s24/F</td>
+</tr>
+<tr>
+<td>12.596</td>
+<td>0.415</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C138[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s11/I2</td>
+</tr>
+<tr>
+<td>13.175</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
-<td>3</td>
-<td>R69C126[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/n124_s14/F</td>
+<td>1</td>
+<td>R67C138[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s11/F</td>
 </tr>
 <tr>
-<td>11.585</td>
-<td>0.425</td>
+<td>13.881</td>
+<td>0.706</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C122[0][B]</td>
-<td>i2c_config_m0/i2c_write_req_s4/I1</td>
+<td>R65C133[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s7/I1</td>
 </tr>
 <tr>
-<td>11.874</td>
-<td>0.289</td>
+<td>14.460</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C122[0][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_write_req_s4/F</td>
+<td>R65C133[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s7/F</td>
 </tr>
 <tr>
-<td>12.025</td>
-<td>0.151</td>
+<td>15.008</td>
+<td>0.549</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C122[0][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_write_req_s0/CE</td>
+<td>R65C127[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/n203_s6/I0</td>
+</tr>
+<tr>
+<td>15.576</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R65C127[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/n203_s6/F</td>
+</tr>
+<tr>
+<td>15.576</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R65C127[1][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/txr_6_s0/D</td>
 </tr>
 </table>
 <p><b>Data Required Path:</b></p>
@@ -4417,29 +4199,29 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>clk_ibuf/O</td>
 </tr>
 <tr>
-<td>25.926</td>
-<td>5.243</td>
+<td>25.934</td>
+<td>5.251</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>R69C122[0][A]</td>
-<td>i2c_config_m0/i2c_write_req_s0/CLK</td>
+<td>R65C127[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0/CLK</td>
 </tr>
 <tr>
-<td>25.614</td>
-<td>-0.311</td>
+<td>25.870</td>
+<td>-0.064</td>
 <td>tSu</td>
 <td></td>
 <td>1</td>
-<td>R69C122[0][A]</td>
-<td>i2c_config_m0/i2c_write_req_s0</td>
+<td>R65C127[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/txr_6_s0</td>
 </tr>
 </table>
 <p><b>Path Statistics:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Clock Skew</td>
-<td>0.000</td>
+<td>0.006</td>
 </tr>
 <tr>
 <td class="label">Setup Relationship </td>
@@ -4447,31 +4229,31 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Logic Level</td>
-<td>4</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.518%; route: 5.243, 88.482%</td>
+<td>cell: 0.683, 11.514%; route: 5.245, 88.486%</td>
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 1.435, 23.527%; route: 4.282, 70.202%; tC2Q: 0.382, 6.271%</td>
+<td>cell: 3.288, 34.073%; route: 5.978, 61.963%; tC2Q: 0.382, 3.964%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.518%; route: 5.243, 88.482%</td>
+<td>cell: 0.683, 11.502%; route: 5.251, 88.498%</td>
 </tr>
 </table>
-<h3>Path10</h3>
+<h3>Path9</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>13.687</td>
+<td>13.344</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.937</td>
+<td>12.279</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -4560,8 +4342,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
 </tr>
 <tr>
-<td>6.522</td>
-<td>0.202</td>
+<td>6.558</td>
+<td>0.239</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4569,7 +4351,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/I1</td>
 </tr>
 <tr>
-<td>7.089</td>
+<td>7.126</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4578,7 +4360,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/F</td>
 </tr>
 <tr>
-<td>7.092</td>
+<td>7.128</td>
 <td>0.003</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4587,7 +4369,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/I3</td>
 </tr>
 <tr>
-<td>7.381</td>
+<td>7.417</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4596,7 +4378,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/F</td>
 </tr>
 <tr>
-<td>7.774</td>
+<td>7.811</td>
 <td>0.394</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4605,7 +4387,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/I0</td>
 </tr>
 <tr>
-<td>8.342</td>
+<td>8.378</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4614,8 +4396,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/F</td>
 </tr>
 <tr>
-<td>8.917</td>
-<td>0.575</td>
+<td>9.259</td>
+<td>0.881</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4623,7 +4405,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/I3</td>
 </tr>
 <tr>
-<td>9.496</td>
+<td>9.838</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4632,7 +4414,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/F</td>
 </tr>
 <tr>
-<td>9.904</td>
+<td>10.247</td>
 <td>0.409</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4641,7 +4423,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/I0</td>
 </tr>
 <tr>
-<td>10.452</td>
+<td>10.794</td>
 <td>0.548</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4650,7 +4432,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/F</td>
 </tr>
 <tr>
-<td>10.666</td>
+<td>11.008</td>
 <td>0.214</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4659,7 +4441,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s4/I2</td>
 </tr>
 <tr>
-<td>11.239</td>
+<td>11.582</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4668,7 +4450,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s4/F</td>
 </tr>
 <tr>
-<td>11.244</td>
+<td>11.587</td>
 <td>0.005</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4677,7 +4459,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s2/I1</td>
 </tr>
 <tr>
-<td>11.701</td>
+<td>12.043</td>
 <td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4686,7 +4468,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s2/F</td>
 </tr>
 <tr>
-<td>11.937</td>
+<td>12.279</td>
 <td>0.236</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4781,23 +4563,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.580, 59.667%; route: 2.037, 33.958%; tC2Q: 0.382, 6.375%</td>
+<td>cell: 3.580, 56.445%; route: 2.380, 37.525%; tC2Q: 0.382, 6.031%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.683, 11.500%; route: 5.253, 88.500%</td>
 </tr>
 </table>
-<h3>Path11</h3>
+<h3>Path10</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>13.711</td>
+<td>13.369</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.903</td>
+<td>12.246</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -4886,8 +4668,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
 </tr>
 <tr>
-<td>6.522</td>
-<td>0.202</td>
+<td>6.558</td>
+<td>0.239</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4895,7 +4677,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/I1</td>
 </tr>
 <tr>
-<td>7.089</td>
+<td>7.126</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4904,7 +4686,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/F</td>
 </tr>
 <tr>
-<td>7.092</td>
+<td>7.128</td>
 <td>0.003</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4913,7 +4695,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/I3</td>
 </tr>
 <tr>
-<td>7.381</td>
+<td>7.417</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4922,7 +4704,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/F</td>
 </tr>
 <tr>
-<td>7.774</td>
+<td>7.811</td>
 <td>0.394</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4931,7 +4713,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/I0</td>
 </tr>
 <tr>
-<td>8.342</td>
+<td>8.378</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4940,8 +4722,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/F</td>
 </tr>
 <tr>
-<td>8.917</td>
-<td>0.575</td>
+<td>9.259</td>
+<td>0.881</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -4949,7 +4731,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/I3</td>
 </tr>
 <tr>
-<td>9.496</td>
+<td>9.838</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4958,7 +4740,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/F</td>
 </tr>
 <tr>
-<td>9.904</td>
+<td>10.247</td>
 <td>0.409</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4967,7 +4749,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/I0</td>
 </tr>
 <tr>
-<td>10.452</td>
+<td>10.794</td>
 <td>0.548</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4976,7 +4758,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/F</td>
 </tr>
 <tr>
-<td>10.666</td>
+<td>11.008</td>
 <td>0.214</td>
 <td>tNET</td>
 <td>RR</td>
@@ -4985,7 +4767,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s4/I2</td>
 </tr>
 <tr>
-<td>11.239</td>
+<td>11.582</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
@@ -4994,7 +4776,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s4/F</td>
 </tr>
 <tr>
-<td>11.244</td>
+<td>11.587</td>
 <td>0.005</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5003,7 +4785,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sda_oen_s2/I2</td>
 </tr>
 <tr>
-<td>11.752</td>
+<td>12.094</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5012,7 +4794,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/sda_oen_s2/F</td>
 </tr>
 <tr>
-<td>11.903</td>
+<td>12.246</td>
 <td>0.151</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5107,7 +4889,261 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.631, 60.863%; route: 1.952, 32.726%; tC2Q: 0.382, 6.411%</td>
+<td>cell: 3.631, 57.559%; route: 2.295, 36.378%; tC2Q: 0.382, 6.063%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.683, 11.518%; route: 5.243, 88.482%</td>
+</tr>
+</table>
+<h3>Path11</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>13.537</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>12.077</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>25.614</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>i2c_config_m0/lut_index_5_s2</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>i2c_config_m0/i2c_write_req_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>5.926</td>
+<td>5.243</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C134[0][A]</td>
+<td>i2c_config_m0/lut_index_5_s2/CLK</td>
+</tr>
+<tr>
+<td>6.308</td>
+<td>0.382</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>83</td>
+<td>R69C134[0][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/lut_index_5_s2/Q</td>
+</tr>
+<tr>
+<td>8.780</td>
+<td>2.472</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R66C143[1][A]</td>
+<td>i2c_config_m0/n124_s18/I1</td>
+</tr>
+<tr>
+<td>9.347</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>21</td>
+<td>R66C143[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/n124_s18/F</td>
+</tr>
+<tr>
+<td>10.634</td>
+<td>1.286</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C126[0][A]</td>
+<td>i2c_config_m0/n124_s14/I1</td>
+</tr>
+<tr>
+<td>11.212</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>R69C126[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/n124_s14/F</td>
+</tr>
+<tr>
+<td>11.637</td>
+<td>0.425</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C122[0][B]</td>
+<td>i2c_config_m0/i2c_write_req_s4/I1</td>
+</tr>
+<tr>
+<td>11.926</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C122[0][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_write_req_s4/F</td>
+</tr>
+<tr>
+<td>12.077</td>
+<td>0.151</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C122[0][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_write_req_s0/CE</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>20.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>25.926</td>
+<td>5.243</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C122[0][A]</td>
+<td>i2c_config_m0/i2c_write_req_s0/CLK</td>
+</tr>
+<tr>
+<td>25.614</td>
+<td>-0.311</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R69C122[0][A]</td>
+<td>i2c_config_m0/i2c_write_req_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.683, 11.518%; route: 5.243, 88.482%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 1.435, 23.326%; route: 4.334, 70.456%; tC2Q: 0.382, 6.218%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -5119,11 +5155,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>13.988</td>
+<td>13.936</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.874</td>
+<td>11.926</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -5230,8 +5266,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s18/F</td>
 </tr>
 <tr>
-<td>10.581</td>
-<td>1.234</td>
+<td>10.634</td>
+<td>1.286</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -5239,7 +5275,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n124_s14/I1</td>
 </tr>
 <tr>
-<td>11.160</td>
+<td>11.212</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5248,7 +5284,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s14/F</td>
 </tr>
 <tr>
-<td>11.874</td>
+<td>11.926</td>
 <td>0.714</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5343,7 +5379,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 1.146, 19.271%; route: 4.419, 74.299%; tC2Q: 0.382, 6.431%</td>
+<td>cell: 1.146, 19.102%; route: 4.472, 74.523%; tC2Q: 0.382, 6.374%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -5355,11 +5391,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>13.988</td>
+<td>13.936</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.874</td>
+<td>11.926</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -5466,8 +5502,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s18/F</td>
 </tr>
 <tr>
-<td>10.581</td>
-<td>1.234</td>
+<td>10.634</td>
+<td>1.286</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -5475,7 +5511,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n124_s14/I1</td>
 </tr>
 <tr>
-<td>11.160</td>
+<td>11.212</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5484,7 +5520,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s14/F</td>
 </tr>
 <tr>
-<td>11.585</td>
+<td>11.637</td>
 <td>0.425</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5493,7 +5529,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n100_s7/I0</td>
 </tr>
 <tr>
-<td>11.874</td>
+<td>11.926</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5502,7 +5538,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n100_s7/F</td>
 </tr>
 <tr>
-<td>11.874</td>
+<td>11.926</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5597,7 +5633,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 1.435, 24.125%; route: 4.131, 69.444%; tC2Q: 0.382, 6.431%</td>
+<td>cell: 1.435, 23.914%; route: 4.183, 69.711%; tC2Q: 0.382, 6.374%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -5609,11 +5645,319 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.513</td>
+<td>14.171</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.328</td>
+<td>11.701</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>25.871</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>5.937</td>
+<td>5.254</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C119[0][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/CLK</td>
+</tr>
+<tr>
+<td>6.319</td>
+<td>0.382</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>5</td>
+<td>R70C119[0][B]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
+</tr>
+<tr>
+<td>6.558</td>
+<td>0.239</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C118[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/I1</td>
+</tr>
+<tr>
+<td>7.126</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C118[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/F</td>
+</tr>
+<tr>
+<td>7.128</td>
+<td>0.003</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C118[1][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/I3</td>
+</tr>
+<tr>
+<td>7.417</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>7</td>
+<td>R70C118[1][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/F</td>
+</tr>
+<tr>
+<td>7.811</td>
+<td>0.394</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C118[2][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/I0</td>
+</tr>
+<tr>
+<td>8.378</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>R67C118[2][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/F</td>
+</tr>
+<tr>
+<td>9.259</td>
+<td>0.881</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R68C119[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/I3</td>
+</tr>
+<tr>
+<td>9.838</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>R68C119[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/F</td>
+</tr>
+<tr>
+<td>10.247</td>
+<td>0.409</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C118[3][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/I0</td>
+</tr>
+<tr>
+<td>10.794</td>
+<td>0.548</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>R67C118[3][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/F</td>
+</tr>
+<tr>
+<td>11.412</td>
+<td>0.618</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C119[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s0/I2</td>
+</tr>
+<tr>
+<td>11.701</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C119[2][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s0/F</td>
+</tr>
+<tr>
+<td>11.701</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C119[2][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>20.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>25.935</td>
+<td>5.253</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C119[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/CLK</td>
+</tr>
+<tr>
+<td>25.871</td>
+<td>-0.064</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R69C119[2][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>-0.002</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.683, 11.496%; route: 5.254, 88.504%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 2.839, 49.252%; route: 2.543, 44.112%; tC2Q: 0.382, 6.636%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.683, 11.500%; route: 5.253, 88.500%</td>
+</tr>
+</table>
+<h3>Path15</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>14.423</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>11.418</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -5720,8 +6064,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s15/F</td>
 </tr>
 <tr>
-<td>9.307</td>
-<td>0.769</td>
+<td>9.311</td>
+<td>0.773</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -5729,7 +6073,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n74_s4/I3</td>
 </tr>
 <tr>
-<td>9.874</td>
+<td>9.878</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5738,8 +6082,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n74_s4/F</td>
 </tr>
 <tr>
-<td>10.251</td>
-<td>0.376</td>
+<td>10.269</td>
+<td>0.391</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -5747,8 +6091,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n72_s2/I2</td>
 </tr>
 <tr>
-<td>10.758</td>
-<td>0.507</td>
+<td>10.848</td>
+<td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
@@ -5756,7 +6100,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n72_s2/F</td>
 </tr>
 <tr>
-<td>10.761</td>
+<td>10.851</td>
 <td>0.003</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5765,7 +6109,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n72_s3/I0</td>
 </tr>
 <tr>
-<td>11.328</td>
+<td>11.418</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -5774,7 +6118,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n72_s3/F</td>
 </tr>
 <tr>
-<td>11.328</td>
+<td>11.418</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -5869,319 +6213,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 2.190, 40.481%; route: 2.838, 52.449%; tC2Q: 0.382, 7.070%</td>
+<td>cell: 2.261, 41.114%; route: 2.856, 51.932%; tC2Q: 0.382, 6.955%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.683, 11.559%; route: 5.222, 88.441%</td>
-</tr>
-</table>
-<h3>Path15</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>14.513</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>11.358</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>25.871</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>5.937</td>
-<td>5.254</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C119[0][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/CLK</td>
-</tr>
-<tr>
-<td>6.319</td>
-<td>0.382</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>5</td>
-<td>R70C119[0][B]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/c_state_15_s0/Q</td>
-</tr>
-<tr>
-<td>6.522</td>
-<td>0.202</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C118[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/I1</td>
-</tr>
-<tr>
-<td>7.089</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C118[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s4/F</td>
-</tr>
-<tr>
-<td>7.092</td>
-<td>0.003</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C118[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/I3</td>
-</tr>
-<tr>
-<td>7.381</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>7</td>
-<td>R70C118[1][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n302_s1/F</td>
-</tr>
-<tr>
-<td>7.774</td>
-<td>0.394</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C118[2][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/I0</td>
-</tr>
-<tr>
-<td>8.342</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>6</td>
-<td>R67C118[2][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s3/F</td>
-</tr>
-<tr>
-<td>8.917</td>
-<td>0.575</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R68C119[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/I3</td>
-</tr>
-<tr>
-<td>9.496</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R68C119[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n300_s0/F</td>
-</tr>
-<tr>
-<td>9.904</td>
-<td>0.409</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C118[3][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/I0</td>
-</tr>
-<tr>
-<td>10.452</td>
-<td>0.548</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R67C118[3][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s2/F</td>
-</tr>
-<tr>
-<td>11.069</td>
-<td>0.618</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C119[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s0/I2</td>
-</tr>
-<tr>
-<td>11.358</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C119[2][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n347_s0/F</td>
-</tr>
-<tr>
-<td>11.358</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C119[2][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>20.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>25.935</td>
-<td>5.253</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C119[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0/CLK</td>
-</tr>
-<tr>
-<td>25.871</td>
-<td>-0.064</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>R69C119[2][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/scl_oen_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>-0.002</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>7</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.496%; route: 5.254, 88.504%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 2.839, 52.363%; route: 2.200, 40.581%; tC2Q: 0.382, 7.056%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.500%; route: 5.253, 88.500%</td>
 </tr>
 </table>
 <h3>Path16</h3>
@@ -6189,11 +6225,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.710</td>
+<td>14.713</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>11.152</td>
+<td>11.149</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -6318,8 +6354,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n310_s2/F</td>
 </tr>
 <tr>
-<td>8.462</td>
-<td>0.414</td>
+<td>8.459</td>
+<td>0.411</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -6327,7 +6363,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s2/I2</td>
 </tr>
 <tr>
-<td>8.969</td>
+<td>8.967</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -6336,7 +6372,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s2/F</td>
 </tr>
 <tr>
-<td>9.147</td>
+<td>9.144</td>
 <td>0.177</td>
 <td>tNET</td>
 <td>RR</td>
@@ -6345,7 +6381,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s1/I2</td>
 </tr>
 <tr>
-<td>9.721</td>
+<td>9.718</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
@@ -6354,7 +6390,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s1/F</td>
 </tr>
 <tr>
-<td>9.962</td>
+<td>9.959</td>
 <td>0.241</td>
 <td>tNET</td>
 <td>RR</td>
@@ -6363,7 +6399,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n353_s9/I3</td>
 </tr>
 <tr>
-<td>10.469</td>
+<td>10.467</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -6372,7 +6408,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n353_s9/F</td>
 </tr>
 <tr>
-<td>10.644</td>
+<td>10.642</td>
 <td>0.175</td>
 <td>tNET</td>
 <td>RR</td>
@@ -6381,7 +6417,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n353_s8/I1</td>
 </tr>
 <tr>
-<td>11.152</td>
+<td>11.149</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -6390,7 +6426,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n353_s8/F</td>
 </tr>
 <tr>
-<td>11.152</td>
+<td>11.149</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -6485,7 +6521,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 3.242, 62.043%; route: 1.601, 30.639%; tC2Q: 0.382, 7.319%</td>
+<td>cell: 3.242, 62.072%; route: 1.599, 30.605%; tC2Q: 0.382, 7.322%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -7077,11 +7113,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>14.930</td>
+<td>14.993</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.911</td>
+<td>10.848</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -7188,8 +7224,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s15/F</td>
 </tr>
 <tr>
-<td>9.307</td>
-<td>0.769</td>
+<td>9.311</td>
+<td>0.773</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -7197,7 +7233,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n74_s4/I3</td>
 </tr>
 <tr>
-<td>9.874</td>
+<td>9.878</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -7206,8 +7242,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n74_s4/F</td>
 </tr>
 <tr>
-<td>10.332</td>
-<td>0.458</td>
+<td>10.269</td>
+<td>0.391</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -7215,7 +7251,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n73_s1/I1</td>
 </tr>
 <tr>
-<td>10.911</td>
+<td>10.848</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -7224,7 +7260,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n73_s1/F</td>
 </tr>
 <tr>
-<td>10.911</td>
+<td>10.848</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -7319,7 +7355,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 1.694, 33.926%; route: 2.916, 58.413%; tC2Q: 0.382, 7.661%</td>
+<td>cell: 1.694, 34.356%; route: 2.854, 57.885%; tC2Q: 0.382, 7.759%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -7331,301 +7367,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>15.084</td>
+<td>15.126</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.757</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>25.841</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>clk:[R]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>0.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>0.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>5.910</td>
-<td>5.228</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R68C117[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/CLK</td>
-</tr>
-<tr>
-<td>6.293</td>
-<td>0.382</td>
-<td>tC2Q</td>
-<td>RR</td>
-<td>10</td>
-<td>R68C117[1][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/Q</td>
-</tr>
-<tr>
-<td>6.915</td>
-<td>0.623</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C120[1][B]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s7/I0</td>
-</tr>
-<tr>
-<td>7.204</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C120[1][B]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s7/F</td>
-</tr>
-<tr>
-<td>7.207</td>
-<td>0.003</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C120[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s6/I3</td>
-</tr>
-<tr>
-<td>7.774</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>3</td>
-<td>R67C120[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s6/F</td>
-</tr>
-<tr>
-<td>8.309</td>
-<td>0.535</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R70C120[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n199_s16/I3</td>
-</tr>
-<tr>
-<td>8.888</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R70C120[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n199_s16/F</td>
-</tr>
-<tr>
-<td>9.063</td>
-<td>0.175</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R69C120[1][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s11/I3</td>
-</tr>
-<tr>
-<td>9.642</td>
-<td>0.579</td>
-<td>tINS</td>
-<td>RR</td>
-<td>2</td>
-<td>R69C120[1][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s11/F</td>
-</tr>
-<tr>
-<td>10.468</td>
-<td>0.826</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C117[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s8/I3</td>
-</tr>
-<tr>
-<td>10.757</td>
-<td>0.289</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C117[0][A]</td>
-<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s8/F</td>
-</tr>
-<tr>
-<td>10.757</td>
-<td>0.000</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C117[0][A]</td>
-<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/D</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>20.000</td>
-<td>20.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>clk</td>
-</tr>
-<tr>
-<td>20.000</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>1</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/I</td>
-</tr>
-<tr>
-<td>20.683</td>
-<td>0.683</td>
-<td>tINS</td>
-<td>RR</td>
-<td>163</td>
-<td>IOR103[B]</td>
-<td>clk_ibuf/O</td>
-</tr>
-<tr>
-<td>25.904</td>
-<td>5.222</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R67C117[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/CLK</td>
-</tr>
-<tr>
-<td>25.841</td>
-<td>-0.064</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>R67C117[0][A]</td>
-<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>-0.006</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>20.000</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>6</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.683, 11.548%; route: 5.228, 88.452%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 2.303, 47.511%; route: 2.161, 44.596%; tC2Q: 0.382, 7.893%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.683, 11.559%; route: 5.222, 88.441%</td>
-</tr>
-</table>
-<h3>Path21</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>15.116</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>10.731</td>
+<td>10.721</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -7732,8 +7478,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n124_s15/F</td>
 </tr>
 <tr>
-<td>9.307</td>
-<td>0.769</td>
+<td>9.311</td>
+<td>0.773</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -7741,7 +7487,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n74_s4/I3</td>
 </tr>
 <tr>
-<td>9.874</td>
+<td>9.878</td>
 <td>0.567</td>
 <td>tINS</td>
 <td>RR</td>
@@ -7750,8 +7496,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n74_s4/F</td>
 </tr>
 <tr>
-<td>10.274</td>
-<td>0.400</td>
+<td>10.264</td>
+<td>0.386</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -7759,7 +7505,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/n74_s3/I1</td>
 </tr>
 <tr>
-<td>10.731</td>
+<td>10.721</td>
 <td>0.456</td>
 <td>tINS</td>
 <td>RR</td>
@@ -7768,7 +7514,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/n74_s3/F</td>
 </tr>
 <tr>
-<td>10.731</td>
+<td>10.721</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -7863,11 +7609,301 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 1.571, 32.649%; route: 2.859, 59.403%; tC2Q: 0.382, 7.948%</td>
+<td>cell: 1.571, 32.717%; route: 2.849, 59.318%; tC2Q: 0.382, 7.965%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
 <td>cell: 0.683, 11.548%; route: 5.228, 88.452%</td>
+</tr>
+</table>
+<h3>Path21</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>15.179</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>10.662</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>25.841</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk:[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>0.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>0.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>5.910</td>
+<td>5.228</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R68C117[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/CLK</td>
+</tr>
+<tr>
+<td>6.293</td>
+<td>0.382</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>10</td>
+<td>R68C117[1][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_1_s2/Q</td>
+</tr>
+<tr>
+<td>6.920</td>
+<td>0.627</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C120[1][B]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s7/I0</td>
+</tr>
+<tr>
+<td>7.428</td>
+<td>0.507</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C120[1][B]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s7/F</td>
+</tr>
+<tr>
+<td>7.430</td>
+<td>0.003</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C120[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s6/I3</td>
+</tr>
+<tr>
+<td>7.998</td>
+<td>0.567</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>R67C120[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n211_s6/F</td>
+</tr>
+<tr>
+<td>8.384</td>
+<td>0.386</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R70C120[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n199_s16/I3</td>
+</tr>
+<tr>
+<td>8.963</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>R70C120[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n199_s16/F</td>
+</tr>
+<tr>
+<td>9.138</td>
+<td>0.175</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R69C120[1][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s11/I3</td>
+</tr>
+<tr>
+<td>9.717</td>
+<td>0.579</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>R69C120[1][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s11/F</td>
+</tr>
+<tr>
+<td>10.373</td>
+<td>0.656</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C117[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s8/I3</td>
+</tr>
+<tr>
+<td>10.662</td>
+<td>0.289</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C117[0][A]</td>
+<td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/n197_s8/F</td>
+</tr>
+<tr>
+<td>10.662</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C117[0][A]</td>
+<td style=" font-weight:bold;">i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/D</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>20.000</td>
+<td>20.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>clk</td>
+</tr>
+<tr>
+<td>20.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>20.683</td>
+<td>0.683</td>
+<td>tINS</td>
+<td>RR</td>
+<td>163</td>
+<td>IOR103[B]</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>25.904</td>
+<td>5.222</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>R67C117[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0/CLK</td>
+</tr>
+<tr>
+<td>25.841</td>
+<td>-0.064</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>R67C117[0][A]</td>
+<td>i2c_config_m0/i2c_master_top_m0/byte_controller/c_state_2_s0</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>-0.006</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>20.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.683, 11.548%; route: 5.228, 88.452%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 2.521, 53.065%; route: 1.847, 38.885%; tC2Q: 0.382, 8.051%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.683, 11.559%; route: 5.222, 88.441%</td>
 </tr>
 </table>
 <h3>Path22</h3>
@@ -8147,11 +8183,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>15.394</td>
+<td>15.397</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>10.469</td>
+<td>10.467</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -8276,8 +8312,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n310_s2/F</td>
 </tr>
 <tr>
-<td>8.462</td>
-<td>0.414</td>
+<td>8.459</td>
+<td>0.411</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -8285,7 +8321,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s2/I2</td>
 </tr>
 <tr>
-<td>8.969</td>
+<td>8.967</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -8294,7 +8330,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s2/F</td>
 </tr>
 <tr>
-<td>9.147</td>
+<td>9.144</td>
 <td>0.177</td>
 <td>tNET</td>
 <td>RR</td>
@@ -8303,7 +8339,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s1/I2</td>
 </tr>
 <tr>
-<td>9.721</td>
+<td>9.718</td>
 <td>0.574</td>
 <td>tINS</td>
 <td>RR</td>
@@ -8312,7 +8348,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s1/F</td>
 </tr>
 <tr>
-<td>9.962</td>
+<td>9.959</td>
 <td>0.241</td>
 <td>tNET</td>
 <td>RR</td>
@@ -8321,7 +8357,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s0/I3</td>
 </tr>
 <tr>
-<td>10.469</td>
+<td>10.467</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -8330,7 +8366,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" background: #97FFFF;">i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/n322_s0/F</td>
 </tr>
 <tr>
-<td>10.469</td>
+<td>10.467</td>
 <td>0.000</td>
 <td>tNET</td>
 <td>RR</td>
@@ -8425,7 +8461,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 2.735, 60.193%; route: 1.426, 31.389%; tC2Q: 0.382, 8.418%</td>
+<td>cell: 2.735, 60.226%; route: 1.424, 31.352%; tC2Q: 0.382, 8.423%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -14515,7 +14551,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -14706,7 +14742,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -14897,7 +14933,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15088,7 +15124,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15279,7 +15315,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15345,7 +15381,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15395,197 +15431,6 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 </table>
 <h3>Path6</h3>
-<p><b>Path Summary:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Slack</td>
-<td>2.137</td>
-</tr>
-<tr>
-<td class="label">Data Arrival Time</td>
-<td>189.570</td>
-</tr>
-<tr>
-<td class="label">Data Required Time</td>
-<td>191.707</td>
-</tr>
-<tr>
-<td class="label">From</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0</td>
-</tr>
-<tr>
-<td class="label">To</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0</td>
-</tr>
-<tr>
-<td class="label">Launch Clk</td>
-<td>video_clk:[R]</td>
-</tr>
-<tr>
-<td class="label">Latch Clk</td>
-<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
-</tr>
-</table>
-<p><b>Data Arrival Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>184.615</td>
-<td>184.615</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>184.615</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>video_clk</td>
-</tr>
-<tr>
-<td>184.615</td>
-<td>0.000</td>
-<td>tCL</td>
-<td>RR</td>
-<td>212</td>
-<td>PLL_R[3]</td>
-<td>Gowin_PLL_dvi_inst/PLL_inst/CLKOUT1</td>
-</tr>
-<tr>
-<td>188.474</td>
-<td>3.858</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>R47C109[1][A]</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/CLK</td>
-</tr>
-<tr>
-<td>188.841</td>
-<td>0.368</td>
-<td>tC2Q</td>
-<td>RF</td>
-<td>4</td>
-<td>R47C109[1][A]</td>
-<td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
-</tr>
-<tr>
-<td>189.570</td>
-<td>0.729</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R49C112[1][A]</td>
-<td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0/PRESET</td>
-</tr>
-</table>
-<p><b>Data Required Path:</b></p>
-<table class="detail_table">
-<tr>
-<th class="label">AT</th>
-<th class="label">DELAY</th>
-<th class="label">TYPE</th>
-<th class="label">RF</th>
-<th class="label">FANOUT</th>
-<th class="label">LOC</th>
-<th>NODE</th>
-</tr>
-<tr>
-<td>185.000</td>
-<td>185.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>active clock edge time</td>
-</tr>
-<tr>
-<td>185.000</td>
-<td>0.000</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
-</tr>
-<tr>
-<td>188.577</td>
-<td>3.577</td>
-<td>tCL</td>
-<td>FF</td>
-<td>6020</td>
-<td>LEFTSIDE[4]</td>
-<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
-</tr>
-<tr>
-<td>192.035</td>
-<td>3.457</td>
-<td>tNET</td>
-<td>FF</td>
-<td>1</td>
-<td>R49C112[1][A]</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0/CLK</td>
-</tr>
-<tr>
-<td>192.000</td>
-<td>-0.035</td>
-<td>tUnc</td>
-<td></td>
-<td></td>
-<td></td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0</td>
-</tr>
-<tr>
-<td>191.707</td>
-<td>-0.292</td>
-<td>tSu</td>
-<td></td>
-<td>1</td>
-<td>R49C112[1][A]</td>
-<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_read_inst/reset_w_0_s0</td>
-</tr>
-</table>
-<p><b>Path Statistics:</b></p>
-<table class="summary_table">
-<tr>
-<td class="label">Clock Skew</td>
-<td>3.177</td>
-</tr>
-<tr>
-<td class="label">Setup Relationship </td>
-<td>0.385</td>
-</tr>
-<tr>
-<td class="label">Logic Level</td>
-<td>1</td>
-</tr>
-<tr>
-<td class="label">Arrival Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 3.858, 100.000%</td>
-</tr>
-<tr>
-<td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.729, 66.477%; tC2Q: 0.368, 33.523%</td>
-</tr>
-<tr>
-<td class="label">Required Clock Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 3.457, 100.000%</td>
-</tr>
-</table>
-<h3>Path7</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -15652,7 +15497,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15718,7 +15563,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15767,7 +15612,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.883, 100.000%</td>
 </tr>
 </table>
-<h3>Path8</h3>
+<h3>Path7</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -15834,7 +15679,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15900,7 +15745,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -15949,7 +15794,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.902, 100.000%</td>
 </tr>
 </table>
-<h3>Path9</h3>
+<h3>Path8</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16016,7 +15861,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16082,7 +15927,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16131,7 +15976,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.902, 100.000%</td>
 </tr>
 </table>
-<h3>Path10</h3>
+<h3>Path9</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16198,7 +16043,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16264,7 +16109,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16313,7 +16158,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.893, 100.000%</td>
 </tr>
 </table>
-<h3>Path11</h3>
+<h3>Path10</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16380,7 +16225,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16446,7 +16291,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16495,7 +16340,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.907, 100.000%</td>
 </tr>
 </table>
-<h3>Path12</h3>
+<h3>Path11</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16562,7 +16407,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16628,7 +16473,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16677,7 +16522,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.893, 100.000%</td>
 </tr>
 </table>
-<h3>Path13</h3>
+<h3>Path12</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16744,7 +16589,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16810,7 +16655,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16859,7 +16704,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.905, 100.000%</td>
 </tr>
 </table>
-<h3>Path14</h3>
+<h3>Path13</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -16926,7 +16771,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -16992,7 +16837,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17041,7 +16886,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.942, 100.000%</td>
 </tr>
 </table>
-<h3>Path15</h3>
+<h3>Path14</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -17108,7 +16953,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17174,7 +17019,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17223,7 +17068,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.914, 100.000%</td>
 </tr>
 </table>
-<h3>Path16</h3>
+<h3>Path15</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -17290,7 +17135,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17356,7 +17201,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17405,7 +17250,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.898, 100.000%</td>
 </tr>
 </table>
-<h3>Path17</h3>
+<h3>Path16</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -17472,7 +17317,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17538,7 +17383,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17587,7 +17432,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.907, 100.000%</td>
 </tr>
 </table>
-<h3>Path18</h3>
+<h3>Path17</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -17654,7 +17499,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17720,7 +17565,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17769,7 +17614,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.932, 100.000%</td>
 </tr>
 </table>
-<h3>Path19</h3>
+<h3>Path18</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -17836,7 +17681,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17902,7 +17747,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -17951,7 +17796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path20</h3>
+<h3>Path19</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18018,7 +17863,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18084,7 +17929,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18133,7 +17978,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path21</h3>
+<h3>Path20</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18200,7 +18045,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18266,7 +18111,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18315,7 +18160,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path22</h3>
+<h3>Path21</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18382,7 +18227,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18448,7 +18293,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18497,7 +18342,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path23</h3>
+<h3>Path22</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18564,7 +18409,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18630,7 +18475,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18679,7 +18524,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path24</h3>
+<h3>Path23</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18746,7 +18591,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18812,7 +18657,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18861,7 +18706,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.900, 100.000%</td>
 </tr>
 </table>
-<h3>Path25</h3>
+<h3>Path24</h3>
 <p><b>Path Summary:</b></p>
 <table class="summary_table">
 <tr>
@@ -18928,7 +18773,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -18994,7 +18839,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -19043,6 +18888,188 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>cell: 0.000, 0.000%; route: 3.907, 100.000%</td>
 </tr>
 </table>
+<h3>Path25</h3>
+<p><b>Path Summary:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>2.197</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>15.260</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>17.458</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/gowin_add_SDPB_Big.mem_Big.mem_0_3_s</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[F]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk:[R]</td>
+</tr>
+</table>
+<p><b>Data Arrival Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>5.000</td>
+<td>5.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>5.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>8.577</td>
+<td>3.577</td>
+<td>tCL</td>
+<td>FF</td>
+<td>6020</td>
+<td>LEFTSIDE[5]</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>12.047</td>
+<td>3.469</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>R51C110[0][A]</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/CLK</td>
+</tr>
+<tr>
+<td>12.489</td>
+<td>0.442</td>
+<td>tC2Q</td>
+<td>FF</td>
+<td>63</td>
+<td>R51C110[0][A]</td>
+<td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/reset_r_1_s0/Q</td>
+</tr>
+<tr>
+<td>15.260</td>
+<td>2.771</td>
+<td>tNET</td>
+<td>FF</td>
+<td>16</td>
+<td>BSRAM_R46[18][B]</td>
+<td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/gowin_add_SDPB_Big.mem_Big.mem_0_3_s/RESET</td>
+</tr>
+</table>
+<p><b>Data Required Path:</b></p>
+<table class="detail_table">
+<tr>
+<th class="label">AT</th>
+<th class="label">DELAY</th>
+<th class="label">TYPE</th>
+<th class="label">RF</th>
+<th class="label">FANOUT</th>
+<th class="label">LOC</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>10.000</td>
+<td>10.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>10.000</td>
+<td>0.000</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>13.577</td>
+<td>3.577</td>
+<td>tCL</td>
+<td>RR</td>
+<td>6020</td>
+<td>LEFTSIDE[5]</td>
+<td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>17.538</td>
+<td>3.960</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>BSRAM_R46[18][B]</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/gowin_add_SDPB_Big.mem_Big.mem_0_3_s/CLKB</td>
+</tr>
+<tr>
+<td>17.458</td>
+<td>-0.080</td>
+<td>tSu</td>
+<td></td>
+<td>1</td>
+<td>BSRAM_R46[18][B]</td>
+<td>Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_write_ctrl/fifo_write_inst/gowin_add_SDPB_Big.mem_Big.mem_0_3_s</td>
+</tr>
+</table>
+<p><b>Path Statistics:</b></p>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew</td>
+<td>0.491</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship </td>
+<td>5.000</td>
+</tr>
+<tr>
+<td class="label">Logic Level</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 3.469, 100.000%</td>
+</tr>
+<tr>
+<td class="label">Arrival Data Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 2.771, 86.231%; tC2Q: 0.442, 13.769%</td>
+</tr>
+<tr>
+<td class="label">Required Clock Path Delay</td>
+<td>cell: 0.000, 0.000%; route: 3.960, 100.000%</td>
+</tr>
+</table>
 <h3><a name="Removal_Analysis">Removal Analysis Report</a></h3>
 <h4>Report Command:report_timing -removal -max_paths 25 -max_common_paths 1</h4>
 <h3>Path1</h3>
@@ -19050,11 +19077,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-3.027</td>
+<td>-3.029</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>17.287</td>
+<td>17.285</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -19134,8 +19161,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
 </tr>
 <tr>
-<td>17.287</td>
-<td>0.287</td>
+<td>17.285</td>
+<td>0.285</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -19178,7 +19205,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -19229,7 +19256,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.287, 66.589%; tC2Q: 0.144, 33.411%</td>
+<td>cell: 0.000, 0.000%; route: 0.285, 66.434%; tC2Q: 0.144, 33.566%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -19241,11 +19268,11 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-2.931</td>
+<td>-3.006</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>17.383</td>
+<td>17.308</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
@@ -19325,8 +19352,8 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td style=" font-weight:bold;">Video_Frame_Buffer_inst/vfb_ddr3_wrapper_inst/u0_dma_frame_buffer/u_dma_read_ctrl/fifo_rd_rst_s0/Q</td>
 </tr>
 <tr>
-<td>17.383</td>
-<td>0.383</td>
+<td>17.308</td>
+<td>0.308</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
@@ -19369,7 +19396,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>FF</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -19420,7 +19447,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Arrival Data Path Delay</td>
-<td>cell: 0.000, 0.000%; route: 0.383, 72.676%; tC2Q: 0.144, 27.324%</td>
+<td>cell: 0.000, 0.000%; route: 0.308, 68.142%; tC2Q: 0.144, 31.858%</td>
 </tr>
 <tr>
 <td class="label">Required Clock Path Delay</td>
@@ -19569,7 +19596,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -19769,7 +19796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -19969,7 +19996,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -20169,7 +20196,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -20369,7 +20396,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -20569,7 +20596,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -20769,7 +20796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -20969,7 +20996,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -21169,7 +21196,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -21369,7 +21396,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -21569,7 +21596,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -21769,7 +21796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -21969,7 +21996,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -22169,7 +22196,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -22369,7 +22396,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -22569,7 +22596,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -22769,7 +22796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -22969,7 +22996,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -23169,7 +23196,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -23369,7 +23396,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -23569,7 +23596,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -23769,7 +23796,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -23969,7 +23996,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td>tCL</td>
 <td>RR</td>
 <td>6020</td>
-<td>LEFTSIDE[4]</td>
+<td>LEFTSIDE[5]</td>
 <td>DDR3MI_inst/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
 </tr>
 <tr>
@@ -25233,13 +25260,13 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>940</td>
 <td>cmos_16bit_clk</td>
-<td>40.174</td>
+<td>-2.692</td>
 <td>5.315</td>
 </tr>
 <tr>
 <td>798</td>
 <td>cmos_xclk_d</td>
-<td>-12.412</td>
+<td>-11.488</td>
 <td>3.816</td>
 </tr>
 <tr>
@@ -25251,19 +25278,19 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>784</td>
 <td>n7709_4</td>
-<td>28.512</td>
+<td>-11.488</td>
 <td>7.034</td>
 </tr>
 <tr>
 <td>416</td>
 <td>state_led_d_23[0]</td>
-<td>0.307</td>
+<td>0.378</td>
 <td>3.500</td>
 </tr>
 <tr>
 <td>400</td>
 <td>dvi_y[4]</td>
-<td>4.641</td>
+<td>4.440</td>
 <td>4.689</td>
 </tr>
 <tr>
@@ -25287,43 +25314,43 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <th class="label">ROUTE CONGESTIONS</th>
 </tr>
 <tr>
+<td>R45C109</td>
+<td>90.28%</td>
+</tr>
+<tr>
 <td>R60C114</td>
 <td>86.11%</td>
 </tr>
 <tr>
-<td>R45C109</td>
-<td>84.72%</td>
+<td>R58C115</td>
+<td>81.94%</td>
 </tr>
 <tr>
-<td>R60C115</td>
+<td>R59C115</td>
 <td>80.56%</td>
 </tr>
 <tr>
-<td>R60C122</td>
+<td>R61C119</td>
 <td>80.56%</td>
 </tr>
 <tr>
-<td>R63C112</td>
+<td>R60C119</td>
 <td>79.17%</td>
 </tr>
 <tr>
-<td>R48C110</td>
+<td>R52C119</td>
 <td>79.17%</td>
 </tr>
 <tr>
-<td>R52C120</td>
-<td>79.17%</td>
-</tr>
-<tr>
-<td>R62C68</td>
+<td>R61C111</td>
 <td>77.78%</td>
 </tr>
 <tr>
-<td>R61C115</td>
+<td>R44C104</td>
 <td>77.78%</td>
 </tr>
 <tr>
-<td>R61C120</td>
+<td>R53C116</td>
 <td>77.78%</td>
 </tr>
 </table>
@@ -25350,7 +25377,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>TC_CLOCK</td>
 <td>Actived</td>
-<td>create_clock -name cmos_vsync -period 1000 -waveform {0 500} [get_ports {cmos_vsync}] -add</td>
+<td>create_clock -name cmos_vsync -period 10000 -waveform {0 500} [get_ports {cmos_vsync}] -add</td>
 </tr>
 <tr>
 <td>TC_CLOCK</td>
@@ -25360,12 +25387,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td>TC_CLOCK</td>
 <td>Actived</td>
-<td>create_clock -name cmos_16bit_clk -period 83.333 -waveform {0 41.666} [get_nets {cmos_16bit_clk}] -add</td>
+<td>create_clock -name cmos_pclk -period 20 -waveform {0 10} [get_ports {cmos_pclk}] -add</td>
 </tr>
 <tr>
-<td>TC_CLOCK</td>
+<td>TC_GENERATED_CLOCK</td>
 <td>Actived</td>
-<td>create_clock -name cmos_pclk -period 41.667 -waveform {0 5} [get_ports {cmos_pclk}] -add</td>
+<td>create_generated_clock -name cmos_16bit -source [get_ports {cmos_pclk}] -master_clock cmos_pclk -divide_by 2 -multiply_by 1 [get_nets {cmos_16bit_clk}]</td>
 </tr>
 <tr>
 <td>TC_GENERATED_CLOCK</td>

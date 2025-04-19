@@ -1,7 +1,7 @@
-Reading netlist file: "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg"
-Parsing netlist file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "H:\git\Gowin_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg"
+Parsing netlist file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst"
+Reading constraint file: "H:\git\Gowin_LUT-Network\mega138K_pro\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -23,10 +23,11 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.power.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Fri Apr 18 01:57:09 2025
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.power.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.pin.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\impl\pnr\top.posp" completed
+Sat Apr 19 15:35:24 2025
 
