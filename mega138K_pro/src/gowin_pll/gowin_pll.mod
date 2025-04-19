@@ -7,7 +7,7 @@
 
 -mod_name Gowin_PLL
 -file_name gowin_pll
--path C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/
+-path E:/git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/
 -type PLL_ADV
 -file_type vlg
 -ssc false
@@ -49,7 +49,17 @@
 -clkout1_pe_coarse 0
 -clkout1_pe_fine 0
 -de1_en false
--en_clkout2 false
+-en_clkout2 true
+-clkout2_bypass false
+-dyn_odiv2_sel false
+-odiv2_sel 12
+-dyn_dt2_sel false
+-clkout2_dt_dir 1
+-clkout2_dt_step 0
+-dyn_pe2_sel false
+-clkout2_pe_coarse 0
+-clkout2_pe_fine 0
+-de2_en false
 -en_clkout3 false
 -en_clkout4 false
 -en_clkout5 false
