@@ -1,14 +1,14 @@
-Reading netlist file: "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg"
-Parsing netlist file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg" completed
+Reading netlist file: "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg"
+Parsing netlist file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg" completed
 Processing netlist completed
-Reading constraint file: "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\138K_PRO_DOCK.cst"
+Reading constraint file: "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\src\138K_PRO_DOCK.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1117) : Can't calculate clocks' relationship between: "tck_pad_i" and "cmos_pclk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "cmos_pclk" and "tck_pad_i"
+WARN  (TA1123) : the clock "clk_74_25"'s frequency does not match u_tmds_pll/PLL_inst/CLKOUT1's 
+WARN  (TA1132) :  'cmos_16bit_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -23,9 +23,12 @@ Running timing analysis......
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.pin.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.html" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.txt" completed
-Generate file "E:\git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.tr.html" completed
-Sun Apr 13 22:13:10 2025
+Running power analysis......
+[100%] Power analysis completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.power.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.pin.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.html" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.rpt.txt" completed
+Generate file "H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\cam2dvi.tr.html" completed
+Sat Apr 19 13:54:43 2025
 
