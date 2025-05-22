@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="1665" Alu="47" Lut="602" T_Register="8264(1665)" T_Alu="372(47)" T_Lut="7656(602)" T_Bsram="64(0)">
+<Module name="top" Register="1665" Alu="47" Lut="607" T_Register="8261(1665)" T_Alu="372(47)" T_Lut="7687(607)" T_Bsram="64(0)">
  <SubModule name="Gowin_PLL_inst"/>
- <SubModule name="i2c_config_m0" Register="13" Lut="22" T_Register="124(13)" T_Alu="15(0)" T_Lut="807(22)">
-  <SubModule name="i2c_master_top_m0" Register="17" Lut="636" T_Register="111(17)" T_Alu="15(0)" T_Lut="785(636)">
-   <SubModule name="byte_controller" Register="23" Lut="48" T_Register="94(23)" T_Alu="15(0)" T_Lut="149(48)">
-    <SubModule name="bit_controller" Register="71" Alu="15" Lut="101" T_Register="71(71)" T_Alu="15(15)" T_Lut="101(101)"/>
+ <SubModule name="i2c_config_m0" Register="13" Lut="25" T_Register="124(13)" T_Alu="15(0)" T_Lut="834(25)">
+  <SubModule name="i2c_master_top_m0" Register="17" Lut="663" T_Register="111(17)" T_Alu="15(0)" T_Lut="809(663)">
+   <SubModule name="byte_controller" Register="23" Lut="48" T_Register="94(23)" T_Alu="15(0)" T_Lut="146(48)">
+    <SubModule name="bit_controller" Register="71" Alu="15" Lut="98" T_Register="71(71)" T_Alu="15(15)" T_Lut="98(98)"/>
    </SubModule>
   </SubModule>
  </SubModule>
- <SubModule name="cmos_8_16bit_m0" Register="29" Lut="3" T_Register="29(29)" T_Lut="3(3)"/>
- <SubModule name="u_MnistLutSimple" T_Register="74(0)" T_Lut="954(0)">
+ <SubModule name="cmos_8_16bit_m0" Register="26" Lut="3" T_Register="26(26)" T_Lut="3(3)"/>
+ <SubModule name="u_MnistLutSimple" T_Register="74(0)" T_Lut="955(0)">
   <SubModule name="i_MnistLutSimple_sub0" T_Lut="5(0)">
    <SubModule name="i_MnistLutSimple_sub0_base" Lut="5" T_Lut="5(5)"/>
   </SubModule>
-  <SubModule name="i_MnistLutSimple_sub1" T_Lut="682(0)">
-   <SubModule name="i_MnistLutSimple_sub1_base" Lut="682" T_Lut="682(682)"/>
+  <SubModule name="i_MnistLutSimple_sub1" T_Lut="683(0)">
+   <SubModule name="i_MnistLutSimple_sub1_base" Lut="683" T_Lut="683(683)"/>
   </SubModule>
   <SubModule name="i_MnistLutSimple_sub2" T_Register="64(0)" T_Lut="64(0)">
    <SubModule name="i_MnistLutSimple_sub2_base" Register="64" Lut="64" T_Register="64(64)" T_Lut="64(64)"/>
@@ -26,10 +26,10 @@
    <SubModule name="i_MnistLutSimple_sub5_base" Register="10" Lut="10" T_Register="10(10)" T_Lut="10(10)"/>
   </SubModule>
  </SubModule>
- <SubModule name="vga_timing_m0" Register="28" Lut="66" T_Register="28(28)" T_Lut="66(66)"/>
+ <SubModule name="vga_timing_m0" Register="28" Lut="65" T_Register="28(28)" T_Lut="65(65)"/>
  <SubModule name="Video_Frame_Buffer_inst" Register="338" Alu="34" Lut="1105" Bsram="16" T_Register="338(338)" T_Alu="34(34)" T_Lut="1105(1105)" T_Bsram="16(16)"/>
  <SubModule name="DDR3MI_inst" Register="5616" Alu="189" Lut="3387" Bsram="24" T_Register="5616(5616)" T_Alu="189(189)" T_Lut="3387(3387)" T_Bsram="24(24)"/>
  <SubModule name="Gowin_PLL_dvi_inst"/>
  <SubModule name="DVI_TX_Top_inst" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
- <SubModule name="gw_gao_inst_0" Register="317" Alu="18" Lut="503" Bsram="24" T_Register="317(317)" T_Alu="18(18)" T_Lut="503(503)" T_Bsram="24(24)"/>
+ <SubModule name="gw_gao_inst_0" Register="317" Alu="18" Lut="502" Bsram="24" T_Register="317(317)" T_Alu="18(18)" T_Lut="502(502)" T_Bsram="24(24)"/>
 </Module>

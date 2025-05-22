@@ -1,11 +1,11 @@
-//Copyright (C)2014-2025 Gowin Semiconductor Corporation.
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
 //All rights reserved. 
 //File Title: Physical Constraints file
-//Tool Version: V1.9.11.01 (64-bit)
+//Tool Version: V1.9.11 (64-bit)
 //Part Number: GW5AST-LV138FPG676AES
 //Device: GW5AST-138
 //Device Version: B
-//Created Time: Sat 04 19 15:19:26 2025
+//Created Time: Thu 05 22 20:46:15 2025
 
 IO_LOC "O_tmds_clk_p" Y22,Y23;
 IO_PORT "O_tmds_clk_p" IO_TYPE=LVDS25 PULL_MODE=NONE DRIVE=3.5 BANK_VCCIO=2.5;

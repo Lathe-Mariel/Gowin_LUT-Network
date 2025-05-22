@@ -1,9 +1,9 @@
--d H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg
+-d C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\gwsynthesis\cam2dvi.vg
 -p GW5AST-138B-FCPBGA676A-1
 -pn GW5AST-LV138FPG676AES
--cst H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\src\138K_PRO_DOCK.cst
--cfg H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\device.cfg
--sdc H:\git\Gowin_LUT-Network\mega138K_pro\exam\cam2dvi\src\TMDS_800_600_60.sdc
+-cst C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\138K_PRO_DOCK.cst
+-cfg C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\impl\pnr\device.cfg
+-sdc C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\TMDS_800_600_60.sdc
 -bit
 -tr
 -ph
@@ -12,7 +12,6 @@
 -convert_sdp32_36_to_sdp16_18
 -place_option 0
 -route_option 0
--clock_route_order 0
 -correct_hold 1
 -route_maxfan 23
 -global_freq 100.000

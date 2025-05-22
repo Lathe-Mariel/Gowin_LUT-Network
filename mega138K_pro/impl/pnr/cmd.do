@@ -1,13 +1,14 @@
--d E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg
+-d C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg
 -p GW5AST-138B-FCPBGA676A-1
 -pn GW5AST-LV138FPG676AES
--cst E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst
--cfg E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\device.cfg
--sdc E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lcd.sdc
+-cst C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst
+-cfg C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\device.cfg
+-sdc C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lcd.sdc
 -gao_crc 0010110001101101
 -bit
 -tr
 -ph
+-posp
 -timing
 -ireg_not_in_iob
 -oreg_not_in_iob
