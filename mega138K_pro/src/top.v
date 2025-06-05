@@ -74,11 +74,9 @@ wire[15:0] 			      write_data;
 wire[9:0]                 lut_index;
 wire[31:0]                lut_data;
 
-wire cmos_clk;
 logic cmos_16bit_wr;
 logic camera_de;
 
-assign cmos_xclk  = cmos_clk;
 assign cmos_pwdn  = 1'b0;
 assign write_data = {cmos_16bit_data[4:0],cmos_16bit_data[10:5],cmos_16bit_data[15:11]};
 
@@ -129,7 +127,7 @@ always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;
     Gowin_PLL Gowin_PLL_inst(
         .lock(DDR_pll_lock),  //output lock
         .clkout0(memory_clk), //output clkout0
-        .clkout1(cmos_clk),   // for OV5640 24MHz
+        .clkout1(cmos_xclk),   // for OV5640 24MHz
 //        .clkout2(clk100),
         .clkin(clk),          //input clkin
         .reset(~rst_n)        //input reset
@@ -241,8 +239,6 @@ cmos_8_16bit cmos_8_16bit_m0(
                 .out_data       (mnist_class    ),
                 .out_valid      (               )
             );
-
-logic cmos_16bit_clk_half;
 
 //The video output timing generator and generate a frame read data request
 wire out_de;
@@ -403,7 +399,7 @@ assign lcd_dclk    			  = video_clk;     //video_clk_phs;
 		.ref_ack(),                //output ref_ack
 		.burst(1'b1),              //input burst
 // phisical memory interface
-		.O_ddr_addr(ddr_addr[14:0]),   //
+		.O_ddr_addr(ddr_addr),   //
 		.O_ddr_ba(ddr_bank),     //output [2:0] O_ddr_ba
 		.O_ddr_cs_n(ddr_cs),     //output O_ddr_cs_n
 		.O_ddr_ras_n(ddr_ras),   //output O_ddr_ras_n

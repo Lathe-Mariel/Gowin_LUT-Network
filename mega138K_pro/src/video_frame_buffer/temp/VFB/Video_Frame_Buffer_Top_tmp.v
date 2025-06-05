@@ -1,11 +1,11 @@
-//Copyright (C)2014-2025 Gowin Semiconductor Corporation.
+//Copyright (C)2014-2024 Gowin Semiconductor Corporation.
 //All rights reserved.
 //File Title: Template file for instantiation
-//Tool Version: V1.9.11.01 (64-bit)
+//Tool Version: V1.9.11 (64-bit)
 //Part Number: GW5AST-LV138FPG676AES
 //Device: GW5AST-138
 //Device Version: B
-//Created Time: Sun Apr 20 04:57:23 2025
+//Created Time: Thu Jun  5 20:07:29 2025
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
@@ -29,7 +29,7 @@
 		.I_cmd_ready(I_cmd_ready), //input I_cmd_ready
 		.O_cmd(O_cmd), //output [2:0] O_cmd
 		.O_cmd_en(O_cmd_en), //output O_cmd_en
-		.O_addr(O_addr), //output [28:0] O_addr
+		.O_addr(O_addr), //output [27:0] O_addr
 		.I_wr_data_rdy(I_wr_data_rdy), //input I_wr_data_rdy
 		.O_wr_data_en(O_wr_data_en), //output O_wr_data_en
 		.O_wr_data_end(O_wr_data_end), //output O_wr_data_end
