@@ -48,7 +48,7 @@ always@ (posedge clk)begin
         rd <= 0;
     else begin
         rd <= (h_cnt > (H_BP + H_SYNC -2)) & (h_cnt < (H_BP + H_SYNC + RD_H -1)) & 
-              (v_cnt > (V_BP + V_SYNC -2)) & (v_cnt < (V_BP + V_SYNC + RD_V -1));
+              (v_cnt > (V_BP + V_SYNC -2 + 10)) & (v_cnt < (V_BP + V_SYNC + RD_V -1 + 10));
     end
 end
 

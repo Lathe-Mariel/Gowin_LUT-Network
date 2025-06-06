@@ -2,10 +2,10 @@
 //All rights reserved.
 //File Title: Timing Constraints file
 //Tool Version: V1.9.11 (64-bit) 
-//Created Time: 2025-06-05 20:01:29
+//Created Time: 2025-06-06 13:13:56
 create_clock -name cmos_vsync -period 1000 -waveform {0 500} [get_ports {cmos_vsync}]
 create_clock -name cmos_pclk -period 10 -waveform {0 5} [get_ports {cmos_pclk}]
-create_clock -name clk -period 20 -waveform {0 18.518} [get_ports {clk}]
+create_clock -name clk -period 20 -waveform {0 10} [get_ports {clk}]
 create_generated_clock -name cmos_in -source [get_ports {clk}] -master_clock clk -divide_by 50 -multiply_by 24 [get_pins {Gowin_PLL_inst/PLL_inst/CLKOUT1}]
 create_generated_clock -name cmos_16bit -source [get_ports {cmos_pclk}] -master_clock cmos_pclk -divide_by 2 -multiply_by 1 [get_nets {cmos_16bit_clk}]
 create_generated_clock -name memory_clk -source [get_ports {clk}] -master_clock clk -divide_by 1 -multiply_by 8 [get_pins {Gowin_PLL_inst/PLL_inst/CLKOUT0}]

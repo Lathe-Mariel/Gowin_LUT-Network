@@ -149,10 +149,19 @@ i2c_config i2c_config_m0(
 	.i2c_sda                    (cmos_sda                 )
 );
 //configure look-up table
+
 lut_ov5640_rgb565_480_272 lut_ov5640_rgb565_480_272_m0(
 	.lut_index                  (lut_index                ),
 	.lut_data                   (lut_data                 )
 );
+
+/*
+lut_ov5640_rgb565_1280_720 lut_ov5640_rgb565_m0(
+	.lut_index                  (lut_index                ),
+	.lut_data                   (lut_data                 )
+);
+*/
+
 //CMOS sensor 8bit data is converted to 16bit data
 
 wire cmos_16bit_vsync;

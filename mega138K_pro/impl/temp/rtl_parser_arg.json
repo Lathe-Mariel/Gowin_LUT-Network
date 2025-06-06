@@ -54,6 +54,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/lut_ov5640_rgb565_1280_720.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/lut_ov5640_rgb565_480_272.v",
    "Type" : "verilog"
   },
