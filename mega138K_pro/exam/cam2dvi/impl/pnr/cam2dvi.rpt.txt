@@ -12,23 +12,23 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Thu Jun  5 19:49:20 2025
+  <Created Time>:Mon Jun  9 22:00:43 2025
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-    Placement Phase 1: CPU time = 0h 0m 0.224s, Elapsed time = 0h 0m 0.225s
+    Placement Phase 0: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Placement Phase 1: CPU time = 0h 0m 0.201s, Elapsed time = 0h 0m 0.201s
     Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Total Placement: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.563s, Elapsed time = 0h 0m 0.563s
+    Routing Phase 0: CPU time = 0h 0m 0.543s, Elapsed time = 0h 0m 0.543s
     Routing Phase 1: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s
-    Routing Phase 2: CPU time = 0h 0m 0.205s, Elapsed time = 0h 0m 0.205s
+    Routing Phase 2: CPU time = 0h 0m 0.267s, Elapsed time = 0h 0m 0.267s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 26s, Elapsed time = 0h 0m 26s
+    Total Routing: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s
  Generate output files:
     CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
 
@@ -40,15 +40,15 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 6265/138240                         |  5%
-    --LUT,ALU,ROM16           | 6265(5855 LUT, 410 ALU, 0 ROM16)    | -
+  Logic                       | 6259/138240                         |  5%
+    --LUT,ALU,ROM16           | 6259(5849 LUT, 410 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
   Register                    | 6309/139140                         |  5%
     --Logic Register as Latch | 0/138240                            |  0%
     --Logic Register as FF    | 6304/138240                         |  5%
     --I/O Register as Latch   | 0/900                               |  0%
     --I/O Register as FF      | 5/900                               |  <1%
-  CLS                         | 5779/69120                          |  9%
+  CLS                         | 5778/69120                          |  9%
   I/O Port                    | 115/311                             |  37%
   I/O Buf                     | 102                                 | -
     --Input Buf               | 14                                  | -

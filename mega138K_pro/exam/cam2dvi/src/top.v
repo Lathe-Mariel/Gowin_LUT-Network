@@ -8,7 +8,7 @@ module top #(
     //Note: HDMI Output use 800x600: Set USE_1280 = "false", Enable [TMDS_PLL_800_600_60.v], [TMDS_800_600_60.sdc],
     //                               Disable Other [TMDS_PLL_*.v] 
     parameter USE_TPG = "false",
-    parameter USE_1280 = "false"
+    parameter USE_1280 = "true"
 )(
 	input                  clk,
 	input                  rst_n,
