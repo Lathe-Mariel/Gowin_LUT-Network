@@ -130,7 +130,8 @@ always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;
         .clkout1(cmos_xclk),   // for OV5640 24MHz
 //        .clkout2(clk100),
         .clkin(clk),          //input clkin
-        .reset(~rst_n)        //input reset
+        .reset(~rst_n),        //input reset
+        .init_clk(clk)
     );
 
 //I2C master controller
@@ -496,7 +497,8 @@ wire serial_clk;
         .clkout0(serial_clk), //output clkout0
         .clkout1(video_clk),  //output clkout1
         .clkin(clk),          //input clkin
-        .reset(~rst_n)        //input reset
+        .reset(~rst_n),       //input reset
+        .init_clk(clk)
     );
 
 	DVI_TX_Top DVI_TX_Top_inst(

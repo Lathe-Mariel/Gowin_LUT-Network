@@ -5,8 +5,8 @@
 -part_number GW5AST-LV138FPG676AES
 
 
--mod_name Gowin_PLL_dvi
--file_name gowin_pll_dvi
+-mod_name Gowin_PLL_dvi_MOD
+-file_name gowin_pll_dvi_mod
 -path C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/
 -type PLL_ADV
 -file_type vlg
@@ -21,12 +21,14 @@
 -idiv_sel 1
 -clkfb_sel 0
 -dyn_fbdiv_sel false
--fbdiv_sel 1
+-fbdiv_sel 2
+-dyn_icp_sel true
+-dyn_lpf_sel true
 -en_lock true
 -dyn_dpa_en false
 -clkout0_bypass false
 -dyn_odiv0_sel false
--odiv0_sel 5
+-odiv0_sel 3
 -odiv0_frac_sel 0
 -dyn_dt0_sel false
 -clkout0_dt_dir 1
@@ -41,7 +43,7 @@
 -en_clkout1 true
 -clkout1_bypass false
 -dyn_odiv1_sel false
--odiv1_sel 25
+-odiv1_sel 15
 -dyn_dt1_sel false
 -clkout1_dt_dir 1
 -clkout1_dt_step 0
@@ -56,5 +58,5 @@
 -en_clkout6 false
 -en_clkfbout false
 -dyn_mdiv_sel false
--mdiv_sel 37
--mdiv_frac_sel 0
+-mdiv_sel 11
+-mdiv_frac_sel 1

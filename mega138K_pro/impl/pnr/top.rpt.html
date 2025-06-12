@@ -67,7 +67,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Tool Version</td>
-<td>V1.9.11 (64-bit)</td>
+<td>V1.9.11.02 (64-bit)</td>
 </tr>
 <tr>
 <td class="label">Part Number</td>
@@ -83,12 +83,12 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Wed Jun 11 13:50:36 2025
+<td>Thu Jun 12 21:49:04 2025
 </td>
 </tr>
 <tr>
 <td class="label">Legal Announcement</td>
-<td>Copyright (C)2014-2024 Gowin Semiconductor Corporation. All rights reserved.</td>
+<td>Copyright (C)2014-2025 Gowin Semiconductor Corporation. All rights reserved.</td>
 </tr>
 </table>
 <h1><a name="PnR_Details">PnR Details</a></h1>
@@ -98,23 +98,23 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <td class="label">Place & Route Process</td>
 <td>Running placement:
    Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-   Placement Phase 1: CPU time = 0h 0m 0.215s, Elapsed time = 0h 0m 0.215s
+   Placement Phase 1: CPU time = 0h 0m 0.376s, Elapsed time = 0h 0m 0.376s
    Placement Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
-   Placement Phase 3: CPU time = 0h 0m 17s, Elapsed time = 0h 0m 17s
+   Placement Phase 3: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s
    Total Placement: CPU time = 0h 0m 23s, Elapsed time = 0h 0m 23s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.566s, Elapsed time = 0h 0m 0.566s
+   Routing Phase 0: CPU time = 0h 0m 0.554s, Elapsed time = 0h 0m 0.554s
    Routing Phase 1: CPU time = 0h 0m 40s, Elapsed time = 0h 0m 40s
-   Routing Phase 2: CPU time = 0h 0m 0.226s, Elapsed time = 0h 0m 0.226s
+   Routing Phase 2: CPU time = 0h 0m 0.231s, Elapsed time = 0h 0m 0.231s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
    Total Routing: CPU time = 0h 0m 41s, Elapsed time = 0h 0m 41s
 Generate output files:
-   CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s
+   CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 1m 12s, Elapsed time = 0h 1m 12s, Peak memory usage = 1516MB</td>
+<td>CPU time = 0h 1m 15s, Elapsed time = 0h 1m 15s, Peak memory usage = 1728MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>7496/138240</td>
+<td>7631/138240</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>7496(7114 LUT, 382 ALU, 0 ROM16)</td>
+<td>7631(7217 LUT, 414 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>7925/139140</td>
+<td>8003/139140</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>7925/138240</td>
+<td>8003/138240</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -169,12 +169,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>7195/69120</td>
+<td>7265/69120</td>
 <td>11%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
-<td>107/311</td>
+<td>107/312</td>
 <td>35%</td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">bank 10</td>
-<td>0/11</td><td>0%</td>
+<td>0/12</td><td>0%</td>
 </tr>
 </table>
 <br/>
@@ -298,12 +298,12 @@ Generate output files:
 <tr>
 <td class="label">clk_d</td>
 <td>PRIMARY</td>
-<td> PTR0 PTR2 PBR1 PBR2 PBR3</td>
+<td> PTR2 PBR1 PBR2 PBR3</td>
 </tr>
 <tr>
 <td class="label">cmos_pclk_d</td>
 <td>PRIMARY</td>
-<td> PTR2 PBR2</td>
+<td> PTR2 PBR1 PBR2</td>
 </tr>
 <tr>
 <td class="label">cmos_xclk_d</td>
@@ -343,12 +343,12 @@ Generate output files:
 <tr>
 <td class="label">memory_clk</td>
 <td>HCLK</td>
-<td>LEFT[0] LEFT[5]</td>
+<td>BANK6_HCLK1 BANK7_HCLK2</td>
 </tr>
 <tr>
 <td class="label">serial_clk</td>
 <td>HCLK</td>
-<td>RIGHT[2]</td>
+<td>BANK2_HCLK0</td>
 </tr>
 </table>
 <br/>

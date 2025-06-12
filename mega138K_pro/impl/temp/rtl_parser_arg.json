@@ -72,6 +72,18 @@
   {
    "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/video_frame_buffer/Video_Frame_Buffer_Top.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/gowin_pll_dvi_mod.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/pll_init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/gowin_pll/gowin_pll_mod.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [
