@@ -7,7 +7,6 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1123) : the clock "video_clk"'s frequency does not match Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1's 
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -29,5 +28,5 @@ Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.ht
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.posp" completed
-Thu Jun 12 21:49:04 2025
+Fri Jun 13 21:57:50 2025
 

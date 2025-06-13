@@ -62,6 +62,8 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v<br>
+C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi_mod.v<br>
+C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_bit_ctrl.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_byte_ctrl.v<br>
@@ -70,12 +72,10 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_top.v<br
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\timescale.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_1280_720.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v<br>
+C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v<br>
 C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v<br>
-C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi_mod.v<br>
-C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v<br>
-C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Thu Jun 12 21:47:32 2025
+<td>Fri Jun 13 21:56:01 2025
 </td>
 </tr>
 <tr>
@@ -116,11 +116,11 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 1728.508MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.265s, Elapsed time = 0h 0m 0.408s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.328s, Elapsed time = 0h 0m 0.541s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.375s, Elapsed time = 0h 0m 0.444s, Peak memory usage = 1728.508MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.453s, Elapsed time = 0h 0m 0.475s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.037s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.037s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.021s, Peak memory usage = 1728.508MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.531s, Elapsed time = 0h 0m 0.746s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.14s, Elapsed time = 0h 0m 0.149s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.062s, Elapsed time = 0h 0m 0.075s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 8s, Peak memory usage = 1728.508MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.234s, Elapsed time = 0h 0m 0.3s, Peak memory usage = 1728.508MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.468s, Elapsed time = 0h 0m 0.644s, Peak memory usage = 1728.508MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s, Peak memory usage = 438.793MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.371s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.265s, Elapsed time = 0h 0m 0.513s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.328s, Elapsed time = 0h 0m 0.444s, Peak memory usage = 438.793MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.281s, Elapsed time = 0h 0m 0.487s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.015s, Elapsed time = 0h 0m 0.037s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.04s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.021s, Peak memory usage = 438.793MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.437s, Elapsed time = 0h 0m 0.744s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.152s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.046s, Elapsed time = 0h 0m 0.075s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 8s, Peak memory usage = 438.793MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.109s, Elapsed time = 0h 0m 0.307s, Peak memory usage = 438.793MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.661s, Peak memory usage = 438.793MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 9s, Elapsed time = 0h 0m 12s, Peak memory usage = 1728.508MB</td>
+<td>CPU time = 0h 0m 7s, Elapsed time = 0h 0m 12s, Peak memory usage = 438.793MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
@@ -168,7 +168,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label"><b>Register </b></td>
-<td>8003</td>
+<td>8002</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
@@ -184,23 +184,23 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
-<td>5657</td>
+<td>5656</td>
 </tr>
 <tr>
 <td class="label"><b>LUT </b></td>
-<td>7181</td>
+<td>7156</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
-<td>1141</td>
+<td>1148</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
-<td>2802</td>
+<td>2813</td>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
-<td>3238</td>
+<td>3195</td>
 </tr>
 <tr>
 <td class="label"><b>ALU </b></td>
@@ -284,12 +284,12 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>7616(7234 LUT, 382 ALU) / 138240</td>
+<td>7591(7209 LUT, 382 ALU) / 138240</td>
 <td>6%</td>
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>8003 / 139140</td>
+<td>8002 / 139140</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">&nbsp&nbsp--Register as FF</td>
-<td>8003 / 139140</td>
+<td>8002 / 139140</td>
 <td>6%</td>
 </tr>
 <tr>
@@ -387,10 +387,10 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>6</td>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT0.default_gen_clk</td>
 <td>Generated</td>
-<td>2.727</td>
-<td>366.667</td>
+<td>3.077</td>
+<td>325.000</td>
 <td>0.000</td>
-<td>1.364</td>
+<td>1.538</td>
 <td>clk_ibuf/I</td>
 <td>clk</td>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT0 </td>
@@ -399,10 +399,10 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>7</td>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1.default_gen_clk</td>
 <td>Generated</td>
-<td>13.636</td>
-<td>73.333</td>
+<td>15.385</td>
+<td>65.000</td>
 <td>0.000</td>
-<td>6.818</td>
+<td>7.692</td>
 <td>clk_ibuf/I</td>
 <td>clk</td>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1 </td>
@@ -465,7 +465,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <tr>
 <td>5</td>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1.default_gen_clk</td>
-<td>73.333(MHz)</td>
+<td>65.000(MHz)</td>
 <td>82.979(MHz)</td>
 <td>11</td>
 <td>TOP</td>
@@ -485,19 +485,19 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-7.662</td>
+<td>-6.822</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>49.185</td>
+<td>38.205</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>41.523</td>
+<td>31.383</td>
 </tr>
 <tr>
 <td class="label">From</td>
-<td>bin_img[15]_22_s0</td>
+<td>bin_img[15]_18_s0</td>
 </tr>
 <tr>
 <td class="label">To</td>
@@ -523,7 +523,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>40.000</td>
+<td>30.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -531,7 +531,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>cmos_pclk</td>
 </tr>
 <tr>
-<td>40.000</td>
+<td>30.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -539,7 +539,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>cmos_pclk_ibuf/I</td>
 </tr>
 <tr>
-<td>40.000</td>
+<td>30.000</td>
 <td>0.000</td>
 <td>tINS</td>
 <td>RR</td>
@@ -547,119 +547,103 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>cmos_pclk_ibuf/O</td>
 </tr>
 <tr>
-<td>40.412</td>
+<td>30.413</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>bin_img[15]_22_s0/CLK</td>
+<td>bin_img[15]_18_s0/CLK</td>
 </tr>
 <tr>
-<td>40.795</td>
+<td>30.795</td>
 <td>0.382</td>
 <td>tC2Q</td>
 <td>RR</td>
-<td>5</td>
-<td>bin_img[15]_22_s0/Q</td>
+<td>4</td>
+<td>bin_img[15]_18_s0/Q</td>
 </tr>
 <tr>
-<td>41.207</td>
+<td>31.208</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s73/I0</td>
+<td>n5446_s73/I0</td>
 </tr>
 <tr>
-<td>41.786</td>
+<td>31.786</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s73/F</td>
+<td>n5446_s73/F</td>
 </tr>
 <tr>
-<td>42.199</td>
+<td>32.199</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s63/I1</td>
+<td>n5446_s63/I1</td>
 </tr>
 <tr>
-<td>42.349</td>
+<td>32.349</td>
 <td>0.150</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s63/O</td>
+<td>n5446_s63/O</td>
 </tr>
 <tr>
-<td>42.761</td>
+<td>32.761</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s59/I1</td>
+<td>n5446_s59/I1</td>
 </tr>
 <tr>
-<td>42.847</td>
+<td>32.847</td>
 <td>0.086</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s59/O</td>
+<td>n5446_s59/O</td>
 </tr>
 <tr>
-<td>43.260</td>
+<td>33.260</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s57/I1</td>
+<td>n5446_s57/I1</td>
 </tr>
 <tr>
-<td>43.346</td>
+<td>33.346</td>
 <td>0.086</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n5310_s57/O</td>
+<td>n5446_s57/O</td>
 </tr>
 <tr>
-<td>43.759</td>
+<td>33.759</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s108/I0</td>
+<td>n6059_s104/I0</td>
 </tr>
 <tr>
-<td>44.338</td>
+<td>34.338</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s108/F</td>
+<td>n6059_s104/F</td>
 </tr>
 <tr>
-<td>44.750</td>
-<td>0.413</td>
-<td>tNET</td>
-<td>RR</td>
-<td>1</td>
-<td>n6059_s103/I1</td>
-</tr>
-<tr>
-<td>45.318</td>
-<td>0.567</td>
-<td>tINS</td>
-<td>RR</td>
-<td>1</td>
-<td>n6059_s103/F</td>
-</tr>
-<tr>
-<td>45.730</td>
+<td>34.750</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -667,7 +651,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s82/I3</td>
 </tr>
 <tr>
-<td>46.019</td>
+<td>35.039</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
@@ -675,7 +659,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s82/F</td>
 </tr>
 <tr>
-<td>46.431</td>
+<td>35.451</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -683,7 +667,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s56/I0</td>
 </tr>
 <tr>
-<td>47.010</td>
+<td>36.030</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -691,39 +675,39 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s56/F</td>
 </tr>
 <tr>
-<td>47.423</td>
+<td>36.442</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s113/I3</td>
+<td>n6059_s112/I3</td>
 </tr>
 <tr>
-<td>47.711</td>
+<td>36.731</td>
 <td>0.289</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s113/F</td>
+<td>n6059_s112/F</td>
 </tr>
 <tr>
-<td>48.124</td>
+<td>37.144</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s110/I0</td>
+<td>n6059_s109/I0</td>
 </tr>
 <tr>
-<td>48.274</td>
+<td>37.294</td>
 <td>0.150</td>
 <td>tINS</td>
 <td>RR</td>
 <td>1</td>
-<td>n6059_s110/O</td>
+<td>n6059_s109/O</td>
 </tr>
 <tr>
-<td>48.686</td>
+<td>37.706</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -731,7 +715,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s41/I1</td>
 </tr>
 <tr>
-<td>48.772</td>
+<td>37.792</td>
 <td>0.086</td>
 <td>tINS</td>
 <td>RR</td>
@@ -739,7 +723,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6059_s41/O</td>
 </tr>
 <tr>
-<td>49.185</td>
+<td>38.205</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -758,7 +742,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>40.909</td>
+<td>30.769</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -766,7 +750,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1.default_gen_clk</td>
 </tr>
 <tr>
-<td>41.209</td>
+<td>31.069</td>
 <td>0.300</td>
 <td>tCL</td>
 <td>RR</td>
@@ -774,7 +758,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1</td>
 </tr>
 <tr>
-<td>41.622</td>
+<td>31.482</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -782,7 +766,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>bin_view_s0/CLK</td>
 </tr>
 <tr>
-<td>41.587</td>
+<td>31.447</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
@@ -790,7 +774,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>bin_view_s0</td>
 </tr>
 <tr>
-<td>41.523</td>
+<td>31.383</td>
 <td>-0.064</td>
 <td>tSu</td>
 <td> </td>
@@ -806,16 +790,16 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.909</td>
+<td>0.769</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>
-<td>8</td>
+<td>7</td>
 </tr>
 <tr>
 <td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.413, 100.000%</td></tr>
 <tr>
-<td class="label">Arrival Data Path Delay:</td><td> cell: 3.440, 39.213%; route: 4.950, 56.427%; tC2Q: 0.382, 4.360%</td></tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.872, 36.862%; route: 4.537, 58.229%; tC2Q: 0.382, 4.909%</td></tr>
 <tr>
 <td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.413, 100.000%</td></tr>
 </table>
@@ -825,15 +809,15 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <table class="summary_table">
 <tr>
 <td class="label">Slack</td>
-<td>-2.657</td>
+<td>-2.797</td>
 </tr>
 <tr>
 <td class="label">Data Arrival Time</td>
-<td>44.180</td>
+<td>34.180</td>
 </tr>
 <tr>
 <td class="label">Data Required Time</td>
-<td>41.523</td>
+<td>31.383</td>
 </tr>
 <tr>
 <td class="label">From</td>
@@ -863,7 +847,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>40.000</td>
+<td>30.000</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -871,7 +855,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>cmos_8_16bit_m0/cmos_16bit_clk</td>
 </tr>
 <tr>
-<td>40.000</td>
+<td>30.000</td>
 <td>0.000</td>
 <td>tCL</td>
 <td>RR</td>
@@ -879,7 +863,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>cmos_8_16bit_m0/de_o_s0/Q</td>
 </tr>
 <tr>
-<td>40.412</td>
+<td>30.413</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -887,7 +871,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>u_MnistLutSimple/i_MnistLutSimple_sub5/i_MnistLutSimple_sub5_base/ff_7.lut_7_ff_s0/CLK</td>
 </tr>
 <tr>
-<td>40.795</td>
+<td>30.795</td>
 <td>0.382</td>
 <td>tC2Q</td>
 <td>RR</td>
@@ -895,7 +879,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>u_MnistLutSimple/i_MnistLutSimple_sub5/i_MnistLutSimple_sub5_base/ff_7.lut_7_ff_s0/Q</td>
 </tr>
 <tr>
-<td>41.207</td>
+<td>31.208</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -903,7 +887,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s32/I0</td>
 </tr>
 <tr>
-<td>41.786</td>
+<td>31.786</td>
 <td>0.579</td>
 <td>tINS</td>
 <td>RR</td>
@@ -911,7 +895,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s32/F</td>
 </tr>
 <tr>
-<td>42.199</td>
+<td>32.199</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -919,7 +903,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s28/I1</td>
 </tr>
 <tr>
-<td>42.349</td>
+<td>32.349</td>
 <td>0.150</td>
 <td>tINS</td>
 <td>RR</td>
@@ -927,7 +911,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s28/O</td>
 </tr>
 <tr>
-<td>42.761</td>
+<td>32.761</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -935,7 +919,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s24/I1</td>
 </tr>
 <tr>
-<td>42.847</td>
+<td>32.847</td>
 <td>0.086</td>
 <td>tINS</td>
 <td>RR</td>
@@ -943,7 +927,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s24/O</td>
 </tr>
 <tr>
-<td>43.260</td>
+<td>33.260</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -951,7 +935,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s25/I2</td>
 </tr>
 <tr>
-<td>43.768</td>
+<td>33.768</td>
 <td>0.507</td>
 <td>tINS</td>
 <td>RR</td>
@@ -959,7 +943,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>n6105_s25/F</td>
 </tr>
 <tr>
-<td>44.180</td>
+<td>34.180</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -978,7 +962,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <th>NODE</th>
 </tr>
 <tr>
-<td>40.909</td>
+<td>30.769</td>
 <td>0.000</td>
 <td> </td>
 <td> </td>
@@ -986,7 +970,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1.default_gen_clk</td>
 </tr>
 <tr>
-<td>41.209</td>
+<td>31.069</td>
 <td>0.300</td>
 <td>tCL</td>
 <td>RR</td>
@@ -994,7 +978,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>Gowin_PLL_dvi_inst/u_pll/PLL_inst/CLKOUT1</td>
 </tr>
 <tr>
-<td>41.622</td>
+<td>31.482</td>
 <td>0.413</td>
 <td>tNET</td>
 <td>RR</td>
@@ -1002,7 +986,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>mnist_view_s0/CLK</td>
 </tr>
 <tr>
-<td>41.587</td>
+<td>31.447</td>
 <td>-0.035</td>
 <td>tUnc</td>
 <td> </td>
@@ -1010,7 +994,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 <td>mnist_view_s0</td>
 </tr>
 <tr>
-<td>41.523</td>
+<td>31.383</td>
 <td>-0.064</td>
 <td>tSu</td>
 <td> </td>
@@ -1026,7 +1010,7 @@ C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v<br>
 </tr>
 <tr>
 <td class="label">Setup Relationship:</td>
-<td>0.909</td>
+<td>0.769</td>
 </tr>
 <tr>
 <td class="label">Logic Level:</td>

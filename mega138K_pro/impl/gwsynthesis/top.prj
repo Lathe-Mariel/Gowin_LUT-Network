@@ -11,6 +11,8 @@
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\fifo_top\video_fifo.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v" type="verilog"/>
+        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi_mod.v" type="verilog"/>
+        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_config.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\i2c_master_byte_ctrl.v" type="verilog"/>
@@ -19,12 +21,10 @@
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_master\timescale.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_1280_720.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v" type="verilog"/>
+        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v" type="verilog"/>
-        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi_mod.v" type="verilog"/>
-        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v" type="verilog"/>
-        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_mod.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
