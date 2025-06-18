@@ -8,7 +8,7 @@
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\ddr3_memory_interface\DDR3MI_400M.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\dvi_tx\DVI_TX_Top.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\fifo_top\video_fifo.v" type="verilog"/>
-        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_30HZ.v" type="verilog"/>
+        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\TMDS_PLL_800_600_60.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\gowin_pll\gowin_pll_400M.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_config.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\exam\cam2dvi\src\i2c_master\i2c_master_bit_ctrl.v" type="verilog"/>

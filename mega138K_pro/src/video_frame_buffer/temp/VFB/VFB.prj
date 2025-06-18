@@ -4,13 +4,13 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AES"/>
     <FileList>
-        <File path="C:/Gowin/Gowin_V1.9.11_x64/IDE/ipcore/VFB/data/vfb_top.v" type="verilog"/>
-        <File path="C:/Gowin/Gowin_V1.9.11_x64/IDE/ipcore/VFB/data/vfb_wrapper.v" type="verilog"/>
+        <File path="C:/Gowin/Gowin_V1.9.11.02_SP1_x64/IDE/ipcore/VFB/data/vfb_top.v" type="verilog"/>
+        <File path="C:/Gowin/Gowin_V1.9.11.02_SP1_x64/IDE/ipcore/VFB/data/vfb_wrapper.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="1"/>
         <Option type="enable_dsrm" value="0"/>
-        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.11_x64/IDE/ipcore/VFB/data"/>
+        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.11.02_SP1_x64/IDE/ipcore/VFB/data"/>
         <Option type="include_path" value="C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/video_frame_buffer/temp/VFB"/>
         <Option type="output_file" value="Video_Frame_Buffer_Top.vg"/>
         <Option type="output_template" value="Video_Frame_Buffer_Top_tmp.v"/>

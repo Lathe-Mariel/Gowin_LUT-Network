@@ -227,7 +227,7 @@ cmos_8_16bit cmos_8_16bit_m0(
     // -----------------------------
     //  LUT-Network 画像認識
     // -----------------------------
-
+/*
     logic   [9:0]       mnist_class;
     MnistLutSimple
             #(
@@ -249,7 +249,7 @@ cmos_8_16bit cmos_8_16bit_m0(
                 .out_data       (mnist_class    ),
                 .out_valid      (               )
             );
-
+*/
 //The video output timing generator and generate a frame read data request
 wire out_de;
 //wire [9:0] lcd_x,lcd_y;
@@ -479,7 +479,7 @@ assign lcd_dclk    			  = video_clk;     //video_clk_phs;
         if ( dvi_x[10:5] >= MNIST_X && dvi_x[10:5] < MNIST_X+10 
                 && dvi_y[9:5] >= MNIST_Y && dvi_y[9:5] < MNIST_Y+1 ) begin
             mnist_en   <= 1;
-            mnist_view <= mnist_class[dvi_x[10:5]-MNIST_X];
+//            mnist_view <= mnist_class[dvi_x[10:5]-MNIST_X];
         end
         else begin
             mnist_en   <= 0;
