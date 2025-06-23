@@ -265,7 +265,7 @@ vga_timing vga_timing_m0(
     );
 
 //输入测试图
-/*//--------------------------
+//--------------------------
 wire        tp0_vs_in  ;
 wire        tp0_hs_in  ;
 wire        tp0_de_in ;
@@ -274,7 +274,7 @@ wire [ 7:0] tp0_data_g;
 wire [ 7:0] tp0_data_b;
 testpattern testpattern_inst
 (
-    .I_pxl_clk   (video_clk              ),//pixel clock
+    .I_pxl_clk   (cmos_16bit_clk),//video_clk              ),//pixel clock
     .I_rst_n     (rst_n             ),//low active 
     .I_mode      (3'b010 ),//data select
     .I_single_r  (8'd255               ),
@@ -296,7 +296,7 @@ testpattern testpattern_inst
     .O_data_r    (tp0_data_r         ),   
     .O_data_g    (tp0_data_g         ),
     .O_data_b    (tp0_data_b         )
-);*/
+);
 
 wire dma_clk;
 wire cmd_ready;
@@ -322,9 +322,9 @@ wire init_calib_complete;
 		.I_rd_halt(1'b0),            //frame buffer interrupt(read) for debug
 // video data input(camera)
 		.I_vin0_clk(cmos_16bit_clk), //camera data input clock
-		.I_vin0_vs_n(~cmos_vsync),   // camera data v sync
-		.I_vin0_de(cmos_16bit_wr),   // camera data enable
-		.I_vin0_data(write_data),    // camera data
+		.I_vin0_vs_n(~tp0_vs_in),//~cmos_vsync),   // camera data v sync
+		.I_vin0_de(tp0_de_in),// cmos_16bit_wr),   // camera data enable
+		.I_vin0_data({tp0_data_r,tp0_data_g,tp0_data_b}),//write_data),    // camera data
 		.O_vin0_fifo_full(),         //output O_vin0_fifo_full
 // video data output(dvi or LCD)
 		.I_vout0_clk(video_clk),     // pixel clock for DVI
@@ -497,8 +497,8 @@ wire serial_clk;
         .clkout0(serial_clk), //output clkout0
         .clkout1(video_clk),  //output clkout1
         .clkin(clk),          //input clkin
-        .reset(~rst_n),       //input reset
-        .init_clk(clk)
+        .reset(~rst_n)       //input reset
+//        .init_clk(clk)
     );
 
 	DVI_TX_Top DVI_TX_Top_inst(
