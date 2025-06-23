@@ -275,7 +275,7 @@ wire [ 7:0] tp0_data_b;
 testpattern testpattern_inst
 (
     .I_pxl_clk   (cmos_16bit_clk),//video_clk              ),//pixel clock
-    .I_rst_n     (rst_n             ),//low active 
+    .I_rst_n     (~rst_n             ),//low active 
     .I_mode      (3'b010 ),//data select
     .I_single_r  (8'd255               ),
     .I_single_g  (8'd255             ),
@@ -324,7 +324,7 @@ wire init_calib_complete;
 		.I_vin0_clk(cmos_16bit_clk), //camera data input clock
 		.I_vin0_vs_n(~tp0_vs_in),//~cmos_vsync),   // camera data v sync
 		.I_vin0_de(tp0_de_in),// cmos_16bit_wr),   // camera data enable
-		.I_vin0_data({tp0_data_r,tp0_data_g,tp0_data_b}),//write_data),    // camera data
+		.I_vin0_data({tp0_data_r[7:3],tp0_data_g[7:2],tp0_data_b[7:3]}),//write_data),    // camera data
 		.O_vin0_fifo_full(),         //output O_vin0_fifo_full
 // video data output(dvi or LCD)
 		.I_vout0_clk(video_clk),     // pixel clock for DVI
@@ -508,9 +508,9 @@ wire serial_clk;
 		.I_rgb_vs(lcd_vs), //input I_rgb_vs
 		.I_rgb_hs(lcd_hs), //input I_rgb_hs
 		.I_rgb_de(lcd_de), //input I_rgb_de
-		.I_rgb_r(off0_syn_de? {off0_syn_data[4:0],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x), //
-		.I_rgb_g(off0_syn_de? {off0_syn_data[10:5],2'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y), //
-		.I_rgb_b(off0_syn_de? {off0_syn_data[15:11],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff), //
+		.I_rgb_r(off0_syn_data[4:0]),//off0_syn_de? {off0_syn_data[4:0],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_x), //
+		.I_rgb_g(off0_syn_data[10:5]),//off0_syn_de? {off0_syn_data[10:5],2'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: dvi_y), //
+		.I_rgb_b(off0_syn_data[15:11]),//off0_syn_de? {off0_syn_data[15:11],3'b0}: bin_en?{8{bin_view}}: mnist_en? {8{mnist_view}}: 8'hff), //
 		.O_tmds_clk_p(O_tmds_clk_p), //output O_tmds_clk_p
 		.O_tmds_clk_n(O_tmds_clk_n), //output O_tmds_clk_n
 		.O_tmds_data_p(O_tmds_data_p), //output [2:0] O_tmds_data_p

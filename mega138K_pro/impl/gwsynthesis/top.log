@@ -22,10 +22,10 @@ Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\i2c_ma
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_1280_720.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v'
+Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\testpattern.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v'
 Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v'
-Analyzing Verilog file 'E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\testpattern.v'
 WARN  (EX3073) : Port 'clkout2' remains unconnected for this instance("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":135)
 WARN  (EX3073) : Port 'active_x' remains unconnected for this instance("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":265)
 Compiling module 'top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":3)
@@ -246,7 +246,6 @@ WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\T
 Compiling module 'testpattern'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\testpattern.v":17)
 Compiling module 'Video_Frame_Buffer_Top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v":5024)
 Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v":5023)
-WARN  (EX3670) : Actual bit length 24 differs from formal bit length 16 for port 'I_vin0_data'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":327)
 WARN  (EX3670) : Actual bit length 29 differs from formal bit length 28 for port 'O_addr'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":341)
 Compiling module 'DDR3MI'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":28353)
 Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v":28352)
@@ -256,14 +255,17 @@ WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("E:\git\T
 Compiling module 'Gowin_PLL_dvi'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\gowin_pll\gowin_pll_dvi.v":10)
 Compiling module 'DVI_TX_Top'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v":1089)
 Compiling module '**'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v":1088)
-WARN  (EX3670) : Actual bit length 12 differs from formal bit length 8 for port 'I_rgb_r'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":511)
-WARN  (EX3670) : Actual bit length 11 differs from formal bit length 8 for port 'I_rgb_g'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":512)
+WARN  (EX3670) : Actual bit length 5 differs from formal bit length 8 for port 'I_rgb_r'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":511)
+WARN  (EX3670) : Actual bit length 6 differs from formal bit length 8 for port 'I_rgb_g'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":512)
+WARN  (EX3670) : Actual bit length 5 differs from formal bit length 8 for port 'I_rgb_b'("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":513)
 NOTE  (EX0101) : Current top module is "top"
 WARN  (EX0211) : The output port "state_led[5]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":39)
 WARN  (EX0211) : The output port "state_led[4]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":39)
 WARN  (EX0211) : The output port "state_led[3]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":39)
 [5%] Running netlist conversion ...
 WARN  (CV0016) : Input sw1 is unused("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":7)
+WARN  (CV0016) : Input cmos_vsync is unused("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":11)
+WARN  (CV0016) : Input cmos_db is unused("E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v":15)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed

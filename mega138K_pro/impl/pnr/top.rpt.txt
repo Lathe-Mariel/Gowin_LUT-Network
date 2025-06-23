@@ -12,27 +12,27 @@
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Mon Jun 23 22:07:38 2025
+  <Created Time>:Mon Jun 23 23:59:42 2025
 
 
 2. PnR Details
 
   Running placement:
     Placement Phase 0: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-    Placement Phase 1: CPU time = 0h 0m 0.554s, Elapsed time = 0h 0m 0.554s
-    Placement Phase 2: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
-    Placement Phase 3: CPU time = 0h 0m 39s, Elapsed time = 0h 0m 39s
-    Total Placement: CPU time = 0h 0m 56s, Elapsed time = 0h 0m 56s
+    Placement Phase 1: CPU time = 0h 0m 0.479s, Elapsed time = 0h 0m 0.479s
+    Placement Phase 2: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
+    Placement Phase 3: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
+    Total Placement: CPU time = 0h 0m 49s, Elapsed time = 0h 0m 49s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.886s, Elapsed time = 0h 0m 0.886s
-    Routing Phase 1: CPU time = 0h 0m 29s, Elapsed time = 0h 0m 29s
-    Routing Phase 2: CPU time = 0h 0m 0.304s, Elapsed time = 0h 0m 0.304s
+    Routing Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Routing Phase 1: CPU time = 0h 1m 8s, Elapsed time = 0h 1m 8s
+    Routing Phase 2: CPU time = 0h 0m 0.524s, Elapsed time = 0h 0m 0.524s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 30s, Elapsed time = 0h 0m 30s
+    Total Routing: CPU time = 0h 1m 10s, Elapsed time = 0h 1m 10s
  Generate output files:
-    CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
+    CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
 
- Total Time and Memory Usage: CPU time = 0h 1m 36s, Elapsed time = 0h 1m 36s, Peak memory usage = 1445MB
+ Total Time and Memory Usage: CPU time = 0h 2m 27s, Elapsed time = 0h 2m 27s, Peak memory usage = 1362MB
 
 
 3. Resource Usage Summary
@@ -40,18 +40,18 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 6425/138240                         |  5%
-    --LUT,ALU,ROM16           | 6425(6027 LUT, 398 ALU, 0 ROM16)    | -
+  Logic                       | 5859/138240                         |  5%
+    --LUT,ALU,ROM16           | 5859(5508 LUT, 351 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 7793/139140                         |  6%
+  Register                    | 6148/139140                         |  5%
     --Logic Register as Latch | 0/138240                            |  0%
-    --Logic Register as FF    | 7793/138240                         |  6%
+    --Logic Register as FF    | 6148/138240                         |  5%
     --I/O Register as Latch   | 0/900                               |  0%
     --I/O Register as FF      | 0/900                               |  0%
-  CLS                         | 6829/69120                          |  10%
+  CLS                         | 5613/69120                          |  9%
   I/O Port                    | 107/311                             |  35%
-  I/O Buf                     | 97                                  | -
-    --Input Buf               | 14                                  | -
+  I/O Buf                     | 88                                  | -
+    --Input Buf               | 5                                   | -
     --Output Buf              | 45                                  | -
     --Inout Buf               | 38                                  | -
   IOLOGIC                     | 105/300                             | 35%
@@ -88,7 +88,7 @@
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
   PRIMARY       | 6/8           | 75%
-  LW            | 3/8           | 38%
+  LW            | 2/8           | 25%
   GCLK_PIN      | 9/24          | 38%
   CLKDIV        | 1/24          | 5%
   DDRDLL        | 1/4           | 25%
@@ -103,12 +103,11 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   clk_d          | PRIMARY        |  PTR2 PBR1 PBR2 PBR3
-  cmos_pclk_d    | PRIMARY        |  PTR2 PBR2
+  cmos_pclk_d    | PRIMARY        |  PBR2
   cmos_xclk_d    | PRIMARY        |  PBR1
   cmos_16bit_clk | PRIMARY        |  PTR2 PBR2
   dma_clk        | PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
   video_clk      | PRIMARY        |  PTR2 PTR3 PBR2
-  cmos_vsync_d   | LW             |  -
   state_led_d[1] | LW             |  -
   DDR3MI_inst/gw3_top/ddr_rst| LW             |  -
   memory_clk     | HCLK           | LEFT[5] LEFT[2]

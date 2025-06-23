@@ -22,10 +22,10 @@
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_1280_720.v" type="verilog"/>
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lut_ov5640_rgb565_480_272.v" type="verilog"/>
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\pll_init.v" type="verilog"/>
+        <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\testpattern.v" type="verilog"/>
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.v" type="verilog"/>
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\vga_timing.v" type="verilog"/>
         <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\video_frame_buffer\Video_Frame_Buffer_Top.v" type="verilog"/>
-        <File path="E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\testpattern.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
