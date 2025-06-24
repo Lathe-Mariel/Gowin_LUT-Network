@@ -5,34 +5,34 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: E:\git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg
-  <Physical Constraints File>: E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst
-  <Timing Constraints File>: E:\git\TangPrimer20K_LUT-Network\mega138K_pro\src\lcd.sdc
-  <Tool Version>: V1.9.11.01 (64-bit)
+  <Design File>: C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\gwsynthesis\top.vg
+  <Physical Constraints File>: C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\top.cst
+  <Timing Constraints File>: C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\lcd.sdc
+  <Tool Version>: V1.9.11.02 (64-bit)
   <Part Number>: GW5AST-LV138FPG676AES
   <Device>: GW5AST-138
   <Device Version>: B
-  <Created Time>:Mon Jun 23 23:59:42 2025
+  <Created Time>:Tue Jun 24 13:05:18 2025
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 6s, Elapsed time = 0h 0m 6s
-    Placement Phase 1: CPU time = 0h 0m 0.479s, Elapsed time = 0h 0m 0.479s
-    Placement Phase 2: CPU time = 0h 0m 7s, Elapsed time = 0h 0m 7s
-    Placement Phase 3: CPU time = 0h 0m 35s, Elapsed time = 0h 0m 35s
-    Total Placement: CPU time = 0h 0m 49s, Elapsed time = 0h 0m 49s
+    Placement Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Placement Phase 1: CPU time = 0h 0m 0.178s, Elapsed time = 0h 0m 0.177s
+    Placement Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Placement Phase 3: CPU time = 0h 0m 11s, Elapsed time = 0h 0m 11s
+    Total Placement: CPU time = 0h 0m 15s, Elapsed time = 0h 0m 15s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Routing Phase 1: CPU time = 0h 1m 8s, Elapsed time = 0h 1m 8s
-    Routing Phase 2: CPU time = 0h 0m 0.524s, Elapsed time = 0h 0m 0.524s
+    Routing Phase 0: CPU time = 0h 0m 0.616s, Elapsed time = 0h 0m 0.616s
+    Routing Phase 1: CPU time = 0h 0m 25s, Elapsed time = 0h 0m 25s
+    Routing Phase 2: CPU time = 0h 0m 0.192s, Elapsed time = 0h 0m 0.192s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 1m 10s, Elapsed time = 0h 1m 10s
+    Total Routing: CPU time = 0h 0m 26s, Elapsed time = 0h 0m 26s
  Generate output files:
-    CPU time = 0h 0m 28s, Elapsed time = 0h 0m 28s
+    CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s
 
- Total Time and Memory Usage: CPU time = 0h 2m 27s, Elapsed time = 0h 2m 27s, Peak memory usage = 1362MB
+ Total Time and Memory Usage: CPU time = 0h 0m 51s, Elapsed time = 0h 0m 51s, Peak memory usage = 1534MB
 
 
 3. Resource Usage Summary
@@ -40,18 +40,18 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 5859/138240                         |  5%
-    --LUT,ALU,ROM16           | 5859(5508 LUT, 351 ALU, 0 ROM16)    | -
+  Logic                       | 5784/138240                         |  5%
+    --LUT,ALU,ROM16           | 5784(5434 LUT, 350 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 6148/139140                         |  5%
+  Register                    | 6091/139140                         |  5%
     --Logic Register as Latch | 0/138240                            |  0%
-    --Logic Register as FF    | 6148/138240                         |  5%
+    --Logic Register as FF    | 6091/138240                         |  5%
     --I/O Register as Latch   | 0/900                               |  0%
     --I/O Register as FF      | 0/900                               |  0%
-  CLS                         | 5613/69120                          |  9%
-  I/O Port                    | 107/311                             |  35%
-  I/O Buf                     | 88                                  | -
-    --Input Buf               | 5                                   | -
+  CLS                         | 5653/69120                          |  9%
+  I/O Port                    | 107/312                             |  35%
+  I/O Buf                     | 89                                  | -
+    --Input Buf               | 6                                   | -
     --Output Buf              | 45                                  | -
     --Inout Buf               | 38                                  | -
   IOLOGIC                     | 105/300                             | 35%
@@ -78,7 +78,7 @@
   bank 5   | 14/50       | 28%         
   bank 6   | 44/50       | 88%         
   bank 7   | 28/50       | 56%         
-  bank 10  | 0/11        | 0%          
+  bank 10  | 0/12        | 0%          
   ======================================
 
 
@@ -88,7 +88,7 @@
   Clock Resource| Usage         | Utilization 
   ------------------------------------------
   PRIMARY       | 6/8           | 75%
-  LW            | 2/8           | 25%
+  LW            | 3/8           | 38%
   GCLK_PIN      | 9/24          | 38%
   CLKDIV        | 1/24          | 5%
   DDRDLL        | 1/4           | 25%
@@ -108,10 +108,11 @@
   cmos_16bit_clk | PRIMARY        |  PTR2 PBR2
   dma_clk        | PRIMARY        |  PTR0 PTR1 PTR2 PBR0 PBR1 PBR2
   video_clk      | PRIMARY        |  PTR2 PTR3 PBR2
+  cmos_vsync_d   | LW             |  -
   state_led_d[1] | LW             |  -
   DDR3MI_inst/gw3_top/ddr_rst| LW             |  -
-  memory_clk     | HCLK           | LEFT[5] LEFT[2]
-  serial_clk     | HCLK           | RIGHT[0]
+  memory_clk     | HCLK           | BANK6_HCLK1 BANK7_HCLK2
+  serial_clk     | HCLK           | BANK2_HCLK0
   ===========================================
 
 
