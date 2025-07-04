@@ -1,5 +1,6 @@
 module gw_gao(
     cmos_vsync,
+    cmos_16bit_wr,
     cmos_href,
     init_calib_complete,
     cmd_ready,
@@ -18,6 +19,7 @@ module gw_gao(
 );
 
 input cmos_vsync;
+input cmos_16bit_wr;
 input cmos_href;
 input init_calib_complete;
 input cmd_ready;
@@ -35,6 +37,7 @@ input tdi_pad_i;
 output tdo_pad_o;
 
 wire cmos_vsync;
+wire cmos_16bit_wr;
 wire cmos_href;
 wire init_calib_complete;
 wire cmd_ready;
@@ -120,7 +123,7 @@ gw_con_top  u_icon_top(
 ao_top_0  u_la0_top(
     .control(control0[9:0]),
     .trig0_i(cmos_vsync),
-    .data_i({cmos_vsync,cmos_href,init_calib_complete,cmd_ready,wr_data_en,wr_data_rdy,rd_data_valid,camera_de,cmd_en,rst_n,DDR_pll_lock}),
+    .data_i({cmos_vsync,cmos_16bit_wr,cmos_href,init_calib_complete,cmd_ready,wr_data_en,wr_data_rdy,rd_data_valid,camera_de,cmd_en,rst_n,DDR_pll_lock}),
     .clk_i(cmos_pclk)
 );
 

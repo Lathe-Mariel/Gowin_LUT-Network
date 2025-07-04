@@ -5,6 +5,7 @@
     <AoCore index="0" sample_clock="cmos_pclk" trig_type="0" storage_depth="32768" window_num="1" capture_amount="32768" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
             <Signal capture_enable="true">cmos_vsync</Signal>
+            <Signal capture_enable="true">cmos_16bit_wr</Signal>
             <Signal capture_enable="true">cmos_href</Signal>
             <Signal capture_enable="true">init_calib_complete</Signal>
             <Signal capture_enable="true">cmd_ready</Signal>
@@ -60,5 +61,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0010110001101101</GAO_ID>
+    <GAO_ID>0011101110011110</GAO_ID>
 </GAO_CONFIG>

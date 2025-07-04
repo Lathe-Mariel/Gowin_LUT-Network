@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Register="49" Lut="62" T_Register="6091(49)" T_Alu="320(0)" T_Lut="5448(62)" T_Bsram="32(0)">
- <SubModule name="Gowin_PLL_inst" T_Register="40(0)" T_Alu="16(0)" T_Lut="53(0)">
+<Module name="top" Register="49" Lut="65" T_Register="6410(49)" T_Alu="338(0)" T_Lut="5952(65)" T_Bsram="58(0)">
+ <SubModule name="Gowin_PLL_inst" T_Register="40(0)" T_Alu="16(0)" T_Lut="55(0)">
   <SubModule name="u_pll"/>
-  <SubModule name="u_pll_init" Register="40" Alu="16" Lut="53" T_Register="40(40)" T_Alu="16(16)" T_Lut="53(53)"/>
+  <SubModule name="u_pll_init" Register="40" Alu="16" Lut="55" T_Register="40(40)" T_Alu="16(16)" T_Lut="55(55)"/>
  </SubModule>
- <SubModule name="i2c_config_m0" Register="13" Lut="23" T_Register="124(13)" T_Alu="15(0)" T_Lut="834(23)">
-  <SubModule name="i2c_master_top_m0" Register="17" Lut="669" T_Register="111(17)" T_Alu="15(0)" T_Lut="811(669)">
-   <SubModule name="byte_controller" Register="23" Lut="49" T_Register="94(23)" T_Alu="15(0)" T_Lut="142(49)">
-    <SubModule name="bit_controller" Register="71" Alu="15" Lut="93" T_Register="71(71)" T_Alu="15(15)" T_Lut="93(93)"/>
+ <SubModule name="i2c_config_m0" Register="13" Lut="24" T_Register="124(13)" T_Alu="15(0)" T_Lut="828(24)">
+  <SubModule name="i2c_master_top_m0" Register="17" Lut="657" T_Register="111(17)" T_Alu="15(0)" T_Lut="804(657)">
+   <SubModule name="byte_controller" Register="23" Lut="48" T_Register="94(23)" T_Alu="15(0)" T_Lut="147(48)">
+    <SubModule name="bit_controller" Register="71" Alu="15" Lut="99" T_Register="71(71)" T_Alu="15(15)" T_Lut="99(99)"/>
    </SubModule>
   </SubModule>
  </SubModule>
@@ -16,5 +16,6 @@
  <SubModule name="Video_Frame_Buffer_inst" Register="318" Alu="30" Lut="1065" Bsram="16" T_Register="318(318)" T_Alu="30(30)" T_Lut="1065(1065)" T_Bsram="16(16)"/>
  <SubModule name="DDR3MI_inst" Register="5454" Alu="190" Lut="3136" Bsram="16" T_Register="5454(5454)" T_Alu="190(190)" T_Lut="3136(3136)" T_Bsram="16(16)"/>
  <SubModule name="Gowin_PLL_dvi_inst"/>
+ <SubModule name="gw_gao_inst_0" Register="319" Alu="18" Lut="505" Bsram="26" T_Register="319(319)" T_Alu="18(18)" T_Lut="505(505)" T_Bsram="26(26)"/>
  <SubModule name="DVI_TX_Top_inst" Register="73" Alu="69" Lut="229" T_Register="73(73)" T_Alu="69(69)" T_Lut="229(229)"/>
 </Module>

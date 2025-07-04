@@ -122,15 +122,14 @@ always@(posedge lcd_vs) lcd_vs_cnt <= lcd_vs_cnt + 1;
     end
 
 
-
 //generate the CMOS sensor clock and DDR3 controller clock
     Gowin_PLL Gowin_PLL_inst(
         .lock(DDR_pll_lock),  //output lock
         .clkout0(memory_clk), //output clkout0
-        .clkout1(cmos_xclk),   // for OV5640 24MHz
+        .clkout1(cmos_xclk),  // for OV5640 24MHz
 //        .clkout2(clk100),
         .clkin(clk),          //input clkin
-        .reset(~rst_n),        //input reset
+        .reset(~rst_n),       //input reset
         .init_clk(clk)
     );
 
