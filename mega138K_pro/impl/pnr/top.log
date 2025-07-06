@@ -7,8 +7,8 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1123) : the clock "memory_clk"'s frequency does not match Gowin_PLL_inst/u_pll/PLL_inst/CLKOUT0's 
 WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+WARN  (TA1132) :  'prev3_href' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -29,6 +29,5 @@ Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.ht
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.posp" completed
-Fri Jul  4 22:01:56 2025
+Sun Jul  6 18:04:15 2025
 

@@ -7,7 +7,6 @@
             <Signal capture_enable="true">cmos_vsync</Signal>
             <Signal capture_enable="true">cmos_16bit_wr</Signal>
             <Signal capture_enable="true">cmos_href</Signal>
-            <Signal capture_enable="true">init_calib_complete</Signal>
             <Signal capture_enable="true">cmd_ready</Signal>
             <Signal capture_enable="true">wr_data_en</Signal>
             <Signal capture_enable="true">wr_data_rdy</Signal>
@@ -15,7 +14,36 @@
             <Signal capture_enable="true">camera_de</Signal>
             <Signal capture_enable="true">cmd_en</Signal>
             <Signal capture_enable="true">rst_n</Signal>
-            <Signal capture_enable="true">DDR_pll_lock</Signal>
+            <Bus capture_enable="true" name="tp[15:0]">
+                <Signal>tp[15]</Signal>
+                <Signal>tp[14]</Signal>
+                <Signal>tp[13]</Signal>
+                <Signal>tp[12]</Signal>
+                <Signal>tp[11]</Signal>
+                <Signal>tp[10]</Signal>
+                <Signal>tp[9]</Signal>
+                <Signal>tp[8]</Signal>
+                <Signal>tp[7]</Signal>
+                <Signal>tp[6]</Signal>
+                <Signal>tp[5]</Signal>
+                <Signal>tp[4]</Signal>
+                <Signal>tp[3]</Signal>
+                <Signal>tp[2]</Signal>
+                <Signal>tp[1]</Signal>
+                <Signal>tp[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="tp_counter[9:0]">
+                <Signal>tp_counter[9]</Signal>
+                <Signal>tp_counter[8]</Signal>
+                <Signal>tp_counter[7]</Signal>
+                <Signal>tp_counter[6]</Signal>
+                <Signal>tp_counter[5]</Signal>
+                <Signal>tp_counter[4]</Signal>
+                <Signal>tp_counter[3]</Signal>
+                <Signal>tp_counter[2]</Signal>
+                <Signal>tp_counter[1]</Signal>
+                <Signal>tp_counter[0]</Signal>
+            </Bus>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -61,5 +89,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0011101110011110</GAO_ID>
+    <GAO_ID>1000100010011001</GAO_ID>
 </GAO_CONFIG>
