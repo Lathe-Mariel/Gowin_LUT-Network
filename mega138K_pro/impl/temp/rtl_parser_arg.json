@@ -2,7 +2,7 @@
  "Device" : "GW5AST-138B",
  "Files" : [
   {
-   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/MnistLutSimple_old.v",
+   "Path" : "C:/Git/TangPrimer20K_LUT-Network/mega138K_pro/src/MnistLutSimple.v",
    "Type" : "verilog"
   },
   {

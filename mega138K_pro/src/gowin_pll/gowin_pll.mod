@@ -43,7 +43,7 @@
 -en_clkout1 true
 -clkout1_bypass false
 -dyn_odiv1_sel false
--odiv1_sel 50
+-odiv1_sel 100
 -dyn_dt1_sel false
 -clkout1_dt_dir 1
 -clkout1_dt_step 0
