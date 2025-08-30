@@ -1,8 +1,8 @@
 //Copyright (C)2014-2025 GOWIN Semiconductor Corporation.
 //All rights reserved.
 //File Title: Timing Constraints file
-//Tool Version: V1.9.11.02 (64-bit) 
-//Created Time: 2025-07-06 16:40:35
+//Tool Version: V1.9.12 (64-bit) 
+//Created Time: 2025-08-30 19:34:25
 create_clock -name cmos_vsync -period 1000 -waveform {0 500} [get_ports {cmos_vsync}]
 create_clock -name cmos_pclk -period 10 -waveform {0 5} [get_ports {cmos_pclk}]
 create_clock -name clk -period 20 -waveform {0 10} [get_ports {clk}]

@@ -4,7 +4,7 @@
     <Version>beta</Version>
     <Device id="GW5AST-138B" package="FCPBGA676A" speed="1" partNumber="GW5AST-LV138FPG676AC1/I0"/>
     <FileList>
-        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple.v" type="verilog"/>
+        <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\MnistLutSimple_old.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\cmos_8_16bit.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\ddr3_memory_interface\DDR3MI_400M.v" type="verilog"/>
         <File path="C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\src\dvi_tx\DVI_TX_Top.v" type="verilog"/>
