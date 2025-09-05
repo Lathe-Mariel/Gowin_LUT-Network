@@ -7,7 +7,6 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1123) : the clock "cmos_in"'s frequency does not match Gowin_PLL_inst/u_pll/PLL_inst/CLKOUT1's 
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -28,5 +27,5 @@ Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.pin.ht
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.html" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.rpt.txt" completed
 Generate file "C:\Git\TangPrimer20K_LUT-Network\mega138K_pro\impl\pnr\top.tr.html" completed
-Sat Aug 30 19:28:28 2025
+Fri Sep  5 20:21:52 2025
 
