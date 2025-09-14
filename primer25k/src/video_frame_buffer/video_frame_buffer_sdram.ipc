@@ -7,7 +7,7 @@ type=video_frame_buffer
 version=1.0
 
 [Config]
-Addr_Width=21
+Addr_Width=
 Burst_Number_Enable=false
 Data_Width=16
 Image_Size=00080000
