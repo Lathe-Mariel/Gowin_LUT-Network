@@ -1,15 +1,19 @@
--d H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg
+-d H:\git\Gowin_LUT-Network\primer25k\impl\gwsynthesis\top.vg
 -p GW5A-25A-MBGA121N-1
 -pn GW5A-LV25MG121NES
--cst H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst
--cfg H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\device.cfg
--sdc H:\git\TangPrimer20K_LUT-Network\primer25k\src\lcd.sdc
+-cst H:\git\Gowin_LUT-Network\primer25k\src\top.cst
+-cfg H:\git\Gowin_LUT-Network\primer25k\impl\pnr\device.cfg
+-sdc H:\git\Gowin_LUT-Network\primer25k\src\lcd.sdc
 -gao_crc 0001110100101010
 -bit
 -tr
 -ph
 -timing
 -cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-clock_route_order 0
 -correct_hold 1
 -route_maxfan 23
 -global_freq 100.000

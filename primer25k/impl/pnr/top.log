@@ -1,13 +1,16 @@
-Reading netlist file: "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
-Parsing netlist file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
+Reading netlist file: "H:\git\Gowin_LUT-Network\primer25k\impl\gwsynthesis\top.vg"
+Parsing netlist file "H:\git\Gowin_LUT-Network\primer25k\impl\gwsynthesis\top.vg" completed
 Processing netlist completed
-Reading constraint file: "H:\git\TangPrimer20K_LUT-Network\primer25k\src\top.cst"
+Reading constraint file: "H:\git\Gowin_LUT-Network\primer25k\src\top.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
 WARN  (TA1123) : the clock "mem_clk"'s frequency does not match pll_memory/PLLA_inst/CLKOUT0's 
+WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
+WARN  (TA1132) :  'Pout_vs_dn[2]' was determined to be a clock but was not created.
+WARN  (TA1132) :  'video_clk_gen/clkdiv_inst/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -20,9 +23,12 @@ Running timing analysis......
 Placement and routing completed
 Bitstream generation in progress......
 Bitstream generation completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
-Generate file "H:\git\TangPrimer20K_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
-Mon Feb 24 22:07:21 2025
+Running power analysis......
+[100%] Power analysis completed
+Generate file "H:\git\Gowin_LUT-Network\primer25k\impl\pnr\top.power.html" completed
+Generate file "H:\git\Gowin_LUT-Network\primer25k\impl\pnr\top.pin.html" completed
+Generate file "H:\git\Gowin_LUT-Network\primer25k\impl\pnr\top.rpt.html" completed
+Generate file "H:\git\Gowin_LUT-Network\primer25k\impl\pnr\top.rpt.txt" completed
+Generate file "H:\git\Gowin_LUT-Network\primer25k\impl\pnr\top.tr.html" completed
+Wed Oct 29 23:27:13 2025
 
